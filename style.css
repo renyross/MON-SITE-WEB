@@ -664,9 +664,9 @@ a {
   height: 100%;
   z-index: 1;
   opacity: 0.6;
-  /* Reduced opacity to see grid better */
   pointer-events: none;
-  /* Background image removed */
+  background: url("hero_background_ai_1766351976088.png") no-repeat center center;
+  background-size: cover;
   mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 70%);
   -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 70%);
 }
