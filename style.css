@@ -14,11 +14,12 @@ html {
   /* Graphic Charter Colors */
   /* Graphic Charter Colors */
   --accent-primary: #2E5CFF;
-  /* Bleu Électrique (Principale) */
+  /* Bleu Électrique */
   --accent-secondary: #00F2FF;
-  /* Bleu Cyan (Secondaire) */
+  /* Bleu Cyan */
   --accent-mauve: #BD00FF;
-  /* Mauve (Optionnelle) */
+  /* Mauve */
+  --text-white: #FFFFFF;
 
   --glass-bg: rgba(0, 0, 0, 0.8);
   --glass-border: 1px solid rgba(255, 255, 255, 0.1);
@@ -494,14 +495,14 @@ a {
 }
 
 .hero-title {
-  font-size: 4.5rem;
+  font-family: 'Outfit', var(--font-display);
+  font-size: 5rem;
   line-height: 1.05;
   margin-bottom: 24px;
-  color: #FFFFFF;
-  text-shadow: 0 0 30px rgba(46, 92, 255, 0.4);
-  /* Premium Glow */
-  letter-spacing: -0.02em;
-  font-weight: 700;
+  color: var(--text-white);
+  text-shadow: 0 0 30px rgba(46, 92, 255, 0.3);
+  letter-spacing: -0.03em;
+  font-weight: 900;
   text-transform: uppercase;
 }
 
@@ -749,10 +750,23 @@ section {
 /* Section Typography */
 .section-title {
   text-align: center;
-  font-size: 3rem;
-  font-weight: 700;
+  font-family: 'Outfit', var(--font-display);
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
   margin-bottom: 24px;
   letter-spacing: -0.02em;
+  color: var(--text-white);
+}
+
+.section-title span,
+h1 span.text-gradient,
+h2 span.text-gradient {
+  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 .section-intro {
