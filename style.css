@@ -123,17 +123,19 @@ a {
 .logo-text {
   font-size: 1.2rem;
   font-weight: 700;
-  /* Gradient Text for 'Renel' */
+  color: #FFFFFF;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin-bottom: -3px;
+}
+
+.logo-color {
   background: linear-gradient(135deg, #2E5CFF 0%, #00F2FF 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  /* Fallback */
-  font-weight: 700;
-  /* Bold weight as requested */
-  line-height: 1;
-  margin-bottom: -3px;
+  display: inline-block;
 }
 
 /* Animations de conversion */
@@ -4094,4 +4096,6 @@ h2 span.text-gradient {
   margin-bottom: 0;
   font-family: 'Outfit', sans-serif;
   letter-spacing: -0.02em;
-}/* Force Build Wed Dec 24 21:51:34 CET 2025 */
+}
+
+/* Force Build Wed Dec 24 21:51:34 CET 2025 */
