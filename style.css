@@ -665,8 +665,6 @@ a {
   z-index: 1;
   opacity: 0.6;
   pointer-events: none;
-  /* background: url("hero_background_ai_1766351976088.png") no-repeat center center; */
-  /* Background image removed as requested */
   background-size: cover;
   mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 70%);
   -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 70%);
