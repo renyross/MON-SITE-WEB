@@ -4098,4 +4098,64 @@ h2 span.text-gradient {
   letter-spacing: -0.02em;
 }
 
+/* Hero Eyebrow (Consultant SEO & IA) */
+.hero-eyebrow {
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* Hero Mini Trust Badge (Google) */
+.hero-mini-trust {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 8px 16px 8px 12px;
+  border-radius: 99px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 24px;
+}
+
+.hmt-icon-box {
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hmt-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.1;
+}
+
+.hmt-stars {
+  color: #FFA500;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+}
+
+.hmt-text {
+  font-size: 0.75rem;
+  color: #D1D1D6;
+  white-space: nowrap;
+}
+
+.hmt-text strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+
 /* Force Build Wed Dec 24 21:51:34 CET 2025 */
