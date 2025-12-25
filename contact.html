@@ -110,7 +110,8 @@
                 <div class="contact-form-card-premium">
                     <h3 class="form-title">Réserver mon Audit Offert</h3>
                     <p class="form-subtitle">Disponibilité limitée : 2 nouveaux projets par mois maximum.</p>
-                    <form name="contact" method="POST" data-netlify="true" class="premium-form">
+                    <form name="contact" method="POST" action="/success.html" data-netlify="true" class="premium-form">
+                        <input type="hidden" name="form-name" value="contact" />
                         <div class="form-group">
                             <input type="text" name="name" placeholder="Nom complet" aria-label="Nom complet" required>
                         </div>
