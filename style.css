@@ -4715,7 +4715,7 @@ h2 span.text-gradient {
 
 .resource-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
   margin-top: 50px;
 }
@@ -4798,6 +4798,7 @@ h2 span.text-gradient {
 .resource-card:hover .resource-btn svg {
   transform: translateY(3px);
 }
+
 /* Resource Filters */
 .resource-filters {
   display: flex;
