@@ -4,13 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Résultats & Études de Cas SEO | Preuves de Performance</title>
+    <title>Ressources SEO & IA : Études de Cas, Guides & Brochures | Renel Rosené</title>
     <meta name="description"
-        content="Découvrez comment nos stratégies SEO & IA génèrent +300% de trafic qualifié pour nos clients. Des résultats réels, du ROI concret. Voir les études de cas.">
+        content="Accédez à nos ressources premium : études de cas détaillées, guides stratégiques SEO + IA et checklists techniques. Découvrez des résultats concrets et boostez votre autorité sémantique.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Outfit:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/logos/dmb.png">
     <link rel="canonical" href="https://www.renelrosene.com/portfolio.html">
 </head>
 
@@ -28,27 +31,22 @@
                             <stop offset="100%" stop-color="#00F2FF" /> <!-- Cyan -->
                         </linearGradient>
                     </defs>
-
-                    <!-- Top Part (Standard R Top-Right shape) -->
                     <path
                         d="M10 20 L60 20 C80 20, 90 30, 90 50 L90 60 L70 60 L70 50 C70 40, 65 35, 55 35 L40 35 L40 35 L10 20 Z"
                         fill="url(#rGradient)" />
-
-                    <!-- Bottom Part (Inverted R Bottom-Left shape) -->
                     <path
                         d="M90 80 L40 80 C20 80, 10 70, 10 50 L10 40 L30 40 L30 50 C30 60, 35 65, 45 65 L60 65 L60 65 L90 80 Z"
                         fill="url(#rGradient)" />
                 </svg>
                 <div class="logo-text-group">
-                    <span class="logo-text">Renel<span class="logo-color">Rosené</span></span>
-                    <span class="logo-subtitle">Consultant SEO & IA</span>
+                    <span class="logo-text">Renel Rosené</span>
                 </div>
             </a>
 
             <ul class="nav-links">
                 <li><a href="offres.html">Solution</a></li>
-                <li><a href="portfolio.html" class="active">Résultat</a></li>
-                <li><a href="vision.html">Méthode</a></li>
+                <li><a href="portfolio.html" class="active">Ressources</a></li>
+                <li><a href="blog.html">Blog</a></li>
             </ul>
 
             <!-- Hamburger Menu Toggle -->
@@ -64,93 +62,201 @@
         </div>
     </nav>
 
-    <!-- Hero Minor -->
-    <section class="hero-minor">
-        <div class="container">
-            <h1 class="hero-title">Des résultats qui <span class="text-gradient">parlent d'eux-mêmes</span></h1>
-            <p class="hero-subtitle">Pas de "vanity metrics". Uniquement du trafic qualifié, de l'autorité sémantique et
-                une croissance réelle de votre revenu.</p>
-        </div>
-    </section>
 
-    <!-- Detailed Portfolio Content -->
-    <section class="portfolio-detailed">
+
+    <!-- Premium Resources & Guides Section -->
+    <section class="resources-section">
         <div class="container">
-            <div class="case-study" id="case-study-1">
-                <div class="case-study-grid">
-                    <div class="case-study-image">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop"
-                            alt="E-commerce Results">
-                        <div class="stat-overlay">+180% CA</div>
-                    </div>
-                    <div class="case-study-info">
-                        <span class="p-tag">E-COMMERCE LUXE</span>
-                        <h2>Domination d'un leader de la maroquinerie d'exception</h2>
-                        <div class="case-detail-grid">
-                            <div class="detail-col">
-                                <strong>La Problématique</strong>
-                                <p>Un site techniquement lourd, des temps de chargement supérieurs à 5s et une
-                                    dépendance totale à l'acquisition payante (Ads).</p>
-                            </div>
-                            <div class="detail-col">
-                                <strong>La Solution Hybride</strong>
-                                <p>Refonte technique pour le score Lighthouse 98, déploiement d'un cocon sémantique axé
-                                    sur le prestige et optimisation GEO pour les moteurs de réponse.</p>
-                            </div>
-                        </div>
-                        <div class="case-results">
-                            <div class="res-item">
-                                <span class="res-val">TOP 1</span>
-                                <span class="res-lab">Sur les mots-clés "Luxe"</span>
-                            </div>
-                            <div class="res-item">
-                                <span class="res-val">-70%</span>
-                                <span class="res-lab">Coût d'acquisition</span>
-                            </div>
-                        </div>
-                    </div>
+            <h2 class="section-title" style="text-align: center;">Ressources <span class="text-blue">Premium</span></h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 50px; opacity: 0.7;">Accédez à mes guides
+                exclusifs et brochures stratégiques pour accélérer votre compréhension du Search moderne.</p>
+
+            <!-- Filters -->
+            <div class="resource-filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="outil">Outils</button>
+                <button class="filter-btn" data-filter="guide">Guides</button>
+                <button class="filter-btn" data-filter="autre">Checklists & Brochures</button>
+            </div>
+
+            <div class="resource-grid">
+                <!-- 1. Outil (New) -->
+                <div class="resource-card" data-category="outil">
+                    <span class="resource-type">Outil SEO</span>
+                    <h3>Identification Cannibalisation</h3>
+                    <p>Identifiez en quelques minutes les contenus sur votre site qui ont le plus de potentiel de
+                        réoptimisation.</p>
+                    <a href="#" class="resource-btn">
+                        ACCÉDER À L'OUTIL
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 15V3M12 15L8 11M12 15L16 11M5 17C5 18.1046 5.89543 19 7 19H17C18.1046 19 19 18.1046 19 17"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- 2. Outil (New) -->
+                <div class="resource-card" data-category="outil">
+                    <span class="resource-type">Outil SEO</span>
+                    <h3>Générateur de REGEX</h3>
+                    <p>Générez des REGEX pour passer au niveau supérieur sur vos filtres de mots clefs dans la GSC et
+                        vos outils SEO.</p>
+                    <a href="#" class="resource-btn">
+                        GÉNÉRER VOS REGEX
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 15V3M12 15L8 11M12 15L16 11M5 17C5 18.1046 5.89543 19 7 19H17C18.1046 19 19 18.1046 19 17"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- 3. Guide (New) -->
+                <div class="resource-card" data-category="guide">
+                    <span class="resource-type">Guide Stratégique</span>
+                    <h3>Stratégie SEO E-commerce</h3>
+                    <p>Le plan d'action détaillé pour dominer votre niche e-commerce : structure de catalogue, facettes
+                        et conversion.</p>
+                    <a href="#" class="resource-btn">
+                        TÉLÉCHARGER LE GUIDE
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 15V3M12 15L8 11M12 15L16 11M5 17C5 18.1046 5.89543 19 7 19H17C18.1046 19 19 18.1046 19 17"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- 4. Guide (Old) -->
+                <div class="resource-card" data-category="guide">
+                    <span class="resource-type">Guide Stratégique</span>
+                    <h3>Domination SEO + IA : Le Blueprint 2026</h3>
+                    <p>Découvrez comment aligner votre contenu sur les vecteurs de compréhension des LLMs (ChatGPT,
+                        Perplexity).</p>
+                    <a href="#" class="resource-btn">
+                        TÉLÉCHARGER LE GUIDE (PDF)
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 15V3M12 15L8 11M12 15L16 11M5 17C5 18.1046 5.89543 19 7 19H17C18.1046 19 19 18.1046 19 17"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- 5. Brochure (Old) -->
+                <div class="resource-card" data-category="autre">
+                    <span class="resource-type">Brochure Services</span>
+                    <h3>L'Accompagnement Hybride & ROI</h3>
+                    <p>Une présentation détaillée de ma méthodologie de travail, des livrables par étape et de la
+                        structure de mes partenariats.</p>
+                    <a href="#" class="resource-btn">
+                        VOIR LA BROCHURE
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 15V3M12 15L8 11M12 15L16 11M5 17C5 18.1046 5.89543 19 7 19H17C18.1046 19 19 18.1046 19 17"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- 6. Checklist (Old) -->
+                <div class="resource-card" data-category="autre">
+                    <span class="resource-type">Checklist Technique</span>
+                    <h3>Audit 100% Core Web Vitals</h3>
+                    <p>La liste de contrôle technique ultime pour passer tous vos indicateurs Google au vert et
+                        maximiser votre budget de crawl.</p>
+                    <a href="#" class="resource-btn">
+                        RÉCUPÉRER LA CHECKLIST
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 15V3M12 15L8 11M12 15L16 11M5 17C5 18.1046 5.89543 19 7 19H17C18.1046 19 19 18.1046 19 17"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
                 </div>
             </div>
 
-            <div class="case-study-separator"></div>
-
-            <div class="case-study" id="case-study-2">
-                <div class="case-study-grid reflect">
-                    <div class="case-study-info">
-                        <span class="p-tag">SAAS B2B</span>
-                        <h2>Hyper-croissance pour une licorne Cyber-sécurité</h2>
-                        <div class="case-detail-grid">
-                            <div class="detail-col">
-                                <strong>La Problématique</strong>
-                                <p>Un marché ultra-concurrentiel où chaque prospect coûte des centaines d'euros en SEA.
-                                    Invisibilité sur les nouveaux moteurs IA.</p>
-                            </div>
-                            <div class="detail-col">
-                                <strong>La Solution Hybride</strong>
-                                <p>Saturas thématique via des workflows IA supervisés. Création de 50+ articles experts
-                                    en 3 mois avec un maillage interne prédictif.</p>
-                            </div>
-                        </div>
-                        <div class="case-results">
-                            <div class="res-item">
-                                <span class="res-val">+240%</span>
-                                <span class="res-lab">Inbound Leads</span>
-                            </div>
-                            <div class="res-item">
-                                <span class="res-val">GEO Ready</span>
-                                <span class="res-lab">Cité par Perplexity</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="case-study-image">
-                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1200&auto=format&fit=crop"
-                            alt="Google Search Console Analytics Dashboard">
-                        <div class="stat-overlay">GSC: +240%</div>
-                    </div>
-                </div>
+            <div style="text-align: center; margin-top: 60px;" id="load-more-container">
+                <button id="load-more-btn" class="hero-btn-primary"
+                    style="display: inline-block; padding: 16px 32px; border:none; cursor:pointer;">VOIR TOUTES MES
+                    RESSOURCES</button>
             </div>
         </div>
     </section>
+
+    <!-- Filter & Load More Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const cards = document.querySelectorAll('.resource-card');
+            const loadMoreBtn = document.getElementById('load-more-btn');
+            const loadMoreContainer = document.getElementById('load-more-container');
+
+            let currentCategory = 'all';
+            let itemsToShow = 3; // Show top 3 initially
+
+            function render() {
+                let visibleCount = 0;
+                let totalFiltered = 0;
+
+                // First count total available for this filter to know if we need the button
+                cards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (currentCategory === 'all' || category === currentCategory) {
+                        totalFiltered++;
+                    }
+                });
+
+                // Then display
+                cards.forEach(card => {
+                    card.style.display = 'none'; // Reset
+                    const category = card.getAttribute('data-category');
+
+                    if (currentCategory === 'all' || category === currentCategory) {
+                        if (visibleCount < itemsToShow) {
+                            card.style.display = 'flex';
+                            visibleCount++;
+                        }
+                    }
+                });
+
+                // Toggle Button Visibility
+                if (visibleCount >= totalFiltered) {
+                    loadMoreContainer.style.display = 'none';
+                } else {
+                    loadMoreContainer.style.display = 'block';
+                }
+            }
+
+            // Init
+            render();
+
+            // Filter Click Handler
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Update UI
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    // Logic
+                    currentCategory = btn.getAttribute('data-filter');
+                    itemsToShow = 3; // Reset view on filter change? Or keep expanded? Let's reset to keep it clean.
+                    render();
+                });
+            });
+
+            // Load More Handler
+            loadMoreBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                itemsToShow = 999; // Show all
+                render();
+            });
+        });
+    </script>
+
+
+
 
     <!-- Final Call to Action -->
     <section id="final-cta" class="final-cta-section">
@@ -160,7 +266,7 @@
                 <h2 class="cta-title">Votre futur digital<br><span class="text-gradient">se décide maintenant</span>
                 </h2>
                 <div class="cta-action-group">
-                    <a href="https://calendly.com/app/availability/schedules" target="_blank" class="premium-cta-btn">
+                    <a href="https://calendly.com/rosenerenel/30min" target="_blank" class="premium-cta-btn">
                         <span>RÉSERVER MON APPEL DE DÉCOUVERTE</span>
                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
@@ -196,8 +302,7 @@
                             fill="url(#footerGradient)" />
                     </svg>
                     <div class="logo-text-group">
-                        <span class="logo-text">Renel<span class="logo-color">Rosené</span></span>
-                        <span class="logo-subtitle">Consultant SEO & IA</span>
+                        <span class="logo-text">Renel Rosené</span>
                     </div>
                 </a>
                 <p class="footer-slogan">Architecte de visibilité hybride pour B2B & E-commerce.</p>
