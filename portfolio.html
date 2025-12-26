@@ -153,10 +153,55 @@
                     RESSOURCES</button>
             </div>
 
+            <div class="vision-rd-separator"
+                style="margin: 100px 0 60px; height: 1px; background: linear-gradient(90deg, transparent, rgba(46, 92, 255, 0.2), transparent);">
+            </div>
+
+            <h2 class="section-title" style="text-align: center;">Vision & R&D : <span class="text-blue">Idées
+                    Révolutionnaires</span></h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 50px; opacity: 0.7;">Aperçu des outils et
+                méthodologies de pointe actuellement en incubation dans mon workflow.</p>
+
+            <div class="resource-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                <!-- 10. Simulation d'Impact -->
+                <div class="resource-card no-filter"
+                    style="border: 1px dashed rgba(46, 92, 255, 0.4); background: rgba(46, 92, 255, 0.02);">
+                    <span class="resource-type"
+                        style="color: var(--accent-secondary); letter-spacing: 0.1em; font-weight: 700;">PROJET EN
+                        INCUBATION</span>
+                    <h3>Simulation d'Impact Prédictif</h3>
+                    <p>Simulation de classement et d'indexation avec optimisation prédictive. Testez vos changements
+                        techniques dans un environnement virtuel avant déploiement.</p>
+                </div>
+
+                <!-- 11. Veille Algorithmique -->
+                <div class="resource-card no-filter"
+                    style="border: 1px dashed rgba(46, 92, 255, 0.4); background: rgba(46, 92, 255, 0.02);">
+                    <span class="resource-type"
+                        style="color: var(--accent-secondary); letter-spacing: 0.1em; font-weight: 700;">PROJET EN
+                        INCUBATION</span>
+                    <h3>Veille Algorithmique Prédictive</h3>
+                    <p>Adaptation en temps réel aux changements d'algorithmes (Google Core Update, SGE, GEO). Anticipez
+                        les bascules de visibilité.</p>
+                </div>
+
+                <!-- 12. Analyse Sémantique Augmentée -->
+                <div class="resource-card no-filter"
+                    style="border: 1px dashed rgba(46, 92, 255, 0.4); background: rgba(46, 92, 255, 0.02);">
+                    <span class="resource-type"
+                        style="color: var(--accent-secondary); letter-spacing: 0.1em; font-weight: 700;">PROJET EN
+                        INCUBATION</span>
+                    <h3>Analyse Sémantique Augmentée</h3>
+                    <p>Outil de corpus sémantique complet basé sur les tendances émergentes. Détectez les opportunités
+                        de mots-clés avant la concurrence.</p>
+                </div>
+            </div>
+
             <script>
                 document.addEventListener('DOMContentLoaded', () => {
                     const filterBtns = document.querySelectorAll('.filter-btn');
-                    const cards = document.querySelectorAll('.resource-card');
+                    const firstGrid = document.querySelector('.resource-grid');
+                    const cards = firstGrid.querySelectorAll('.resource-card');
                     const loadMoreBtn = document.getElementById('load-more-btn');
                     const loadMoreContainer = document.getElementById('load-more-container');
 
