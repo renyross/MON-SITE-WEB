@@ -1821,10 +1821,13 @@ h2 span.text-gradient {
   position: absolute;
   inset: 0;
   /* Custom Radiant Black Vignette (Corner Blocker) */
+  /* Custom Radiant Black Vignette (Nano 10%) */
   background:
-    radial-gradient(circle at top left, #000 0%, #000 25%, transparent 70%),
-    radial-gradient(circle at top right, #000 0%, #000 25%, transparent 70%),
-    linear-gradient(to top, #000 0%, transparent 20%);
+    radial-gradient(circle at top left, #000 0%, transparent 10%),
+    radial-gradient(circle at top right, #000 0%, transparent 10%),
+    linear-gradient(to top, #000 0%, transparent 10%);
+  pointer-events: none;
+  z-index: 2;
   pointer-events: none;
   z-index: 2;
 }
