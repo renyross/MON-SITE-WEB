@@ -53,20 +53,13 @@
     <!-- Premium Resources & Guides Section -->
     <section class="resources-section">
         <div class="container">
-            <h2 class="section-title" style="text-align: center;">Ressources <span class="text-blue">Premium</span></h2>
-            <p style="text-align: center; max-width: 700px; margin: 0 auto 50px; opacity: 0.7;">Accédez à mes guides
-                exclusifs et brochures stratégiques pour accélérer votre compréhension du Search moderne.</p>
-
-            <!-- Filters -->
-            <div class="resource-filters">
-                <button class="filter-btn active" data-filter="all">Tous</button>
-                <button class="filter-btn" data-filter="outil">Outils</button>
-                <button class="filter-btn" data-filter="guide">Guides</button>
-                <button class="filter-btn" data-filter="autre">Checklists & Brochures</button>
-            </div>
+            <h2 class="section-title" style="text-align: center;">Bibliothèque <span
+                    class="text-blue">Stratégique</span></h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 50px; opacity: 0.7;">Des outils exclusifs et
+                des guides actionnables pour piloter votre croissance SEO & IA en toute autonomie.</p>
 
             <div class="resource-grid">
-                <!-- 1. Outil (New) -->
+                <!-- 1. Outil: Cannibalisation -->
                 <div class="resource-card" data-category="outil">
                     <span class="resource-type">Outil SEO</span>
                     <h3>Identification Cannibalisation</h3>
@@ -75,14 +68,13 @@
                     <a href="#" class="resource-btn">
                         ACCÉDER À L'OUTIL
                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12 15V3M12 15L8 11M12 15L16 11M5 17C5 18.1046 5.89543 19 7 19H17C18.1046 19 19 18.1046 19 17"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </a>
                 </div>
 
-                <!-- 2. Outil (New) -->
+                <!-- 2. Outil: REGEX -->
                 <div class="resource-card" data-category="outil">
                     <span class="resource-type">Outil SEO</span>
                     <h3>Générateur de REGEX</h3>
@@ -91,138 +83,30 @@
                     <a href="#" class="resource-btn">
                         GÉNÉRER VOS REGEX
                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- 3. Guide: E-commerce -->
+                <div class="resource-card" data-category="guide">
+                    <span class="resource-type">Guide Stratégique</span>
+                    <h3>Stratégie SEO E-commerce</h3>
+                    <p>Le plan d'action détaillé pour dominer votre niche e-commerce : structure de catalogue, facettes
+                        et conversion.</p>
+                    <a href="#" class="resource-btn">
+                        TÉLÉCHARGER LE GUIDE
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M12 15V3M12 15L8 11M12 15L16 11M5 17C5 18.1046 5.89543 19 7 19H17C18.1046 19 19 18.1046 19 17"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </a>
                 </div>
-
-                <!-- 3. Guide (New) -->
-                <div class="resource-card" data-category="guide">
-                    <span class="resource-type">Guide Stratégique</span>
-                    <h3>Stratégie SEO E-commerce</h3>
-                    <p>Le plan d'action détaillé pour dominer votre niche e-commerce : structure de catalogue, facettes
-                        et conversion.</p>
-                    <div class="resource-btn" style="opacity: 0.5; cursor: not-allowed;">
-                        Bientôt disponible
-                    </div>
-                </div>
-
-                <!-- 4. Guide (Old) -->
-                <div class="resource-card" data-category="guide">
-                    <span class="resource-type">Guide Stratégique</span>
-                    <h3>Domination SEO + IA : Le Blueprint 2026</h3>
-                    <p>Découvrez comment aligner votre contenu sur les vecteurs de compréhension des LLMs (ChatGPT,
-                        Perplexity).</p>
-                    <div class="resource-btn" style="opacity: 0.5; cursor: not-allowed;">
-                        Bientôt disponible
-                    </div>
-                </div>
-
-                <!-- 5. Brochure (Old) -->
-                <div class="resource-card" data-category="autre">
-                    <span class="resource-type">Brochure Services</span>
-                    <h3>L'Accompagnement Hybride & ROI</h3>
-                    <p>Une présentation détaillée de ma méthodologie de travail, des livrables par étape et de la
-                        structure de mes partenariats.</p>
-                    <div class="resource-btn" style="opacity: 0.5; cursor: not-allowed;">
-                        Bientôt disponible
-                    </div>
-                </div>
-
-                <!-- 6. Checklist (Old) -->
-                <div class="resource-card" data-category="autre">
-                    <span class="resource-type">Checklist Technique</span>
-                    <h3>Audit 100% Core Web Vitals</h3>
-                    <p>La liste de contrôle technique ultime pour passer tous vos indicateurs Google au vert et
-                        maximiser votre budget de crawl.</p>
-                    <div class="resource-btn" style="opacity: 0.5; cursor: not-allowed;">
-                        Bientôt disponible
-                    </div>
-                </div>
-            </div>
-
-            <div style="text-align: center; margin-top: 60px;" id="load-more-container">
-                <button id="load-more-btn" class="hero-btn-primary"
-                    style="display: inline-block; padding: 16px 32px; border:none; cursor:pointer;">VOIR TOUTES MES
-                    RESSOURCES</button>
             </div>
         </div>
     </section>
-
-    <!-- Filter & Load More Logic -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const filterBtns = document.querySelectorAll('.filter-btn');
-            const cards = document.querySelectorAll('.resource-card');
-            const loadMoreBtn = document.getElementById('load-more-btn');
-            const loadMoreContainer = document.getElementById('load-more-container');
-
-            let currentCategory = 'all';
-            let itemsToShow = 3; // Show top 3 initially
-
-            function render() {
-                let visibleCount = 0;
-                let totalFiltered = 0;
-
-                // First count total available for this filter to know if we need the button
-                cards.forEach(card => {
-                    const category = card.getAttribute('data-category');
-                    if (currentCategory === 'all' || category === currentCategory) {
-                        totalFiltered++;
-                    }
-                });
-
-                // Then display
-                cards.forEach(card => {
-                    card.style.display = 'none'; // Reset
-                    const category = card.getAttribute('data-category');
-
-                    if (currentCategory === 'all' || category === currentCategory) {
-                        if (visibleCount < itemsToShow) {
-                            card.style.display = 'flex';
-                            visibleCount++;
-                        }
-                    }
-                });
-
-                // Toggle Button Visibility
-                if (visibleCount >= totalFiltered) {
-                    loadMoreContainer.style.display = 'none';
-                } else {
-                    loadMoreContainer.style.display = 'block';
-                }
-            }
-
-            // Init
-            render();
-
-            // Filter Click Handler
-            filterBtns.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    // Update UI
-                    filterBtns.forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
-
-                    // Logic
-                    currentCategory = btn.getAttribute('data-filter');
-                    itemsToShow = 3; // Reset view on filter change? Or keep expanded? Let's reset to keep it clean.
-                    render();
-                });
-            });
-
-            // Load More Handler
-            loadMoreBtn.addEventListener('click', (e) => {
-                e.preventDefault();
-                itemsToShow = 999; // Show all
-                render();
-            });
-        });
-    </script>
-
-
-
 
     <!-- Final Call to Action -->
     <section id="final-cta" class="final-cta-section">
