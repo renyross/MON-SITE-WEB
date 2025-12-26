@@ -1813,8 +1813,8 @@ h2 span.text-gradient {
   filter: saturate(1.1) contrast(1.1);
   transition: transform 0.8s cubic-bezier(0.2, 0, 0.2, 1);
   /* Strong radial mask to hide image background */
-  mask-image: radial-gradient(ellipse at center 40%, black 40%, transparent 75%);
-  -webkit-mask-image: radial-gradient(ellipse at center 40%, black 40%, transparent 75%);
+  mask-image: radial-gradient(ellipse at center 30%, black 40%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse at center 30%, black 40%, transparent 75%);
 }
 
 .vignette-overlay {
