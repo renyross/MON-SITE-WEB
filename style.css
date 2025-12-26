@@ -4832,6 +4832,23 @@ h2 span.text-gradient {
   font-weight: 600;
 }
 
+/* Stop flickering on these specific boxes */
+.qual-box,
+.overview-item.featured {
+  animation: none !important;
+  transform: translateZ(0);
+  /* Hardware acceleration fix */
+  backface-visibility: hidden;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.qual-box:hover,
+.overview-item.featured:hover {
+  /* Ensure hover doesn't trigger a flicker re-layout */
+  transform: translateY(-5px) !important;
+  transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+}
+
 /* Insights Section (Homepage) */
 .insights-section {
   padding: 80px 0;
