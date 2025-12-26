@@ -4902,3 +4902,91 @@ h2 span.text-gradient {
   color: var(--accent-secondary);
   gap: 5px;
 }
+
+/* =========================================================================
+   MOBILE FIRST & CORE WEB VITALS OPTIMIZATIONS (2025 STANDARD)
+   ========================================================================= */
+
+@media (max-width: 768px) {
+  /* 1. Typography Scaling for Readability */
+  html {
+    font-size: 15px; /* Base size slightly smaller but readable */
+  }
+  
+  h1, .hero-title {
+    font-size: 2.8rem !important; /* Prevent reckless headers */
+    line-height: 1.15;
+    word-wrap: break-word; /* Prevent overflow */
+  }
+  
+  h2, .section-title {
+    font-size: 2rem !important;
+  }
+  
+  p {
+    font-size: 1.05rem; /* Text large enough for thumbs */
+    line-height: 1.6;
+  }
+
+  /* 2. Touch Targets (Google Requirement: 48x48px min area) */
+  button, 
+  .nav-btn, 
+  .nav-btn-premium, 
+  .cta-btn,
+  .resource-btn,
+  .blog-read-more,
+  a {
+    min-height: 48px;
+    min-width: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-links li a {
+    padding: 15px; /* Increase tap area in mobile menus */
+    display: block;
+    width: 100%;
+  }
+
+  /* 3. Layout Stability (CLS Protection) */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Removes bottom spacing gap */
+  }
+  
+  .hero-minor, .hero-split-layout {
+    min-height: auto; /* Avoid forced heights causing layout shifts */
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  /* 4. Grid Stack Fixes (No horizontal scroll) */
+  .grid-2, .grid-3, .grid-4, 
+  .insights-grid, 
+  .blog-grid,
+  .comparison-battle-grid,
+  .target-bento-grid {
+    grid-template-columns: 1fr !important;
+    gap: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    overflow-x: hidden; /* Critical safety */
+  }
+
+  /* 5. Interactive Elements Spacing */
+  .faq-item {
+    margin-bottom: 15px;
+  }
+  
+  .faq-question {
+    padding: 20px; /* Easier to tap */
+  }
+}
