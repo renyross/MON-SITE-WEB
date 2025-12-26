@@ -1945,7 +1945,7 @@ h2 span.text-gradient {
 
 .reviews-track {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   width: max-content;
   animation: scroll 60s linear infinite;
 }
@@ -1966,28 +1966,24 @@ h2 span.text-gradient {
 }
 
 .review-card {
-  flex: 0 0 320px;
-  background: #FFFFFF;
-  /* Changed to white/light as requested by 'imite ce format' usually implies looking like the card, but user has dark theme. Actually, Google Review cards are white. If I make them white in a dark theme it might pop too much. The user said 'imite ce format' (mimic this format). 'Format' usually means layout. But the specific mention of 'badge bleu' and 'logo G' implies looking like the real thing. I will stick to the DARK theme background but use the Google LAYOUT elements. */
+  flex: 0 0 260px;
   background: rgba(255, 255, 255, 0.03);
-  /* Stick to dark theme for consistency unless user complains */
   color: #fff;
-
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 20px;
-  padding: 24px;
+  border-radius: 16px;
+  padding: 18px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 12px;
   transition: transform 0.3s ease, background 0.3s ease;
-  min-height: 200px;
+  min-height: 180px;
 }
 
 @media (max-width: 480px) {
   .review-card {
-    flex: 0 0 280px;
+    flex: 0 0 220px;
   }
 }
 
@@ -4067,7 +4063,7 @@ h2 span.text-gradient {
   margin-top: 110px;
   /* Reduced from 60px */
   width: 100%;
-  max-width: 800px;
+  max-width: 650px;
   /* Tighter width */
   overflow: hidden;
   position: relative;
@@ -4084,11 +4080,9 @@ h2 span.text-gradient {
 /* ... existing Trusted By Text ... */
 
 .logo-slide img {
-  height: 38px;
-  /* Reduced from 30px */
-  /* Reduced from 45px */
+  height: 28px;
   width: auto;
-  min-width: 60px;
+  min-width: 50px;
   /* Force White/Silver for Visibility on Dark Background */
   filter: brightness(0) invert(1);
   opacity: 0.6;
@@ -4101,7 +4095,7 @@ h2 span.text-gradient {
 /* Specific Logo Sizing Overrides */
 .logo-slide img[src*="merle-eclat.png"],
 .logo-slide img[alt="Merle Éclat"] {
-  height: 75px !important;
+  height: 55px !important;
   width: auto !important;
   max-height: none !important;
   opacity: 1 !important;
@@ -4112,7 +4106,7 @@ h2 span.text-gradient {
   filter: invert(1) grayscale(100%) brightness(2);
   mix-blend-mode: screen;
   opacity: 1 !important;
-  height: 80px !important;
+  height: 60px !important;
 }
 
 /* On hover, keep DMB White (re-apply hack) but increase opacity/scale */
@@ -4158,7 +4152,11 @@ h2 span.text-gradient {
   }
 
   .hero-logo-carousel {
-    margin-top: 60px;
+    margin-top: 40px;
+  }
+
+  .logo-slide img {
+    height: 22px;
   }
 }
 
