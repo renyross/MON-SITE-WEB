@@ -1820,11 +1820,11 @@ h2 span.text-gradient {
 .vignette-overlay {
   position: absolute;
   inset: 0;
-  /* Custom Radiant Black Vignette (Micro) */
+  /* Custom Radiant Black Vignette (Nano) */
   background:
-    radial-gradient(circle at top left, #000 0%, transparent 15%),
-    radial-gradient(circle at top right, #000 0%, transparent 15%),
-    linear-gradient(to top, #000 0%, transparent 10%);
+    radial-gradient(circle at top left, #000 0%, transparent 10%),
+    radial-gradient(circle at top right, #000 0%, transparent 10%),
+    linear-gradient(to top, #000 0%, transparent 5%);
   pointer-events: none;
   z-index: 2;
 }
