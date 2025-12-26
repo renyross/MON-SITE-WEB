@@ -4186,8 +4186,7 @@ h2 span.text-gradient {
 .process-step,
 .qual-box,
 .tech-action-card .card-inner {
-  animation: featured-pulse 4s infinite ease-in-out;
-  /* Apply the slow pulse */
+  /* animation: featured-pulse 4s infinite ease-in-out; REMOVED to stop flickering */
   background: rgba(0, 242, 255, 0.03) !important;
   /* Force the base tint */
   border-color: rgba(0, 242, 255, 0.2) !important;
@@ -4832,6 +4831,7 @@ h2 span.text-gradient {
   box-shadow: 0 0 20px rgba(46, 92, 255, 0.4);
   font-weight: 600;
 }
+
 /* Insights Section (Homepage) */
 .insights-section {
   padding: 80px 0;
@@ -4908,30 +4908,37 @@ h2 span.text-gradient {
    ========================================================================= */
 
 @media (max-width: 768px) {
+
   /* 1. Typography Scaling for Readability */
   html {
-    font-size: 15px; /* Base size slightly smaller but readable */
+    font-size: 15px;
+    /* Base size slightly smaller but readable */
   }
-  
-  h1, .hero-title {
-    font-size: 2.8rem !important; /* Prevent reckless headers */
+
+  h1,
+  .hero-title {
+    font-size: 2.8rem !important;
+    /* Prevent reckless headers */
     line-height: 1.15;
-    word-wrap: break-word; /* Prevent overflow */
+    word-wrap: break-word;
+    /* Prevent overflow */
   }
-  
-  h2, .section-title {
+
+  h2,
+  .section-title {
     font-size: 2rem !important;
   }
-  
+
   p {
-    font-size: 1.05rem; /* Text large enough for thumbs */
+    font-size: 1.05rem;
+    /* Text large enough for thumbs */
     line-height: 1.6;
   }
 
   /* 2. Touch Targets (Google Requirement: 48x48px min area) */
-  button, 
-  .nav-btn, 
-  .nav-btn-premium, 
+  button,
+  .nav-btn,
+  .nav-btn-premium,
   .cta-btn,
   .resource-btn,
   .blog-read-more,
@@ -4942,9 +4949,10 @@ h2 span.text-gradient {
     align-items: center;
     justify-content: center;
   }
-  
+
   .nav-links li a {
-    padding: 15px; /* Increase tap area in mobile menus */
+    padding: 15px;
+    /* Increase tap area in mobile menus */
     display: block;
     width: 100%;
   }
@@ -4953,18 +4961,23 @@ h2 span.text-gradient {
   img {
     max-width: 100%;
     height: auto;
-    display: block; /* Removes bottom spacing gap */
+    display: block;
+    /* Removes bottom spacing gap */
   }
-  
-  .hero-minor, .hero-split-layout {
-    min-height: auto; /* Avoid forced heights causing layout shifts */
+
+  .hero-minor,
+  .hero-split-layout {
+    min-height: auto;
+    /* Avoid forced heights causing layout shifts */
     padding-top: 100px;
     padding-bottom: 50px;
   }
 
   /* 4. Grid Stack Fixes (No horizontal scroll) */
-  .grid-2, .grid-3, .grid-4, 
-  .insights-grid, 
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .insights-grid,
   .blog-grid,
   .comparison-battle-grid,
   .target-bento-grid {
@@ -4978,15 +4991,17 @@ h2 span.text-gradient {
     padding-left: 20px;
     padding-right: 20px;
     width: 100%;
-    overflow-x: hidden; /* Critical safety */
+    overflow-x: hidden;
+    /* Critical safety */
   }
 
   /* 5. Interactive Elements Spacing */
   .faq-item {
     margin-bottom: 15px;
   }
-  
+
   .faq-question {
-    padding: 20px; /* Easier to tap */
+    padding: 20px;
+    /* Easier to tap */
   }
 }
