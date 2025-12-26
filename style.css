@@ -2022,21 +2022,21 @@ h2 span.text-gradient {
 }
 
 .avatar-initials {
-  width: 42px;
-  height: 42px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 600;
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   /* Bg color set inline or via utility classes */
 }
 
 .author-avatar {
-  width: 42px;
-  height: 42px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -4080,9 +4080,9 @@ h2 span.text-gradient {
 /* ... existing Trusted By Text ... */
 
 .logo-slide img {
-  height: 28px;
+  height: 18px;
   width: auto;
-  min-width: 50px;
+  min-width: 40px;
   /* Force White/Silver for Visibility on Dark Background */
   filter: brightness(0) invert(1);
   opacity: 0.6;
@@ -4095,7 +4095,7 @@ h2 span.text-gradient {
 /* Specific Logo Sizing Overrides */
 .logo-slide img[src*="merle-eclat.png"],
 .logo-slide img[alt="Merle Éclat"] {
-  height: 55px !important;
+  height: 35px !important;
   width: auto !important;
   max-height: none !important;
   opacity: 1 !important;
@@ -4106,7 +4106,7 @@ h2 span.text-gradient {
   filter: invert(1) grayscale(100%) brightness(2);
   mix-blend-mode: screen;
   opacity: 1 !important;
-  height: 60px !important;
+  height: 40px !important;
 }
 
 /* On hover, keep DMB White (re-apply hack) but increase opacity/scale */
@@ -4156,7 +4156,7 @@ h2 span.text-gradient {
   }
 
   .logo-slide img {
-    height: 22px;
+    height: 14px;
   }
 }
 
