@@ -4860,27 +4860,27 @@ h2 span.text-gradient {
 
 .insights-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 40px;
-  margin-top: 60px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
 }
 
 .insight-card {
-  background: rgba(15, 15, 20, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 24px;
+  background: rgba(20, 20, 25, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
   text-decoration: none;
-  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: all 0.4s ease;
   display: flex;
   flex-direction: column;
   position: relative;
   overflow: hidden;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
 }
 
 .insight-image-container {
   width: 100%;
-  height: 200px;
+  height: 130px;
   overflow: hidden;
   position: relative;
 }
@@ -4897,7 +4897,7 @@ h2 span.text-gradient {
 }
 
 .insight-content {
-  padding: 30px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -4927,17 +4927,16 @@ h2 span.text-gradient {
 }
 
 .insight-tag {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   font-weight: 800;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   display: inline-block;
-  padding: 6px 12px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.05);
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.03);
   color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Specific Tag Colors based on content if possible, otherwise generic */
@@ -4957,11 +4956,11 @@ h2 span.text-gradient {
 
 .insight-title {
   font-family: 'Outfit', sans-serif;
-  font-size: 1.8rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 600;
   color: #fff;
-  margin-bottom: 20px;
-  line-height: 1.25;
+  margin-bottom: 12px;
+  line-height: 1.3;
   transition: color 0.3s ease;
 }
 
@@ -4971,11 +4970,7 @@ h2 span.text-gradient {
 }
 
 .insight-excerpt {
-  font-size: 1rem;
-  color: #A1A1A6;
-  line-height: 1.7;
-  margin-bottom: 40px;
-  flex-grow: 1;
+  display: none;
 }
 
 .insight-link {
