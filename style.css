@@ -121,7 +121,7 @@ a {
 /* Legacy logo styles removed to prevent conflict */
 
 .logo-text {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 800;
   background: linear-gradient(135deg, #2E5CFF 0%, #00F2FF 100%);
   -webkit-background-clip: text;
