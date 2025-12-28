@@ -5096,3 +5096,58 @@ h2 span.text-gradient {
     /* Easier to tap */
   }
 }
+/* Blog Table Styles */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin: 40px 0;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.premium-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+.premium-table th {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px 20px;
+  font-weight: 700;
+  color: var(--accent-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.premium-table td {
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-secondary);
+}
+
+.premium-table tr:last-child td {
+  border-bottom: none;
+}
+
+.premium-table tr:hover td {
+  background: rgba(255, 255, 255, 0.03);
+  color: #fff;
+}
+
+.premium-table strong {
+  color: var(--accent-primary);
+}
+
+@media (max-width: 600px) {
+  .premium-table {
+    font-size: 0.85rem;
+  }
+  .premium-table th, .premium-table td {
+    padding: 12px 15px;
+  }
+}
