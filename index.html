@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="style.css?v=8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="style.css?v=8" as="style">
+    <link rel="stylesheet" href="style.css?v=8">
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Outfit:wght@400;500;700;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Outfit:wght@700;900&display=swap"
         rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="assets/logos/favicon.svg">
     <link rel="apple-touch-icon" href="assets/logos/favicon-search.png">
@@ -20,6 +22,31 @@
 </head>
 
 <body>
+    <!-- SVG Sprite for performance -->
+    <svg style="display: none;">
+        <symbol id="google-logo" viewBox="0 0 24 24">
+            <path
+                d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                fill="#4285F4" />
+            <path
+                d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                fill="#34A853" />
+            <path
+                d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                fill="#FBBC05" />
+            <path
+                d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                fill="#EA4335" />
+        </symbol>
+        <symbol id="verified-badge" viewBox="0 0 24 24">
+            <path
+                d="M22.5 12.5C22.5 12.5 22.5 12.5 22.5 12.5L20.25 15.1786L20.5071 18.6786L17.1536 19.4107L15.3429 22.3482L12 20.9107L8.65714 22.3482L6.84643 19.4107L3.49286 18.6786L3.75 15.1786L1.5 12.5L3.75 9.82143L3.49286 6.32143L6.84643 5.58929L8.65714 2.65179L12 4.08929L15.3429 2.65179L17.1536 5.58929L20.5071 6.32143L20.25 9.82143L22.5 12.5Z"
+                fill="#1A73E8" />
+            <path
+                d="M10.125 16.0714L7.125 13.0714L8.18571 12.0107L10.125 13.95L15.8143 8.26071L16.875 9.32143L10.125 16.0714Z"
+                fill="white" />
+        </symbol>
+    </svg>
 
     <!-- Navbar -->
     <nav class="navbar">
@@ -85,10 +112,10 @@
                 </div>
             </div>
 
-            <h1 class="hero-title anim-fade-up" style="animation-delay: 0.2s;">
+            <h1 class="hero-title anim-fade-up" style="animation-delay: 0s;">
                 Le SEO qui génère des <span class="text-gradient">leads</span>, <br>pas seulement du trafic
             </h1>
-            <p class="hero-subtitle anim-fade-up" style="animation-delay: 0.3s;">
+            <p class="hero-subtitle anim-fade-up" style="animation-delay: 0.1s;">
                 J’aide les marques E-commerce et B2B à générer des leads qualifiés <br>grâce à des stratégies SEO
                 orientées croissance et résultats.
             </p>
@@ -101,7 +128,7 @@
                 </div>
             </div>
 
-            <div class="hero-cta-group anim-fade-up" style="animation-delay: 0.7s;">
+            <div class="hero-cta-group anim-fade-up" style="animation-delay: 0.3s;">
                 <a href="offres.html" class="hero-btn-primary"
                     title="Découvrir l'offre d'accompagnement SEO & IA">DÉCOUVRIR L'OFFRE SEO</a>
                 <a href="contact.html" class="hero-btn-secondary" title="Demander un audit SEO technique gratuit">AUDIT
@@ -114,12 +141,12 @@
                 <div class="logo-track">
                     <!-- Slide 1 -->
                     <div class="logo-slide">
-
-                        <img src="assets/logos/reveil.png" alt="Le Réveil Digital" loading="lazy">
-                        <img src="assets/logos/amundi.png" alt="Amundi" loading="lazy">
-                        <img src="assets/logos/efap.png" alt="EFAP" loading="lazy">
-                        <img src="assets/logos/castles.png" alt="Castles Technology" loading="lazy">
-                        <img src="assets/logos/merle-eclat.png" alt="Merle Éclat" loading="lazy">
+                        <img src="assets/logos/reveil.png" alt="Le Réveil Digital" fetchpriority="high" width="120"
+                            height="40">
+                        <img src="assets/logos/amundi.png" alt="Amundi" width="120" height="40">
+                        <img src="assets/logos/efap.png" alt="EFAP" width="120" height="40">
+                        <img src="assets/logos/castles.png" alt="Castles Technology" width="120" height="40">
+                        <img src="assets/logos/merle-eclat.png" alt="Merle Éclat" width="120" height="40">
                     </div>
                     <!-- Slide 2 (Duplicate) -->
                     <div class="logo-slide">
