@@ -1558,6 +1558,10 @@ h2 span.text-gradient {
   color: #FFFFFF;
 }
 
+.status-footer .container {
+  max-width: 1600px;
+}
+
 /* Gradient Top Border Effect */
 .status-footer::before {
   content: '';
