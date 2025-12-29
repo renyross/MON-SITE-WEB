@@ -57,3 +57,8 @@
   Header set Referrer-Policy "strict-origin-when-cross-origin"
   Header set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
 </IfModule>
+
+# Prevent robots.txt from being indexed (it should be read, not shown in search results)
+<Files "robots.txt">
+  Header set X-Robots-Tag "noindex"
+</Files>
