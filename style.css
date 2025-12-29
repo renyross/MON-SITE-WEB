@@ -1559,7 +1559,7 @@ h2 span.text-gradient {
 
 .status-footer .footer-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 40px;
   align-items: end;
   /* Align columns at the bottom as requested */
