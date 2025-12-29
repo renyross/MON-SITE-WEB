@@ -1550,20 +1550,34 @@ h2 span.text-gradient {
 }
 
 /* Option 1 : Le "Status Bar" Footer */
+/* Option 1 : Le "Status Bar" Footer - Premium Redesign */
 .status-footer {
-  background-color: #000000;
-  border-top: 1px solid #333333;
-  padding: 80px 0 40px 0;
+  background: #050505;
+  position: relative;
+  padding: 100px 0 40px 0;
   color: #FFFFFF;
+}
+
+/* Gradient Top Border Effect */
+.status-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg,
+      rgba(2, 0, 36, 0) 0%,
+      rgba(46, 92, 255, 0.5) 50%,
+      rgba(0, 212, 255, 0) 100%);
 }
 
 .status-footer .footer-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 40px;
-  align-items: end;
-  /* Align columns at the bottom as requested */
-  margin-bottom: 60px;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+  margin-bottom: 80px;
 }
 
 /* Colonne 1 : Identité */
@@ -1585,12 +1599,16 @@ h2 span.text-gradient {
 /* Colonne 2 : Disponibilité */
 .status-title {
   display: block;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  color: #666;
-  margin-bottom: 15px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  background: linear-gradient(to right, #fff, #999);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 25px;
   text-transform: uppercase;
+  opacity: 0.8;
 }
 
 .status-indicator {
@@ -1696,10 +1714,10 @@ h2 span.text-gradient {
   color: #fff;
 }
 
-/* Copyright Section */
+/* Update bottom separator */
 .footer-bottom-full {
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  padding-top: 40px;
   text-align: center;
 }
 
