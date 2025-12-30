@@ -5209,10 +5209,14 @@ h2 span.text-gradient {
   font-family: 'Outfit', sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #fff;
   margin: 0 0 16px 0;
   letter-spacing: -0.03em;
   line-height: 1.1;
+  background: linear-gradient(90deg, #2E5CFF, #00F2FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .newsletter-subtitle {
