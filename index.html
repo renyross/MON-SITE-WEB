@@ -1453,13 +1453,17 @@
                 <a href="mailto:contact@renelrosene.com" class="contact-link">contact@renelrosene.com</a>
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/renel-rosene/?originalSubdomain=fr" target="_blank"
-                        rel="noopener noreferrer">LinkedIn</a>
-                    <a href="https://twitter.com/renelrosene" target="_blank" rel="noopener noreferrer">Twitter / X</a>
+                        aria-label="Suivre Renel Rosené sur LinkedIn">LinkedIn</a>
+                    <a href="https://twitter.com/renelrosene" target="_blank"
+                        aria-label="Suivre Renel Rosené sur Twitter / X">Twitter / X</a>
                     <a href="https://www.instagram.com/renelrosene/" target="_blank"
-                        rel="noopener noreferrer">Instagram</a>
-                    <a href="https://www.youtube.com/@renelrosene" target="_blank" rel="noopener noreferrer">YouTube</a>
+                        aria-label="Suivre Renel Rosené sur Instagram">Instagram</a>
+                    <a href="https://www.youtube.com/@renelrosene" target="_blank"
+                        aria-label="S'abonner à la chaîne YouTube de Renel Rosené">YouTube</a>
                 </div>
             </div>
+
+
         </div>
 
         <div class="footer-bottom-full">
@@ -1572,6 +1576,45 @@
             });
         });
     </script>
+    <!-- Newsletter Popup -->
+    <div id="newsletter-popup" class="popup-overlay">
+        <div class="popup-card">
+            <button class="popup-close-btn" id="close-popup" aria-label="Fermer la fenêtre">&times;</button>
+
+            <!-- Content duplicated for consistency -->
+            <img src="assets/logos/logo.svg" alt="Renel Rosené" class="newsletter-logo" width="50" height="50"
+                loading="lazy">
+
+            <h2 class="newsletter-title" style="font-size: 1.8rem;">E-mails privés SEO & IA</h2>
+
+            <div class="newsletter-byline" style="justify-content: center; margin-bottom: 20px;">
+                <span style="width:6px;height:6px;background:#22c55e;border-radius:50%;display:inline-block;"></span>
+                Par Renel Rosené · +2 500 experts
+            </div>
+
+            <p class="newsletter-subtitle" style="font-size: 0.95rem; margin-bottom: 25px;">
+                Les secrets du SEO et du GEO pour dominer Google et l'IA. Veille, Stratégies et Prompts.
+            </p>
+
+            <div class="newsletter-form-wrapper">
+                <form class="newsletter-form" action="https://formsubmit.co/contact@renelrosene.com" method="POST"
+                    style="flex-direction: column;">
+                    <input type="hidden" name="_next" value="https://www.renelrosene.com/success.html">
+                    <input type="hidden" name="_subject" value="Nouvel Abonné Popup Newsletter">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="email" name="email_newsletter" placeholder="Votre email pro..." required
+                        class="newsletter-input" autocomplete="email">
+                    <button type="submit" class="newsletter-btn" style="width: 100%;">Rejoindre les 2 500
+                        experts</button>
+                </form>
+            </div>
+
+            <p class="newsletter-privacy" style="margin-top: 15px;">
+                0% Spam. Désinscription en 1 clic.
+            </p>
+        </div>
+    </div>
+
     <script src="script.js" defer></script>
 </body>
 
