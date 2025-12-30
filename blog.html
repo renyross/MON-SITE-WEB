@@ -125,7 +125,8 @@
         <div class="container">
             <div class="newsletter-box">
                 <!-- Logo -->
-                <img src="assets/logos/logo.svg" alt="Renel Rosené" class="newsletter-logo">
+                <img src="assets/logos/logo.svg" alt="Renel Rosené - Newsletter SEO & IA" class="newsletter-logo"
+                    width="48" height="48" loading="lazy">
 
                 <!-- Title & Byline -->
                 <h2 class="newsletter-title">E-mails privés SEO & IA</h2>
@@ -138,7 +139,9 @@
                 <div class="newsletter-form-wrapper">
                     <form class="newsletter-form" action="#" method="POST"
                         onsubmit="event.preventDefault(); alert('Inscription validée (simulation) !');">
-                        <input type="email" placeholder="Rédigez votre e-mail..." required class="newsletter-input">
+                        <input type="email" name="email_newsletter" placeholder="Rédigez votre e-mail..." required
+                            class="newsletter-input" aria-label="Votre adresse e-mail professionnel"
+                            autocomplete="email">
                         <button type="submit" class="newsletter-btn">S'abonner</button>
                     </form>
                 </div>
@@ -151,6 +154,29 @@
             </div>
         </div>
     </section>
+
+    <!-- SCHEMA.ORG NEWSLETTER -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Periodical",
+      "name": "E-mails privés SEO & IA",
+      "headline": "Les secrets du SEO et du GEO directement dans votre boîte mail",
+      "description": "La newsletter de référence pour les experts qui veulent dominer ChatGPT et Google. Veille, Stratégies GEO et Prompts.",
+      "publisher": {
+        "@type": "Person",
+        "name": "Renel Rosené",
+        "url": "https://www.renelrosene.com"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Consultants SEO, CMO, Experts Marketing"
+      },
+      "inLanguage": "fr",
+      "isAccessibleForFree": true,
+      "frequency": "Weekly"
+    }
+    </script>
 
     <footer class="status-footer">
         <div class="container footer-grid">
