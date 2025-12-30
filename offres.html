@@ -656,8 +656,10 @@
 
                 <!-- Form -->
                 <div class="newsletter-form-wrapper">
-                    <form class="newsletter-form" action="#" method="POST"
-                        onsubmit="event.preventDefault(); alert('Inscription validée (simulation) !');">
+                    <form class="newsletter-form" action="https://formsubmit.co/contact@renelrosene.com" method="POST">
+                        <input type="hidden" name="_next" value="https://www.renelrosene.com/success.html">
+                        <input type="hidden" name="_subject" value="Nouvel Abonné Newsletter SEO">
+                        <input type="hidden" name="_captcha" value="false">
                         <input type="email" name="email_newsletter" placeholder="Votre email pro..." required
                             class="newsletter-input" aria-label="Votre adresse e-mail professionnel"
                             autocomplete="email">
