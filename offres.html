@@ -643,19 +643,30 @@
     <section class="newsletter-section">
         <div class="container">
             <div class="newsletter-box">
-                <div class="newsletter-content">
-                    <h2 class="newsletter-title">Rejoignez l'élite du <span class="text-gradient">SEO & IA</span></h2>
-                    <p class="newsletter-text">Recevez chaque semaine mes meilleures stratégies GEO, des prompts
-                        exclusifs et ma veille technique.</p>
-                </div>
+                <!-- Logo -->
+                <img src="assets/logos/logo.svg" alt="Renel Rosené" class="newsletter-logo">
+
+                <!-- Title & Byline -->
+                <h2 class="newsletter-title">E-mails privés SEO & IA</h2>
+                <div class="newsletter-byline">Par Renel Rosené · +2 500 experts abonnés</div>
+
+                <!-- Subtitle -->
+                <p class="newsletter-subtitle">La meilleure newsletter GEO & IA de France.</p>
+
+                <!-- Form -->
                 <div class="newsletter-form-wrapper">
                     <form class="newsletter-form" action="#" method="POST"
                         onsubmit="event.preventDefault(); alert('Inscription validée (simulation) !');">
-                        <input type="email" placeholder="Votre email pro..." required class="newsletter-input">
-                        <button type="submit" class="hero-btn-primary">M'INSCRIRE</button>
+                        <input type="email" placeholder="Rédigez votre e-mail..." required class="newsletter-input">
+                        <button type="submit" class="newsletter-btn">S'abonner</button>
                     </form>
-                    <p class="newsletter-privacy">Rejoignez +2500 experts abonnés (0% spam).</p>
                 </div>
+
+                <!-- Footer/Privacy -->
+                <p class="newsletter-privacy">
+                    En vous abonnant, vous acceptez de recevoir mes conseils privés.
+                    <a href="mentions-legales.html">Désabonnement à tout moment.</a>
+                </p>
             </div>
         </div>
     </section>
