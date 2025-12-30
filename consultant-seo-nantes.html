@@ -24,21 +24,7 @@
     <nav class="navbar">
         <div class="container nav-container">
             <a href="index.html" class="logo">
-                <svg class="logo-icon" width="50" height="35" viewBox="0 15 100 70" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <linearGradient id="rGradient" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
-                            <stop offset="0%" stop-color="#2E5CFF" /> <!-- Electric Blue -->
-                            <stop offset="100%" stop-color="#00F2FF" /> <!-- Cyan -->
-                        </linearGradient>
-                    </defs>
-                    <path
-                        d="M10 20 L60 20 C80 20, 90 30, 90 50 L90 60 L70 60 L70 50 C70 40, 65 35, 55 35 L40 35 L40 35 L10 20 Z"
-                        fill="url(#rGradient)" />
-                    <path
-                        d="M90 80 L40 80 C20 80, 10 70, 10 50 L10 40 L30 40 L30 50 C30 60, 35 65, 45 65 L60 65 L60 65 L90 80 Z"
-                        fill="url(#rGradient)" />
-                </svg>
+                <img src="assets/logos/logo.svg" alt="Renel Rosené" class="logo-icon" width="50" height="35">
                 <div class="logo-text-group">
                     <span class="logo-text">Renel Rosené</span>
                 </div>
@@ -345,7 +331,7 @@
         </div>
         <div class="footer-bottom-full">
             <div class="container">
-                <p style="margin-bottom: 10px;">Copyright © 2025. Tous droits réservés.</p>
+                <p style="margin-bottom: 10px;">Copyright © 2026. Tous droits réservés.</p>
                 <p>
                     <a href="mentions-legales.html" style="color: #666; font-size: 0.8rem;">Mentions Légales</a> |
                     <a href="plan-du-site.html" style="color: #666; font-size: 0.8rem;">Plan du Site</a>
@@ -386,6 +372,40 @@
       ]
     }
     </script>
+        <!-- Newsletter Popup -->
+    <div id="newsletter-popup" class="popup-overlay">
+        <div class="popup-card">
+            <button class="popup-close-btn" id="close-popup" aria-label="Fermer la fenêtre">&times;</button>
+            
+            <!-- Content duplicated for consistency -->
+            <img src="assets/logos/logo.svg" alt="Renel Rosené" class="newsletter-logo" width="50" height="50" loading="lazy">
+            
+            <h2 class="newsletter-title" style="font-size: 1.8rem;">E-mails privés SEO & IA</h2>
+
+            <div class="newsletter-byline" style="justify-content: center; margin-bottom: 20px;">
+                <span style="width:6px;height:6px;background:#22c55e;border-radius:50%;display:inline-block;"></span>
+                Par Renel Rosené · +2 500 experts
+            </div>
+            
+            <p class="newsletter-subtitle" style="font-size: 0.95rem; margin-bottom: 25px;">
+                Les secrets du SEO et du GEO pour dominer Google et l'IA. Veille, Stratégies et Prompts.
+            </p>
+
+            <div class="newsletter-form-wrapper">
+                <form class="newsletter-form" action="https://formsubmit.co/contact@renelrosene.com" method="POST" style="flex-direction: column;">
+                    <input type="hidden" name="_next" value="https://www.renelrosene.com/success.html">
+                    <input type="hidden" name="_subject" value="Nouvel Abonné Popup Newsletter">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="email" name="email_newsletter" placeholder="Votre email pro..." required class="newsletter-input" autocomplete="email">
+                    <button type="submit" class="newsletter-btn" style="width: 100%;">Rejoindre les 2 500 experts</button>
+                </form>
+            </div>
+
+            <p class="newsletter-privacy" style="margin-top: 15px;">
+                0% Spam. Désinscription en 1 clic.
+            </p>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 
