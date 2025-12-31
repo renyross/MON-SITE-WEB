@@ -72,24 +72,12 @@
         </div>
     </section>
 
+
     <!-- Detailed Blog Content -->
     <section class="blog-detailed">
         <div class="container">
-            <div class="featured-article">
-                <div class="f-article-grid">
-                    <div class="f-article-content">
-                        <span class="blog-date">30 DÉC 2024</span>
-                        <h2>Freelance SEO vs Agence : Le Guide Sans Langue de Bois pour les Dirigeants</h2>
-                        <p>Faut-il choisir la sécurité apparente d'une agence ou l'agilité experte d'un freelance ?
-                            Comparatif des coûts, des modèles et les 3 questions pièges à poser en entretien pour ne pas
-                            se tromper.</p>
-                        <a href="blog-freelance-vs-agence.html" class="blog-btn-link">LIRE LE GUIDE <span>→</span></a>
-                    </div>
-                </div>
-            </div>
-
             <!-- Filtres de catégories -->
-            <div class="blog-filters" style="margin: 60px 0 40px; text-align: center;">
+            <div class="blog-filters" style="margin: 0 0 50px; text-align: center;">
                 <button class="filter-btn active" data-category="all"
                     style="background: #3b82f6; color: #fff; border: none; padding: 12px 24px; margin: 5px; border-radius: 50px; cursor: pointer; font-weight: 600; transition: all 0.3s;">
                     🎯 Tous
@@ -111,6 +99,20 @@
                     ⚡ Technique
                 </button>
             </div>
+
+            <div class="featured-article">
+                <div class="f-article-grid">
+                    <div class="f-article-content">
+                        <span class="blog-date">30 DÉC 2024</span>
+                        <h2>Freelance SEO vs Agence : Le Guide Sans Langue de Bois pour les Dirigeants</h2>
+                        <p>Faut-il choisir la sécurité apparente d'une agence ou l'agilité experte d'un freelance ?
+                            Comparatif des coûts, des modèles et les 3 questions pièges à poser en entretien pour ne pas
+                            se tromper.</p>
+                        <a href="blog-freelance-vs-agence.html" class="blog-btn-link">LIRE LE GUIDE <span>→</span></a>
+                    </div>
+                </div>
+            </div>
+
 
             <div class="blog-posts-grid">
 
@@ -442,26 +444,27 @@
         }
     });
     </script>
-    
+
     <style>
-    .post-card.hidden {
-        display: none;
-    }
-    
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(30px);
+        .post-card.hidden {
+            display: none;
         }
-        to {
-            opacity: 1;
-            transform: translateY(0);
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
-    }
-    
-    .load-more-btn {
-        transition: all 0.3s ease;
-    }
+
+        .load-more-btn {
+            transition: all 0.3s ease;
+        }
     </style>
 
     <!-- Script de filtrage des articles -->
@@ -499,17 +502,24 @@
         });
     });
     </script>
-    
+
     <style>
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(10px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-    
-    .filter-btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
-    }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .filter-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
     </style>
 
 </body>
