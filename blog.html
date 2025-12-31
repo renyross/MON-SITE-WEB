@@ -144,7 +144,7 @@
                     </div>
                 </article>
 
-                <article class="post-card" data-category="business">
+                <article class="post-card hidden" data-category="business">
                     <div class="post-content">
                         <span class="blog-date">30 DÉC 2024</span>
                         <h3>Consultant SEO Immobilier : Capter des Mandats Exclusifs Sans Dépendre des Portails</h3>
@@ -154,7 +154,7 @@
                     </div>
                 </article>
 
-                <article class="post-card" data-category="business">
+                <article class="post-card hidden" data-category="business">
                     <div class="post-content">
                         <span class="blog-date">30 DÉC 2024</span>
                         <h3>Consultant SEO E-commerce : Réduire Votre CAC de 60% et Scaler Sans Exploser Votre Budget
@@ -165,7 +165,7 @@
                     </div>
                 </article>
 
-                <article class="post-card" data-category="ia">
+                <article class="post-card hidden" data-category="ia">
                     <div class="post-content">
                         <span class="blog-date">18 DÉC 2024</span>
                         <h3>Automatisation Sémantique : Produire 50 articles experts sans perte de qualité</h3>
@@ -175,7 +175,7 @@
                     </div>
                 </article>
 
-                <article class="post-card" data-category="ia">
+                <article class="post-card hidden" data-category="ia">
                     <div class="post-content">
                         <span class="blog-date">10 DÉC 2024</span>
                         <h3>L'impact caché du Core Web Vitals sur les moteurs IA</h3>
@@ -185,7 +185,7 @@
                     </div>
                 </article>
 
-                <article class="post-card" data-category="strategie">
+                <article class="post-card hidden" data-category="strategie">
                     <div class="post-content">
                         <span class="blog-date">02 DÉC 2024</span>
                         <h3>L'Évolution du Conseil Search : Agilité & Performance</h3>
@@ -195,7 +195,7 @@
                     </div>
                 </article>
 
-                <article class="post-card">
+                <article class="post-card hidden">
                     <div class="post-content">
                         <span class="blog-date">22 DÉC 2024</span>
                         <h3>Comment l’IA évalue la crédibilité d’un expert SEO</h3>
@@ -400,6 +400,69 @@
         </div>
     </div>
     <script src="script.js"></script>
+
+
+    <!-- Script pour afficher tous les articles -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const loadMoreBtn = document.getElementById('loadMoreBtn');
+        const hiddenArticles = document.querySelectorAll('.post-card.hidden');
+        
+        if (loadMoreBtn && hiddenArticles.length > 0) {
+            loadMoreBtn.addEventListener('click', function() {
+                // Afficher tous les articles cachés avec animation
+                hiddenArticles.forEach((article, index) => {
+                    setTimeout(() => {
+                        article.classList.remove('hidden');
+                        article.style.animation = 'fadeInUp 0.5s ease-out forwards';
+                    }, index * 100); // Décalage de 100ms entre chaque article
+                });
+                
+                // Cacher le bouton après le clic
+                this.style.opacity = '0';
+                this.style.transform = 'scale(0.9)';
+                setTimeout(() => {
+                    this.style.display = 'none';
+                }, 300);
+            });
+            
+            // Effet hover
+            loadMoreBtn.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-3px)';
+                this.style.boxShadow = '0 8px 30px rgba(59, 130, 246, 0.5)';
+            });
+            
+            loadMoreBtn.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = '0 4px 20px rgba(59, 130, 246, 0.3)';
+            });
+        } else if (loadMoreBtn && hiddenArticles.length === 0) {
+            // Pas d'articles cachés, cacher le bouton
+            loadMoreBtn.style.display = 'none';
+        }
+    });
+    </script>
+    
+    <style>
+    .post-card.hidden {
+        display: none;
+    }
+    
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .load-more-btn {
+        transition: all 0.3s ease;
+    }
+    </style>
 
     <!-- Script de filtrage des articles -->
     <script>
