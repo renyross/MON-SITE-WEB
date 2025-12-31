@@ -15,7 +15,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog SEO & IA : Stratégies GEO & Croissance | Renel</title>
-    <meta name="description"        content="Blog SEO & IA : stratégies GEO, optimisation ChatGPT, guides e-commerce, études de cas. Conseils d'expert pour dominer Google. Articles hebdo.">
+    <meta name="description"
+        content="Blog SEO & IA : stratégies GEO, optimisation ChatGPT, guides e-commerce, études de cas. Conseils d'expert pour dominer Google. Articles hebdo.">
     <link rel="stylesheet" href="style.css?v=2">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +44,7 @@
                 </div>
             </a>
 
-                        <ul class="nav-links">
+            <ul class="nav-links">
                 <li><a href="services-seo.html">Services</a></li>
                 <li><a href="tarifs-seo.html">Prestation SEO</a></li>
                 <li><a href="portfolio.html">Ressources</a></li>
@@ -87,9 +88,33 @@
                 </div>
             </div>
 
+            <!-- Filtres de catégories -->
+            <div class="blog-filters" style="margin: 60px 0 40px; text-align: center;">
+                <button class="filter-btn active" data-category="all"
+                    style="background: #3b82f6; color: #fff; border: none; padding: 12px 24px; margin: 5px; border-radius: 50px; cursor: pointer; font-weight: 600; transition: all 0.3s;">
+                    🎯 Tous
+                </button>
+                <button class="filter-btn" data-category="business"
+                    style="background: rgba(255,255,255,0.05); color: #fff; border: 1px solid rgba(255,255,255,0.1); padding: 12px 24px; margin: 5px; border-radius: 50px; cursor: pointer; font-weight: 600; transition: all 0.3s;">
+                    🏢 SEO Business
+                </button>
+                <button class="filter-btn" data-category="ia"
+                    style="background: rgba(255,255,255,0.05); color: #fff; border: 1px solid rgba(255,255,255,0.1); padding: 12px 24px; margin: 5px; border-radius: 50px; cursor: pointer; font-weight: 600; transition: all 0.3s;">
+                    🤖 IA & GEO
+                </button>
+                <button class="filter-btn" data-category="strategie"
+                    style="background: rgba(255,255,255,0.05); color: #fff; border: 1px solid rgba(255,255,255,0.1); padding: 12px 24px; margin: 5px; border-radius: 50px; cursor: pointer; font-weight: 600; transition: all 0.3s;">
+                    💼 Stratégie
+                </button>
+                <button class="filter-btn" data-category="technique"
+                    style="background: rgba(255,255,255,0.05); color: #fff; border: 1px solid rgba(255,255,255,0.1); padding: 12px 24px; margin: 5px; border-radius: 50px; cursor: pointer; font-weight: 600; transition: all 0.3s;">
+                    ⚡ Technique
+                </button>
+            </div>
+
             <div class="blog-posts-grid">
 
-                <article class="post-card">
+                <article class="post-card" data-category="business">
                     <div class="post-content">
                         <span class="blog-date">30 DÉC 2024</span>
                         <h3>Consultant SEO Local : Comment Dominer Google Maps et Générer des Leads</h3>
@@ -99,7 +124,7 @@
                     </div>
                 </article>
 
-                <article class="post-card">
+                <article class="post-card" data-category="strategie">
                     <div class="post-content">
                         <span class="blog-date">30 DÉC 2024</span>
                         <h3>Quels Résultats Attendre d'un Consultant SEO ? (Sans Bullshit)</h3>
@@ -109,7 +134,7 @@
                     </div>
                 </article>
 
-                <article class="post-card">
+                <article class="post-card" data-category="ia">
                     <div class="post-content">
                         <span class="blog-date">24 DÉC 2024</span>
                         <h3>GEO : Pourquoi le SEO classique ne suffit plus pour être cité par l'IA</h3>
@@ -119,7 +144,7 @@
                     </div>
                 </article>
 
-                <article class="post-card">
+                <article class="post-card" data-category="business">
                     <div class="post-content">
                         <span class="blog-date">30 DÉC 2024</span>
                         <h3>Consultant SEO Immobilier : Capter des Mandats Exclusifs Sans Dépendre des Portails</h3>
@@ -129,7 +154,7 @@
                     </div>
                 </article>
 
-                <article class="post-card">
+                <article class="post-card" data-category="business">
                     <div class="post-content">
                         <span class="blog-date">30 DÉC 2024</span>
                         <h3>Consultant SEO E-commerce : Réduire Votre CAC de 60% et Scaler Sans Exploser Votre Budget
@@ -140,7 +165,7 @@
                     </div>
                 </article>
 
-                <article class="post-card">
+                <article class="post-card" data-category="ia">
                     <div class="post-content">
                         <span class="blog-date">18 DÉC 2024</span>
                         <h3>Automatisation Sémantique : Produire 50 articles experts sans perte de qualité</h3>
@@ -150,7 +175,7 @@
                     </div>
                 </article>
 
-                <article class="post-card">
+                <article class="post-card" data-category="ia">
                     <div class="post-content">
                         <span class="blog-date">10 DÉC 2024</span>
                         <h3>L'impact caché du Core Web Vitals sur les moteurs IA</h3>
@@ -160,7 +185,7 @@
                     </div>
                 </article>
 
-                <article class="post-card">
+                <article class="post-card" data-category="strategie">
                     <div class="post-content">
                         <span class="blog-date">02 DÉC 2024</span>
                         <h3>L'Évolution du Conseil Search : Agilité & Performance</h3>
@@ -251,7 +276,7 @@
     }
     </script>
 
-        <!-- Option 1 : Le "Status Bar" (Spécial Freelance) -->
+    <!-- Option 1 : Le "Status Bar" (Spécial Freelance) -->
     <footer class="status-footer">
         <div class="container footer-grid">
             <!-- Colonne 1 : Identité -->
@@ -375,6 +400,55 @@
         </div>
     </div>
     <script src="script.js"></script>
+
+    <!-- Script de filtrage des articles -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const articles = document.querySelectorAll('.post-card');
+        
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const category = this.getAttribute('data-category');
+                
+                // Mettre à jour les boutons actifs
+                filterBtns.forEach(b => {
+                    b.classList.remove('active');
+                    b.style.background = 'rgba(255,255,255,0.05)';
+                    b.style.border = '1px solid rgba(255,255,255,0.1)';
+                });
+                this.classList.add('active');
+                this.style.background = '#3b82f6';
+                this.style.border = 'none';
+                
+                // Filtrer les articles
+                articles.forEach(article => {
+                    const articleCategory = article.getAttribute('data-category');
+                    
+                    if (category === 'all' || articleCategory === category) {
+                        article.style.display = 'block';
+                        article.style.animation = 'fadeIn 0.5s ease-in';
+                    } else {
+                        article.style.display = 'none';
+                    }
+                });
+            });
+        });
+    });
+    </script>
+    
+    <style>
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .filter-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    }
+    </style>
+
 </body>
 
 </html>
