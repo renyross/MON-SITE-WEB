@@ -27,6 +27,7 @@ Ce document recense la stratégie de mots-clés pour chaque page du site `renelr
 | `consultant-seo-amiens.html` | **Consultant SEO Amiens** | Local / Transactionnel 📍 | Consultant SEO Amiens & Expert IA : Leads & Croissance | Consultant SEO freelance à Amiens |
 | `consultant-seo-angers.html` | **Consultant SEO Angers** | Local / Transactionnel 📍 | Consultant SEO Angers & Expert IA : Leads & Croissance | Consultant SEO freelance à Angers |
 | `consultant-seo-argenteuil.html` | **Consultant SEO Argenteuil** | Local / Transactionnel 📍 | Consultant SEO Argenteuil & Expert IA : Leads & Croissance | Consultant SEO freelance à Argenteuil |
+| `consultant-seo-b2b.html` | **Consultant SEO B2B** | Transactionnel 💼 | Consultant SEO B2B : Génération de Leads Qualifiés | Consultant SEO B2B & Industrie |
 | `consultant-seo-besancon.html` | **Consultant SEO Besancon** | Local / Transactionnel 📍 | Consultant SEO Besançon & Expert IA : Leads & Croissance | Consultant SEO freelance à Besançon |
 | `consultant-seo-bordeaux.html` | **Consultant SEO Bordeaux** | Local / Transactionnel 📍 | Consultant SEO Bordeaux & Expert IA : Leads & Croissance | Consultant SEO freelance à Bordeaux |
 | `consultant-seo-boulogne-billancourt.html` | **Consultant SEO Boulogne Billancourt** | Local / Transactionnel 📍 | Consultant SEO Boulogne-Billancourt & Expert IA : Leads & Croissance | Consultant SEO freelance à Boulogne-Billancourt |
