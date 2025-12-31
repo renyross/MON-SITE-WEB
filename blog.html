@@ -206,6 +206,14 @@
                         <a href="blog-credibilite-ia.html" class="post-link">Lire l'article</a>
                     </div>
                 </article>
+
+                <!-- Bouton Voir tous les articles -->
+                <div class="load-more-container" style="grid-column: 1 / -1; text-align: center; margin: 60px 0;">
+                    <button id="loadMoreBtn" class="load-more-btn"
+                        style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); color: #fff; border: none; padding: 18px 48px; border-radius: 100px; cursor: pointer; font-weight: 700; font-size: 1rem; transition: all 0.3s; box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);">
+                        📚 Voir tous les articles
+                    </button>
+                </div>
             </div>
         </div>
     </section>
@@ -406,43 +414,43 @@
 
     <!-- Script pour afficher tous les articles -->
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const loadMoreBtn = document.getElementById('loadMoreBtn');
-        const hiddenArticles = document.querySelectorAll('.post-card.hidden');
-        
-        if (loadMoreBtn && hiddenArticles.length > 0) {
-            loadMoreBtn.addEventListener('click', function() {
-                // Afficher tous les articles cachés avec animation
-                hiddenArticles.forEach((article, index) => {
+        document.addEventListener('DOMContentLoaded', function () {
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            const hiddenArticles = document.querySelectorAll('.post-card.hidden');
+
+            if (loadMoreBtn && hiddenArticles.length > 0) {
+                loadMoreBtn.addEventListener('click', function () {
+                    // Afficher tous les articles cachés avec animation
+                    hiddenArticles.forEach((article, index) => {
+                        setTimeout(() => {
+                            article.classList.remove('hidden');
+                            article.style.animation = 'fadeInUp 0.5s ease-out forwards';
+                        }, index * 100); // Décalage de 100ms entre chaque article
+                    });
+
+                    // Cacher le bouton après le clic
+                    this.style.opacity = '0';
+                    this.style.transform = 'scale(0.9)';
                     setTimeout(() => {
-                        article.classList.remove('hidden');
-                        article.style.animation = 'fadeInUp 0.5s ease-out forwards';
-                    }, index * 100); // Décalage de 100ms entre chaque article
+                        this.style.display = 'none';
+                    }, 300);
                 });
-                
-                // Cacher le bouton après le clic
-                this.style.opacity = '0';
-                this.style.transform = 'scale(0.9)';
-                setTimeout(() => {
-                    this.style.display = 'none';
-                }, 300);
-            });
-            
-            // Effet hover
-            loadMoreBtn.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 30px rgba(59, 130, 246, 0.5)';
-            });
-            
-            loadMoreBtn.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = '0 4px 20px rgba(59, 130, 246, 0.3)';
-            });
-        } else if (loadMoreBtn && hiddenArticles.length === 0) {
-            // Pas d'articles cachés, cacher le bouton
-            loadMoreBtn.style.display = 'none';
-        }
-    });
+
+                // Effet hover
+                loadMoreBtn.addEventListener('mouseenter', function () {
+                    this.style.transform = 'translateY(-3px)';
+                    this.style.boxShadow = '0 8px 30px rgba(59, 130, 246, 0.5)';
+                });
+
+                loadMoreBtn.addEventListener('mouseleave', function () {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = '0 4px 20px rgba(59, 130, 246, 0.3)';
+                });
+            } else if (loadMoreBtn && hiddenArticles.length === 0) {
+                // Pas d'articles cachés, cacher le bouton
+                loadMoreBtn.style.display = 'none';
+            }
+        });
     </script>
 
     <style>
@@ -469,38 +477,38 @@
 
     <!-- Script de filtrage des articles -->
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const articles = document.querySelectorAll('.post-card');
-        
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', function() {
-                const category = this.getAttribute('data-category');
-                
-                // Mettre à jour les boutons actifs
-                filterBtns.forEach(b => {
-                    b.classList.remove('active');
-                    b.style.background = 'rgba(255,255,255,0.05)';
-                    b.style.border = '1px solid rgba(255,255,255,0.1)';
-                });
-                this.classList.add('active');
-                this.style.background = '#3b82f6';
-                this.style.border = 'none';
-                
-                // Filtrer les articles
-                articles.forEach(article => {
-                    const articleCategory = article.getAttribute('data-category');
-                    
-                    if (category === 'all' || articleCategory === category) {
-                        article.style.display = 'block';
-                        article.style.animation = 'fadeIn 0.5s ease-in';
-                    } else {
-                        article.style.display = 'none';
-                    }
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const articles = document.querySelectorAll('.post-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const category = this.getAttribute('data-category');
+
+                    // Mettre à jour les boutons actifs
+                    filterBtns.forEach(b => {
+                        b.classList.remove('active');
+                        b.style.background = 'rgba(255,255,255,0.05)';
+                        b.style.border = '1px solid rgba(255,255,255,0.1)';
+                    });
+                    this.classList.add('active');
+                    this.style.background = '#3b82f6';
+                    this.style.border = 'none';
+
+                    // Filtrer les articles
+                    articles.forEach(article => {
+                        const articleCategory = article.getAttribute('data-category');
+
+                        if (category === 'all' || articleCategory === category) {
+                            article.style.display = 'block';
+                            article.style.animation = 'fadeIn 0.5s ease-in';
+                        } else {
+                            article.style.display = 'none';
+                        }
+                    });
                 });
             });
         });
-    });
     </script>
 
     <style>
