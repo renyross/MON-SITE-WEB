@@ -28,6 +28,7 @@
     <link rel="canonical" href="https://www.renelrosene.com/services-seo.html">
     <style>
         /* Mobile Optimization Override */
+        /* Mobile Optimization Override */
         @media (max-width: 768px) {
             .hero {
                 padding-top: 100px !important;
@@ -53,7 +54,8 @@
             .method-section,
             .localized-content,
             .faq-localized,
-            .cta-final {
+            .cta-final,
+            .about-section {
                 padding: 60px 0 !important;
             }
 
@@ -73,6 +75,40 @@
 
             h3 {
                 font-size: 1.4rem !important;
+            }
+
+            /* Generic Grid Unstacker for Inline Styles */
+            div[style*="grid-template-columns: 1fr 1.2fr"],
+            div[style*="grid-template-columns: 1fr 1.5fr"],
+            div[style*="grid-template-columns: 1fr 1fr"],
+            div[style*="grid-template-columns: 1fr 1fr 1fr"] {
+                grid-template-columns: 1fr !important;
+                gap: 30px !important;
+            }
+
+            /* Specific fix for About Section reversed order or specific layout */
+            .about-image-wrapper {
+                margin-bottom: 20px;
+                max-height: 400px;
+                /* Limit height on mobile */
+            }
+
+            /* Adjust Service Detail Cards */
+            .service-detail-card,
+            .sector-card-premium {
+                padding: 30px !important;
+            }
+
+            /* CTA Group stack */
+            .hero-cta-group {
+                flex-direction: column;
+                padding: 0 20px;
+            }
+
+            .hero-btn-primary,
+            .hero-btn-secondary {
+                width: 100%;
+                text-align: center;
             }
 
             /* Adjust grid in Reassurance section */
