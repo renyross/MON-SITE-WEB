@@ -185,6 +185,33 @@
                 width: 100%;
                 text-align: center;
             }
+
+            /* Essential Grid Horizontal Scroll (Carousel) */
+            .essential-grid {
+                display: flex !important;
+                overflow-x: auto !important;
+                scroll-snap-type: x mandatory;
+                padding-bottom: 20px;
+                /* Space for scrollbar if any */
+                scrollbar-width: none;
+                /* Firefox */
+                gap: 15px !important;
+                margin-right: -20px !important;
+                /* Bleed effect */
+                padding-right: 20px;
+            }
+
+            .essential-grid::-webkit-scrollbar {
+                display: none;
+                /* Chrome/Safari */
+            }
+
+            .essential-grid>div {
+                min-width: 85vw;
+                /* Show mostly one card with potential peek */
+                scroll-snap-align: center;
+                margin-bottom: 0 !important;
+            }
         }
     </style>
     }
@@ -436,7 +463,7 @@
                     mais à construire un <strong>business model</strong> performant.
                 </p>
 
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                <div class="essential-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
                     <!-- Card 1 -->
                     <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 16px; padding: 30px; transition: transform 0.3s ease;"
                         onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='rgba(59, 130, 246, 0.3)'"
