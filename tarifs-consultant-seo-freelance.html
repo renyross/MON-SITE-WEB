@@ -806,76 +806,136 @@
                         style="background: linear-gradient(90deg, #3b82f6, #06b6d4); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">secteur</span>
                 </h2>
 
-                <div
+                <div class="pricing-grid"
                     style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-top: 40px;">
                     <!-- B2B & SaaS -->
-                    <div class="pricing-card" style="border-top: 4px solid #3b82f6;">
-                        <span
-                            style="color: #3b82f6; font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px; display: block;">Modèle
-                            B2B / SaaS</span>
-                        <h3 style="font-size: 1.8rem; margin-bottom: 20px;">Lead Generation</h3>
-                        <p style="color: #A1A1A6; margin-bottom: 30px; flex-grow: 1;">Pour les entreprises qui vendent
-                            du service ou des logiciels haut de gamme. Focus sur l'autorité et la conversion.</p>
-                        <ul
-                            style="list-style: none; padding: 0; margin-bottom: 35px; color: #e5e5e5; display: grid; gap: 12px;">
-                            <li>✅ Stratégie sémantique B2B</li>
-                            <li>✅ Articles d'expertise (Thought Leadership)</li>
-                            <li>✅ Netlinking haute autorité</li>
-                            <li>✅ Lead Magnet & Conversion</li>
-                        </ul>
-                        <div style="font-size: 1.8rem; font-weight: 700; color: #fff; margin-bottom: 25px;">À partir de
-                            <span style="color: #3b82f6;">800€</span><span style="font-size: 0.9rem; color: #666;"> /
-                                mois</span>
+                    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 24px; padding: 40px; display: flex; flex-direction: column; transition: all 0.3s ease; position: relative; overflow: hidden;"
+                        onmouseover="this.style.background='rgba(59, 130, 246, 0.05)'; this.style.borderColor='rgba(59, 130, 246, 0.3)'; this.style.transform='translateY(-5px)';"
+                        onmouseout="this.style.background='rgba(255,255,255,0.02)'; this.style.borderColor='rgba(255,255,255,0.05)'; this.style.transform='translateY(0)';">
+
+                        <div style="margin-bottom: 20px;">
+                            <span
+                                style="background: rgba(59, 130, 246, 0.1); color: #3b82f6; border: 1px solid rgba(59, 130, 246, 0.2); padding: 8px 16px; border-radius: 100px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">Modèle
+                                B2B / SaaS</span>
                         </div>
-                        <a href="contact.html"
-                            style="background: rgba(59, 130, 246, 0.1); color: #3b82f6; border: 1px solid rgba(59, 130, 246, 0.3); padding: 15px; border-radius: 12px; text-decoration: none; font-weight: 700; text-align: center; transition: all 0.3s ease;">PARLER
-                            DE MON PROJET B2B</a>
+
+                        <h3 style="font-size: 2rem; margin-bottom: 15px; color: #fff;">Lead Generation</h3>
+                        <p
+                            style="color: #A1A1A6; margin-bottom: 30px; font-size: 0.95rem; line-height: 1.6; flex-grow: 1;">
+                            Pour les entreprises qui vendent du service ou des logiciels haut de gamme. Focus sur
+                            l'autorité et la conversion.</p>
+
+                        <div style="width: 100%; height: 1px; background: rgba(255,255,255,0.1); margin-bottom: 30px;">
+                        </div>
+
+                        <ul
+                            style="list-style: none; padding: 0; margin-bottom: 40px; color: #e5e5e5; display: grid; gap: 15px;">
+                            <li style="display: flex; gap: 10px; align-items: flex-start;"><span
+                                    style="color: #3b82f6;">✅</span> Stratégie sémantique B2B</li>
+                            <li style="display: flex; gap: 10px; align-items: flex-start;"><span
+                                    style="color: #3b82f6;">✅</span> Articles d'expertise (Thought Leadership)</li>
+                            <li style="display: flex; gap: 10px; align-items: flex-start;"><span
+                                    style="color: #3b82f6;">✅</span> Netlinking haute autorité</li>
+                            <li style="display: flex; gap: 10px; align-items: flex-start;"><span
+                                    style="color: #3b82f6;">✅</span> Lead Magnet & Conversion</li>
+                        </ul>
+
+                        <div style="margin-top: auto;">
+                            <div style="font-size: 0.9rem; color: #A1A1A6; margin-bottom: 5px;">À partir de</div>
+                            <div style="font-size: 2.2rem; font-weight: 700; color: #fff; margin-bottom: 25px;">800€
+                                <span style="font-size: 1rem; color: #666; font-weight: 400;">/ mois</span></div>
+                            <a href="contact.html"
+                                style="display: block; width: 100%; background: #3b82f6; color: #fff; padding: 18px; border-radius: 16px; text-decoration: none; font-weight: 700; text-align: center; transition: all 0.3s ease; box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);">PARLER
+                                DE MON PROJET B2B</a>
+                        </div>
                     </div>
 
                     <!-- E-commerce -->
-                    <div class="pricing-card featured" style="border-top: 4px solid #06b6d4;">
-                        <span
-                            style="color: #06b6d4; font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px; display: block;">Modèle
-                            E-commerce</span>
-                        <h3 style="font-size: 1.8rem; margin-bottom: 20px;">Expansion de CA</h3>
-                        <p style="color: #A1A1A6; margin-bottom: 30px; flex-grow: 1;">Pour les boutiques en ligne
-                            scalables. Focus sur les fiches produits, catégories et performance technique.</p>
-                        <ul
-                            style="list-style: none; padding: 0; margin-bottom: 35px; color: #e5e5e5; display: grid; gap: 12px;">
-                            <li>✅ Optimisation fiches produits</li>
-                            <li>✅ Maillage interne stratégique</li>
-                            <li>✅ UX SEO (Core Web Vitals)</li>
-                            <li>✅ Domination longue traîne</li>
-                        </ul>
-                        <div style="font-size: 1.8rem; font-weight: 700; color: #fff; margin-bottom: 25px;">À partir de
-                            <span style="color: #06b6d4;">1 200€</span><span style="font-size: 0.9rem; color: #666;"> /
-                                mois</span>
+                    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 24px; padding: 40px; display: flex; flex-direction: column; transition: all 0.3s ease; position: relative; overflow: hidden;"
+                        onmouseover="this.style.background='rgba(6, 182, 212, 0.05)'; this.style.borderColor='rgba(6, 182, 212, 0.3)'; this.style.transform='translateY(-5px)';"
+                        onmouseout="this.style.background='rgba(255,255,255,0.02)'; this.style.borderColor='rgba(255,255,255,0.05)'; this.style.transform='translateY(0)';">
+
+                        <div
+                            style="position: absolute; top: 0; right: 0; padding: 5px 15px; background: #06b6d4; color: #000; font-weight: 800; font-size: 0.7rem; text-transform: uppercase; border-bottom-left-radius: 16px;">
+                            Populaire</div>
+
+                        <div style="margin-bottom: 20px;">
+                            <span
+                                style="background: rgba(6, 182, 212, 0.1); color: #06b6d4; border: 1px solid rgba(6, 182, 212, 0.2); padding: 8px 16px; border-radius: 100px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">Modèle
+                                E-commerce</span>
                         </div>
-                        <a href="contact.html"
-                            style="background: #06b6d4; color: #000; padding: 15px; border-radius: 12px; text-decoration: none; font-weight: 700; text-align: center; transition: all 0.3s ease;">BOOSTER
-                            MES VENTES</a>
+
+                        <h3 style="font-size: 2rem; margin-bottom: 15px; color: #fff;">Expansion de CA</h3>
+                        <p
+                            style="color: #A1A1A6; margin-bottom: 30px; font-size: 0.95rem; line-height: 1.6; flex-grow: 1;">
+                            Pour les boutiques en ligne scalables. Focus sur les fiches produits, catégories et
+                            performance technique.</p>
+
+                        <div style="width: 100%; height: 1px; background: rgba(255,255,255,0.1); margin-bottom: 30px;">
+                        </div>
+
+                        <ul
+                            style="list-style: none; padding: 0; margin-bottom: 40px; color: #e5e5e5; display: grid; gap: 15px;">
+                            <li style="display: flex; gap: 10px; align-items: flex-start;"><span
+                                    style="color: #06b6d4;">✅</span> Optimisation fiches produits</li>
+                            <li style="display: flex; gap: 10px; align-items: flex-start;"><span
+                                    style="color: #06b6d4;">✅</span> Maillage interne stratégique</li>
+                            <li style="display: flex; gap: 10px; align-items: flex-start;"><span
+                                    style="color: #06b6d4;">✅</span> UX SEO (Core Web Vitals)</li>
+                            <li style="display: flex; gap: 10px; align-items: flex-start;"><span
+                                    style="color: #06b6d4;">✅</span> Domination longue traîne</li>
+                        </ul>
+
+                        <div style="margin-top: auto;">
+                            <div style="font-size: 0.9rem; color: #A1A1A6; margin-bottom: 5px;">À partir de</div>
+                            <div style="font-size: 2.2rem; font-weight: 700; color: #fff; margin-bottom: 25px;">1 200€
+                                <span style="font-size: 1rem; color: #666; font-weight: 400;">/ mois</span></div>
+                            <a href="contact.html"
+                                style="display: block; width: 100%; background: #06b6d4; color: #000; padding: 18px; border-radius: 16px; text-decoration: none; font-weight: 700; text-align: center; transition: all 0.3s ease; box-shadow: 0 4px 20px rgba(6, 182, 212, 0.3);">BOOSTER
+                                MES VENTES</a>
+                        </div>
                     </div>
 
                     <!-- Sur-mesure -->
-                    <div class="pricing-card" style="border-top: 4px solid #BD00FF;">
-                        <span
-                            style="color: #BD00FF; font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px; display: block;">Hors
-                            Standard</span>
-                        <h3 style="font-size: 1.8rem; margin-bottom: 20px;">Accompagnement Élite</h3>
-                        <p style="color: #A1A1A6; margin-bottom: 30px; flex-grow: 1;">Pour les grands comptes ou les
-                            niches ultra-concurrentielles nécessitant une frappe chirurgicale.</p>
+                    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 24px; padding: 40px; display: flex; flex-direction: column; transition: all 0.3s ease; position: relative; overflow: hidden;"
+                        onmouseover="this.style.background='rgba(189, 0, 255, 0.05)'; this.style.borderColor='rgba(189, 0, 255, 0.3)'; this.style.transform='translateY(-5px)';"
+                        onmouseout="this.style.background='rgba(255,255,255,0.02)'; this.style.borderColor='rgba(255,255,255,0.05)'; this.style.transform='translateY(0)';">
+
+                        <div style="margin-bottom: 20px;">
+                            <span
+                                style="background: rgba(189, 0, 255, 0.1); color: #BD00FF; border: 1px solid rgba(189, 0, 255, 0.2); padding: 8px 16px; border-radius: 100px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">Hors
+                                Standard</span>
+                        </div>
+
+                        <h3 style="font-size: 2rem; margin-bottom: 15px; color: #fff;">Accompagnement Élite</h3>
+                        <p
+                            style="color: #A1A1A6; margin-bottom: 30px; font-size: 0.95rem; line-height: 1.6; flex-grow: 1;">
+                            Pour les grands comptes ou les niches ultra-concurrentielles nécessitant une frappe
+                            chirurgicale.</p>
+
+                        <div style="width: 100%; height: 1px; background: rgba(255,255,255,0.1); margin-bottom: 30px;">
+                        </div>
+
                         <ul
-                            style="list-style: none; padding: 0; margin-bottom: 35px; color: #e5e5e5; display: grid; gap: 12px;">
-                            <li>✅ Analyse de logs mensuelle</li>
-                            <li>✅ RP Digitale (Netlinking Premium)</li>
-                            <li>✅ Visibility LLMs & GEO Expert</li>
-                            <li>✅ Consultant dédié 4j / semaine</li>
+                            style="list-style: none; padding: 0; margin-bottom: 40px; color: #e5e5e5; display: grid; gap: 15px;">
+                            <li style="display: flex; gap: 10px; align-items: flex-start;"><span
+                                    style="color: #BD00FF;">✅</span> Analyse de logs mensuelle</li>
+                            <li style="display: flex; gap: 10px; align-items: flex-start;"><span
+                                    style="color: #BD00FF;">✅</span> RP Digitale (Netlinking Premium)</li>
+                            <li style="display: flex; gap: 10px; align-items: flex-start;"><span
+                                    style="color: #BD00FF;">✅</span> Visibility LLMs & GEO Expert</li>
+                            <li style="display: flex; gap: 10px; align-items: flex-start;"><span
+                                    style="color: #BD00FF;">✅</span> Consultant dédié 4j / semaine</li>
                         </ul>
-                        <div style="font-size: 1.8rem; font-weight: 700; color: #fff; margin-bottom: 25px;">Sur <span
-                                style="color: #BD00FF;">Devis</span></div>
-                        <a href="contact.html"
-                            style="background: rgba(189, 0, 255, 0.1); color: #BD00FF; border: 1px solid rgba(189, 0, 255, 0.3); padding: 15px; border-radius: 12px; text-decoration: none; font-weight: 700; text-align: center; transition: all 0.3s ease;">DEMANDER
-                            UN DEVIS ELITE</a>
+
+                        <div style="margin-top: auto;">
+                            <div style="font-size: 0.9rem; color: #A1A1A6; margin-bottom: 5px;">Budget mensuel</div>
+                            <div style="font-size: 2.2rem; font-weight: 700; color: #fff; margin-bottom: 25px;">Sur
+                                Devis</div>
+                            <a href="contact.html"
+                                style="display: block; width: 100%; background: transparent; color: #BD00FF; border: 1px solid #BD00FF; padding: 18px; border-radius: 16px; text-decoration: none; font-weight: 700; text-align: center; transition: all 0.3s ease;">DEMANDER
+                                UN DEVIS ELITE</a>
+                        </div>
                     </div>
                 </div>
             </div>
