@@ -579,7 +579,8 @@
                         <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">Flexibilité Totale</h4>
                         <p style="color: #d1d1d6; font-size: 0.95rem; line-height: 1.6;">L’accompagnement peut être
                             <strong>opérationnel</strong> (je mets les mains dans le code et le contenu) ou
-                            <strong>stratégique</strong> (je pilote vos équipes internes pour garantir l'exécution).</p>
+                            <strong>stratégique</strong> (je pilote vos équipes internes pour garantir l'exécution).
+                        </p>
                     </div>
                 </div>
             </div>
@@ -706,32 +707,54 @@
             </div>
         </section>
 
-        <!-- 5. Durée -->
-        <section id="duree" style="padding: 60px 0;">
-            <div class="container" style="max-width: 800px;">
-                <h2 class="section-title" style="color: #fff;">Combien de temps dure un accompagnement <span
+        <!-- 5. Durée (Redesigned) -->
+        <section id="duree" style="padding: 100px 0; background: #050505;">
+            <div class="container" style="max-width: 900px;">
+                <h2 class="section-title" style="color: #fff; text-align: center; margin-bottom: 50px;">Combien de temps
+                    dure un accompagnement <span
                         style="background: linear-gradient(90deg, #3b82f6, #06b6d4); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">SEO</span>
                     ?</h2>
-                <table style="width: 100%; margin: 30px 0; border-collapse: collapse; color: #A1A1A6;">
-                    <thead style="background: #111; color: #fff;">
-                        <tr>
-                            <th style="padding: 15px; border: 1px solid #333; text-align: left;">Situation</th>
-                            <th style="padding: 15px; border: 1px solid #333; text-align: left;">Durée recommandée</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="padding: 15px; border: 1px solid #333;">Site existant avec historique</td>
-                            <td style="padding: 15px; border: 1px solid #333;">6 mois minimum</td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 15px; border: 1px solid #333;">Site récent ou refonte</td>
-                            <td style="padding: 15px; border: 1px solid #333;">9 à 12 mois</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p style="opacity: 0.8;"><strong>Pourquoi ?</strong> Parce que le SEO est un actif long terme. Et quand
-                    ça fonctionne… on continue.</p>
+
+                <div class="duration-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 50px;">
+                    <!-- Card 1: Site Existant -->
+                    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; padding: 35px; text-align: center; transition: all 0.3s ease;"
+                        onmouseover="this.style.background='rgba(59, 130, 246, 0.05)'; this.style.borderColor='rgba(59, 130, 246, 0.3)'; this.style.transform='translateY(-5px)';"
+                        onmouseout="this.style.background='rgba(255,255,255,0.02)'; this.style.borderColor='rgba(255,255,255,0.05)'; this.style.transform='translateY(0)';">
+                        <div
+                            style="width: 60px; height: 60px; background: rgba(59, 130, 246, 0.1); color: #3b82f6; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin: 0 auto 20px;">
+                            ⚡</div>
+                        <h3 style="color: #fff; font-size: 1.3rem; margin-bottom: 15px;">Site existant avec historique
+                        </h3>
+                        <div style="font-size: 2.5rem; font-weight: 900; color: #fff; margin-bottom: 5px;">6 <span
+                                style="font-size: 1rem; opacity: 0.6; font-weight: 400;">mois</span></div>
+                        <div
+                            style="color: #3b82f6; font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase; font-weight: 700;">
+                            Minimum</div>
+                    </div>
+
+                    <!-- Card 2: Site Récent -->
+                    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; padding: 35px; text-align: center; transition: all 0.3s ease;"
+                        onmouseover="this.style.background='rgba(16, 185, 129, 0.05)'; this.style.borderColor='rgba(16, 185, 129, 0.3)'; this.style.transform='translateY(-5px)';"
+                        onmouseout="this.style.background='rgba(255,255,255,0.02)'; this.style.borderColor='rgba(255,255,255,0.05)'; this.style.transform='translateY(0)';">
+                        <div
+                            style="width: 60px; height: 60px; background: rgba(16, 185, 129, 0.1); color: #10b981; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin: 0 auto 20px;">
+                            🌱</div>
+                        <h3 style="color: #fff; font-size: 1.3rem; margin-bottom: 15px;">Site récent ou Refonte</h3>
+                        <div style="font-size: 2.5rem; font-weight: 900; color: #fff; margin-bottom: 5px;">9 à 12 <span
+                                style="font-size: 1rem; opacity: 0.6; font-weight: 400;">mois</span></div>
+                        <div
+                            style="color: #10b981; font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase; font-weight: 700;">
+                            Recommandé</div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+                    <p style="font-size: 1.1rem; color: #d1d1d6; font-style: italic; line-height: 1.6;">
+                        "Pourquoi ? Parce que le SEO est un <strong>actif long terme</strong>. Et quand ça fonctionne…
+                        on continue."
+                    </p>
+                </div>
             </div>
         </section>
 
