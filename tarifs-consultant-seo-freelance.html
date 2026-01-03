@@ -137,7 +137,7 @@
             }
 
             .section-title {
-                margin-bottom: 40px !important;
+                margin-bottom: 30px !important;
                 font-size: 1.8rem !important;
             }
 
@@ -148,14 +148,25 @@
 
             /* Unstacking complex grids for mobile */
             div[style*="grid-template-columns: 1fr 1.2fr"],
+            div[style*="grid-template-columns: 0.8fr 1.2fr"],
             div[style*="grid-template-columns: 1fr 1.5fr"],
             div[style*="grid-template-columns: 1fr 1fr"],
             div[style*="grid-template-columns: 1fr 1fr 1fr"],
             div[style*="grid-template-columns: repeat(3, 1fr)"],
+            div[style*="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr))"],
             .services-detailed-grid,
             .about-section .container>div {
                 grid-template-columns: 1fr !important;
-                gap: 30px !important;
+                gap: 40px !important;
+            }
+
+            /* CTA Final Fixes */
+            .cta-final h2 {
+                font-size: 2rem !important;
+            }
+
+            .cta-final .container>div {
+                padding: 40px 20px !important;
             }
 
             .pricing-card,
