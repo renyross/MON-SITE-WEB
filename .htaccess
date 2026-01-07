@@ -62,3 +62,6 @@
 <Files "robots.txt">
   Header set X-Robots-Tag "noindex"
 </Files>
+
+# Custom 404 Page
+ErrorDocument 404 /404.html
