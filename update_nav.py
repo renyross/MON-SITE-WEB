@@ -3,32 +3,30 @@ import os
 import re
 
 directory = "/Users/renelrosene/Desktop/SEO RENEL"
-new_navbar = """    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="assets/logos/logo.svg" alt="Renel Rosené" class="logo-icon" width="50" height="35">
-                <div class="logo-text-group">
-                    <span class="logo-text">Renel Rosené</span>
-                </div>
-            </a>
-
-            <ul class="nav-links">
-                <li><a href="services-seo.html">Services</a></li>
-                <li><a href="portfolio.html">Ressources</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-
-            <div class="nav-cta">
-                <a href="contact.html" class="nav-btn-premium">AUDIT GRATUIT</a>
-            </div>
+new_navbar = """  <nav class="navbar">
+    <div class="container nav-container">
+      <a class="logo" href="/">
+        <img alt="Renel Rosené" class="logo-icon" height="35" src="assets/logos/logo.svg" width="50" />
+        <div class="logo-text-group">
+          <span class="logo-text">Renel Rosené</span>
         </div>
-    </nav>"""
+      </a>
+      <ul class="nav-links">
+        <li><a href="services-seo.html">Services</a></li>
+        <li><a href="tarifs-consultant-seo-freelance.html">Prestation SEO</a></li>
+        <li><a href="portfolio.html">Ressources</a></li>
+        <li><a href="blog-seo-ia.html">Blog</a></li>
+      </ul>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="nav-cta">
+        <a class="nav-btn-premium" href="contact.html">AUDIT SEO GRATUIT</a>
+      </div>
+    </div>
+  </nav>"""
 
 for filename in os.listdir(directory):
     if filename.endswith(".html"):
