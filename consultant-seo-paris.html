@@ -14,9 +14,9 @@
   <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Consultant SEO & IA à Paris | Croissance & Visibilité Durable</title>
+  <title>Consultant SEO Paris Freelance | Audit Gratuit</title>
   <meta name="description"
-    content="Consultant SEO & IA senior à Paris. J'accompagne Startups & PME pour transformer leur visibilité en moteur de croissance. Audit offert.">
+    content="Consultant SEO freelance à Paris. Stratégie SEO + IA pour startups & PME. +150% leads en 6 mois. Audit gratuit, sans engagement.">
   <link rel="canonical" href="https://www.renelrosene.com/consultant-seo-paris">
   <link rel="stylesheet" href="style.css">
 
@@ -76,6 +76,132 @@
       ]
     }
   </script>
+  <style>
+    /* Specific overrides for consultant-seo-paris page */
+    :root {
+      --section-padding: 100px 0;
+      --mobile-padding: 60px 0;
+    }
+
+    section {
+      padding: var(--section-padding);
+    }
+
+    .hero-paris {
+      background: #0a0a0a;
+      padding: 160px 0 100px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-paris h1 {
+      font-size: clamp(2.5rem, 8vw, 3.5rem);
+      line-height: 1.2;
+      margin-bottom: 25px;
+      color: #fff;
+    }
+
+    .hero-paris .hero-subtitle {
+      font-size: clamp(1.2rem, 4vw, 1.5rem);
+      color: #e2e8f0;
+      margin-bottom: 20px;
+      font-weight: 500;
+      max-width: none;
+    }
+
+    .hero-paris .hero-meta {
+      color: #94a3b8;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .grid-2-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .paris-stats-box {
+      background: rgba(255, 255, 255, 0.02);
+      padding: 40px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .service-card {
+      background: rgba(255, 255, 255, 0.02);
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .package-card {
+      background: rgba(34, 197, 94, 0.05);
+      border: 1px solid rgba(34, 197, 94, 0.2);
+      padding: 40px;
+      border-radius: 16px;
+      text-align: center;
+    }
+
+    .about-freelance-grid {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Mobile Responsive Overrides */
+    @media (max-width: 768px) {
+      section {
+        padding: var(--mobile-padding) !important;
+      }
+
+      .hero-paris {
+        padding: 100px 0 60px !important;
+      }
+
+      .grid-2-cols {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+        text-align: center;
+      }
+
+      .section-title {
+        font-size: 2.2rem !important;
+        margin-bottom: 30px !important;
+      }
+
+      .hero-btn-primary,
+      .hero-btn-secondary {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .paris-stats-box {
+        padding: 25px !important;
+      }
+
+      .hero-meta {
+        font-size: 1rem !important;
+      }
+    }
+  </style>
+
+  <!-- Pour Google Search (Essentiel) -->
+  <link rel="icon" href="/logo-seo.png" sizes="192x192" type="image/png">
+  <!-- Pour iOS/Android (Déjà fonctionnel, à garder) -->
+  <link rel="apple-touch-icon" href="/logo-seo.png">
 </head>
 
 <body>
@@ -111,226 +237,142 @@
   </nav>
 
   <!-- 1️⃣ Hero Section -->
-  <section class="hero-dpt" style="background: #0a0a0a; padding: 160px 0 100px; position: relative; overflow: hidden;">
+  <section class="hero-paris">
     <div
       style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 30% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 50%); z-index: 0;">
     </div>
     <div class="container" style="position: relative; z-index: 1;">
-      <div class="hero-content" style="max-width: 850px; margin: 0 auto; text-align: center;">
-        <h1 style="font-size: 3.5rem; line-height: 1.2; margin-bottom: 25px; color: #fff;">
-          Consultant SEO & IA à <span class="text-blue">Paris</span>
+      <div class="hero-content" style="max-width: 950px; margin: 0 auto; text-align: center;">
+        <h1 id="cta-audit">
+          Consultant SEO & IA à Paris : Transformez votre visibilité en moteur de croissance
         </h1>
-        <p style="font-size: 1.5rem; color: #e2e8f0; margin-bottom: 20px; font-weight: 500;">
-          Transformez votre visibilité en moteur de croissance
+        <p class="hero-subtitle">
+          Stratégie SEO + IA pour startups & PME | Audit gratuit, sans engagement
         </p>
-        <p style="color: #94a3b8; font-size: 1.1rem; margin-bottom: 30px;">
-          Trafic → Leads → CA<br>
-          SEO stratégique + Data + IA
-        </p>
+
+        <!-- TL;DR -->
+        <div
+          style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 20px; text-align: left; margin: 40px 0; backdrop-filter: blur(10px);">
+          <h2 style="color: #fff; font-size: 1.4rem; margin-bottom: 15px;">TL;DR – En résumé</h2>
+          <p style="color: #cbd5e1; line-height: 1.6; margin-bottom: 20px;">
+            Vous cherchez à booster votre visibilité organique et générer des leads qualifiés ? Je suis
+            <strong>consultant SEO & IA freelance à Paris</strong>, spécialisé dans l'accompagnement des startups et
+            PME. Mon approche fusionne expertise technique SEO + puissance de l'IA pour des résultats mesurables :
+            <strong>+150% leads qualifiés en 6 mois</strong> en moyenne. Pas de contrat long, relation directe,
+            stratégie 100% alignée sur votre business.
+          </p>
+          <a href="#contact" class="hero-btn-primary" style="font-size: 0.85rem;">Réserver votre audit SEO gratuit</a>
+          <span style="color: #64748b; font-size: 0.8rem; margin-left: 15px; font-style: italic;">(20 min, sans
+            engagement)</span>
+        </div>
+
         <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 15px;">
-          <a href="audit-seo-gratuit" class="hero-btn-primary">Audit SEO gratuit – 20 min</a>
           <a href="portfolio" class="hero-btn-secondary">Voir mes études de cas</a>
         </div>
-        <p style="font-size: 0.85rem; color: #64748b; font-style: italic;">“Sans engagement, diagnostic concret pour
-          votre business”</p>
       </div>
     </div>
   </section>
 
   <!-- 2️⃣ Pourquoi Paris est stratégique -->
-  <section style="padding: 100px 0; background: #0f0f0f;">
+  <section style="background: #0f0f0f;">
     <div class="container">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+      <div class="grid-2-cols">
         <div>
           <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">
             Pourquoi Paris est un marché stratégique pour le <span class="text-blue">SEO</span>
           </h2>
 
-          <h3 style="color: #fff; font-size: 1.3rem; margin-bottom: 15px;">La capitale digitale</h3>
+          <h3 style="color: #fff; font-size: 1.3rem; margin-bottom: 15px;">La capitale digitale française</h3>
           <p style="color: #cbd5e1; margin-bottom: 20px; line-height: 1.7;">
-            La concurrence y est la plus forte de France. Startups, PME, Grands Groupes : tout le monde se bat pour la
-            première page. Seul un SEO aligné business performe ici.
+            Paris concentre la plus forte compétition SEO de France. Startups, PME, grands groupes : tout le monde se
+            bat pour la première page Google. <strong>Seul un SEO aligné business performe ici.</strong>
+          </p>
+          <p style="color: #cbd5e1; margin-bottom: 20px; line-height: 1.7;">
+            Vous êtes à Paris ? Vous avez un avantage : un marché avec un potentiel illimité, mais aussi une exigence
+            SEO maximale.
           </p>
 
-          <h3 style="color: #fff; font-size: 1.3rem; margin-bottom: 15px;">Opportunités SEO + IA</h3>
+          <h3 style="color: #fff; font-size: 1.3rem; margin-bottom: 15px;">Opportunités SEO + IA à Paris</h3>
           <ul style="list-style: none; padding: 0; margin-bottom: 30px;">
-            <li style="margin-bottom: 10px; color: #e2e8f0;">✔ Requêtes locales précises (quartiers, arrondissements)
-            </li>
-            <li style="margin-bottom: 10px; color: #e2e8f0;">✔ Analyse de concurrence IA pour prioriser le ROI</li>
-            <li style="margin-bottom: 10px; color: #e2e8f0;">✔ Impact fort de Google My Business</li>
+            <li style="margin-bottom: 10px; color: #e2e8f0;">✅ <strong>Requêtes locales précises</strong> → Ciblage par
+              quartiers, arrondissements, zones géographiques</li>
+            <li style="margin-bottom: 10px; color: #e2e8f0;">✅ <strong>Analyse de concurrence IA</strong> → Identifier
+              les leviers ROI avant vos concurrents</li>
+            <li style="margin-bottom: 10px; color: #e2e8f0;">✅ <strong>Impact fort de Google My Business</strong> →
+              Dominer le local pack</li>
+            <li style="margin-bottom: 10px; color: #e2e8f0;">✅ <strong>Spécialisation sur startups & PME</strong> → Vous
+              êtes mon cœur de cible</li>
           </ul>
-
-          <div style="margin-top: 20px;">
-            <a href="audit-seo-gratuit" style="color: #3b82f6; text-decoration: underline; font-weight: 700;">Audit SEO
-              offert – analyse Paris →</a>
-          </div>
         </div>
 
-        <!-- Visuel contextuel abstrait -->
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 40px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05);">
-          <h3 style="color: #fff; text-align: center; margin-bottom: 30px;">Intensité Concurrentielle Paris</h3>
-          <div style="display: flex; flex-direction: column; gap: 20px;">
-            <div>
-              <div
-                style="display: flex; justify-content: space-between; color: #94a3b8; font-size: 0.9rem; margin-bottom: 5px;">
-                <span>Pression SEA (Ads)</span><span>Extrême</span>
-              </div>
-              <div style="height: 6px; background: #331f1f; border-radius: 3px;">
-                <div style="width: 95%; height: 100%; background: #ef4444;"></div>
-              </div>
-            </div>
-            <div>
-              <div
-                style="display: flex; justify-content: space-between; color: #94a3b8; font-size: 0.9rem; margin-bottom: 5px;">
-                <span>Complexité Sémantique</span><span>Haute</span>
-              </div>
-              <div style="height: 6px; background: #0f1f33; border-radius: 3px;">
-                <div style="width: 80%; height: 100%; background: #3b82f6;"></div>
-              </div>
-            </div>
-            <div>
-              <div
-                style="display: flex; justify-content: space-between; color: #94a3b8; font-size: 0.9rem; margin-bottom: 5px;">
-                <span>Potentiel Business</span><span>Illimité</span>
-              </div>
-              <div style="height: 6px; background: #062b1f; border-radius: 3px;">
-                <div style="width: 100%; height: 100%; background: #10b981;"></div>
-              </div>
-            </div>
-          </div>
+        <div class="paris-stats-box">
+          <h3 style="color: #fff; text-align: center; margin-bottom: 30px;">Indicateurs de Marché Paris</h3>
+          <table style="width: 100%; border-collapse: collapse; color: #cbd5e1;">
+            <thead>
+              <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <th style="padding: 10px; text-align: left;">Critère</th>
+                <th style="padding: 10px; text-align: right;">Niveau</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <td style="padding: 15px 10px;"><strong>Pression SEA (Ads)</strong></td>
+                <td style="padding: 15px 10px; text-align: right; color: #ef4444;">Extrême</td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <td style="padding: 15px 10px;"><strong>Complexité Sémantique</strong></td>
+                <td style="padding: 15px 10px; text-align: right; color: #3b82f6;">Haute</td>
+              </tr>
+              <tr>
+                <td style="padding: 15px 10px;"><strong>Potentiel Business</strong></td>
+                <td style="padding: 15px 10px; text-align: right; color: #10b981;">Illimité</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- 3️⃣ Pourquoi moi ? (Nouveau Design) -->
-  <section class="about-section"
-    style="padding: 100px 0; background: #0a0a0a; border-bottom: 1px solid rgba(255,255,255,0.05);">
-    <div class="container" style="max-width: 1000px;">
-      <div class="about-grid" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: center;">
-
-        <!-- Colonne Image (Gauche) -->
-        <div class="about-image-wrapper"
-          style="position: relative; overflow: hidden; border-radius: 24px; box-shadow: 0 20px 50px rgba(0,0,0,0.5);">
-          <img alt="Renel Rosené - Consultant SEO Paris" src="assets/images/renel-portrait.jpg"
-            style="width: 100%; display: block; filter: grayscale(10%); transform: scale(1.02);" />
-          <!-- Black Radial & Linear Gradient Overlay -->
-          <div
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 50% 50%, transparent 45%, #0a0a0a 105%), linear-gradient(to top, #0a0a0a 2%, transparent 20%); pointer-events: none; z-index: 2;">
-          </div>
+  <!-- 3️⃣ Pourquoi choisir un consultant SEO freelance ? -->
+  <section style="background: #0a0a0a;">
+    <div class="container">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 60px;">
+        Pourquoi choisir un consultant SEO <span class="text-blue">freelance</span> à Paris ?
+      </h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+        <div class="service-card">
+          <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 15px;">✅ Approche personnalisée</h3>
+          <p style="color: #94a3b8;">Chaque entreprise a un ADN unique, surtout à Paris. Pas de solution
+            "one-size-fits-all". Je construis une stratégie sur-mesure alignée sur <strong>votre business model, votre
+              budget, vos objectifs</strong>.</p>
         </div>
-
-        <!-- Colonne Contenu (Droite) -->
-        <div class="about-content">
-          <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">Pourquoi <span
-              class="text-blue">moi</span> ?</h2>
-
-          <p style="font-size: 1.1rem; line-height: 1.8; color: #d1d1d6; margin-bottom: 30px;">
-            Consultant SEO & IA Senior, j'accompagne les Startups et PME parisiennes pour transformer leur visibilité en
-            moteur de croissance.
-            Mon approche <strong>Hybride (SEO + IA)</strong> fusionne l'expertise technique humaine avec la puissance de
-            l'IA pour produire plus vite et analyser plus de données, tout en gardant une stratégie 100% pilotée par
-            l'intuition business.
-          </p>
-
-          <div
-            style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05); margin-bottom: 30px;">
-            <h4
-              style="color: #fff; margin-bottom: 20px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1.5px; opacity: 0.8;">
-              Impact Business Moyen :</h4>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-              <div>
-                <div style="color: #3b82f6; font-size: 1.8rem; font-weight: 900;">+<span class="counter-value"
-                    data-target="80">0</span>%</div>
-                <div style="font-size: 0.8rem; opacity: 0.6; color: #fff;">Trafic Organique</div>
-              </div>
-              <div>
-                <div style="color: #3b82f6; font-size: 1.8rem; font-weight: 900;">+<span class="counter-value"
-                    data-target="30">0</span>%</div>
-                <div style="font-size: 0.8rem; opacity: 0.6; color: #fff;">Leads Qualifiés</div>
-              </div>
-            </div>
-          </div>
-
-          <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 30px;">
-            <span
-              style="padding: 8px 18px; background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 50px; font-size: 0.8rem; color: #60a5fa; font-weight: 600;">Data-Driven</span>
-            <span
-              style="padding: 8px 18px; background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 50px; font-size: 0.8rem; color: #60a5fa; font-weight: 600;">SEO
-              Technique</span>
-            <span
-              style="padding: 8px 18px; background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 50px; font-size: 0.8rem; color: #60a5fa; font-weight: 600;">IA
-              Native</span>
-          </div>
-
-          <a href="contact" class="hero-btn-primary">Discutons de votre projet</a>
-
+        <div class="service-card">
+          <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 15px;">✅ Relation directe</h3>
+          <p style="color: #94a3b8;">Vous parlez à celui qui agit. Pas de commercial, pas de validation interne, pas de
+            délai. <strong>Décisions rapides, exécution immédiate.</strong></p>
+        </div>
+        <div class="service-card">
+          <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 15px;">✅ Vision business</h3>
+          <p style="color: #94a3b8;">Je ne regarde pas que vos rankings. Je regarde votre <strong>ROI, vos leads
+              qualifiés, votre chiffre d'affaires</strong>. Chaque action SEO doit servir votre croissance.</p>
+        </div>
+        <div class="service-card">
+          <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 15px;">✅ Coût optimisé</h3>
+          <p style="color: #94a3b8;">Un freelance SEO senior coûte moins cher qu'une agence, <strong>sans compromis sur
+              l'expertise</strong>. Vous payez pour l'expertise, pas pour la structure commerciale.</p>
+        </div>
+        <div class="service-card">
+          <h3 style="color: #fff; font-size: 1.25rem; margin-bottom: 15px;">✅ Flexibilité</h3>
+          <p style="color: #94a3b8;">Besoin d'augmenter ? De réduire ? De faire une pause ? Aucun problème. Pas de
+            contrat rigide, juste une collaboration basée sur les résultats.</p>
         </div>
       </div>
     </div>
-    <script>
-      // Animation des chiffres
-      document.addEventListener('DOMContentLoaded', () => {
-        const counters = document.querySelectorAll('.counter-value');
-        const observerOptions = {
-          root: null,
-          rootMargin: '0px',
-          threshold: 0.5
-        };
-        const observer = new IntersectionObserver((entries, observer) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              const counter = entry.target;
-              const target = +counter.getAttribute('data-target');
-              const duration = 2000;
-              const increment = target / (duration / 16);
-              let current = 0;
-              const updateCounter = () => {
-                current += increment;
-                if (current < target) {
-                  counter.textContent = Math.ceil(current);
-                  requestAnimationFrame(updateCounter);
-                } else {
-                  counter.textContent = target;
-                }
-              };
-              updateCounter();
-              observer.unobserve(counter);
-            }
-          });
-        }, observerOptions);
-        counters.forEach(counter => {
-          observer.observe(counter);
-        });
-      });
-    </script>
-    <style>
-      /* Responsive Fix for About Section */
-      @media (max-width: 900px) {
-        .about-grid {
-          grid-template-columns: 1fr !important;
-          gap: 40px !important;
-        }
-
-        .about-image-wrapper {
-          max-height: 400px;
-        }
-
-        .about-content {
-          text-align: center;
-        }
-
-        .section-title {
-          text-align: center !important;
-        }
-      }
-    </style>
   </section>
 
   <!-- 4️⃣ Mon Approche -->
-  <section style="padding: 100px 0; background: #0f0f0f;">
+  <section style="background: #0f0f0f;">
     <div class="container">
       <h2 class="section-title" style="text-align: center; margin-bottom: 50px;">
         Mon Approche : SEO + IA <span class="text-blue">orienté business</span>
@@ -339,39 +381,37 @@
         style="display: flex; flex-direction: column; gap: 20px; max-width: 800px; margin: 0 auto;">
 
         <!-- Step 1 -->
-        <div
-          style="display: flex; gap: 20px; align-items: center; background: rgba(255,255,255,0.02); padding: 25px; border-radius: 12px;">
+        <div class="service-card" style="display: flex; gap: 20px; align-items: center;">
           <div style="font-size: 2rem;">🏗️</div>
           <div>
             <h4 style="color: #fff; margin: 0 0 5px 0;">Systèmes d'acquisition organique</h4>
-            <p style="color: #94a3b8; margin: 0;">Pas de SEO "contenu pour contenu". Je construis des systèmes scalables
-              et mesurables. Chaque page a un but.</p>
+            <p style="color: #94a3b8; margin: 0;">Pas de SEO "contenu pour contenu". Je construis des <strong>systèmes
+                scalables et mesurables</strong>. Chaque page a un but, chaque action a un ROI.</p>
           </div>
         </div>
 
         <!-- Step 2 -->
-        <div
-          style="display: flex; gap: 20px; align-items: center; background: rgba(255,255,255,0.02); padding: 25px; border-radius: 12px;">
+        <div class="service-card" style="display: flex; gap: 20px; align-items: center;">
           <div style="font-size: 2rem;">⚡</div>
           <div>
             <h4 style="color: #fff; margin: 0 0 5px 0;">Méthode 80/20 & IA</h4>
-            <p style="color: #94a3b8; margin: 0;">Identification des leviers majeurs et optimisation continue accélérée
-              par l'IA.</p>
+            <p style="color: #94a3b8; margin: 0;"><strong>Identification des leviers majeurs</strong> (où se cachent vos
+              80% de résultats ?) et <strong>optimisation continue accélérée par l'IA</strong>.</p>
           </div>
         </div>
 
         <!-- Step 3 -->
-        <div
-          style="display: flex; gap: 20px; align-items: center; background: rgba(255,255,255,0.02); padding: 25px; border-radius: 12px;">
+        <div class="service-card" style="display: flex; gap: 20px; align-items: center;">
           <div style="font-size: 2rem;">📈</div>
           <div>
             <h4 style="color: #fff; margin: 0 0 5px 0;">Résultats Attendus</h4>
-            <p style="color: #94a3b8; margin: 0;">Trafic qualifié, Leads qualifiés, ROI clair et mesurable.</p>
+            <p style="color: #94a3b8; margin: 0;">Trafic qualifié (pas du trafic vanité), Leads qualifiés (pas du
+              volume), ROI clair et mesurable.</p>
           </div>
         </div>
 
         <div style="text-align: center; margin-top: 20px;">
-          <a href="audit-seo-gratuit" style="color: #3b82f6; text-decoration: underline; font-weight: 700;">Audit SEO
+          <a href="#cta-audit" style="color: #3b82f6; text-decoration: underline; font-weight: 700;">Audit SEO
             offert →</a>
         </div>
 
@@ -379,108 +419,117 @@
     </div>
   </section>
 
-  <!-- 5️⃣ Services Premium -->
-  <section style="padding: 100px 0; background: #0a0a0a;">
+  <!-- 5️⃣ Services SEO à Paris -->
+  <section id="services" style="background: #0a0a0a;">
     <div class="container">
-      <h2 class="section-title" style="text-align: center; margin-bottom: 60px;">
-        Services & Accompagnement Premium
-      </h2>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
-          <h3 style="color: #fff; font-size: 1.2rem; margin-bottom: 10px;">1. Audit SEO & IA Stratégique</h3>
-          <p style="color: #94a3b8;">Analyse 360° (Tech, Sémantique, Business). Détection d'opportunités IA et recos
-            actionnables immédiatement.</p>
+      <h2 class="section-title" style="text-align: center; margin-bottom: 50px;">Services SEO à <span
+          class="text-blue">Paris</span></h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <div style="font-size: 2.5rem; margin-bottom: 20px;">1.</div>
+          <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 15px;">Audit SEO & IA Stratégique</h3>
+          <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.6;">
+            <strong>Analyse 360°</strong> : Tech, Sémantique, Business. <br>
+            <strong>Détection d'opportunités IA</strong> : Où vos concurrents ne regardent pas. <br>
+            <strong>Actions concrètes</strong> : Pas de rapport usine.
+          </p>
+          <a href="#cta-audit"
+            style="color: #3b82f6; display: inline-block; margin-top: 15px; font-weight: 600;">Demander votre audit
+            gratuit →</a>
         </div>
-
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
-          <h3 style="color: #fff; font-size: 1.2rem; margin-bottom: 10px;">2. Stratégie Mots-Clés Paris</h3>
-          <p style="color: #94a3b8;">Cartographie des intentions business. Priorisation selon ROI potentiel. Ciblage
-            multi-arrondissements.</p>
-        </div>
-
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
-          <h3 style="color: #fff; font-size: 1.2rem; margin-bottom: 10px;">3. Optimisation Tech & UX</h3>
-          <p style="color: #94a3b8;">Mobile-first, vitesse, structure SEO saine et optimisation de la conversion (CRO).
+        <div class="service-card">
+          <div style="font-size: 2.5rem; margin-bottom: 20px;">2.</div>
+          <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 15px;">Stratégie Mots-Clés Paris</h3>
+          <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.6;">
+            <strong>Cartographie des intentions business</strong> : Quels mots-clés génèrent des leads ? <br>
+            <strong>Priorisation ROI</strong> : 80/20 appliqué aux keywords. <br>
+            <strong>Ciblage multi-arrondissements</strong> : Paris 1er au 20e, Île-de-France.
           </p>
         </div>
-
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
-          <h3 style="color: #fff; font-size: 1.2rem; margin-bottom: 10px;">4. Contenu Augmenté (IA)</h3>
-          <p style="color: #94a3b8;">Articles, landing pages, guides. Le duo IA + expertise humaine pour allier volume
-            et qualité.</p>
+        <div class="service-card">
+          <div style="font-size: 2.5rem; margin-bottom: 20px;">3.</div>
+          <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 15px;">Optimisation Tech & UX</h3>
+          <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.6;">
+            <strong>Mobile-first</strong> : 70% du trafic vient du mobile. <br>
+            <strong>Vitesse & Core Web Vitals</strong> : Chargement éclair. <br>
+            <strong>Optimisation conversion (CRO)</strong> : Transformer le trafic en client.
+          </p>
         </div>
-
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
-          <h3 style="color: #fff; font-size: 1.2rem; margin-bottom: 10px;">5. Netlinking Stratégique</h3>
-          <p style="color: #94a3b8;">Acquisition de backlinks crédibles (médias parisiens, partenaires locaux). Pas de
-            spam.</p>
+        <div class="service-card">
+          <div style="font-size: 2.5rem; margin-bottom: 20px;">4.</div>
+          <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 15px;">Contenu Augmenté (IA)</h3>
+          <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.6;">
+            <strong>Le duo IA + Humain</strong> : Volume + Qualité. <br>
+            <strong>Articles stratégiques</strong> : Générateurs de leads. <br>
+            <strong>Landing pages</strong> : Conversion-focused.
+          </p>
         </div>
-
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
-          <h3 style="color: #fff; font-size: 1.2rem; margin-bottom: 10px;">6. Suivi & Pilotage</h3>
-          <p style="color: #94a3b8;">Reporting clair sur Notion. KPI business. Explications simples pour décisions
-            rapides.</p>
+        <div class="service-card">
+          <div style="font-size: 2.5rem; margin-bottom: 20px;">5.</div>
+          <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 15px;">Netlinking Stratégique</h3>
+          <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.6;">
+            <strong>Liens d'autorité</strong> : Médias parisiens, partenaires locaux. <br>
+            <strong>Pas de spam</strong> : Zéro PBN douteux. <br>
+            <strong>Profil naturel</strong> : Construit pour durer.
+          </p>
         </div>
-
-      </div>
-      <div style="text-align: center; margin-top: 50px;">
-        <a href="audit-seo-gratuit" class="hero-btn-primary">Audit SEO offert – diagnostic complet</a>
+        <div class="service-card">
+          <div style="font-size: 2.5rem; margin-bottom: 20px;">6.</div>
+          <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 15px;">Suivi & Pilotage</h3>
+          <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.6;">
+            <strong>Reporting Notion</strong> : Accessible 24/7. <br>
+            <strong>KPI business</strong> : Trafic, leads, CA. <br>
+            <strong>Explications simples</strong> : Pas de jargon inutile.
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- 6️⃣ Offres & Packages -->
-  <section style="padding: 100px 0; background: #0f0f0f;">
+  <section id="tarifs" style="background: #0f0f0f;">
     <div class="container container-medium">
       <h2 class="section-title" style="text-align: center; margin-bottom: 50px;">Offres & Packages</h2>
 
-      <div style="display: grid; gap: 30px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
         <!-- Package Month -->
-        <div
-          style="background: rgba(34, 197, 94, 0.05); border: 1px solid rgba(34, 197, 94, 0.2); padding: 40px; border-radius: 16px; text-align: center;">
-          <h3 style="color: #fff; font-size: 1.5rem; margin-bottom: 10px;">Accompagnement Mensuel</h3>
-          <div style="font-size: 2.5rem; font-weight: 700; color: #22c55e; margin-bottom: 20px;">À partir de 1 000 €
+        <div class="package-card" style="text-align: left;">
+          <h3 style="color: #fff; font-size: 1.5rem; margin-bottom: 10px;">🎯 Accompagnement Mensuel</h3>
+          <div style="font-size: 2.5rem; font-weight: 700; color: #22c55e; margin-bottom: 20px;">Dès 1 000 €
             <span style="font-size: 1rem; color: #94a3b8; font-weight: 400;">/mois</span>
           </div>
-          <p style="color: #e2e8f0; margin-bottom: 30px;">SEO + IA + Pilotage Business. Le tout-en-un pour la
+          <p style="color: #e2e8f0; margin-bottom: 20px;">SEO + IA + Pilotage Business. Le tout-en-un pour la
             croissance.</p>
-          <a href="tarifs-consultant-seo-freelance" class="hero-btn-primary">Découvrir mes offres</a>
+          <ul style="list-style: none; padding: 0; color: #94a3b8; margin-bottom: 30px; font-size: 0.9rem;">
+            <li style="margin-bottom: 8px;">✅ Audit initial complet</li>
+            <li style="margin-bottom: 8px;">✅ Stratégie mots-clés + roadmap</li>
+            <li style="margin-bottom: 8px;">✅ Optimisations tech & on-page</li>
+            <li style="margin-bottom: 8px;">✅ Contenu IA + expertise</li>
+            <li style="margin-bottom: 8px;">✅ Netlinking progressif</li>
+            <li style="margin-bottom: 8px;">✅ Reporting hebdomadaire</li>
+          </ul>
+          <a href="#cta-audit" class="hero-btn-primary" style="width: 100%; text-align: center;">Démarrer maintenant</a>
+        </div>
+
+        <!-- Consultation -->
+        <div class="package-card"
+          style="text-align: left; background: rgba(59, 130, 246, 0.05); border-color: rgba(59, 130, 246, 0.2);">
+          <h3 style="color: #fff; font-size: 1.5rem; margin-bottom: 10px;">🎁 Consultation Gratuite</h3>
+          <div style="font-size: 2.2rem; font-weight: 700; color: #3b82f6; margin-bottom: 20px;">OFFERT
+            <span style="font-size: 1rem; color: #94a3b8; font-weight: 400;">(20 min)</span>
+          </div>
+          <p style="color: #e2e8f0; margin-bottom: 20px;">Diagnostic concret pour votre business, sans engagement.</p>
+          <ul style="list-style: none; padding: 0; color: #94a3b8; margin-bottom: 30px; font-size: 0.9rem;">
+            <li style="margin-bottom: 8px;">✅ Analyse rapide de votre site</li>
+            <li style="margin-bottom: 8px;">✅ Identification des 3 leviers</li>
+            <li style="margin-bottom: 8px;">✅ Recommandations actionnables</li>
+            <li style="margin-bottom: 8px;">✅ Pas de vente forcée</li>
+          </ul>
+          <a href="#cta-audit" class="hero-btn-secondary"
+            style="width: 100%; text-align: center; border-color: #3b82f6; color: #3b82f6;">Réserver mon audit</a>
         </div>
       </div>
 
-      <div style="max-width: 900px; margin: 40px auto 0 auto;">
-        <h2 style="color: #fff; font-size: 1.8rem; margin-bottom: 40px; text-align: center;">Pourquoi choisir un
-          consultant SEO freelance ?</h2>
-
-        <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 40px; align-items: center;">
-          <!-- Colonne Photo -->
-          <div style="text-align: center;">
-            <!-- Photo Renel -->
-            <div
-              style="width: 150px; height: 150px; border-radius: 50%; margin: 0 auto; overflow: hidden; border: 3px solid rgba(59, 130, 246, 0.3); box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);">
-              <img src="assets/images/renel-portrait.jpg" alt="Renel Rosené - Expert SEO Freelance"
-                style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-          </div>
-
-          <!-- Colonne Texte -->
-          <div style="display: flex; flex-direction: column; gap: 15px;">
-            <div style="color: #cbd5e1;">✅ <strong>Approche personnalisée :</strong> Chaque entreprise a un ADN unique,
-              surtout à Paris.</div>
-            <div style="color: #cbd5e1;">✅ <strong>Relation directe :</strong> Pas d'intermédiaire commercial, vous
-              parlez à celui qui agit.</div>
-            <div style="color: #cbd5e1;">✅ <strong>Vision business :</strong> Je ne regarde pas que les positions, je
-              regarde votre CA.</div>
-          </div>
-        </div>
-      </div>
       <div style="display: flex; justify-content: space-around; margin-top: 40px; flex-wrap: wrap; gap: 20px;">
         <span style="color: #94a3b8;">SEO B2B</span>
         <span style="color: #94a3b8;">SEO E-commerce</span>
@@ -492,37 +541,87 @@
   </section>
 
   <!-- 7️⃣ Stack & Outils -->
-  <section style="padding: 60px 0; background: #0a0a0a;">
+  <section id="stack" style="background: #0a0a0a;">
     <div class="container text-center">
       <h2 style="font-size: 1.5rem; color: #fff; margin-bottom: 30px;">Stack & Outils</h2>
       <div style="display: flex; gap: 30px; justify-content: center; flex-wrap: wrap; opacity: 0.7;">
-        <span style="color: #fff;">Screaming Frog</span>
-        <span style="color: #fff;">SE Ranking</span>
-        <span style="color: #fff;">ThotSEO</span>
-        <span style="color: #fff;">OpenAI API</span>
+        <span style="color: #fff;">Screaming Frog (Tech)</span>
+        <span style="color: #fff;">SE Ranking (Tracking)</span>
+        <span style="color: #fff;">ThotSEO (Sémantique)</span>
+        <span style="color: #fff;">OpenAI API (IA)</span>
         <span style="color: #fff;">Google Search Console</span>
-        <span style="color: #fff;">Notion</span>
+        <span style="color: #fff;">Notion (Reporting)</span>
       </div>
     </div>
   </section>
 
-  <!-- 8️⃣ Études de Cas -->
-  <section style="padding: 100px 0; background: #0f0f0f;">
+  <!-- Section À propos -->
+  <section id="a-propos" style="background: #0f0f0f;">
+    <div class="container">
+      <div
+        style="max-width: 800px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center;">
+        <div>
+          <h2 class="section-title" style="margin-bottom: 25px;">À propos de <span class="text-blue">Renel Rosené</span>
+          </h2>
+          <p style="color: #94a3b8; line-height: 1.8; margin-bottom: 20px;">
+            Consultant SEO freelance spécialisé dans la croissance organique via le duo <strong>SEO + IA</strong>. Ma
+            mission est simple : transformer votre site web en un actif financier rentable et prévisible.
+          </p>
+          <p style="color: #94a3b8; line-height: 1.8;">
+            Basé à Paris, j'accompagne les startups et PME qui souhaitent dominer leur marché sémantique sans dépendre
+            uniquement des budgets publicitaires.
+          </p>
+        </div>
+        <div
+          style="background: rgba(59, 130, 246, 0.1); padding: 30px; border-radius: 20px; border: 1px solid rgba(59, 130, 246, 0.2);">
+          <div style="font-size: 2.5rem; margin-bottom: 15px;">🚀</div>
+          <h4 style="color: #fff; margin-bottom: 10px;">Ma Vision</h4>
+          <p style="color: #94a3b8; font-size: 0.9rem;">
+            Le SEO ne doit pas être une dépense, mais un investissement à haut rendement. J'utilise l'IA pour accélérer
+            la production et l'analyse, tout en gardant une stratégie 100% orientée business.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8️⃣ Résultats Clients -->
+  <section id="etudes-cas" style="background: #0f0f0f;">
     <div class="container text-center">
       <h2 class="section-title" style="margin-bottom: 40px;">Résultats Clients</h2>
-      <div
-        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; text-align: left;">
-        <div style="background: rgba(255,255,255,0.02); padding: 25px; border-radius: 12px;">
-          <h4 style="color: #fff; margin-bottom: 10px;">Scale-up B2B</h4>
-          <p style="color: #94a3b8; font-size: 0.9rem;"><strong>Problème :</strong> Trafic stagnant malgré
-            blog.<br><strong>Action :</strong> Refonte sémantique cocon + Netlinking.<br><strong>Résultat :</strong>
-            +150% leads qualifiés en 6 mois.</p>
+      <div class="service-grid" style="text-align: left;">
+        <div class="service-card">
+          <div
+            style="color: #3b82f6; font-size: 0.8rem; font-weight: 700; margin-bottom: 10px; text-transform: uppercase;">
+            📊 Scale-up B2B</div>
+          <h4 style="color: #fff; margin-bottom: 10px;">+150% leads qualifiés</h4>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
+            <strong>Problème :</strong> Trafic stagnant malgré un blog actif depuis 2 ans.<br>
+            <strong>Action :</strong> Refonte sémantique (cocon), netlinking stratégique, optimisation tech.<br>
+            <strong>Résultat :</strong> Trafic organique x2.5 en 6 mois.
+          </p>
         </div>
-        <div style="background: rgba(255,255,255,0.02); padding: 25px; border-radius: 12px;">
-          <h4 style="color: #fff; margin-bottom: 10px;">E-commerce Mode</h4>
-          <p style="color: #94a3b8; font-size: 0.9rem;"><strong>Problème :</strong> Chute trafic
-            post-migration.<br><strong>Action :</strong> Audit tech + maillage interne.<br><strong>Résultat :</strong>
-            Récupération positions + croissance 20%.</p>
+        <div class="service-card">
+          <div
+            style="color: #3b82f6; font-size: 0.8rem; font-weight: 700; margin-bottom: 10px; text-transform: uppercase;">
+            📊 E-commerce Mode</div>
+          <h4 style="color: #fff; margin-bottom: 10px;">Récupération & Croissance</h4>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
+            <strong>Problème :</strong> Chute brutale post-migration technique.<br>
+            <strong>Action :</strong> Audit tech complet, maillage interne, fiches produits.<br>
+            <strong>Résultat :</strong> +40 positions récupérées + 20% croissance en 3 mois.
+          </p>
+        </div>
+        <div class="service-card">
+          <div
+            style="color: #3b82f6; font-size: 0.8rem; font-weight: 700; margin-bottom: 10px; text-transform: uppercase;">
+            📊 Agence Marketing</div>
+          <h4 style="color: #fff; margin-bottom: 10px;">+85% trafic local</h4>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
+            <strong>Problème :</strong> Faible visibilité sur mots-clés locaux à Paris.<br>
+            <strong>Action :</strong> Stratégie SEO Local, optimisation GMB, contenu localisé.<br>
+            <strong>Résultat :</strong> Leads qualifiés x3 en 4 mois.
+          </p>
         </div>
       </div>
       <div style="margin-top: 40px;">
@@ -532,76 +631,218 @@
   </section>
 
   <!-- 9️⃣ FAQ -->
-  <section class="faq-section" style="padding: 100px 0; background: #0a0a0a;">
+  <section class="faq-section" style="background: #0a0a0a;">
     <div class="container container-medium">
       <h2 class="section-title" style="text-align: center; margin-bottom: 50px;">FAQ SEO & IA</h2>
 
       <div class="faq-item" style="border-bottom: 1px solid #1e293b; padding: 20px 0;">
-        <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 10px;">Combien de temps pour voir des résultats à
+        <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 10px;">❓ Combien de temps pour voir des résultats à
           Paris ?</h3>
-        <p style="color: #94a3b8;">Entre 3 et 6 mois pour des résultats tangibles. Le SEO est un marathon, pas un
-          sprint, surtout dans une ville concurrentielle.</p>
+        <p style="color: #94a3b8;"><strong>Entre 3 et 6 mois pour des résultats tangibles.</strong> Le SEO est un
+          marathon, pas un sprint, surtout dans une ville aussi compétitive que Paris.</p>
       </div>
 
       <div class="faq-item" style="border-bottom: 1px solid #1e293b; padding: 20px 0;">
-        <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 10px;">IA peut-elle remplacer le SEO humain ?</h3>
-        <p style="color: #94a3b8;">Non. Elle l'assiste et l'accélère. La stratégie, l'empathie client et la décision
-          finale restent humaines.</p>
+        <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 10px;">❓ L'IA peut-elle remplacer le SEO humain ?</h3>
+        <p style="color: #94a3b8;"><strong>Non.</strong> L'IA l'assiste et l'accélère. La stratégie, l'empathie client
+          et la décision finale restent humaines.</p>
       </div>
 
       <div class="faq-item" style="border-bottom: 1px solid #1e293b; padding: 20px 0;">
-        <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 10px;">Quels secteurs sont concernés ?</h3>
-        <p style="color: #94a3b8;">Tous les secteurs concurrentiels : Immobilier, Finance, Tech/SaaS, Services aux
-          entreprises, E-commerce, Santé/Bien-être.</p>
+        <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 10px;">❓ Quels secteurs sont concernés ?</h3>
+        <p style="color: #94a3b8;"><strong>Tous les secteurs concurrentiels</strong> : Immobilier, Finance, Tech/SaaS,
+          Services aux entreprises, E-commerce, Santé/Bien-être, Consulting, etc.</p>
       </div>
 
       <div class="faq-item" style="border-bottom: 1px solid #1e293b; padding: 20px 0;">
-        <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 10px;">Combien coûte un freelance SEO à Paris ?</h3>
-        <p style="color: #94a3b8;">Un expert senior facture généralement entre 500 et 1000€/jour selon la mission. Mes
-          packages mensuels débutent à 1 000€.</p>
+        <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 10px;">❓ Combien coûte un freelance SEO à Paris ?</h3>
+        <p style="color: #94a3b8;">Un expert senior facture généralement entre 500 et 1 000€/jour. Mes packages mensuels
+          débutent à <strong>1 000€/mois</strong>, ce qui est très compétitif pour une expertise senior.</p>
       </div>
 
-    </div>
-  </section>
-
-  <!-- 1️⃣0️⃣ Pourquoi investir en 2025 -->
-  <section style="padding: 80px 0; background: #0f0f0f;">
-    <div class="container text-center">
-      <h2 class="section-title" style="margin-bottom: 30px;">Pourquoi investir en SEO + IA maintenant ?</h2>
-      <p style="color: #cbd5e1; font-size: 1rem; max-width: 800px; margin: 20px auto;">Le SEO couplé à l’IA n’est plus
-        une option, c’est une nécessité pour toute entreprise qui veut croître durablement dans un environnement digital
-        saturé. En combinant la puissance d’algorithmes d’apprentissage automatique avec les meilleures pratiques SEO,
-        vous obtenez une visibilité organique qui se renforce jour après jour.</p>
-      <div style="display: flex; gap: 40px; justify-content: center; flex-wrap: wrap;">
-        <div style="color: #e2e8f0;">✅ ROI Long Terme vs Ads</div>
-        <div style="color: #e2e8f0;">✅ Indépendance Marketing</div>
-        <div style="color: #e2e8f0;">✅ Acquisition Durable</div>
-        <div
-          style="margin-top: 20px; color: #cbd5e1; font-size: 1rem; max-width: 800px; margin-left: auto; margin-right: auto;">
-          <p><strong>✅ ROI Long Terme vs Ads</strong> : Le SEO offre un trafic organique durable qui continue de générer
-            des leads sans coûts publicitaires récurrents, contrairement aux campagnes payantes qui s'arrêtent dès que
-            le budget est épuisé.</p>
-          <p><strong>✅ Indépendance Marketing</strong> : En maîtrisant votre visibilité naturelle, vous n'êtes plus
-            dépendant des plateformes publicitaires et de leurs algorithmes changeants.</p>
-          <p><strong>✅ Acquisition Durable</strong> : Une stratégie SEO + IA crée un écosystème de contenu et de données
-            qui alimente votre croissance sur le long terme, avec des résultats qui s'améliorent continuellement.</p>
+      <div class="faq-item" style="border-bottom: 1px solid #1e293b; padding: 20px 0;">
+        <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 15px;">❓ Freelance vs Agence : quelle différence ?
+        </h3>
+        <div style="overflow-x: auto;">
+          <table style="width: 100%; border-collapse: collapse; color: #94a3b8; font-size: 0.85rem;">
+            <thead>
+              <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <th style="padding: 10px; text-align: left; color: #fff;">Critère</th>
+                <th style="padding: 10px; text-align: left; color: #fff;">Freelance</th>
+                <th style="padding: 10px; text-align: left; color: #fff;">Agence</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <td style="padding: 10px;"><strong>Relation</strong></td>
+                <td style="padding: 10px;">Directe</td>
+                <td style="padding: 10px;">Via commercial</td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <td style="padding: 10px;"><strong>Expertise</strong></td>
+                <td style="padding: 10px;">Senior (souvent)</td>
+                <td style="padding: 10px;">Variable</td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <td style="padding: 10px;"><strong>Coût</strong></td>
+                <td style="padding: 10px;">Optimisé</td>
+                <td style="padding: 10px;">Surcoûts structure</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px;"><strong>Flexibilité</strong></td>
+                <td style="padding: 10px;">Maximale</td>
+                <td style="padding: 10px;">Standard</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-      <div style="margin-top: 40px;">
-        <a href="audit-seo-gratuit" class="hero-btn-primary">Audit SEO Offert</a>
+
+      <div class="faq-item" style="border-bottom: 1px solid #1e293b; padding: 20px 0;">
+        <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 10px;">❓ Vous intervenez en dehors de Paris ?</h3>
+        <p style="color: #94a3b8;"><strong>Oui, toute la France.</strong> Mais je suis spécialisé sur le marché parisien
+          pour sa haute complexité sémantique et son fort potentiel business.</p>
+      </div>
+
+      <div class="faq-item" style="border-bottom: 1px solid #1e293b; padding: 20px 0;">
+        <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 10px;">❓ Comment se déroule un accompagnement ?</h3>
+        <p style="color: #94a3b8;">1. Consultation Gratuite → 2. Audit Complet → 3. Stratégie & Roadmap → 4. Exécution
+          (Tech, Contenu, Liens) → 5. Pilotage Hebdo.</p>
+      </div>
+
+      <div class="faq-item" style="padding: 20px 0;">
+        <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 10px;">❓ Quel est votre processus de tarification ?
+        </h3>
+        <p style="color: #94a3b8;">Transparent et basé sur la valeur. Audit gratuit (20 min), accompagnement mensuel
+          flexible à partir de 1 000€, ou missions ponctuelles sur devis. Pas de frais cachés.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 1️⃣0️⃣ Pourquoi investir en SEO + IA maintenant ? -->
+  <section style="background: #0f0f0f;">
+    <div class="container text-center">
+      <h2 class="section-title" style="margin-bottom: 30px;">Pourquoi investir en SEO + IA maintenant ?</h2>
+      <p style="color: #cbd5e1; font-size: 1rem; max-width: 800px; margin: 20px auto;">
+        Le SEO couplé à l’IA n’est plus une option, c’est une nécessité pour toute entreprise qui veut croître
+        durablement dans un environnement digital saturé.
+      </p>
+
+      <div style="max-width: 800px; margin: 40px auto; overflow-x: auto;">
+        <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 25px;">Comparaison : SEO vs Ads (Publicité Payante)
+        </h3>
+        <table style="width: 100%; border-collapse: collapse; color: #94a3b8; text-align: left; font-size: 0.9rem;">
+          <thead>
+            <tr style="border-bottom: 2px solid #3b82f6;">
+              <th style="padding: 15px; color: #fff;">Critère</th>
+              <th style="padding: 15px; color: #fff;">SEO + IA</th>
+              <th style="padding: 15px; color: #fff;">Google Ads (SEA)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td style="padding: 15px;"><strong>Coût par clic</strong></td>
+              <td style="padding: 15px;">0€ (Organique)</td>
+              <td style="padding: 15px;">Élevé (Enchères)</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td style="padding: 15px;"><strong>Durée des effets</strong></td>
+              <td style="padding: 15px;">Long terme (Capitalisation)</td>
+              <td style="padding: 15px;">Éphémère (Stop budget = Stop trafic)</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td style="padding: 15px;"><strong>Crédibilité (Trust)</strong></td>
+              <td style="padding: 15px;">Haute (Expertise affichée)</td>
+              <td style="padding: 15px;">Moyenne (Perçu comme pub)</td>
+            </tr>
+            <tr>
+              <td style="padding: 15px;"><strong>ROI</strong></td>
+              <td style="padding: 15px;">Exponentiel</td>
+              <td style="padding: 15px;">Linéaire / Décroissant</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style="display: flex; gap: 40px; justify-content: center; flex-wrap: wrap;">
+        <div style="max-width: 250px;">
+          <h4 style="color: #fff; margin-bottom: 10px;">✅ ROI Long Terme</h4>
+          <p style="color: #94a3b8; font-size: 0.85rem;">Le SEO crée un actif numérique qui prend de la valeur chaque
+            mois.</p>
+        </div>
+        <div style="max-width: 250px;">
+          <h4 style="color: #fff; margin-bottom: 10px;">✅ Indépendance</h4>
+          <p style="color: #94a3b8; font-size: 0.85rem;">Ne soyez plus l'otage des régies publicitaires et de leurs
+            hausses de prix.</p>
+        </div>
+        <div style="max-width: 250px;">
+          <h4 style="color: #fff; margin-bottom: 10px;">✅ Acquisition Durable</h4>
+          <p style="color: #94a3b8; font-size: 0.85rem;">Attirez des clients qualifiés 24h/24, 7j/7 sans payer chaque
+            clic.</p>
+        </div>
+      </div>
+
+      <div style="margin-top: 50px;">
+        <a href="#cta-audit" class="hero-btn-primary">Démarrer ma transition SEO + IA</a>
       </div>
     </div>
   </section>
 
-  <!-- 1️⃣1️⃣ CTA Final -->
-  <section class="cta-final"
-    style="padding: 80px 0; text-align: center; background: linear-gradient(to bottom, #0a0a0a, #000);">
+  <!-- 1️⃣1️⃣ Ressources Utiles -->
+  <section id="ressources" style="background: #0a0a0a;">
     <div class="container">
-      <h2 style="color: #fff; font-size: 2.2rem; margin-bottom: 20px;">Prêt à transformer votre site en machine à
-        croissance à Paris ?</h2>
-      <p style="color: #94a3b8; margin-bottom: 40px; font-size: 1.2rem;">Stratégie sur-mesure, mesurable et scalable.
-        Accompagnement humain + data + IA.</p>
-      <a href="audit-seo-gratuit" class="hero-btn-primary">Réserver un audit SEO gratuit</a>
+      <h2 class="section-title" style="text-align: center; margin-bottom: 50px;">Ressources Utiles</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <h4 style="color: #fff; margin-bottom: 15px;">SEO & IA</h4>
+          <ul style="list-style: none; padding: 0; font-size: 0.9rem;">
+            <li style="margin-bottom: 10px;"><a href="https://developers.google.com/search?hl=fr" target="_blank"
+                style="color: #3b82f6;">Documentation Google Search</a></li>
+            <li style="margin-bottom: 10px;"><a href="https://openai.com/blog" target="_blank"
+                style="color: #3b82f6;">Actualités OpenAI</a></li>
+            <li style="margin-bottom: 10px;"><a href="https://www.abondance.com/" target="_blank"
+                style="color: #3b82f6;">Abondance (Actualité SEO)</a></li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <h4 style="color: #fff; margin-bottom: 15px;">Outils Gratuits</h4>
+          <ul style="list-style: none; padding: 0; font-size: 0.9rem;">
+            <li style="margin-bottom: 10px;"><a href="https://pagespeed.web.dev/" target="_blank"
+                style="color: #3b82f6;">PageSpeed Insights</a></li>
+            <li style="margin-bottom: 10px;"><a href="https://search.google.com/search-console/" target="_blank"
+                style="color: #3b82f6;">Google Search Console</a></li>
+            <li style="margin-bottom: 10px;"><a href="https://analytics.google.com/" target="_blank"
+                style="color: #3b82f6;">Google Analytics 4</a></li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <h4 style="color: #fff; margin-bottom: 15px;">Business à Paris</h4>
+          <ul style="list-style: none; padding: 0; font-size: 0.9rem;">
+            <li style="margin-bottom: 10px;"><a href="https://www.cci75.fr/" target="_blank" style="color: #3b82f6;">CCI
+                Paris</a></li>
+            <li style="margin-bottom: 10px;"><a href="https://www.lafrenchtech.com/" target="_blank"
+                style="color: #3b82f6;">La French Tech Paris</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1️⃣2️⃣ CTA Final -->
+  <section id="cta-audit" class="cta-final"
+    style="text-align: center; background: linear-gradient(to bottom, #0a0a0a, #000); padding: 100px 20px;">
+    <div class="container">
+      <h2 style="color: #fff; font-size: 2.2rem; margin-bottom: 20px;">Prêt à transformer votre visibilité à <span
+          class="text-blue">Paris</span> ?</h2>
+      <p
+        style="color: #94a3b8; margin-bottom: 40px; font-size: 1.2rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+        Stratégie sur-mesure, méthodologie 80/20 et puissance de l'IA. Commençons par un diagnostic gratuit.
+      </p>
+      <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+        <a href="#contact" class="hero-btn-primary">Réserver mon audit gratuit (20 min)</a>
+        <a href="#tarifs" class="hero-btn-secondary">Voir les packages</a>
+      </div>
     </div>
   </section>
 
@@ -615,7 +856,13 @@
             <span class="logo-text">Renel Rosené</span>
           </div>
         </a>
-        <p class="footer-slogan">Consultant SEO & IA – Freelance Paris & France.</p>
+        <p class="footer-slogan">Consultant SEO & IA à Paris. Stratégies de croissance organique pour startups et PME.
+        </p>
+        <div style="margin-top: 20px; color: #94a3b8; font-size: 0.9rem;">
+          📍 Paris, France <br>
+          📧 contact@renelrosene.com <br>
+          📞 +33 (0)6 XX XX XX XX
+        </div>
       </div>
 
       <div class="footer-col zones">
