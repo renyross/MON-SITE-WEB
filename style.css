@@ -5200,9 +5200,10 @@ h2 span.text-gradient {
   color: #888;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  margin-bottom: 12px;
+  margin: 0 auto 12px auto;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
 }
 
@@ -5287,7 +5288,8 @@ h2 span.text-gradient {
 .newsletter-privacy {
   margin-top: 20px;
   font-size: 0.8rem;
-  color: #444;
+  color: #666;
+  text-align: center;
 }
 
 .newsletter-privacy a {
