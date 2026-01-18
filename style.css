@@ -5204,6 +5204,7 @@ h2 span.text-gradient {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   gap: 8px;
 }
 
@@ -5211,7 +5212,8 @@ h2 span.text-gradient {
   font-family: 'Outfit', sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
-  margin: 0 0 16px 0;
+  margin: 0 auto 16px auto;
+  text-align: center;
   letter-spacing: -0.03em;
   line-height: 1.1;
   background: linear-gradient(90deg, #2E5CFF, #00F2FF);
@@ -5228,6 +5230,7 @@ h2 span.text-gradient {
   line-height: 1.6;
   max-width: 80%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .newsletter-form-wrapper {
@@ -5418,6 +5421,7 @@ h2 span.text-gradient {
   margin: 0 auto 30px auto;
   color: #aaa;
   max-width: 100%;
+  text-align: center;
 }
 
 /* =========================================
