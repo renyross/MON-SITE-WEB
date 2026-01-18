@@ -5226,6 +5226,7 @@ h2 span.text-gradient {
   margin-bottom: 40px;
   line-height: 1.6;
   max-width: 80%;
+  margin: 0 auto;
 }
 
 .newsletter-form-wrapper {
@@ -5412,108 +5413,125 @@ h2 span.text-gradient {
 
 .popup-card .newsletter-subtitle {
   font-size: 1rem;
-  margin-bottom: 30px;
+  margin: 0 auto 30px auto;
   color: #aaa;
+  max-width: 100%;
 }
+
 /* =========================================
    MOBILE RESPONSIVE FIXES (GLOBAL)
    ========================================= */
 
 @media (max-width: 1024px) {
-    .container {
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-    
-    .hero-title {
-        font-size: 4rem;
-    }
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 
-    /* Footer Grid Tablet */
-    .status-footer .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-    }
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  /* Footer Grid Tablet */
+  .status-footer .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
 }
 
 @media (max-width: 768px) {
-    /* Global Section Spacing */
-    section, .strategy-monolith-section, .offers-section, .faq-section {
-        padding: 60px 0 !important;
-    }
 
-    .hero {
-        padding-top: 120px !important;
-        padding-bottom: 60px !important;
-        min-height: auto;
-    }
+  /* Global Section Spacing */
+  section,
+  .strategy-monolith-section,
+  .offers-section,
+  .faq-section {
+    padding: 60px 0 !important;
+  }
 
-    /* Typography Scaling */
-    html {
-        font-size: 14px; /* Slight scale down */
-    }
+  .hero {
+    padding-top: 120px !important;
+    padding-bottom: 60px !important;
+    min-height: auto;
+  }
 
-    .hero-title {
-        font-size: 2.5rem !important; /* Control Hero Title Overflow */
-        line-height: 1.2;
-    }
+  /* Typography Scaling */
+  html {
+    font-size: 14px;
+    /* Slight scale down */
+  }
 
-    .section-title {
-        font-size: 2rem !important;
-    }
+  .hero-title {
+    font-size: 2.5rem !important;
+    /* Control Hero Title Overflow */
+    line-height: 1.2;
+  }
 
-    .hero-subtitle {
-        font-size: 1.1rem !important;
-        max-width: 100%;
-    }
+  .section-title {
+    font-size: 2rem !important;
+  }
 
-    /* Grids to Single Column */
-    .grid-3, .grid-2, .features-grid, .semantique-grid, .offers-grid-premium, .blog-posts-grid {
-        grid-template-columns: 1fr !important;
-    }
+  .hero-subtitle {
+    font-size: 1.1rem !important;
+    max-width: 100%;
+  }
 
-    .status-footer .footer-grid {
-        grid-template-columns: 1fr !important; /* Footer Stack */
-        text-align: center; /* Center footer on mobile */
-    }
+  /* Grids to Single Column */
+  .grid-3,
+  .grid-2,
+  .features-grid,
+  .semantique-grid,
+  .offers-grid-premium,
+  .blog-posts-grid {
+    grid-template-columns: 1fr !important;
+  }
 
-    .footer-col {
-        align-items: center;
-    }
+  .status-footer .footer-grid {
+    grid-template-columns: 1fr !important;
+    /* Footer Stack */
+    text-align: center;
+    /* Center footer on mobile */
+  }
 
-    .social-links {
-        justify-content: center;
-    }
+  .footer-col {
+    align-items: center;
+  }
 
-    /* Hide complex background elements causing overflow */
-    .monolith-bg-text, .hero-glow-left, .hero-glow-right {
-        opacity: 0.3;
-        transform: none !important;
-    }
+  .social-links {
+    justify-content: center;
+  }
 
-    /* CTA Buttons Mobile */
-    .hero-cta-group {
-        width: 100%;
-    }
-    
-    .hero-cta-group a {
-        width: 100%;
-        justify-content: center;
-    }
-    
-    /* Newsletter Popup Mobile */
-    .popup-card {
-        width: 90%;
-        padding: 30px 20px;
-    }
-    
-    .newsletter-title {
-        font-size: 1.5rem !important;
-    }
+  /* Hide complex background elements causing overflow */
+  .monolith-bg-text,
+  .hero-glow-left,
+  .hero-glow-right {
+    opacity: 0.3;
+    transform: none !important;
+  }
+
+  /* CTA Buttons Mobile */
+  .hero-cta-group {
+    width: 100%;
+  }
+
+  .hero-cta-group a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Newsletter Popup Mobile */
+  .popup-card {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .newsletter-title {
+    font-size: 1.5rem !important;
+  }
 }
 
 @media (max-width: 480px) {
-    .hero-title {
-        font-size: 2rem !important;
-    }
+  .hero-title {
+    font-size: 2rem !important;
+  }
 }
