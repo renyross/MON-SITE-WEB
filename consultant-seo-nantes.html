@@ -158,6 +158,38 @@
   <link rel="apple-touch-icon" href="logo-seo.png">
   <!-- Mobile Responsiveness Fixes -->
   <style>
+    /* FAQ Accordion Styles */
+    details>summary {
+      list-style: none;
+      position: relative;
+      padding-left: 30px;
+      /* Space for the cross */
+    }
+
+    details>summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details>summary::before {
+      content: '+';
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #00F2FF;
+      /* Cyan accent */
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+
+    details[open]>summary::before {
+      content: '×';
+      /* Cross when open */
+      font-size: 1.8rem;
+      /* Adjust size for X */
+      top: -3px;
+    }
+
     @media (max-width: 768px) {
       h1 {
         font-size: 2.5rem !important;
