@@ -156,6 +156,50 @@
   <link rel="icon" href="logo-seo.png" sizes="192x192" type="image/png">
   <!-- Pour iOS/Android -->
   <link rel="apple-touch-icon" href="logo-seo.png">
+  <!-- Mobile Responsiveness Fixes -->
+  <style>
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem !important;
+      }
+
+      h2.section-title {
+        font-size: 1.8rem !important;
+      }
+
+      section {
+        padding: 60px 0 !important;
+      }
+
+      .hero-content {
+        padding: 0 15px;
+      }
+
+      .container {
+        padding: 0 20px;
+      }
+
+      /* Force Flex containers to column on mobile if not handled globally */
+      .hero-mini-trust {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      /* Ensure details/summary works well on touch */
+      details {
+        padding: 20px !important;
+      }
+
+      summary {
+        font-size: 1rem !important;
+      }
+
+      /* Stack Items Grid */
+      div[style*="display: flex"] {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -634,25 +678,6 @@
     <div class="container container-medium">
       <h2 class="section-title" style="text-align: center; margin-bottom: 50px;">FAQ : Vos questions sur le
         Référencement à Nantes</h2>
-
-      <div class="faq-item" style="border-bottom: 1px solid #1e293b; padding: 20px 0;">
-        <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 10px;">Pourquoi le SEO Data est-il plus efficace qu'un
-          consultant classique à Nantes ?
-        </h3>
-        <p style="color: #94a3b8; line-height: 1.6;">
-          Parce que Google est un robot mathématique. Lui parler avec des mathématiques (Data) et de la structure est le
-          seul moyen de garantir des résultats. L'approche classique est trop lente et imprécise pour 2026.
-        </p>
-      </div>
-
-      <div class="faq-item" style="border-bottom: 1px solid #1e293b; padding: 20px 0;">
-        <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 10px;">Combien coûte un consultant SEO Freelance à
-          Nantes ?</h3>
-        <p style="color: #94a3b8; line-height: 1.6;">
-          Mon TJM reflète mon expertise Senior et l'utilisation d'outils technologiques avancés. Cependant, la question
-          n'est pas "combien ça coûte", mais "combien ça rapporte". Un bon SEO s'autofinance en quelques mois.
-        </p>
-      </div>
 
       <div style="display: flex; flex-direction: column; gap: 15px;">
 
