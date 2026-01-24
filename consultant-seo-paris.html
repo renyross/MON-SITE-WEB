@@ -359,53 +359,130 @@
         problématiques typiques et nos solutions.
       </p>
 
-      <div class="service-grid">
-        <!-- Card 1 -->
-        <div class="service-card">
-          <h3 style="color: #f87171; font-size: 1.2rem; margin-bottom: 10px;">⚠️ Manque de trafic qualifié</h3>
-          <p style="color: #cbd5e1; font-size: 0.95rem; margin-bottom: 15px;">
-            <strong>Problème :</strong> Votre site attire peu de visiteurs réellement intéressés.
-          </p>
-          <p style="color: #3b82f6; font-size: 0.95rem;">
-            <strong>Solution :</strong> Audit SEO complet et recherche de mots-clés ciblés pour générer un trafic
-            qualifié prêt à convertir.
-          </p>
+      <style>
+        .prob-sol-grid {
+          display: grid;
+          gap: 30px;
+        }
+
+        .prob-sol-item {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 0;
+          background: rgba(255, 255, 255, 0.02);
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          border-radius: 20px;
+          overflow: hidden;
+        }
+
+        .prob-sol-part {
+          padding: 40px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .prob-part {
+          background: rgba(239, 68, 68, 0.05);
+          border-right: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .sol-part {
+          background: rgba(59, 130, 246, 0.05);
+        }
+
+        @media (max-width: 768px) {
+          .prob-sol-item {
+            grid-template-columns: 1fr;
+          }
+
+          .prob-part {
+            border-right: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+          }
+        }
+      </style>
+
+      <div class="prob-sol-grid">
+        <!-- Item 1 -->
+        <div class="prob-sol-item">
+          <div class="prob-sol-part prob-part">
+            <h3 style="color: #f87171; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+              ⚠️ Manque de trafic qualifié
+            </h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem;">
+              <strong>Problème :</strong> Votre site attire peu de visiteurs réellement intéressés.
+            </p>
+          </div>
+          <div class="prob-sol-part sol-part">
+            <h3 style="color: #3b82f6; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+              💡 La Solution
+            </h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem;">
+              Audit SEO complet et recherche de mots-clés ciblés pour générer un trafic qualifié prêt à convertir.
+            </p>
+          </div>
         </div>
 
-        <!-- Card 2 -->
-        <div class="service-card">
-          <h3 style="color: #f87171; font-size: 1.2rem; margin-bottom: 10px;">⚠️ Leads peu qualifiés</h3>
-          <p style="color: #cbd5e1; font-size: 0.95rem; margin-bottom: 15px;">
-            <strong>Problème :</strong> Les contacts obtenus ne sont pas pertinents.
-          </p>
-          <p style="color: #3b82f6; font-size: 0.95rem;">
-            <strong>Solution :</strong> Stratégie éditoriale et cocon sémantique pour attirer des prospects alignés sur
-            vos services et objectifs.
-          </p>
+        <!-- Item 2 -->
+        <div class="prob-sol-item">
+          <div class="prob-sol-part prob-part">
+            <h3 style="color: #f87171; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+              ⚠️ Leads peu qualifiés
+            </h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem;">
+              <strong>Problème :</strong> Les contacts obtenus ne sont pas pertinents.
+            </p>
+          </div>
+          <div class="prob-sol-part sol-part">
+            <h3 style="color: #3b82f6; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+              💡 La Solution
+            </h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem;">
+              Stratégie éditoriale et cocon sémantique pour attirer des prospects alignés sur vos services et objectifs.
+            </p>
+          </div>
         </div>
 
-        <!-- Card 3 -->
-        <div class="service-card">
-          <h3 style="color: #f87171; font-size: 1.2rem; margin-bottom: 10px;">⚠️ Site mal optimisé</h3>
-          <p style="color: #cbd5e1; font-size: 0.95rem; margin-bottom: 15px;">
-            <strong>Problème :</strong> Votre site manque de structure SEO et de contenus pertinents.
-          </p>
-          <p style="color: #3b82f6; font-size: 0.95rem;">
-            <strong>Solution :</strong> Optimisation technique et création de contenus stratégiques pour améliorer
-            visibilité et positionnement durable.
-          </p>
+        <!-- Item 3 -->
+        <div class="prob-sol-item">
+          <div class="prob-sol-part prob-part">
+            <h3 style="color: #f87171; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+              ⚠️ Site mal optimisé
+            </h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem;">
+              <strong>Problème :</strong> Votre site manque de structure SEO et de contenus pertinents.
+            </p>
+          </div>
+          <div class="prob-sol-part sol-part">
+            <h3 style="color: #3b82f6; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+              💡 La Solution
+            </h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem;">
+              Optimisation technique et création de contenus stratégiques pour améliorer visibilité et positionnement
+              durable.
+            </p>
+          </div>
         </div>
 
-        <!-- Card 4 -->
-        <div class="service-card">
-          <h3 style="color: #f87171; font-size: 1.2rem; margin-bottom: 10px;">⚠️ ROI SEO difficile à mesurer</h3>
-          <p style="color: #cbd5e1; font-size: 0.95rem; margin-bottom: 15px;">
-            <strong>Problème :</strong> Vous investissez sans savoir ce qui fonctionne.
-          </p>
-          <p style="color: #3b82f6; font-size: 0.95rem;">
-            <strong>Solution :</strong> KPIs clairs, reporting transparent et suivi continu pour chaque action afin de
-            maximiser votre ROI.
-          </p>
+        <!-- Item 4 -->
+        <div class="prob-sol-item">
+          <div class="prob-sol-part prob-part">
+            <h3 style="color: #f87171; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+              ⚠️ ROI SEO difficile à mesurer
+            </h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem;">
+              <strong>Problème :</strong> Vous investissez sans savoir ce qui fonctionne.
+            </p>
+          </div>
+          <div class="prob-sol-part sol-part">
+            <h3 style="color: #3b82f6; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+              💡 La Solution
+            </h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem;">
+              KPIs clairs, reporting transparent et suivi continu pour chaque action afin de maximiser votre ROI.
+            </p>
+          </div>
         </div>
       </div>
 
