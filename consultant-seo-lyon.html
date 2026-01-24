@@ -167,7 +167,6 @@
 
       .hero-text-col {
         text-align: center !important;
-        order: -1;
         /* Text first on mobile? User didn't specify, but usually standard. Keeping current order for now unless requested */
       }
 
@@ -224,20 +223,7 @@
     <div class="container">
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;">
 
-        <!-- Left Column: Image -->
-        <div class="hero-image-col">
-          <div
-            style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.4);">
-            <!-- Background placeholder as fallback/overlay -->
-            <div
-              style="background: url('assets/images/lyon-seo.jpg') center/cover no-repeat; height: 500px; width: 100%; opacity: 0.8;">
-            </div>
-            <img src="renel_portrait.jpg" alt="Renel Rosene Consultant SEO Lyon"
-              style="position: absolute; bottom: -20px; right: -20px; z-index: 2; border-radius: 50%; width: 180px; height: 180px; object-fit: cover; border: 4px solid #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
-          </div>
-        </div>
-
-        <!-- Right Column: Text -->
+        <!-- Left Column: Text -->
         <div class="hero-text-col" style="text-align: left;">
           <h1 style="font-size: 3.5rem; line-height: 1.1; margin-bottom: 20px; color: #fff;">
             Renel Rosené – Consultant SEO Freelance <span>Lyon</span>
@@ -258,6 +244,19 @@
               capter les flux de recherche des décideurs au sein de la métropole lyonnaise, en s'appuyant sur des
               signaux de confiance et une expertise technique irréprochable pour transformer chaque visiteur en
               opportunité commerciale concrète.</p>
+          </div>
+        </div>
+
+        <!-- Right Column: Image -->
+        <div class="hero-image-col">
+          <div
+            style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.4);">
+            <!-- Background placeholder as fallback/overlay -->
+            <div
+              style="background: url('assets/images/lyon-seo.jpg') center/cover no-repeat; height: 500px; width: 100%; opacity: 0.8;">
+            </div>
+            <img src="renel_portrait.jpg" alt="Renel Rosene Consultant SEO Lyon"
+              style="position: absolute; bottom: -20px; right: -20px; z-index: 2; border-radius: 50%; width: 180px; height: 180px; object-fit: cover; border: 4px solid #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
           </div>
         </div>
 
