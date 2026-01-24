@@ -71,6 +71,65 @@
   <link rel="icon" href="logo-seo.png" sizes="192x192" type="image/png">
   <!-- Pour iOS/Android -->
   <link rel="apple-touch-icon" href="logo-seo.png">
+  <!-- FAQ Accordion Styles -->
+  <style>
+    details>summary {
+      list-style: none;
+      position: relative;
+      padding-left: 35px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1.15rem;
+      color: #fff;
+      transition: color 0.3s ease;
+    }
+
+    details>summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details>summary::before {
+      content: '+';
+      position: absolute;
+      left: 0;
+      top: -2px;
+      color: #8b5cf6;
+      /* Purple accent */
+      font-weight: 700;
+      font-size: 1.6rem;
+      line-height: 1;
+      transition: transform 0.3s ease;
+    }
+
+    details[open]>summary::before {
+      content: '×';
+      /* Cross when open */
+      font-size: 1.9rem;
+      top: -5px;
+      left: -2px;
+    }
+
+    details {
+      padding: 25px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      margin-bottom: 15px;
+      transition: all 0.3s ease;
+    }
+
+    details[open] {
+      background: rgba(139, 92, 246, 0.05);
+      border-color: rgba(139, 92, 246, 0.2);
+    }
+
+    details p {
+      margin-top: 20px;
+      color: #94a3b8;
+      line-height: 1.7;
+      padding-left: 35px;
+    }
+  </style>
 </head>
 
 <body>
@@ -840,24 +899,50 @@
       <div style="max-width: 800px; margin: 0 auto;">
 
         <!-- Question 1 -->
-        <div style="margin-bottom: 30px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 30px;">
-          <h3 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">Quel est le délai pour être en 1ère page à
-            Bordeaux ?</h3>
-          <p style="color: #94a3b8; line-height: 1.6;">
+        <details>
+          <summary>Qu'est-ce que le SEO ?</summary>
+          <p>
+            Le SEO (Search Engine Optimization) est l'art d'optimiser votre site pour qu'il apparaisse en haut des
+            résultats naturels de Google. C'est le levier le plus rentable pour attirer des clients qualifiés sans payer
+            de publicité.
+          </p>
+        </details>
+
+        <!-- Question 2 -->
+        <details>
+          <summary>Quel est le délai pour être en 1ère page à Bordeaux ?</summary>
+          <p>
             Selon la concurrence, les premiers signaux positifs apparaissent en 2 à 3 mois. La domination stable
             s'obtient généralement entre 6 et 12 mois.
           </p>
-        </div>
+        </details>
 
-        <!-- Question 2 -->
-        <div style="margin-bottom: 30px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 30px;">
-          <h3 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">Pourquoi ne pas simplement faire du Google
-            Ads ?</h3>
-          <p style="color: #94a3b8; line-height: 1.6;">
+        <!-- Question 3 -->
+        <details>
+          <summary>Pourquoi ne pas simplement faire du Google Ads ?</summary>
+          <p>
             L'Ads s'arrête dès que vous coupez le budget. Le SEO construit un actif qui continue de générer des leads
             gratuitement sur le long terme.
           </p>
-        </div>
+        </details>
+
+        <!-- Question 4 -->
+        <details>
+          <summary>Pourquoi choisir un consultant SEO local à Bordeaux ?</summary>
+          <p>
+            Pour la connaissance chirurgicale du marché bordelais (French Tech, Vin, Bassins à Flot) et une proximité
+            permettant des échanges fluides et des workshops en présentiel.
+          </p>
+        </details>
+
+        <!-- Question 5 -->
+        <details>
+          <summary>Quel est le tarif d'un accompagnement SEO ?</summary>
+          <p>
+            Mes accompagnements sont sur-mesure pour maximiser votre ROI. Les tarifs sont adaptés selon vos objectifs de
+            croissance, avec des accompagnements mensuels débutant généralement à 1 000 € pour un focus ROI maximal.
+          </p>
+        </details>
 
       </div>
     </div>
