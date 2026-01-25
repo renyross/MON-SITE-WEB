@@ -163,10 +163,9 @@ a {
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 50px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  gap: 30px;
+  /* Reduced from 50px for better fit */
+  margin: 0 20px;
 }
 
 .nav-links a {
@@ -224,11 +223,11 @@ a {
   display: none;
 }
 
-.nav-cta-mobile {
+.nav-cta-header {
   display: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
   .navbar {
     padding: 10px 0;
   }
@@ -319,6 +318,8 @@ a {
     cursor: pointer;
     z-index: 1002;
     position: relative;
+    order: 3;
+    /* Always on the far right */
   }
 
   .menu-toggle .bar {
@@ -348,6 +349,9 @@ a {
     display: block;
     margin-right: 15px;
     margin-left: auto;
+    /* Push relative to logo */
+    order: 2;
+    /* To the left of the hamburger */
   }
 
   .nav-btn-header-mobile {
@@ -1723,6 +1727,7 @@ h2 span.text-gradient {
   letter-spacing: 0.15em;
   background: linear-gradient(to right, #fff, #999);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   margin-bottom: 25px;
   text-transform: uppercase;

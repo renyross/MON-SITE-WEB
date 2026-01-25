@@ -37,6 +37,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // =========================================
+    // ACTIVE LINK HIGHLIGHTING LOGIC
+    // =========================================
+    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    const allNavLinks = document.querySelectorAll('.nav-links a, .logo');
+
+    allNavLinks.forEach(link => {
+        const linkPath = link.getAttribute('href');
+        // Handle home page case
+        if ((currentPath === 'index.html' || currentPath === '') && (linkPath === '/' || linkPath === 'index.html')) {
+            link.classList.add('active');
+        } else if (linkPath && currentPath.includes(linkPath) && linkPath !== '/') {
+            link.classList.add('active');
+        }
+    });
+
+    // =========================================
     // FAQ ACCORDION LOGIC
     // =========================================
     const faqQuestions = document.querySelectorAll('.faq-question');
