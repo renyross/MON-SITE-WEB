@@ -80,74 +80,54 @@
   </style>
   <link rel="stylesheet" href="style.css">
 
-  <!-- Schema.org LocalBusiness -->
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Renel Rosené - Consultant SEO Nantes",
-      "image": "https://www.renelrosene.com/assets/logos/logo.png",
-      "url": "https://www.renelrosene.com/consultant-seo-nantes",
-      "description": "Consultant SEO Freelance pour les entreprises et l'écosystème Tech de Nantes et Loire-Atlantique.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Nantes",
-        "addressRegion": "Pays de la Loire",
-        "addressCountry": "FR"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "name": "Renel Rosene - Consultant SEO Nantes",
+        "image": "https://renelrosene.com/photo-renel.jpg",
+        "url": "https://renelrosene.com/consultant-seo-nantes/",
+        "telephone": "+33XXXXXXXXX",
+        "priceRange": "€€€",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Quartier de la Création, Île de Nantes",
+          "addressLocality": "Nantes",
+          "postalCode": "44200",
+          "addressCountry": "FR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 47.218371,
+          "longitude": -1.553621
+        }
       },
-      "areaServed": [
-        {
-          "@type": "City",
-          "name": "Nantes"
-        },
-        {
-          "@type": "City",
-          "name": "Saint-Herblain"
-        },
-        {
-          "@type": "City",
-          "name": "Rezé"
-        },
-         {
-          "@type": "City",
-          "name": "Orvault"
-        }
-      ],
-      "priceRange": "€€"
-    }
-    </script>
-  <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Pourquoi le SEO Data est-il plus efficace qu'un consultant classique à Nantes ?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Parce que Google est un robot mathématique. Lui parler avec des mathématiques (Data) et de la structure est le seul moyen de garantir des résultats. L'approche classique est trop lente et imprécise pour 2026."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Combien coûte un consultant SEO Freelance à Nantes ?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Mon TJM reflète mon expertise Senior et l'utilisation d'outils technologiques avancés. Cependant, la question n'est pas \"combien ça coûte\", mais \"combien ça rapporte\". Un bon SEO s'autofinance en quelques mois."
-              }
-            },
-             {
-              "@type": "Question",
-              "name": "Intervenez-vous en présentiel ?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Oui. Bien que le digital permette le distanciel, je me déplace régulièrement chez mes clients (Centre-ville, Île de Nantes, Chantrerie) pour des workshops stratégiques."
-              }
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Quel est le tarif d'un consultant SEO à Nantes ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Le tarif dépend de la complexité du projet. Mes accompagnements à Nantes débutent généralement à partir de 1 000 € / mois pour une stratégie complète orientée ROI."
             }
-          ]
-        }
-        </script>
+          },
+          {
+            "@type": "Question",
+            "name": "Combien de temps pour voir les premiers résultats ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "En moyenne, les premiers gains de visibilité apparaissent sous 3 à 6 mois, selon la concurrence locale et l'état technique initial de votre site."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 
   <!-- Pour Google Search (ICO) -->
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
