@@ -73,61 +73,143 @@
   <link rel="apple-touch-icon" href="logo-seo.png">
   <!-- FAQ Accordion Styles -->
   <style>
-    details>summary {
-      list-style: none;
+    /* Specific overrides for consultant-seo-bordeaux page */
+    :root {
+      --section-padding: 100px 0;
+      --mobile-padding: 60px 0;
+    }
+
+    section {
+      padding: var(--section-padding);
+    }
+
+    .hero-bordeaux {
+      background: #0a0a0a;
+      padding: 160px 0 100px;
       position: relative;
-      padding-left: 35px;
-      cursor: pointer;
-      font-weight: 600;
-      font-size: 1.15rem;
+      overflow: hidden;
+    }
+
+    .hero-bordeaux h1 {
+      font-size: clamp(2.5rem, 8vw, 3.5rem);
+      line-height: 1.2;
+      margin-bottom: 25px;
       color: #fff;
-      transition: color 0.3s ease;
+      font-weight: 800;
     }
 
-    details>summary::-webkit-details-marker {
-      display: none;
+    .hero-bordeaux .hero-subtitle {
+      font-size: clamp(1.2rem, 4vw, 1.5rem);
+      color: #e2e8f0;
+      margin-bottom: 20px;
+      font-weight: 500;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    details>summary::before {
-      content: '+';
-      position: absolute;
-      left: 0;
-      top: -2px;
-      color: #8b5cf6;
-      /* Purple accent */
-      font-weight: 700;
-      font-size: 1.6rem;
-      line-height: 1;
+    .grid-2-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .bordeaux-stats-box {
+      background: rgba(255, 255, 255, 0.02);
+      padding: 40px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .service-card {
+      background: rgba(255, 255, 255, 0.02);
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
       transition: transform 0.3s ease;
     }
 
-    details[open]>summary::before {
-      content: '×';
-      /* Cross when open */
-      font-size: 1.9rem;
-      top: -5px;
-      left: -2px;
+    .section-title {
+      text-align: center;
+      font-family: 'Outfit', var(--font-display);
+      font-size: 3.5rem;
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 24px;
+      letter-spacing: -0.02em;
+      color: var(--text-white);
     }
 
-    details {
-      padding: 25px;
+    .section-title span {
+      background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+
+    .prob-sol-grid {
+      display: grid;
+      gap: 30px;
+    }
+
+    .prob-sol-item {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
       background: rgba(255, 255, 255, 0.02);
-      border-radius: 16px;
       border: 1px solid rgba(255, 255, 255, 0.05);
-      margin-bottom: 15px;
-      transition: all 0.3s ease;
+      border-radius: 20px;
+      overflow: hidden;
     }
 
-    details[open] {
+    .prob-sol-part {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .prob-part {
+      background: rgba(239, 68, 68, 0.05);
+      border-right: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .sol-part {
       background: rgba(139, 92, 246, 0.05);
-      border-color: rgba(139, 92, 246, 0.2);
     }
 
-    details p {
-      margin-top: 20px;
-      color: #94a3b8;
-      line-height: 1.7;
-      padding-left: 35px;
+    /* Mobile Responsive Overrides */
+    @media (max-width: 768px) {
+      section {
+        padding: var(--mobile-padding) !important;
+      }
+
+      .hero-bordeaux {
+        padding: 100px 0 60px !important;
+      }
+
+      .grid-2-cols {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+        text-align: center;
+      }
+
+      .prob-sol-item {
+        grid-template-columns: 1fr;
+      }
+
+      .prob-part {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
     }
   </style>
 </head>
@@ -168,129 +250,155 @@
     </div>
   </nav>
 
-  <!-- 1️⃣ Hero Section -->
-  <section class="hero-dpt" style="background: #0a0a0a; padding: 160px 0 100px; position: relative; overflow: hidden;">
-    <!-- Background Elements -->
-    <div
-      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 75% 25%, rgba(139, 92, 246, 0.08) 0%, transparent 60%); z-index: 0;">
-    </div>
-
-    <div class="container" style="position: relative; z-index: 1;">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
-
-        <!-- Left Column: Text -->
+  <!-- [SECTION 1 : HERO HEADER] -->
+  <section class="hero-bordeaux">
+    <div class="container">
+      <div class="grid-2-cols" style="gap: 50px;">
         <div class="hero-content" style="text-align: left;">
-          <h1 style="font-size: 3rem; line-height: 1.2; margin-bottom: 25px; color: #fff;">
-            <strong>Renel Rosene – Consultant SEO freelance à <span class="text-purple">Bordeaux</span></strong>
+          <h1 id="cta-audit">
+            Renel Rosené – Consultant SEO Freelance à <span>Bordeaux</span>
           </h1>
-          <p style="font-size: 1.15rem; color: #cbd5e1; margin-bottom: 40px; line-height: 1.6;">
-            Boostez la visibilité de votre entreprise et générez des leads qualifiés grâce à une stratégie SEO haute
-            performance, propulsée par l'Intelligence Artificielle au cœur de la Nouvelle-Aquitaine.
+          <p class="hero-subtitle" style="margin-left: 0; color: #cbd5e1;">
+            Maximisez votre visibilité et vos revenus sur Google grâce à une stratégie SEO sur-mesure.
           </p>
 
-          <!-- CTAs -->
-          <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-            <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank">
-              APPEL DÉCOUVERTE
-            </a>
-            <a href="audit-seo-gratuit" class="hero-btn-secondary">
-              AUDIT SEO GRATUIT
-            </a>
+          <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 30px;">
+            <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank">APPEL
+              DÉCOUVERTE</a>
+            <a href="audit-seo-gratuit" class="hero-btn-secondary">AUDIT SEO GRATUIT</a>
+          </div>
+        </div>
+        <div class="hero-image" style="text-align: center;">
+          <img src="renel-portrait.jpg" alt="Renel Rosené Consultant SEO Bordeaux"
+            style="max-width: 100%; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.5);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- [SECTION 1.5 : POURQUOI INVESTIR] -->
+  <section style="background: #0a0a0a;">
+    <div class="container">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
+        Pourquoi investir dans <br> <span>le SEO à Bordeaux ?</span>
+      </h2>
+      <div class="grid-2-cols" style="align-items: center;">
+
+        <!-- Text Column -->
+        <div>
+          <p style="color: #cbd5e1; margin-bottom: 25px; line-height: 1.7;">
+            Bordeaux est un hub économique ultra-dynamique en Nouvelle-Aquitaine. Entre les startups de la French Tech,
+            les domaines viticoles et les services B2B, la compétition sur Google est intense. Le SEO est le levier le
+            plus rentable pour dominer ce marché bordelais en pleine mutation.
+          </p>
+          <ul style="list-style: none; padding: 0; color: #cbd5e1; font-size: 1rem;">
+            <li style="margin-bottom: 15px; display: flex; gap: 10px;">
+              <span style="color: #8b5cf6; font-weight: bold;">↗</span> Écosystème French Tech & Cité Numérique
+            </li>
+            <li style="margin-bottom: 15px; display: flex; gap: 10px;">
+              <span style="color: #8b5cf6; font-weight: bold;">↗</span> Forte demande Vin & E-commerce premium
+            </li>
+            <li style="margin-bottom: 15px; display: flex; gap: 10px;">
+              <span style="color: #8b5cf6; font-weight: bold;">↗</span> ROI durable face à la hausse des coûts Ads
+            </li>
+          </ul>
+        </div>
+
+        <!-- Visual/Stat Column -->
+        <div
+          style="position: relative; border-radius: 20px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); min-height: 400px; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+          <img src="assets/images/bordeaux-seo.png" alt="Bordeaux SEO Skyline"
+            style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          <div
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle, transparent 40%, rgba(0,0,0,0.8) 100%), linear-gradient(to top, rgba(0,0,0,0.9), transparent 50%); pointer-events: none;">
+          </div>
+          <div
+            style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 40px 20px 20px; text-align: center; z-index: 2;">
+            <h3 style="color: #fff; font-size: 1.5rem; margin: 0; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Dominez votre
+              marché girondin</h3>
           </div>
         </div>
 
-        <!-- Right Column: Image -->
-        <div style="position: relative; display: flex; justify-content: center;">
-          <img src="assets/images/renel-rosene-portrait.jpg" alt="Renel Rosene Consultant SEO"
-            style="position: relative; z-index: 1; border-radius: 20px; box-shadow: 0 20px 50px rgba(0,0,0,0.5); max-width: 100%; height: auto; max-height: 500px; object-fit: cover;">
-        </div>
-
       </div>
     </div>
   </section>
 
-  <!-- 3️⃣ Problème / Solution (PAS) -->
-  <section style="padding: 100px 0; background: #0a0a0a;">
+  <!-- [SECTION 2 : PROBLÈMES / SOLUTIONS] -->
+  <section style="background: #0f0f0f;">
     <div class="container">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
+        Problèmes SEO fréquents <span style="white-space: nowrap;">et solutions concrètes</span>
+      </h2>
+      <p style="text-align: center; color: #94a3b8; max-width: 800px; margin: 0 auto 50px;">
+        Beaucoup d’entreprises peinent à transformer leur site en générateur de trafic et de leads. Voici les
+        problématiques typiques et nos solutions à Bordeaux.
+      </p>
 
-      <!-- Problème -->
-      <div style="margin-bottom: 80px;">
-        <h2 class="section-title" style="text-align: center; margin-bottom: 50px;">
-          Votre site bordelais est-il un <span class="text-purple">actif</span> ou un <span
-            style="color: #ef4444;">poids mort</span> ?
-        </h2>
-        <div style="overflow-x: auto;">
-          <table
-            style="width: 100%; border-collapse: collapse; background: rgba(255,255,255,0.02); border-radius: 16px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05);">
-            <thead>
-              <tr style="background: rgba(239, 68, 68, 0.1);">
-                <th
-                  style="padding: 25px; text-align: left; color: #fff; font-size: 1.1rem; border-bottom: 2px solid rgba(239, 68, 68, 0.3);">
-                  Problématique</th>
-                <th
-                  style="padding: 25px; text-align: left; color: #fff; font-size: 1.1rem; border-bottom: 2px solid rgba(239, 68, 68, 0.3);">
-                  Analyse & Impact Local</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <td style="padding: 25px; color: #ef4444; font-weight: 700; width: 35%;">Un manque de visibilité face
-                  aux leaders girondins ?</td>
-                <td style="padding: 25px; color: #cbd5e1; line-height: 1.7;">
-                  Le marché bordelais est spécifique : entre les institutions historiques et les startups agressives de
-                  la Cité Numérique, il est facile d'être relégué en deuxième page. <strong>Si vous n'êtes pas dans le
-                    Top 3, vous n'existez pas pour 90% de vos clients potentiels.</strong>
-                </td>
-              </tr>
-              <tr>
-                <td style="padding: 25px; color: #ef4444; font-weight: 700;">Des leads qui ne convertissent pas ?</td>
-                <td style="padding: 25px; color: #cbd5e1; line-height: 1.7;">
-                  Recevoir du trafic est inutile si celui-ci ne se transforme pas en appels ou en devis. Une stratégie
-                  SEO déconnectée de votre réalité business à Bordeaux vous fera perdre du temps et de l'argent.
-                </td>
-              </tr>
-            </tbody>
-          </table>
+      <div class="prob-sol-grid">
+        <!-- Item 1 -->
+        <div class="prob-sol-item">
+          <div class="prob-sol-part prob-part">
+            <h3 style="color: #f87171; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+              ⚠️ Manque de trafic qualifié
+            </h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem;">
+              <strong>Problème :</strong> Votre site attire peu de visiteurs réellement intéressés.
+            </p>
+          </div>
+          <div class="prob-sol-part sol-part">
+            <h3 style="color: #8b5cf6; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+              💡 La Solution
+            </h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem;">
+              Audit SEO complet et recherche de mots-clés ciblés pour générer un trafic girondin qualifié.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="prob-sol-item">
+          <div class="prob-sol-part prob-part">
+            <h3 style="color: #f87171; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+              ⚠️ Leads peu qualifiés
+            </h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem;">
+              <strong>Problème :</strong> Les contacts obtenus ne sont pas pertinents.
+            </p>
+          </div>
+          <div class="prob-sol-part sol-part">
+            <h3 style="color: #8b5cf6; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+              💡 La Solution
+            </h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem;">
+              Stratégie éditoriale et cocon sémantique pour attirer des prospects alignés sur vos objectifs business.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="prob-sol-item">
+          <div class="prob-sol-part prob-part">
+            <h3 style="color: #f87171; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+              ⚠️ Site mal optimisé
+            </h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem;">
+              <strong>Problème :</strong> Votre site manque de structure et de contenus pertinents.
+            </p>
+          </div>
+          <div class="prob-sol-part sol-part">
+            <h3 style="color: #8b5cf6; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+              💡 La Solution
+            </h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem;">
+              Optimisation technique et création de contenus stratégiques pour un positionnement durable.
+            </p>
+          </div>
         </div>
       </div>
 
-
-
-    </div>
-  </section>
-
-  <!-- 2️⃣ Contexte SEO Bordeaux -->
-  <section style="padding: 100px 0; background: #0f0f0f;">
-    <div class="container">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
-
-        <!-- Left Column: Content -->
-        <div>
-          <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">
-            Dominez le marché bordelais : <span class="text-purple">Pourquoi le SEO est votre meilleur allié ?</span>
-          </h2>
-          <p style="color: #cbd5e1; margin-bottom: 20px; line-height: 1.7; font-size: 1.05rem;">
-            Bordeaux est devenue une place forte de l'économie numérique française. Entre les startups de la
-            <strong>French Tech Bordeaux</strong>, les acteurs du <strong>Vin & Spiritueux</strong> et les PME
-            dynamiques de Mérignac ou Pessac, la compétition sur Google est intense.
-          </p>
-          <p style="color: #cbd5e1; margin-bottom: 20px; line-height: 1.7; font-size: 1.05rem;">
-            Pour une entreprise bordelaise, être invisible sur la première page n'est pas qu'un manque à gagner, c'est
-            laisser le champ libre à vos concurrents. Le SEO local et national est le levier le plus rentable pour
-            transformer votre site web en une machine à leads 24h/24.
-          </p>
-          <p style="color: #cbd5e1; margin-bottom: 20px; line-height: 1.7; font-size: 1.05rem;">
-            En tant qu'expert de proximité, je vous aide à capter l'attention des décideurs girondins et à étendre votre
-            influence bien au-delà de la Garonne.
-          </p>
-        </div>
-
-        <!-- Right Column: Image (Place de la Bourse) -->
-        <div style="position: relative; height: 100%; min-height: 400px;">
-          <img src="assets/images/bordeaux-seo.png" alt="Place de la Bourse Bordeaux SEO"
-            style="position: relative; z-index: 1; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.6); width: 100%; height: 100%; object-fit: cover; border: 1px solid rgba(255,255,255,0.1);">
-        </div>
-
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank">APPEL DÉCOUVERTE –
+          Transformez votre site en générateur de leads</a>
       </div>
     </div>
   </section>
@@ -349,137 +457,110 @@
     </div>
   </section>
 
-  <!-- 7️⃣ Prestations (Bloc 7) -->
-  <section style="padding: 100px 0; background: #0f0f0f;">
+  <!-- [SECTION 6 : PRESTATIONS] -->
+  <section style="background: #0f0f0f;">
     <div class="container">
       <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
-        Mes expertises SEO pour propulser votre croissance en <span class="text-purple">Nouvelle-Aquitaine</span>
+        Prestations de consultant <span>SEO freelance à Bordeaux</span>
       </h2>
-      <p
-        style="text-align: center; color: #cbd5e1; max-width: 800px; margin: 0 auto 60px; font-size: 1.1rem; line-height: 1.6;">
-        Mon approche combine la rigueur technique du SEO traditionnel et la puissance de frappe de l’intelligence
-        artificielle pour des résultats concrets.
-      </p>
-
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-
-        <!-- Card 1 -->
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
-          <div style="font-size: 2rem; margin-bottom: 20px;">🗺️</div>
-          <h3 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">SEO Local & Domination sur Bordeaux Métropole
-          </h3>
-          <p style="color: #94a3b8; line-height: 1.6; font-size: 0.95rem;">
-            Je positionne votre entreprise dans le Local Pack (Google Maps) pour capter les recherches de proximité. Que
-            vous soyez à Mérignac, Pessac ou au centre de Bordeaux, je maximise vos appels et vos visites physiques.
+      <div class="service-grid">
+        <div class="service-card">
+          <h3 style="color: #fff; margin-bottom: 15px;">📍 SEO local & Google Business Profile</h3>
+          <p style="color: #94a3b8;">Attirer des clients locaux à Bordeaux et optimiser votre présence sur Google Maps.
           </p>
         </div>
-
-        <!-- Card 2 -->
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
-          <div style="font-size: 2rem; margin-bottom: 20px;">⚡</div>
-          <h3 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">Audit SEO & Performance Technique</h3>
-          <p style="color: #94a3b8; line-height: 1.6; font-size: 0.95rem;">
-            Un site lent est un site qui perd de l'argent. J'optimise vos Core Web Vitals et la structure de votre code
-            pour offrir une expérience utilisateur fluide, essentielle pour le SEO moderne et la conversion.
+        <div class="service-card">
+          <h3 style="color: #fff; margin-bottom: 15px;">🛠️ Audit SEO technique</h3>
+          <p style="color: #94a3b8;">Corriger les problèmes techniques, vitesse, et balises pour un site bordelais
+            performant.</p>
+        </div>
+        <div class="service-card">
+          <h3 style="color: #fff; margin-bottom: 15px;">📝 Stratégie éditoriale / cocon sémantique</h3>
+          <p style="color: #94a3b8;">Générer du trafic qualifié grâce à un contenu structuré et ciblé sur vos
+            expertises.</p>
+        </div>
+        <div class="service-card">
+          <h3 style="color: #fff; margin-bottom: 15px;">🔗 Netlinking et popularité</h3>
+          <p style="color: #94a3b8;">Augmenter l’autorité de votre site via des liens de qualité en Nouvelle-Aquitaine.
           </p>
         </div>
-
-        <!-- Card 3 -->
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
-          <div style="font-size: 2rem; margin-bottom: 20px;">✒️</div>
-          <h3 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">Stratégie de Contenu & Autorité</h3>
-          <p style="color: #94a3b8; line-height: 1.6; font-size: 0.95rem;">
-            De la création de cocons sémantiques à la rédaction assistée par IA, je bâtis votre autorité thématique. À
-            Bordeaux, c’est le levier indispensable pour devenir la référence sur des niches premium ou technologiques
-            (Vin, Tech, B2B).
-          </p>
+        <div class="service-card">
+          <h3 style="color: #fff; margin-bottom: 15px;">🤖 SEO & IA</h3>
+          <p style="color: #94a3b8;">Scalabilité et automatisation pour gagner du temps tout en augmentant l’efficacité
+            de vos campagnes.</p>
         </div>
-
-        <!-- Card 4 -->
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
-          <div style="font-size: 2rem; margin-bottom: 20px;">🔗</div>
-          <h3 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">Netlinking & Popularité de Qualité</h3>
-          <p style="color: #94a3b8; line-height: 1.6; font-size: 0.95rem;">
-            J'obtiens pour vous des liens (backlinks) depuis des sites d'autorité et des médias locaux. Cette puissance
-            de recommandation est le signal n°1 attendu par Google pour vous placer en tête des résultats.
-          </p>
-        </div>
-
-        <!-- Card 5 -->
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
-          <div style="font-size: 2rem; margin-bottom: 20px;">🤖</div>
-          <h3 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">SEO & IA : Scalabilité et Gain de Temps</h3>
-          <p style="color: #94a3b8; line-height: 1.6; font-size: 0.95rem;">
-            J’intègre l’IA pour automatiser l’analyse de données et accélérer la production de contenus stratégiques.
-            Vous obtenez plus de visibilité, plus vite, pour un budget maîtrisé.
-          </p>
-        </div>
-
       </div>
-
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank">APPEL DÉCOUVERTE –
+          Commencez votre optimisation SEO à Bordeaux</a>
+      </div>
     </div>
   </section>
 
-  <!-- 3️⃣ Approche / Piliers -->
-  <section style="padding: 100px 0; background: #0a0a0a;">
+  <!-- [SECTION 7 : PROFILS] -->
+  <section style="background: #0a0a0a;">
     <div class="container">
-      <h2 class="section-title" style="text-align: center; margin-bottom: 60px;">
-        Trois piliers pour booster votre visibilité à <span class="text-purple">Bordeaux</span>
+      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
+        <span>Profils accompagnés</span> à Bordeaux
       </h2>
-      <div style="overflow-x: auto;">
-        <table
-          style="width: 100%; border-collapse: collapse; background: rgba(255,255,255,0.02); border-radius: 16px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05);">
+      <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        <span style="background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 50px; color: #fff;">Vignobles
+          & Châteaux</span>
+        <span style="background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 50px; color: #fff;">Startups
+          Tech</span>
+        <span style="background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 50px; color: #fff;">PME
+          Girondines</span>
+        <span
+          style="background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 50px; color: #fff;">E-commerçants</span>
+      </div>
+      <p style="text-align: center; color: #8b5cf6; margin-top: 30px; font-weight: bold;">
+        Votre ambition de croissance est notre priorité, chaque stratégie est adaptée au marché bordelais.
+      </p>
+    </div>
+  </section>
+
+  <!-- [SECTION 8 : MÉTHODE] -->
+  <section style="background: #0f0f0f;">
+    <div class="container">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
+        Ma méthode de <span>travail</span>
+      </h2>
+      <div class="bordeaux-stats-box" style="overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; color: #cbd5e1; text-align: left; min-width: 600px;">
           <thead>
-            <tr style="background: rgba(139, 92, 246, 0.1);">
-              <th
-                style="padding: 25px; text-align: left; color: #fff; font-size: 1.1rem; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">
-                Pilier Stratégique</th>
-              <th
-                style="padding: 25px; text-align: left; color: #fff; font-size: 1.1rem; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">
-                Objectif Business</th>
-              <th
-                style="padding: 25px; text-align: left; color: #fff; font-size: 1.1rem; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">
-                Détails de l'approche</th>
+            <tr style="border-bottom: 2px solid #8b5cf6;">
+              <th style="padding: 15px; color: #fff;">Phase & Durée</th>
+              <th style="padding: 15px; color: #fff;">Description & Actions</th>
             </tr>
           </thead>
           <tbody>
             <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-              <td style="padding: 25px; color: #fff; font-weight: 700; width: 25%;">1. Audit SEO 360°</td>
-              <td style="padding: 25px; color: #cbd5e1; width: 35%;">Le diagnostic vital avant toute action.</td>
-              <td style="padding: 25px; color: #94a3b8;">
-                <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
-                  <li><span class="text-purple">•</span> Tech : Vitesse, Crawl, Mobile</li>
-                  <li><span class="text-purple">•</span> Contenu : Nettoyage & Optimisation</li>
-                  <li><span class="text-purple">•</span> Local : Ciblage mots-clés Bordeaux</li>
-                </ul>
+              <td style="padding: 15px;">
+                <strong style="color: #8b5cf6;">Audit & Diagnostic</strong><br>
+                <span style="font-size: 0.9rem; color: #94a3b8;">(1-2 semaines)</span>
               </td>
+              <td style="padding: 15px;">Analyse complète technique et sémantique</td>
             </tr>
             <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-              <td style="padding: 25px; color: #fff; font-weight: 700;">2. Stratégie & Priorités</td>
-              <td style="padding: 25px; color: #cbd5e1;">Plan d'attaque clair et chiffré.</td>
-              <td style="padding: 25px; color: #94a3b8;">
-                <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
-                  <li><span class="text-purple">•</span> Quick Wins (Impact immédiat)</li>
-                  <li><span class="text-purple">•</span> Calendrier éditorial business</li>
-                  <li><span class="text-purple">•</span> Hybrid IA (Préparation SearchGPT)</li>
-                </ul>
+              <td style="padding: 15px;">
+                <strong style="color: #8b5cf6;">Stratégie sur-mesure</strong><br>
+                <span style="font-size: 0.9rem; color: #94a3b8;">(2-3 semaines)</span>
               </td>
+              <td style="padding: 15px;">Définition de la feuille de route SEO personnalisée</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td style="padding: 15px;">
+                <strong style="color: #8b5cf6;">Optimisation & Action</strong><br>
+                <span style="font-size: 0.9rem; color: #94a3b8;">(3-6 mois)</span>
+              </td>
+              <td style="padding: 15px;">Mise en œuvre des actions techniques et éditoriales</td>
             </tr>
             <tr>
-              <td style="padding: 25px; color: #fff; font-weight: 700;">3. Optimisation & Suivi</td>
-              <td style="padding: 25px; color: #cbd5e1;">Exécution et ajustement continu.</td>
-              <td style="padding: 25px; color: #94a3b8;">
-                <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
-                  <li><span class="text-purple">•</span> Implémentation technique</li>
-                  <li><span class="text-purple">•</span> Netlinking local puissant</li>
-                  <li><span class="text-purple">•</span> Reporting ROI lisible</li>
-                </ul>
+              <td style="padding: 15px;">
+                <strong style="color: #8b5cf6;">Pilotage & ROI</strong><br>
+                <span style="font-size: 0.9rem; color: #94a3b8;">(Continu)</span>
               </td>
+              <td style="padding: 15px;">Suivi des KPIs et ajustements pour maximiser le retour</td>
             </tr>
           </tbody>
         </table>
@@ -487,487 +568,218 @@
     </div>
   </section>
 
-  <!-- 9️⃣ Méthodologie (Bloc 9) -->
-  <section style="padding: 100px 0; background: #0f0f0f;">
+  <!-- [SECTION 9 : PRICING] -->
+  <section style="background: #0a0a0a;">
     <div class="container">
       <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
-        Une approche rigoureuse pour des <span class="text-purple">résultats pérennes</span> à Bordeaux
+        Mes offres <span>et tarifs</span>
       </h2>
-      <p
-        style="text-align: center; color: #cbd5e1; max-width: 800px; margin: 0 auto 80px; font-size: 1.1rem; line-height: 1.6;">
-        Ma méthodologie ne repose pas sur des suppositions, mais sur des données concrètes et une exécution millimétrée.
-      </p>
-
-      <!-- Timeline Container -->
-      <div
-        style="max-width: 800px; margin: 0 auto; position: relative; padding-left: 40px; border-left: 2px solid rgba(139, 92, 246, 0.2);">
-
-        <!-- Step 1 -->
-        <div style="position: relative; margin-bottom: 60px;">
-          <div
-            style="position: absolute; left: -49px; top: 0; width: 16px; height: 16px; background: #8b5cf6; border-radius: 50%; border: 4px solid #0f0f0f;">
-          </div>
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.4rem;">01 – Diagnostic & Audit "Deep Dive" <span
-              style="font-size: 0.9rem; color: #94a3b8; font-weight: normal; margin-left: 10px;">(1–2 semaines)</span>
-          </h3>
-          <p style="color: #cbd5e1; line-height: 1.7;">
-            Analyse de votre empreinte technique, sémantique et de votre profil de liens. J'identifie les freins
-            spécifiques qui empêchent votre site de dépasser les acteurs historiques du marché bordelais.
-          </p>
+      <div class="grid-2-cols" style="max-width: 900px; margin: 0 auto; gap: 30px;">
+        <div
+          style="background: rgba(139, 92, 246, 0.05); border: 1px solid rgba(139, 92, 246, 0.2); padding: 40px; border-radius: 16px; text-align: center;">
+          <h3 style="color: #fff; margin-bottom: 15px;">Accompagnement Mensuel</h3>
+          <p style="color: #8b5cf6; font-size: 1.5rem; font-weight: bold; margin-bottom: 15px;">dès 1 000 €/mois</p>
+          <p style="color: #94a3b8;">Pour les PME et sites en croissance en Gironde.</p>
         </div>
-
-        <!-- Step 2 -->
-        <div style="position: relative; margin-bottom: 60px;">
-          <div
-            style="position: absolute; left: -49px; top: 0; width: 16px; height: 16px; background: #8b5cf6; border-radius: 50%; border: 4px solid #0f0f0f;">
-          </div>
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.4rem;">02 – Roadmap Stratégique & IA <span
-              style="font-size: 0.9rem; color: #94a3b8; font-weight: normal; margin-left: 10px;">(2–3 semaines)</span>
-          </h3>
-          <p style="color: #cbd5e1; line-height: 1.7;">
-            Planification du contenu via la méthode du cocon sémantique. J'intègre l'IA pour cartographier les
-            intentions de recherche de vos clients et définir les priorités de production pour un impact ROI immédiat.
-          </p>
+        <div
+          style="background: rgba(139, 92, 246, 0.05); border: 1px solid rgba(139, 92, 246, 0.2); padding: 40px; border-radius: 16px; text-align: center;">
+          <h3 style="color: #fff; margin-bottom: 15px;">Forfaits Personnalisés</h3>
+          <p style="color: #8b5cf6; font-size: 1.5rem; font-weight: bold; margin-bottom: 15px;">Sur devis</p>
+          <p style="color: #94a3b8;">Selon objectifs et taille de votre structure.</p>
         </div>
-
-        <!-- Step 3 -->
-        <div style="position: relative; margin-bottom: 60px;">
-          <div
-            style="position: absolute; left: -49px; top: 0; width: 16px; height: 16px; background: #8b5cf6; border-radius: 50%; border: 4px solid #0f0f0f;">
-          </div>
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.4rem;">03 – Déploiement & Optimisation <span
-              style="font-size: 0.9rem; color: #94a3b8; font-weight: normal; margin-left: 10px;">(3–6 mois)</span></h3>
-          <p style="color: #cbd5e1; line-height: 1.7;">
-            Phase d'action intensive : rédaction optimisée, maillage interne et acquisition de backlinks de qualité.
-            C'est durant cette période que votre autorité s'installe durablement sur Google.
-          </p>
-        </div>
-
-        <!-- Step 4 -->
-        <div style="position: relative;">
-          <div
-            style="position: absolute; left: -49px; top: 0; width: 16px; height: 16px; background: #10b981; border-radius: 50%; border: 4px solid #0f0f0f;">
-          </div>
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.4rem;">04 – Suivi, Analyse & Scale <span
-              style="font-size: 0.9rem; color: #10b981; font-weight: normal; margin-left: 10px;">(Continu)</span></h3>
-          <p style="color: #cbd5e1; line-height: 1.7;">
-            Reporting mensuel transparent. Nous analysons les conversions et ajustons la stratégie pour aller chercher
-            de nouvelles parts de marché et maximiser votre rentabilité.
-          </p>
-        </div>
-
       </div>
-
-    </div>
-  </section>
-
-  <!-- 11 Stack d'outils (Bloc 11) -->
-  <section style="padding: 100px 0; background: #0f0f0f;">
-    <div class="container">
-      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
-        La technologie au service de votre <span class="text-purple">visibilité</span>
-      </h2>
-      <p
-        style="text-align: center; color: #cbd5e1; max-width: 800px; margin: 0 auto 60px; font-size: 1.1rem; line-height: 1.6;">
-        Pour vous offrir une précision chirurgicale, je m'appuie sur les meilleurs outils du marché :
+      <p style="text-align: center; color: #fff; margin-top: 30px;">Transparence totale sur le scope et les livrables.
       </p>
-
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
-
-        <!-- Tool 1 -->
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); text-align: center;">
-
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.2rem;">Screaming Frog</h3>
-          <p style="color: #94a3b8; font-size: 0.95rem;">Pour l'analyse technique.</p>
-        </div>
-
-        <!-- Tool 2 -->
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); text-align: center;">
-
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.2rem;">SEMrush / Ahrefs</h3>
-          <p style="color: #94a3b8; font-size: 0.95rem;">Pour la veille concurrentielle et le netlinking.</p>
-        </div>
-
-        <!-- Tool 3 -->
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); text-align: center;">
-
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.2rem;">Google Search Console</h3>
-          <p style="color: #94a3b8; font-size: 0.95rem;">Pour le monitoring réel des performances.</p>
-        </div>
-
-        <!-- Tool 4 -->
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); text-align: center;">
-
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.2rem;">IA Générative</h3>
-          <p style="color: #94a3b8; font-size: 0.95rem;">Pour la scalabilité sémantique et l'automatisation.</p>
-        </div>
-
+      <div style="text-align: center; margin-top: 30px;">
+        <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank">APPEL DÉCOUVERTE –
+          Audit gratuit ou rendez-vous</a>
       </div>
     </div>
   </section>
 
-  <!-- 4️⃣ Pourquoi moi : Freelance vs Agence -->
-  <section style="padding: 100px 0; background: #0f0f0f;">
+  <!-- [SECTION 10 : OUTILS] -->
+  <section style="background: #0f0f0f;">
     <div class="container">
       <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
-        Pourquoi un expert <span class="text-purple">indépendant</span> pour votre SEO à Bordeaux ?
+        Les outils <span>utilisés</span>
       </h2>
-      <p
-        style="text-align: center; color: #cbd5e1; max-width: 800px; margin: 0 auto 60px; font-size: 1.1rem; line-height: 1.6;">
-        Choisir un freelance, c'est choisir la transparence totale. Là où une agence bordelaise classique multiplie les
-        intermédiaires, je vous offre un canal direct vers l'expertise.
-      </p>
+      <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; align-items: center;">
+        <div style="text-align: center;">
+          <strong style="display: block; color: #fff; margin-bottom: 5px;">Screaming Frog</strong>
+          <span style="color: #94a3b8; font-size: 0.9rem;">Audit technique complet</span>
+        </div>
+        <div style="text-align: center;">
+          <strong style="display: block; color: #fff; margin-bottom: 5px;">Google Search Console</strong>
+          <span style="color: #94a3b8; font-size: 0.9rem;">Suivi performance real-time</span>
+        </div>
+        <div style="text-align: center;">
+          <strong style="display: block; color: #fff; margin-bottom: 5px;">SEMrush / Ahrefs</strong>
+          <span style="color: #94a3b8; font-size: 0.9rem;">Analyse concurrentielle girondine</span>
+        </div>
+        <div style="text-align: center;">
+          <strong style="display: block; color: #fff; margin-bottom: 5px;">Thot SEO</strong>
+          <span style="color: #94a3b8; font-size: 0.9rem;">Optimisation sémantique & IA</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <div style="overflow-x: auto;">
-        <table
-          style="width: 100%; border-collapse: collapse; background: rgba(255,255,255,0.02); border-radius: 16px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05);">
+  <!-- [SECTION 3 : POURQUOI FREELANCE] -->
+  <section style="background: #0a0a0a;">
+    <div class="container">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
+        Pourquoi choisir <span>un freelance</span> plutôt<br>qu’une agence ?
+      </h2>
+      <div class="bordeaux-stats-box" style="overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; color: #cbd5e1; text-align: left; min-width: 600px;">
           <thead>
-            <tr style="background: rgba(139, 92, 246, 0.1);">
-              <th
-                style="padding: 25px; text-align: left; color: #fff; font-size: 1.1rem; border-bottom: 2px solid rgba(139, 92, 246, 0.3); width: 40%;">
-                Questions Stratégiques</th>
-              <th
-                style="padding: 25px; text-align: left; color: #fff; font-size: 1.1rem; border-bottom: 2px solid rgba(139, 92, 246, 0.3);">
-                Vision & Expertise Freelance</th>
+            <tr style="border-bottom: 2px solid #8b5cf6;">
+              <th style="padding: 15px; color: #fff;">Atout & Différenciation</th>
+              <th style="padding: 15px; color: #fff;">Bénéfice pour votre Business</th>
             </tr>
           </thead>
           <tbody>
             <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-              <td style="padding: 25px; color: #fff; font-weight: 700;">Pourquoi privilégier un indépendant plutôt
-                qu'une agence SEO à Bordeaux ?</td>
-              <td style="padding: 25px; color: #cbd5e1;">Transparence totale, canal direct vers l'expertise et
-                suppression des intermédiaires pour un coût optimisé et une efficacité accrue.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-              <td style="padding: 25px; color: #fff; font-weight: 700;">Quelle est la réactivité réelle d'un consultant
-                freelance sur le terrain ?</td>
-              <td style="padding: 25px; color: #cbd5e1;">Pas de ticket support. Un interlocuteur unique qui connaît
-                votre dossier par cœur et pivote instantanément selon les tendances du marché girondin.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-              <td style="padding: 25px; color: #fff; font-weight: 700;">Comment l'Intelligence Artificielle est-elle
-                intégrée à votre stratégie ?</td>
-              <td style="padding: 25px; color: #cbd5e1;">Utilisation des technologies IA 2026 pour maximiser le ROI,
-                réduire les coûts d'acquisition et dominer les secteurs bordelais (Vin, Tech, Immobilier).</td>
-            </tr>
-            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-              <td style="padding: 25px; color: #fff; font-weight: 700;">Comment garantissez-vous une approche orientée
-                résultats ?</td>
-              <td style="padding: 25px; color: #cbd5e1;">Culture de la performance business. Chaque action est mesurable
-                et focalisée sur la croissance réelle de votre chiffre d'affaires, pas seulement le trafic.</td>
-            </tr>
-            <tr>
-              <td style="padding: 25px; color: #fff; font-weight: 700;">Pourquoi un ancrage local est-il crucial pour
-                votre visibilité en Gironde ?</td>
-              <td style="padding: 25px; color: #cbd5e1;">Maîtrise chirurgicale des codes du bassin bordelais (Bassins à
-                Flot, French Tech) pour adapter le message et maximiser la conversion locale.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- 6️⃣ Différenciation -->
-  <section style="padding: 100px 0; background: #0a0a0a;">
-    <div class="container">
-      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
-        Pourquoi mon approche est <span class="text-purple">unique</span> à Bordeaux ?
-      </h2>
-      <p
-        style="text-align: center; color: #cbd5e1; max-width: 800px; margin: 0 auto 60px; font-size: 1.1rem; line-height: 1.6;">
-        Dans un marché où beaucoup se contentent de rédiger du texte pour remplir des pages, je propose une approche
-        Double Rank et IA-Driven.
-      </p>
-
-      <!-- Comparison Table -->
-      <div style="overflow-x: auto; margin-bottom: 60px;">
-        <table style="width: 100%; border-collapse: collapse; min-width: 600px;">
-          <thead>
-            <tr>
-              <th
-                style="text-align: left; padding: 20px; color: #94a3b8; border-bottom: 1px solid rgba(255,255,255,0.1);">
-                Critères</th>
-              <th style="padding: 20px; color: #cbd5e1; border-bottom: 1px solid rgba(255,255,255,0.1);">Consultant
-                Classique</th>
-              <th style="padding: 20px; color: #cbd5e1; border-bottom: 1px solid rgba(255,255,255,0.1);">Agence Web</th>
-              <th
-                style="padding: 20px; color: #fff; background: rgba(139, 92, 246, 0.1); border-top-left-radius: 12px; border-top-right-radius: 12px; border: 1px solid rgba(139, 92, 246, 0.3); border-bottom: none;">
-                Renel Rosene</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style="padding: 20px; color: #cbd5e1; border-bottom: 1px solid rgba(255,255,255,0.05);">Vitesse
-                d'exécution</td>
-              <td
-                style="padding: 20px; text-align: center; color: #94a3b8; border-bottom: 1px solid rgba(255,255,255,0.05);">
-                Modérée</td>
-              <td
-                style="padding: 20px; text-align: center; color: #94a3b8; border-bottom: 1px solid rgba(255,255,255,0.05);">
-                Lente (validation)</td>
-              <td
-                style="padding: 20px; text-align: center; color: #10b981; font-weight: 700; background: rgba(139, 92, 246, 0.05); border-left: 1px solid rgba(139, 92, 246, 0.3); border-right: 1px solid rgba(139, 92, 246, 0.3);">
-                Ultra-rapide (IA)</td>
-            </tr>
-            <tr>
-              <td style="padding: 20px; color: #cbd5e1; border-bottom: 1px solid rgba(255,255,255,0.05);">Coût /
-                Performance</td>
-              <td
-                style="padding: 20px; text-align: center; color: #94a3b8; border-bottom: 1px solid rgba(255,255,255,0.05);">
-                Variable</td>
-              <td
-                style="padding: 20px; text-align: center; color: #94a3b8; border-bottom: 1px solid rgba(255,255,255,0.05);">
-                Élevé</td>
-              <td
-                style="padding: 20px; text-align: center; color: #10b981; font-weight: 700; background: rgba(139, 92, 246, 0.05); border-left: 1px solid rgba(139, 92, 246, 0.3); border-right: 1px solid rgba(139, 92, 246, 0.3);">
-                Optimisé ROI</td>
-            </tr>
-            <tr>
-              <td style="padding: 20px; color: #cbd5e1; border-bottom: 1px solid rgba(255,255,255,0.05);">Maîtrise de
-                l'IA</td>
-              <td
-                style="padding: 20px; text-align: center; color: #94a3b8; border-bottom: 1px solid rgba(255,255,255,0.05);">
-                Basique</td>
-              <td
-                style="padding: 20px; text-align: center; color: #94a3b8; border-bottom: 1px solid rgba(255,255,255,0.05);">
-                Standardisée</td>
-              <td
-                style="padding: 20px; text-align: center; color: #10b981; font-weight: 700; background: rgba(139, 92, 246, 0.05); border-left: 1px solid rgba(139, 92, 246, 0.3); border-right: 1px solid rgba(139, 92, 246, 0.3);">
-                Expertise Avancée</td>
-            </tr>
-            <tr>
-              <td style="padding: 20px; color: #cbd5e1; border-bottom: 1px solid rgba(255,255,255,0.05);">Focus Business
+              <td style="padding: 15px;">
+                <strong style="color: #8b5cf6;">Expertise combinée SEO + IA</strong>
               </td>
-              <td
-                style="padding: 20px; text-align: center; color: #94a3b8; border-bottom: 1px solid rgba(255,255,255,0.05);">
-                Trafic global</td>
-              <td
-                style="padding: 20px; text-align: center; color: #94a3b8; border-bottom: 1px solid rgba(255,255,255,0.05);">
-                Notoriété</td>
-              <td
-                style="padding: 20px; text-align: center; color: #10b981; font-weight: 700; background: rgba(139, 92, 246, 0.05); border-left: 1px solid rgba(139, 92, 246, 0.3); border-right: 1px solid rgba(139, 92, 246, 0.3); border-bottom: 1px solid rgba(139, 92, 246, 0.3); border-bottom-left-radius: 12px; border-bottom-right-radius: 12px;">
-                Chiffre d'Affaires</td>
+              <td style="padding: 15px;">Stratégies scalables et optimisées grâce à l’IA pour dominer Bordeaux.</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td style="padding: 15px;">
+                <strong style="color: #8b5cf6;">Expérience concrète chez l’annonceur</strong>
+              </td>
+              <td style="padding: 15px;">Compréhension des enjeux business réels de Nouvelle-Aquitaine.</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td style="padding: 15px;">
+                <strong style="color: #8b5cf6;">Réactivité & Accompagnement</strong>
+              </td>
+              <td style="padding: 15px;">Suivi dédié et disponibilité maximale sans intermédiaires.</td>
             </tr>
           </tbody>
         </table>
       </div>
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-secondary" target="_blank">APPEL DÉCOUVERTE –
+          Échangez sur votre projet SEO à Bordeaux</a>
+      </div>
+    </div>
+  </section>
 
-      <!-- Closing Statement -->
-      <div
-        style="background: rgba(139, 92, 246, 0.05); padding: 30px; border-radius: 16px; border: 1px solid rgba(139, 92, 246, 0.2); text-align: center; max-width: 900px; margin: 0 auto;">
-        <p style="color: #cbd5e1; font-size: 1.1rem; line-height: 1.8; margin: 0;">
-          <strong style="color: #fff;">Ma différenciation forte :</strong> Je ne vous vends pas du trafic, je vous vends
-          une part de marché. À Bordeaux, je suis l'un des rares à utiliser l'IA non pas pour remplacer l'humain, mais
-          pour démultiplier la puissance sémantique de votre site tout en restant sous le radar des pénalités Google.
+  <!-- [SECTION 4 : SOCIAL PROOF] -->
+  <section style="background: #0f0f0f;">
+    <div class="container">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
+        Ils nous <span>font confiance</span> à Bordeaux
+      </h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <p style="color: #cbd5e1; font-style: italic; margin-bottom: 20px;">« Grâce à l’audit SEO et à la stratégie
+            mise en place, notre trafic a augmenté de 80% en 6 mois. »</p>
+          <strong style="color: #fff;">Château Viticole, Bordeaux</strong>
+        </div>
+        <div class="service-card">
+          <p style="color: #cbd5e1; font-style: italic; margin-bottom: 20px;">« Une expertise IA qui fait la différence
+            pour notre startup aux Bassins à Flot. »</p>
+          <strong style="color: #fff;">Startup Tech, Gironde</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- [SECTION 5 : COMPARATIF] -->
+  <section style="background: #0a0a0a;">
+    <div class="container">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
+        Freelance vs Agence vs DIY – <span>Quelle solution choisir ?</span>
+      </h2>
+      <div class="bordeaux-stats-box" style="overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; color: #cbd5e1; text-align: left; min-width: 600px;">
+          <thead>
+            <tr style="border-bottom: 2px solid #8b5cf6;">
+              <th style="padding: 15px;">Critères</th>
+              <th style="padding: 15px; color: #8b5cf6;">Freelance SEO</th>
+              <th style="padding: 15px;">Agence SEO</th>
+              <th style="padding: 15px;">DIY</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td style="padding: 15px;"><strong>Prix</strong></td>
+              <td style="padding: 15px;">Moyen</td>
+              <td style="padding: 15px;">Élevé</td>
+              <td style="padding: 15px;">Faible</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td style="padding: 15px;"><strong>Réactivité</strong></td>
+              <td style="padding: 15px;">Très rapide</td>
+              <td style="padding: 15px;">Moyenne</td>
+              <td style="padding: 15px;">Variable</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- [SECTION 11 : LOCAL] -->
+  <section style="background: #0a0a0a;">
+    <div class="container">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
+        Un consultant SEO <span>proche de vous</span> à Bordeaux
+      </h2>
+      <div class="bordeaux-stats-box" style="text-align: center; max-width: 800px; margin: 0 auto;">
+        <p style="color: #cbd5e1; font-size: 1.1rem; line-height: 1.8;">
+          Basé en Gironde, je connais parfaitement le tissu économique local, de la Cité Numérique aux vignobles de
+          Saint-Émilion. Je me déplace dans vos bureaux à Bordeaux, Mérignac ou Pessac pour des ateliers stratégiques.
         </p>
       </div>
-
     </div>
   </section>
 
-  <!-- 12 Expert de proximité (Bloc 12) -->
-  <section style="padding: 100px 0; background: #0a0a0a;">
+  <!-- [SECTION 12 : FAQ] -->
+  <section style="background: #0f0f0f;">
     <div class="container">
       <h2 class="section-title" style="text-align: center; margin-bottom: 40px;">
-        Un consultant SEO qui connaît la réalité de la <span class="text-purple">Nouvelle-Aquitaine</span>
+        Questions <span>fréquentes</span>
       </h2>
-
-      <div style="max-width: 900px; margin: 0 auto; text-align: center;">
-        <div
-          style="margin-bottom: 40px; padding: 30px; border-left: 4px solid #8b5cf6; background: rgba(139, 92, 246, 0.05); border-radius: 4px; text-align: left;">
-          <p style="color: #fff; font-size: 1.2rem; font-style: italic; margin: 0; line-height: 1.6;">
-            "On ne gère pas le SEO d'un Château à Saint-Émilion comme celui d'une startup aux Bassins à Flot."
-          </p>
-        </div>
-
-        <p style="color: #cbd5e1; font-size: 1.1rem; line-height: 1.8;">
-          Ma connaissance du bassin économique girondin me permet d'adapter le discours et la stratégie aux codes
-          locaux. Je suis disponible pour des échanges en présentiel dans vos bureaux à <strong>Bordeaux</strong>,
-          <strong>Mérignac</strong> ou via visio pour une réactivité totale.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- 7️⃣ Témoignages (Mockup based on brief) -->
-  <section style="padding: 100px 0; background: #0f0f0f;">
-    <div class="container">
-      <h2 class="section-title" style="text-align: center; margin-bottom: 60px;">Ils me font confiance</h2>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
-          <div style="color: #fbbf24; margin-bottom: 10px;">★★★★★</div>
-          <p style="color: #e2e8f0; font-style: italic; margin-bottom: 20px;">"Méthode efficace, nos leads entrants on
-            doublé en 4 mois. Un vrai partenaire de croissance."</p>
-          <div style="color: #94a3b8; font-size: 0.9rem;"><strong>Marie</strong> - Scale-up B2B</div>
-        </div>
-
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
-          <div style="color: #fbbf24; margin-bottom: 10px;">★★★★★</div>
-          <p style="color: #e2e8f0; font-style: italic; margin-bottom: 20px;">"Accompagnement sur-mesure et ROI rapide
-            sur des mots-clés stratégiques qu'on pensait inatteignables."</p>
-          <div style="color: #94a3b8; font-size: 0.9rem;"><strong>Thomas</strong> - CEO</div>
-        </div>
-
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
-          <div style="color: #fbbf24; margin-bottom: 10px;">★★★★★</div>
-          <p style="color: #e2e8f0; font-style: italic; margin-bottom: 20px;">"Une expertise locale précieuse. On a
-            enfin arrêté de dépenser en Ads pour rien."</p>
-          <div style="color: #94a3b8; font-size: 0.9rem;"><strong>Sophie</strong> - Responsable Digital</div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-
-
-
-  <!-- 10 Tarifs & Offres (Bloc 10) -->
-  <section style="padding: 100px 0; background: #0a0a0a;">
-    <div class="container">
-      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
-        Un investissement <span class="text-purple">transparent</span>, calibré pour votre croissance
-      </h2>
-      <p
-        style="text-align: center; color: #cbd5e1; max-width: 800px; margin: 0 auto 60px; font-size: 1.1rem; line-height: 1.6;">
-        Le SEO est un moteur de croissance. Mes tarifs reflètent la séniorité de l'accompagnement et l'utilisation
-        d'outils de pointe pour votre business à Bordeaux.
-      </p>
-
-      <div
-        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; max-width: 1000px; margin: 0 auto;">
-
-        <!-- Offer 1: Monthly -->
-        <div
-          style="background: rgba(139, 92, 246, 0.05); padding: 40px; border-radius: 20px; border: 2px solid rgba(139, 92, 246, 0.4); position: relative;">
-          <div
-            style="position: absolute; top: -15px; right: 40px; background: #8b5cf6; color: #fff; padding: 5px 15px; border-radius: 50px; font-size: 0.85rem; font-weight: bold;">
-            POPULAIRE</div>
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.5rem;">Accompagnement Mensuel</h3>
-          <div style="color: #a78bfa; font-weight: bold; margin-bottom: 20px; font-size: 0.95rem;">SEO + IA</div>
-          <div style="font-size: 2.5rem; font-weight: 800; color: #fff; margin-bottom: 30px;">
-            Dès 1 000 € <span style="font-size: 1rem; color: #94a3b8; font-weight: normal;">/ mois</span>
-          </div>
-
-          <div style="margin-bottom: 30px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
-            <p style="color: #cbd5e1; font-size: 0.95rem; margin-bottom: 5px;"><strong>Cible :</strong> Startups, PME et
-              E-commerçants visant une domination sectorielle.</p>
-            <p style="color: #cbd5e1; font-size: 0.95rem; margin-bottom: 5px;"><strong>Inclus :</strong> Stratégie,
-              production de contenus assistée par IA, netlinking premium et pilotage ROI mensuel.</p>
-            <p style="color: #cbd5e1; font-size: 0.95rem;"><strong>Engagement :</strong> 6 mois pour une efficacité
-              maximale.</p>
-          </div>
-
-          <a href="contact" class="hero-btn-primary" style="width: 100%; text-align: center; display: block;">Demander
-            un devis</a>
-        </div>
-
-        <!-- Offer 2: Audit -->
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 40px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05);">
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.5rem;">Audit Stratégique & Conseil</h3>
-          <div style="color: #94a3b8; font-weight: bold; margin-bottom: 20px; font-size: 0.95rem;">ONE-SHOT</div>
-          <div style="font-size: 2.5rem; font-weight: 800; color: #fff; margin-bottom: 30px;">
-            Sur devis
-          </div>
-
-          <div style="margin-bottom: 30px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
-            <p style="color: #cbd5e1; font-size: 0.95rem; margin-bottom: 5px;"><strong>Cible :</strong> Projets
-              spécifiques, refonte de site ou besoin d'une feuille de route claire avant internalisation.</p>
-            <p style="color: #cbd5e1; font-size: 0.95rem; margin-bottom: 5px;"><strong>Inclus :</strong> Analyse
-              complète, étude concurrentielle bordelaise et recommandations techniques/sémantiques actionnables.</p>
-          </div>
-
-          <a href="contact" class="hero-btn-secondary"
-            style="width: 100%; text-align: center; display: block;">Contacter pour un devis</a>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- 13 FAQ (Bloc 13) -->
-  <section style="padding: 100px 0; background: #0f0f0f;">
-    <div class="container">
-      <h2 class="section-title" style="text-align: center; margin-bottom: 60px;">
-        Questions Fréquentes <span class="text-purple">(FAQ)</span>
-      </h2>
-
       <div style="max-width: 800px; margin: 0 auto;">
-
-        <!-- Question 1 -->
         <details>
-          <summary>Qu'est-ce que le SEO ?</summary>
-          <p>
-            Le SEO (Search Engine Optimization) est l'art d'optimiser votre site pour qu'il apparaisse en haut des
-            résultats naturels de Google. C'est le levier le plus rentable pour attirer des clients qualifiés sans payer
-            de publicité.
-          </p>
+          <summary>Combien de temps avant de voir des résultats ?</summary>
+          <p>Le SEO est un travail de fond. À Bordeaux, on commence généralement à observer des gains de position
+            significatifs entre 3 et 6 mois.</p>
         </details>
-
-        <!-- Question 2 -->
         <details>
-          <summary>Quel est le délai pour être en 1ère page à Bordeaux ?</summary>
-          <p>
-            Selon la concurrence, les premiers signaux positifs apparaissent en 2 à 3 mois. La domination stable
-            s'obtient généralement entre 6 et 12 mois.
-          </p>
+          <summary>Pourquoi choisir un freelance plutôt qu'une agence bordelaise ?</summary>
+          <p>Pour la réactivité, le contact direct avec l'expert et une structure de coûts optimisée.</p>
         </details>
-
-        <!-- Question 3 -->
         <details>
-          <summary>Pourquoi ne pas simplement faire du Google Ads ?</summary>
-          <p>
-            L'Ads s'arrête dès que vous coupez le budget. Le SEO construit un actif qui continue de générer des leads
-            gratuitement sur le long terme.
-          </p>
+          <summary>Utilisez-vous l'IA dans vos prestations ?</summary>
+          <p>Oui, l'IA nous permet de scaler la production de contenu et d'analyser de larges volumes de données
+            sémantiques plus rapidement.</p>
         </details>
-
-        <!-- Question 4 -->
-        <details>
-          <summary>Pourquoi choisir un consultant SEO local à Bordeaux ?</summary>
-          <p>
-            Pour la connaissance chirurgicale du marché bordelais (French Tech, Vin, Bassins à Flot) et une proximité
-            permettant des échanges fluides et des workshops en présentiel.
-          </p>
-        </details>
-
-        <!-- Question 5 -->
-        <details>
-          <summary>Quel est le tarif d'un accompagnement SEO ?</summary>
-          <p>
-            Mes accompagnements sont sur-mesure pour maximiser votre ROI. Les tarifs sont adaptés selon vos objectifs de
-            croissance, avec des accompagnements mensuels débutant généralement à 1 000 € pour un focus ROI maximal.
-          </p>
-        </details>
-
       </div>
     </div>
   </section>
 
+  <!-- [SECTION 13 : CTA FINAL] -->
+  <section style="background: #0a0a0a; text-align: center;">
+    <div class="container">
+      <h2 class="section-title" style="margin-bottom: 20px;">Prêt à <span>dominer Google</span> à Bordeaux ?</h2>
+      <p style="color: #94a3b8; margin-bottom: 40px;">Ne laissez plus vos concurrents girondins prendre toute la
+        visibilité.</p>
+      <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+        <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank">RÉSERVER MA
+          CONSULTATION</a>
+        <a href="audit-seo-gratuit" class="hero-btn-secondary">AUDIT SEO OFFERT</a>
+      </div>
+    </div>
+  </section>
 
-
-
-
-  <!-- Footer -->
-  <!-- Option 1 : Le "Status Bar" (Spécial Freelance) -->
+  <!-- [FOOTER] -->
   <footer class="status-footer">
     <div class="container footer-grid">
-      <!-- Colonne 1 : Identité -->
       <div class="footer-col identite">
         <a class="logo" href="/">
           <img alt="Renel Rosené" class="logo-icon" height="28" src="assets/logos/logo.svg" width="40" />
@@ -975,91 +787,30 @@
             <span class="logo-text">Renel Rosené</span>
           </div>
         </a>
-        <p class="footer-slogan">Consultant SEO &amp; IA – Freelance pour B2B &amp; E-commerce.</p>
-        <div style="margin-top: 20px;">
-          <a href="zones-intervention"
-            style="color: #666; font-size: 0.8rem; text-decoration: none; opacity: 0.8; transition: opacity 0.3s;">Intervention
-            Partout en France</a>
-        </div>
+        <p class="footer-slogan">Consultant SEO & IA – Freelance pour B2B & E-commerce.</p>
       </div>
-      <!-- Colonne 2 : Disponibilité -->
       <div class="footer-col status">
         <span class="status-title">STATUS ACTUEL :</span>
         <div class="status-indicator">
           <span class="available-dot"></span>
-          <span class="status-info" style="margin-left: 10px;">ouvert pour partenariat</span>
+          <span class="status-info" style="margin-left: 10px;">disponible pour de nouveaux projets</span>
         </div>
       </div>
-      <!-- Colonne 3 : Zones d'intervention -->
-      <div class="footer-col zones">
-        <span class="status-title">ZONES D'INTERVENTION</span>
-        <ul style="list-style: none; padding: 0; margin-top: 15px;">
-          <li><a href="consultant-seo-paris" onmouseout="this.style.color='#666'" onmouseover="this.style.color='#fff'"
-              style="color: #666; text-decoration: none; font-size: 0.85rem; padding: 4px 0; display: block; transition: color 0.3s;">Consultant
-              SEO Paris</a></li>
-          <li><a href="consultant-seo-lyon" onmouseout="this.style.color='#666'" onmouseover="this.style.color='#fff'"
-              style="color: #666; text-decoration: none; font-size: 0.85rem; padding: 4px 0; display: block; transition: color 0.3s;">Consultant
-              SEO Lyon</a></li>
-          <li><a href="consultant-seo-bordeaux" onmouseout="this.style.color='#666'"
-              onmouseover="this.style.color='#fff'"
-              style="color: #666; text-decoration: none; font-size: 0.85rem; padding: 4px 0; display: block; transition: color 0.3s;">Consultant
-              SEO Bordeaux</a></li>
-          <li><a href="consultant-seo-nantes" onmouseout="this.style.color='#666'" onmouseover="this.style.color='#fff'"
-              style="color: #666; text-decoration: none; font-size: 0.85rem; padding: 4px 0; display: block; transition: color 0.3s;">Consultant
-              SEO Nantes</a></li>
-          <li><a href="consultant-seo-lille" onmouseout="this.style.color='#666'" onmouseover="this.style.color='#fff'"
-              style="color: #666; text-decoration: none; font-size: 0.85rem; padding: 4px 0; display: block; transition: color 0.3s;">Consultant
-              SEO Lille</a></li>
-          <li><a href="consultant-seo-besancon" onmouseout="this.style.color='#666'"
-              onmouseover="this.style.color='#fff'"
-              style="color: #666; text-decoration: none; font-size: 0.85rem; padding: 4px 0; display: block; transition: color 0.3s;">Consultant
-              SEO Besançon</a></li>
-          <li><a href="consultant-seo-ivry" onmouseout="this.style.color='#666'" onmouseover="this.style.color='#fff'"
-              style="color: #666; text-decoration: none; font-size: 0.85rem; padding: 4px 0; display: block; transition: color 0.3s;">Consultant
-              SEO Ivry-sur-Seine</a></li>
-          <li><a href="zones-intervention"
-              style="color: #fff; text-decoration: underline; font-size: 0.85rem; padding: 4px 0; display: block; margin-top:10px;">Toutes
-              les zones</a></li>
-        </ul>
-      </div>
-      <!-- Colonne 3 : Contact Rapide -->
       <div class="footer-col contact">
         <a class="contact-link" href="mailto:contact@renelrosene.com">contact@renelrosene.com</a>
         <div class="social-links">
-          <a href="https://www.linkedin.com/in/renel-rosene/?originalSubdomain=fr" target="_blank">LinkedIn</a>
-          <a href="https://twitter.com/renelrosene" target="_blank">Twitter / X</a>
-          <a href="https://www.instagram.com/renelrosene/" target="_blank">Instagram</a>
-          <a href="https://www.youtube.com/@renelrosene" target="_blank">YouTube</a>
+          <a href="https://www.linkedin.com/in/renel-rosene/" target="_blank">LinkedIn</a>
+          <a href="https://twitter.com/renelrosene" target="_blank">Twitter</a>
         </div>
       </div>
     </div>
     <div class="footer-bottom-full">
       <div class="container">
-        <div
-          style="margin-top: 80px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.05); display: flex; justify-content: center; gap: 30px; font-size: 0.85rem; opacity: 0.6; flex-wrap: wrap;">
-          <a href="consultant-seo-b2b" style="color: #fff; text-decoration: none; letter-spacing: 1px;">SEO B2B</a>
-          <a href="consultant-seo-ecommerce" style="color: #fff; text-decoration: none; letter-spacing: 1px;">SEO
-            E-COMMERCE</a>
-          <a href="consultant-seo-local" style="color: #fff; text-decoration: none; letter-spacing: 1px;">SEO
-            LOCAL</a>
-          <a href="consultant-searchgpt" style="color: #fff; text-decoration: none; letter-spacing: 1px;">GEO /
-            IA</a>
-        </div>
         <p style="margin-bottom: 10px;">Copyright © 2026. Tous droits réservés. Design by Renel.</p>
         <p>
           <a href="mentions-legales" style="color: #666; font-size: 0.8rem;">Mentions Légales</a> |
           <a href="plan-du-site" style="color: #666; font-size: 0.8rem;">Plan du Site</a>
         </p>
-        <!-- Scroll to Top Button -->
-        <div style="margin-top: 30px; margin-bottom: 20px;">
-          <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
-            style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #fff; width: 50px; height: 50px; border-radius: 50%; cursor: pointer; transition: all 0.3s; font-size: 1.2rem; display: inline-flex; align-items: center; justify-content: center;"
-            onmouseover="this.style.borderColor='#3b82f6'; this.style.background='rgba(59, 130, 246, 0.1)'; this.style.color='#3b82f6'"
-            onmouseout="this.style.borderColor='rgba(255,255,255,0.1)'; this.style.background='rgba(255,255,255,0.05)'; this.style.color='#fff'"
-            aria-label="Retour en haut">
-            ↑
-          </button>
-        </div>
       </div>
     </div>
   </footer>
