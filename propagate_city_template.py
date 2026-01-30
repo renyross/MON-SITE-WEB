@@ -5,7 +5,7 @@ import re
 MASTER_FILE = "/Users/renelrosene/Desktop/SEO RENEL/consultant-seo-paris.html"
 PROJECT_DIR = "/Users/renelrosene/Desktop/SEO RENEL"
 
-# Precise Mapping
+# Mapping: name, slug (masc), slug_f (fem), keywords, region
 CITY_DATA = {
     "toulouse": {"name": "Toulouse", "slug": "toulousain", "slug_f": "Toulousaine", "keywords": "Aéronautique, Airbus, le Capitole", "region": "Occitanie"},
     "grenoble": {"name": "Grenoble", "slug": "grenoblois", "slug_f": "Grenobloise", "keywords": "Microélectronique, Innovation, massif de la Chartreuse", "region": "Isère"},
@@ -15,6 +15,7 @@ CITY_DATA = {
     "rennes": {"name": "Rennes", "slug": "rennais", "slug_f": "Rennaise", "keywords": "Numérique, Cybersecurity, Bretagne", "region": "Ille-et-Vilaine"},
     "montpellier": {"name": "Montpellier", "slug": "montpelliérain", "slug_f": "Montpelliéraine", "keywords": "Santé, Tech, Méditerranée", "region": "Hérault"},
     "lyon-presqu-ile": {"name": "Lyon Presqu'île", "slug": "lyonnais", "slug_f": "Lyonnaise", "keywords": "Place Bellecour, Vieux Lyon, Gastronomie", "region": "Rhône"},
+    "lyon": {"name": "Lyon", "slug": "lyonnais", "slug_f": "Lyonnaise", "keywords": "Place Bellecour, Vieux Lyon, Gastronomie", "region": "Rhône"},
     "le-mans": {"name": "Le Mans", "slug": "manceau", "slug_f": "Mancelle", "keywords": "Automobile, 24h du Mans, Sarthe", "region": "Pays de la Loire"},
     "tours": {"name": "Tours", "slug": "tourangeau", "slug_f": "Tourangelle", "keywords": "Châteaux de la Loire, Centre-Val de Loire, Gastronomie", "region": "Indre-et-Loire"},
     "dijon": {"name": "Dijon", "slug": "dijonnais", "slug_f": "Dijonnaise", "keywords": "Gastronomie, Vin, Bourgogne, Palais des Ducs", "region": "Côte-d'Or"},
@@ -32,6 +33,9 @@ CITY_DATA = {
     "nanterre": {"name": "Nanterre", "slug": "nanterrien", "slug_f": "Nanterrienne", "keywords": "La Défense, Business, Hauts-de-Seine", "region": "Hauts-de-Seine"},
     "ivry": {"name": "Ivry", "slug": "ivryen", "slug_f": "Ivryenne", "keywords": "Recherche, Innovation, Val-de-Marne", "region": "Val-de-Marne"},
     "levallois": {"name": "Levallois", "slug": "levalloisien", "slug_f": "Levalloisienne", "keywords": "Sièges sociaux, Luxe, Media, Hauts-de-Seine", "region": "Hauts-de-Seine"},
+    "lille": {"name": "Lille", "slug": "lillois", "slug_f": "Lilloise", "keywords": "EuraTechnologies, Vieux-Lille, HUB Euralille", "region": "Hauts-de-France"},
+    "nantes": {"name": "Nantes", "slug": "nantais", "slug_f": "Nantaise", "keywords": "Machines de l'Île, Château des Ducs, Innovation numérique", "region": "Pays de la Loire"},
+    "bordeaux": {"name": "Bordeaux", "slug": "bordelais", "slug_f": "Bordelaise", "keywords": "Place de la Bourse, Cité du Vin, Vin de Bordeaux", "region": "Nouvelle-Aquitaine"},
 }
 
 def propagate():
@@ -61,10 +65,8 @@ def propagate():
         localized_body = localized_body.replace("Huitième, Seizième, Sentier, La Défense", info["keywords"])
         
         # 2. Nuclear Regex for the context paragraph (Targets the first <p> in Section 2)
-        # It replaces anything between the first <p...> and </p> in Section 2 with the localized context
         city_context_p = f"{info['name']} n'est pas seulement un pôle économique majeur de sa région ; c'est un bassin dynamique porté par {info['keywords']}. Dans ce marché où la compétition digitale s'intensifie, la visibilité organique est devenue une nécessité stratégique. Que vous soyez une PME locale ou un acteur industriel, vos futurs clients utilisent Google pour comparer les solutions avant de vous solliciter."
         
-        # This regex finds the first paragraph inside SECTION 2 and replaces ITS CONTENT
         localized_body = re.sub(
             r'(<!-- \[SECTION 2 : CONTEXTE & OPPORTUNITÉ\].*?<p[^>]*>).*?(</p>)',
             r'\1' + city_context_p + r'\2',
@@ -77,7 +79,7 @@ def propagate():
         localized_body = re.sub(r"AUDIT À\s+PARIS", f"AUDIT À {info['name'].upper()}", localized_body)
         localized_body = re.sub(r"RÉSERVER MON AUDIT À\s+PARIS", f"RÉSERVER MON AUDIT À {info['name'].upper()}", localized_body)
 
-        # 4. Global Injection (Ensuring we replace the existing body block)
+        # 4. Global Injection
         start_tokens = ["hero", "Hero Section", "1️⃣ Hero Section"]
         start_index = -1
         for token in start_tokens:

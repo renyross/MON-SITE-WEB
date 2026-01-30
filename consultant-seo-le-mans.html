@@ -311,7 +311,7 @@
   <section style="background: #0a0a0a;">
     <div class="container">
       <h2 class="section-title" style="text-align: center; margin-bottom: 25px;">
-        L’expertise d’un senior, l’agilité d’un freelance, <span>la puissance de l’IA</span>
+        Pourquoi <span>moi ?</span>
       </h2>
       <p
         style="text-align: center; color: #cbd5e1; max-width: 850px; margin: 0 auto 50px; font-size: 1.1rem; line-height: 1.7;">
@@ -320,78 +320,110 @@
       </p>
 
       <style>
-        .pillars-grid {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 30px;
-        }
-
-        .pillar-card {
+        .pillars-table-container {
+          overflow-x: auto;
           background: rgba(255, 255, 255, 0.02);
-          border: 1px solid rgba(255, 255, 255, 0.05);
-          padding: 40px;
           border-radius: 20px;
-          transition: all 0.3s ease;
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          padding: 5px;
         }
 
-        .pillar-card:hover {
-          background: rgba(255, 255, 255, 0.04);
-          border-color: rgba(59, 130, 246, 0.2);
-          transform: translateY(-5px);
+        .pillars-table {
+          width: 100%;
+          border-collapse: collapse;
+          color: #cbd5e1;
+          text-align: left;
+          min-width: 600px;
         }
 
-        .pillar-icon {
-          font-size: 2rem;
-          margin-bottom: 20px;
-          display: block;
+        .pillars-table th,
+        .pillars-table td {
+          padding: 30px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        .pillar-card h3 {
+        .pillars-table tr:last-child td {
+          border-bottom: none;
+        }
+
+        .pillar-head {
+          display: flex;
+          align-items: center;
+          gap: 15px;
           color: #fff;
-          font-size: 1.3rem;
-          margin-bottom: 15px;
           font-weight: 700;
+          font-size: 1.2rem;
         }
 
-        .pillar-card p {
-          color: #94a3b8;
+        .pillar-head span {
+          font-size: 1.8rem;
+          min-width: 40px;
+        }
+
+        .pillar-desc {
           font-size: 0.95rem;
           line-height: 1.6;
-          margin: 0;
+          max-width: 600px;
         }
 
         @media (max-width: 768px) {
-          .pillars-grid {
-            grid-template-columns: 1fr;
+          .pillars-table td {
+            display: block;
+            padding: 20px;
+          }
+
+          .pillars-table tr {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          }
+
+          .pillar-head {
+            margin-bottom: 10px;
           }
         }
       </style>
 
-      <div class="pillars-grid">
-        <div class="pillar-card">
-          <span class="pillar-icon">🧠</span>
-          <h3>Expertise combinée SEO + IA</h3>
-          <p>J’exploite l’IA pour scaler votre production de contenu et analyser la sémantique de vos concurrents
-            manceaus avec une précision inégalée.</p>
-        </div>
-        <div class="pillar-card">
-          <span class="pillar-icon">💼</span>
-          <h3>Expérience chez l’annonceur</h3>
-          <p>Ayant géré des enjeux business directs, je comprends vos impératifs de rentabilité. Je parle "chiffre
-            d'affaires" avant de parler "technique".</p>
-        </div>
-        <div class="pillar-card">
-          <span class="pillar-icon">📍</span>
-          <h3>Réactivité et proximité</h3>
-          <p>En tant que freelance basé à Le Mans, je suis votre interlocuteur unique. Pas d'inertie, une communication
-            fluide et un accompagnement sur-mesure.</p>
-        </div>
-        <div class="pillar-card">
-          <span class="pillar-icon">📊</span>
-          <h3>Mesurabilité totale</h3>
-          <p>Chaque action est pilotée par les données. Vous savez exactement comment votre budget SEO est investi et
-            quels résultats il génère.</p>
-        </div>
+      <div class="pillars-table-container">
+        <table class="pillars-table">
+          <tbody>
+            <tr>
+              <td>
+                <div class="pillar-head"><span>🧠</span> Expertise combinée SEO + IA</div>
+              </td>
+              <td>
+                <p class="pillar-desc">J’utilise l’Intelligence Artificielle pour scaler votre production de contenu et
+                  analyser la sémantique de vos concurrents manceaus avec une précision chirurgicale, tout en
+                  conservant une touche humaine indispensable.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="pillar-head"><span>💼</span> Expérience réelle chez l’annonceur</div>
+              </td>
+              <td>
+                <p class="pillar-desc">Avec plus de 3 ans passés à gérer des enjeux business internes, je comprends vos
+                  contraintes de rentabilité. Je ne parle pas seulement "positions", je parle "chiffre d'affaires".</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="pillar-head"><span>📍</span> Réactivité et proximité</div>
+              </td>
+              <td>
+                <p class="pillar-desc">En tant que freelance basé à Le Mans, je suis votre interlocuteur unique. Pas
+                  d'inertie d'agence, une communication fluide et un accompagnement ultra-personnalisé.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="pillar-head"><span>📊</span> Mesurabilité totale</div>
+              </td>
+              <td>
+                <p class="pillar-desc">Chaque action est pilotée par la donnée. Vous savez exactement comment votre
+                  budget est investi et quels résultats il génère.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <div style="text-align: center; margin-top: 50px;">
         <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-secondary" target="_blank">PARLONS DE VOTRE
@@ -690,6 +722,166 @@
 
 
   <!-- 11️⃣ Stack Outils -->
+  <section id="outils" style="padding: 100px 0; background: #0f0f0f;">
+    <div class="container">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
+        Les meilleurs outils <span>au service de votre visibilité</span>
+      </h2>
+      <p
+        style="text-align: center; color: #94a3b8; margin-bottom: 60px; font-size: 1.1rem; max-width: 850px; margin-left: auto; margin-right: auto;">
+        Pour obtenir des résultats d'expert, j'utilise une suite logicielle de pointe. Chaque outil me permet d'extraire
+        de la donnée précise pour prendre des décisions rentables pour votre business.
+      </p>
+
+      <div
+        style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; align-items: flex-start; margin-bottom: 40px;">
+        <!-- Outil 1 -->
+        <div style="text-align: center; max-width: 260px;">
+          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.15rem;">🐸 Screaming Frog</h3>
+          <p style="color: #7dd3fc; font-size: 0.9rem; margin-bottom: 10px; font-weight: bold;">Audit Technique</p>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
+            Pour réaliser des audits techniques complets. Il me permet de détecter instantanément les erreurs 404, les
+            problèmes d'indexation ou les balises manquantes.
+          </p>
+        </div>
+
+        <!-- Outil 2 -->
+        <div style="text-align: center; max-width: 260px;">
+          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.15rem;">📊 Google Search Console</h3>
+          <p style="color: #7dd3fc; font-size: 0.9rem; margin-bottom: 10px; font-weight: bold;">Pilotage de la
+            Performance</p>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
+            Mon tableau de bord de pilotage. C'est ici que je surveille votre trafic réel, vos positions exactes et la
+            santé de votre site via les données de Google.
+          </p>
+        </div>
+
+        <!-- Outil 3 -->
+        <div style="text-align: center; max-width: 260px;">
+          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.15rem;">🚀 SEMrush / Ahrefs</h3>
+          <p style="color: #7dd3fc; font-size: 0.9rem; margin-bottom: 10px; font-weight: bold;">Analyse Concurrentielle
+          </p>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
+            Pour surveiller ce que font vos concurrents à Le Mans et vous positionner sur les opportunités les plus
+            lucratives.
+          </p>
+        </div>
+
+        <!-- Outil 4 -->
+        <div style="text-align: center; max-width: 260px;">
+          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.15rem;">🧠 ThotSEO</h3>
+          <p style="color: #7dd3fc; font-size: 0.9rem; margin-bottom: 10px; font-weight: bold;">Optimisation Sémantique
+          </p>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
+            L'outil indispensable pour structurer vos contenus et dominer la sémantique de votre marché (topical
+            authority).
+          </p>
+        </div>
+      </div>
+
+      <div
+        style="background: rgba(46, 92, 255, 0.05); padding: 20px; border-radius: 12px; text-align: center; border: 1px solid rgba(46, 92, 255, 0.1); max-width: 800px; margin: 0 auto;">
+        <p style="color: #cbd5e1; font-size: 1rem; margin: 0;">
+          <strong>Le bénéfice pour vous :</strong> Une stratégie basée sur des chiffres réels et une vision claire de la
+          concurrence pour ne laisser aucune place au hasard.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- [SECTION 11 : LOCAL] -->
+  <section style="background: #0a0a0a;">
+    <div class="container container-medium" style="text-align: center;">
+      <h2 class="section-title" style="margin-bottom: 20px;">Un consultant <span>proche de vous</span></h2>
+      <p style="color: #cbd5e1; font-size: 1.1rem; line-height: 1.6;">
+        Intervenant partout à Le Mans (Automobile, 24h du Mans, Sarthe) et en Pays de la Loire. Je connais
+        parfaitement le marché local et ses enjeux de compétitivité.
+      </p>
+    </div>
+  </section>
+
+Stack Outils -->
+  <section id="outils" style="padding: 100px 0; background: #0f0f0f;">
+    <div class="container">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
+        Les meilleurs outils <span>au service de votre visibilité</span>
+      </h2>
+      <p
+        style="text-align: center; color: #94a3b8; margin-bottom: 60px; font-size: 1.1rem; max-width: 850px; margin-left: auto; margin-right: auto;">
+        Pour obtenir des résultats d'expert, j'utilise une suite logicielle de pointe. Chaque outil me permet d'extraire
+        de la donnée précise pour prendre des décisions rentables pour votre business.
+      </p>
+
+      <div
+        style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; align-items: flex-start; margin-bottom: 40px;">
+        <!-- Outil 1 -->
+        <div style="text-align: center; max-width: 260px;">
+          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.15rem;">🐸 Screaming Frog</h3>
+          <p style="color: #7dd3fc; font-size: 0.9rem; margin-bottom: 10px; font-weight: bold;">Audit Technique</p>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
+            Pour réaliser des audits techniques complets. Il me permet de détecter instantanément les erreurs 404, les
+            problèmes d'indexation ou les balises manquantes.
+          </p>
+        </div>
+
+        <!-- Outil 2 -->
+        <div style="text-align: center; max-width: 260px;">
+          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.15rem;">📊 Google Search Console</h3>
+          <p style="color: #7dd3fc; font-size: 0.9rem; margin-bottom: 10px; font-weight: bold;">Pilotage de la
+            Performance</p>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
+            Mon tableau de bord de pilotage. C'est ici que je surveille votre trafic réel, vos positions exactes et la
+            santé de votre site via les données de Google.
+          </p>
+        </div>
+
+        <!-- Outil 3 -->
+        <div style="text-align: center; max-width: 260px;">
+          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.15rem;">🚀 SEMrush / Ahrefs</h3>
+          <p style="color: #7dd3fc; font-size: 0.9rem; margin-bottom: 10px; font-weight: bold;">Analyse Concurrentielle
+          </p>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
+            Pour surveiller ce que font vos concurrents à Le Mans et vous positionner sur les opportunités les plus
+            lucratives.
+          </p>
+        </div>
+
+        <!-- Outil 4 -->
+        <div style="text-align: center; max-width: 260px;">
+          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.15rem;">🧠 ThotSEO</h3>
+          <p style="color: #7dd3fc; font-size: 0.9rem; margin-bottom: 10px; font-weight: bold;">Optimisation Sémantique
+          </p>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
+            L'outil indispensable pour structurer vos contenus et dominer la sémantique de votre marché (topical
+            authority).
+          </p>
+        </div>
+      </div>
+
+      <div
+        style="background: rgba(46, 92, 255, 0.05); padding: 20px; border-radius: 12px; text-align: center; border: 1px solid rgba(46, 92, 255, 0.1); max-width: 800px; margin: 0 auto;">
+        <p style="color: #cbd5e1; font-size: 1rem; margin: 0;">
+          <strong>Le bénéfice pour vous :</strong> Une stratégie basée sur des chiffres réels et une vision claire de la
+          concurrence pour ne laisser aucune place au hasard.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- [SECTION 11 : LOCAL] -->
+  <section style="background: #0a0a0a;">
+    <div class="container container-medium" style="text-align: center;">
+      <h2 class="section-title" style="margin-bottom: 20px;">Un consultant <span>proche de vous</span></h2>
+      <p style="color: #cbd5e1; font-size: 1.1rem; line-height: 1.6;">
+        Intervenant partout à Le Mans (Automobile, 24h du Mans, Sarthe) et en Pays de la Loire. Je connais
+        parfaitement le marché local et ses enjeux de compétitivité.
+      </p>
+    </div>
+  </section>
+
+Stack Outils -->
   <section id="outils" style="padding: 100px 0; background: #0f0f0f;">
     <div class="container">
       <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
