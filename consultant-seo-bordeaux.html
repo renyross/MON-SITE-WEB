@@ -71,7 +71,6 @@
   <link rel="icon" href="logo-seo.png" sizes="192x192" type="image/png">
   <!-- Pour iOS/Android -->
   <link rel="apple-touch-icon" href="logo-seo.png">
-  <!-- FAQ Accordion Styles -->
   <style>
     /* Specific overrides for consultant-seo-bordeaux page */
     :root {
@@ -108,6 +107,12 @@
       margin-right: auto;
     }
 
+    .hero-bordeaux .hero-meta {
+      color: #94a3b8;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
     .grid-2-cols {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -136,54 +141,35 @@
       transition: transform 0.3s ease;
     }
 
-    .section-title {
-      text-align: center;
-      font-family: 'Outfit', var(--font-display);
-      font-size: 3.5rem;
-      font-weight: 800;
-      line-height: 1.1;
-      margin-bottom: 24px;
-      letter-spacing: -0.02em;
-      color: var(--text-white);
+    .service-card:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.04);
     }
 
-    .section-title span {
-      background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      display: inline-block;
-    }
-
-    .prob-sol-grid {
-      display: grid;
-      gap: 30px;
-    }
-
-    .prob-sol-item {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0;
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      border-radius: 20px;
-      overflow: hidden;
-    }
-
-    .prob-sol-part {
-      padding: 40px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .prob-part {
-      background: rgba(239, 68, 68, 0.05);
-      border-right: 1px solid rgba(255, 255, 255, 0.05);
-    }
-
-    .sol-part {
+    .package-card {
       background: rgba(139, 92, 246, 0.05);
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      padding: 40px;
+      border-radius: 16px;
+      text-align: center;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 40px;
+      margin-bottom: 30px;
+      border-left: 2px solid #8b5cf6;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -8px;
+      top: 0;
+      width: 14px;
+      height: 14px;
+      background: #8b5cf6;
+      border-radius: 50%;
     }
 
     /* Mobile Responsive Overrides */
@@ -202,13 +188,23 @@
         text-align: center;
       }
 
-      .prob-sol-item {
-        grid-template-columns: 1fr;
+      .section-title {
+        font-size: 2.2rem !important;
+        margin-bottom: 30px !important;
       }
 
-      .prob-part {
-        border-right: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      .hero-btn-primary,
+      .hero-btn-secondary {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .bordeaux-stats-box {
+        padding: 25px !important;
+      }
+
+      .timeline-item {
+        text-align: left;
       }
     }
   </style>
@@ -403,56 +399,101 @@
     </div>
   </section>
 
-  <!-- 8️⃣ Profils accompagnés (Bloc 8) -->
-  <section style="padding: 100px 0; background: #0a0a0a;">
+  <!-- [SECTION 3 : POURQUOI FREELANCE] -->
+  <section style="background: #0a0a0a;">
     <div class="container">
-      <h2 class="section-title" style="text-align: center; margin-bottom: 60px;">
-        À qui s'adressent mes services de consultant SEO ?
+      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
+        Pourquoi choisir <span>un freelance</span> plutôt<br>qu’une agence ?
       </h2>
+      <div class="bordeaux-stats-box" style="overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; color: #cbd5e1; text-align: left; min-width: 600px;">
+          <thead>
+            <tr style="border-bottom: 2px solid #8b5cf6;">
+              <th style="padding: 15px; color: #fff;">Atout & Différenciation</th>
+              <th style="padding: 15px; color: #fff;">Bénéfice pour votre Business</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td style="padding: 15px;">
+                <strong style="color: #8b5cf6;">Expertise combinée SEO + IA</strong>
+              </td>
+              <td style="padding: 15px;">Stratégies scalables et optimisées grâce à l’IA pour dominer Bordeaux.</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td style="padding: 15px;">
+                <strong style="color: #8b5cf6;">Expérience concrète chez l’annonceur</strong>
+              </td>
+              <td style="padding: 15px;">Compréhension des enjeux business réels de Nouvelle-Aquitaine.</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td style="padding: 15px;">
+                <strong style="color: #8b5cf6;">Réactivité & Accompagnement</strong>
+              </td>
+              <td style="padding: 15px;">Suivi dédié et disponibilité maximale sans intermédiaires.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-secondary" target="_blank">APPEL DÉCOUVERTE –
+          Échangez sur votre projet SEO à Bordeaux</a>
+      </div>
+    </div>
+  </section>
 
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
-
-        <!-- Profile 1: Vignobles -->
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.05); text-align: left;">
-          <div style="font-size: 2.5rem; margin-bottom: 20px;">🍷</div>
-          <h3 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">Vignobles & Châteaux</h3>
-          <p style="color: #94a3b8; line-height: 1.6;">
-            Digitalisez votre domaine et développez vos ventes en direct (D2C) grâce à une visibilité nationale et
-            internationale.
-          </p>
+  <!-- [SECTION 4 : SOCIAL PROOF] -->
+  <section style="background: #0f0f0f;">
+    <div class="container">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
+        Ils nous <span>font confiance</span> à Bordeaux
+      </h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <p style="color: #cbd5e1; font-style: italic; margin-bottom: 20px;">« Grâce à l’audit SEO et à la stratégie
+            mise en place, notre trafic a augmenté de 80% en 6 mois. »</p>
+          <strong style="color: #fff;">Château Viticole, Bordeaux</strong>
         </div>
-
-        <!-- Profile 2: Startups -->
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.05); text-align: left;">
-          <div style="font-size: 2.5rem; margin-bottom: 20px;">🚀</div>
-          <h3 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">Startups French Tech Bordeaux</h3>
-          <p style="color: #94a3b8; line-height: 1.6;">
-            Accélérez votre croissance et dominez votre marché avant que la concurrence ne s'installe.
-          </p>
+        <div class="service-card">
+          <p style="color: #cbd5e1; font-style: italic; margin-bottom: 20px;">« Une expertise IA qui fait la différence
+            pour notre startup aux Bassins à Flot. »</p>
+          <strong style="color: #fff;">Startup Tech, Gironde</strong>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Profile 3: PME -->
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.05); text-align: left;">
-          <div style="font-size: 2.5rem; margin-bottom: 20px;">🏢</div>
-          <h3 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">PME & Entreprises de Services</h3>
-          <p style="color: #94a3b8; line-height: 1.6;">
-            Transformez votre site vitrine en un canal d'acquisition de leads qualifiés et réguliers.
-          </p>
-        </div>
-
-        <!-- Profile 4: E-commerce -->
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.05); text-align: left;">
-          <div style="font-size: 2.5rem; margin-bottom: 20px;">🛍️</div>
-          <h3 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">E-commerçants girondins</h3>
-          <p style="color: #94a3b8; line-height: 1.6;">
-            Optimisez votre catalogue pour maximiser votre ROAS et réduire votre dépendance à la publicité payante.
-          </p>
-        </div>
-
+  <!-- [SECTION 5 : COMPARATIF] -->
+  <section style="background: #0a0a0a;">
+    <div class="container">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
+        Freelance vs Agence vs DIY – <span>Quelle solution choisir ?</span>
+      </h2>
+      <div class="bordeaux-stats-box" style="overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; color: #cbd5e1; text-align: left; min-width: 600px;">
+          <thead>
+            <tr style="border-bottom: 2px solid #8b5cf6;">
+              <th style="padding: 15px;">Critères</th>
+              <th style="padding: 15px; color: #8b5cf6;">Freelance SEO</th>
+              <th style="padding: 15px;">Agence SEO</th>
+              <th style="padding: 15px;">DIY</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td style="padding: 15px;"><strong>Prix</strong></td>
+              <td style="padding: 15px;">Moyen</td>
+              <td style="padding: 15px;">Élevé</td>
+              <td style="padding: 15px;">Faible</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td style="padding: 15px;"><strong>Réactivité</strong></td>
+              <td style="padding: 15px;">Très rapide</td>
+              <td style="padding: 15px;">Moyenne</td>
+              <td style="padding: 15px;">Variable</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
@@ -624,104 +665,6 @@
     </div>
   </section>
 
-  <!-- [SECTION 3 : POURQUOI FREELANCE] -->
-  <section style="background: #0a0a0a;">
-    <div class="container">
-      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
-        Pourquoi choisir <span>un freelance</span> plutôt<br>qu’une agence ?
-      </h2>
-      <div class="bordeaux-stats-box" style="overflow-x: auto;">
-        <table style="width: 100%; border-collapse: collapse; color: #cbd5e1; text-align: left; min-width: 600px;">
-          <thead>
-            <tr style="border-bottom: 2px solid #8b5cf6;">
-              <th style="padding: 15px; color: #fff;">Atout & Différenciation</th>
-              <th style="padding: 15px; color: #fff;">Bénéfice pour votre Business</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-              <td style="padding: 15px;">
-                <strong style="color: #8b5cf6;">Expertise combinée SEO + IA</strong>
-              </td>
-              <td style="padding: 15px;">Stratégies scalables et optimisées grâce à l’IA pour dominer Bordeaux.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-              <td style="padding: 15px;">
-                <strong style="color: #8b5cf6;">Expérience concrète chez l’annonceur</strong>
-              </td>
-              <td style="padding: 15px;">Compréhension des enjeux business réels de Nouvelle-Aquitaine.</td>
-            </tr>
-            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-              <td style="padding: 15px;">
-                <strong style="color: #8b5cf6;">Réactivité & Accompagnement</strong>
-              </td>
-              <td style="padding: 15px;">Suivi dédié et disponibilité maximale sans intermédiaires.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div style="text-align: center; margin-top: 40px;">
-        <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-secondary" target="_blank">APPEL DÉCOUVERTE –
-          Échangez sur votre projet SEO à Bordeaux</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- [SECTION 4 : SOCIAL PROOF] -->
-  <section style="background: #0f0f0f;">
-    <div class="container">
-      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
-        Ils nous <span>font confiance</span> à Bordeaux
-      </h2>
-      <div class="service-grid">
-        <div class="service-card">
-          <p style="color: #cbd5e1; font-style: italic; margin-bottom: 20px;">« Grâce à l’audit SEO et à la stratégie
-            mise en place, notre trafic a augmenté de 80% en 6 mois. »</p>
-          <strong style="color: #fff;">Château Viticole, Bordeaux</strong>
-        </div>
-        <div class="service-card">
-          <p style="color: #cbd5e1; font-style: italic; margin-bottom: 20px;">« Une expertise IA qui fait la différence
-            pour notre startup aux Bassins à Flot. »</p>
-          <strong style="color: #fff;">Startup Tech, Gironde</strong>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- [SECTION 5 : COMPARATIF] -->
-  <section style="background: #0a0a0a;">
-    <div class="container">
-      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
-        Freelance vs Agence vs DIY – <span>Quelle solution choisir ?</span>
-      </h2>
-      <div class="bordeaux-stats-box" style="overflow-x: auto;">
-        <table style="width: 100%; border-collapse: collapse; color: #cbd5e1; text-align: left; min-width: 600px;">
-          <thead>
-            <tr style="border-bottom: 2px solid #8b5cf6;">
-              <th style="padding: 15px;">Critères</th>
-              <th style="padding: 15px; color: #8b5cf6;">Freelance SEO</th>
-              <th style="padding: 15px;">Agence SEO</th>
-              <th style="padding: 15px;">DIY</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-              <td style="padding: 15px;"><strong>Prix</strong></td>
-              <td style="padding: 15px;">Moyen</td>
-              <td style="padding: 15px;">Élevé</td>
-              <td style="padding: 15px;">Faible</td>
-            </tr>
-            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-              <td style="padding: 15px;"><strong>Réactivité</strong></td>
-              <td style="padding: 15px;">Très rapide</td>
-              <td style="padding: 15px;">Moyenne</td>
-              <td style="padding: 15px;">Variable</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
 
   <!-- [SECTION 11 : LOCAL] -->
   <section style="background: #0a0a0a;">
@@ -739,41 +682,59 @@
   </section>
 
   <!-- [SECTION 12 : FAQ] -->
-  <section style="background: #0f0f0f;">
-    <div class="container">
-      <h2 class="section-title" style="text-align: center; margin-bottom: 40px;">
-        Questions <span>fréquentes</span>
+  <section class="faq-section" style="background: #0f0f0f; padding: 100px 0;">
+    <div class="container container-medium">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">FAQ – <span>Questions fréquentes</span>
       </h2>
-      <div style="max-width: 800px; margin: 0 auto;">
-        <details>
-          <summary>Combien de temps avant de voir des résultats ?</summary>
-          <p>Le SEO est un travail de fond. À Bordeaux, on commence généralement à observer des gains de position
-            significatifs entre 3 et 6 mois.</p>
+      <div class="faq-list" style="display: grid; gap: 20px; max-width: 800px; margin: 0 auto;">
+
+        <details
+          style="padding: 25px; background: rgba(255,255,255,0.02); border-radius: 16px; border: 1px solid rgba(255,255,255,0.05); cursor: pointer;">
+          <summary
+            style="font-weight: 600; font-size: 1.1rem; color: #fff; list-style: none; display: flex; align-items: center; gap: 10px;">
+            <span style="color: #8b5cf6; font-size: 1.5em; line-height: 1;">+</span> Q1 : Prix moyen d’un consultant SEO
+            à Bordeaux ?
+          </summary>
+          <div style="margin-top: 15px; color: #94a3b8; line-height: 1.7; padding-left: 30px;">
+            <p>En moyenne, un accompagnement freelance commence à 1 000 €/mois pour les PME and sites medium.</p>
+          </div>
         </details>
-        <details>
-          <summary>Pourquoi choisir un freelance plutôt qu'une agence bordelaise ?</summary>
-          <p>Pour la réactivité, le contact direct avec l'expert et une structure de coûts optimisée.</p>
+
+        <details
+          style="padding: 25px; background: rgba(255,255,255,0.02); border-radius: 16px; border: 1px solid rgba(255,255,255,0.05); cursor: pointer;">
+          <summary
+            style="font-weight: 600; font-size: 1.1rem; color: #fff; list-style: none; display: flex; align-items: center; gap: 10px;">
+            <span style="color: #8b5cf6; font-size: 1.5em; line-height: 1;">+</span> Q2 : Un freelance suffit-il pour un
+            gros site ?
+          </summary>
+          <div style="margin-top: 15px; color: #94a3b8; line-height: 1.7; padding-left: 30px;">
+            <p>Oui, avec une expertise SEO solide, le freelance peut gérer de grands sites and coordonner le netlinking
+              and la technique.</p>
+          </div>
         </details>
-        <details>
-          <summary>Utilisez-vous l'IA dans vos prestations ?</summary>
-          <p>Oui, l'IA nous permet de scaler la production de contenu et d'analyser de larges volumes de données
-            sémantiques plus rapidement.</p>
+
+        <details
+          style="padding: 25px; background: rgba(255,255,255,0.02); border-radius: 16px; border: 1px solid rgba(255,255,255,0.05); cursor: pointer;">
+          <summary
+            style="font-weight: 600; font-size: 1.1rem; color: #fff; list-style: none; display: flex; align-items: center; gap: 10px;">
+            <span style="color: #8b5cf6; font-size: 1.5em; line-height: 1;">+</span> Q3 : Durée avant résultats ?
+          </summary>
+          <div style="margin-top: 15px; color: #94a3b8; line-height: 1.7; padding-left: 30px;">
+            <p>En général 3 à 6 mois pour voir un trafic qualifié and un ROI tangible à Bordeaux.</p>
+          </div>
         </details>
+
       </div>
     </div>
   </section>
 
   <!-- [SECTION 13 : CTA FINAL] -->
-  <section style="background: #0a0a0a; text-align: center;">
-    <div class="container">
-      <h2 class="section-title" style="margin-bottom: 20px;">Prêt à <span>dominer Google</span> à Bordeaux ?</h2>
-      <p style="color: #94a3b8; margin-bottom: 40px;">Ne laissez plus vos concurrents girondins prendre toute la
-        visibilité.</p>
-      <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-        <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank">RÉSERVER MA
-          CONSULTATION</a>
-        <a href="audit-seo-gratuit" class="hero-btn-secondary">AUDIT SEO OFFERT</a>
-      </div>
+  <section style="background: #0a0a0a; padding-bottom: 160px; text-align: center;">
+    <div class="container container-medium">
+      <h2 class="section-title" style="margin-bottom: 20px;">Prêt à <span>propulser votre business ?</span></h2>
+      <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary"
+        style="font-size: 1.2rem; padding: 20px 40px;" target="_blank">APPEL DÉCOUVERTE – 2
+        slots disponibles ce mois</a>
     </div>
   </section>
 
@@ -877,6 +838,7 @@
       </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
