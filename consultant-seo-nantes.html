@@ -183,6 +183,43 @@
       border-radius: 50%;
     }
 
+    /* Branding Overrides for Emerald Green */
+    :root {
+      --accent-primary: #10b981;
+      /* Force Green as Primary */
+    }
+
+    .hero-btn-primary {
+      background: #10b981 !important;
+      box-shadow: 0 0 20px rgba(16, 185, 129, 0.4) !important;
+    }
+
+    .hero-btn-primary:hover {
+      background: #059669 !important;
+      box-shadow: 0 0 40px rgba(16, 185, 129, 0.6) !important;
+    }
+
+    .nav-btn-header-mobile {
+      background: #10b981 !important;
+    }
+
+    .section-title span,
+    h1 span {
+      background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* FAQ Polish */
+    details summary {
+      list-style: none;
+    }
+
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+
     /* Mobile Responsive Overrides */
     @media (max-width: 768px) {
       section {
@@ -294,7 +331,7 @@
         <!-- Text Column -->
         <div>
           <p style="color: #cbd5e1; margin-bottom: 25px; line-height: 1.7;">
-            Nantes est un hub économique ultra-dynamique (Nantes Tech). Entre les startups de l'Île de Nantes and les
+            Nantes est un hub économique ultra-dynamique (Nantes Tech). Entre les startups de l'Île de Nantes et les
             services B2B, la compétition sur Google est intense. Le SEO est le levier le plus rentable pour dominer ce
             marché nantais en pleine mutation.
           </p>
@@ -339,8 +376,8 @@
         Problèmes SEO fréquents <span style="white-space: nowrap;">et solutions concrètes</span>
       </h2>
       <p style="text-align: center; color: #94a3b8; max-width: 800px; margin: 0 auto 50px;">
-        Beaucoup d’entreprises peinent à transformer leur site en générateur de trafic and de leads. Voici les
-        problématiques typiques and nos solutions à Nantes.
+        Beaucoup d’entreprises peinent à transformer leur site en générateur de trafic et de leads. Voici les
+        problématiques typiques et nos solutions à Nantes.
       </p>
 
       <div class="prob-sol-grid">
@@ -402,7 +439,7 @@
               💡 La Solution
             </h3>
             <p style="color: #cbd5e1; font-size: 0.95rem;">
-              Audit SEO complet and recherche de mots-clés ciblés pour générer un trafic nantais qualifié.
+              Audit SEO complet et recherche de mots-clés ciblés pour générer un trafic nantais qualifié.
             </p>
           </div>
         </div>
@@ -422,7 +459,7 @@
               💡 La Solution
             </h3>
             <p style="color: #cbd5e1; font-size: 0.95rem;">
-              Stratégie éditoriale and cocon sémantique pour attirer des prospects alignés on vos objectifs business.
+              Stratégie éditoriale et cocon sémantique pour attirer des prospects alignés sur vos objectifs business.
             </p>
           </div>
         </div>
@@ -442,7 +479,27 @@
               💡 La Solution
             </h3>
             <p style="color: #cbd5e1; font-size: 0.95rem;">
-              Optimisation technique and création de contenus stratégiques pour un positionnement durable.
+              Optimisation technique et création de contenus stratégiques pour un positionnement durable.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="prob-sol-item">
+          <div class="prob-sol-part prob-part">
+            <h3 style="color: #f87171; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+              ⚠️ ROI SEO difficile à mesurer
+            </h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem;">
+              <strong>Problème :</strong> Vous investissez sans savoir ce qui fonctionne.
+            </p>
+          </div>
+          <div class="prob-sol-part sol-part">
+            <h3 style="color: #10b981; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+              💡 La Solution
+            </h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem;">
+              KPIs clairs, reporting transparent et suivi continu pour chaque action à Nantes.
             </p>
           </div>
         </div>
@@ -474,7 +531,7 @@
               <td style="padding: 15px;">
                 <strong style="color: #10b981;">Expertise combinée SEO + IA</strong>
               </td>
-              <td style="padding: 15px;">Stratégies scalables and optimisées grâce à l’IA pour dominer Nantes.</td>
+              <td style="padding: 15px;">Stratégies scalables et optimisées grâce à l’IA pour dominer Nantes.</td>
             </tr>
             <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
               <td style="padding: 15px;">
@@ -486,7 +543,14 @@
               <td style="padding: 15px;">
                 <strong style="color: #10b981;">Réactivité & Accompagnement</strong>
               </td>
-              <td style="padding: 15px;">Suivi dédié and disponibilité maximale sans intermédiaires.</td>
+              <td style="padding: 15px;">Suivi dédié et disponibilité maximale sans intermédiaires.</td>
+            </tr>
+            <tr>
+              <td style="padding: 15px;">
+                <strong style="color: #10b981;">Focus ROI</strong>
+              </td>
+              <td style="padding: 15px;">Optimisations mesurables et ajustées selon vos KPIs pour un retour sur
+                investissement garanti à Nantes.</td>
             </tr>
           </tbody>
         </table>
@@ -498,19 +562,28 @@
   <section style="background: #0f0f0f;">
     <div class="container">
       <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
-        Ils nous <span>font confiance</span> à Nantes
+        Ils nous font confiance à <span>Nantes</span>
       </h2>
       <div class="service-grid">
         <div class="service-card">
-          <p style="color: #cbd5e1; font-style: italic; margin-bottom: 20px;">« Grâce à l’audit SEO and à la stratégie
-            mise en place, notre trafic a augmenté de 315% en 6 mois. »</p>
+          <p style="color: #cbd5e1; font-style: italic; margin-bottom: 20px;">« Grâce à l’audit SEO et à la stratégie
+            mise en place, notre trafic a augmenté de 315% en 6 mois et nos leads qualifiés ont doublé. »</p>
           <strong style="color: #fff;">SaaS B2B, Nantes</strong>
         </div>
         <div class="service-card">
-          <p style="color: #cbd5e1; font-style: italic; margin-bottom: 20px;">« x4 sur les demandes de devis entrants
-            après une refonte sémantique complète. »</p>
-          <strong style="color: #fff;">PME Industrielle, Nantes</strong>
+          <p style="color: #cbd5e1; font-style: italic; margin-bottom: 20px;">« Optimisation SEO local et Google
+            Business Profile : +60% de visites qualifiées sur nos points de vente en 4 mois. »</p>
+          <strong style="color: #fff;">Retail, Nantes</strong>
         </div>
+        <div class="service-card">
+          <p style="color: #cbd5e1; font-style: italic; margin-bottom: 20px;">« Une approche personnalisée et orientée
+            ROI : chaque action SEO était mesurable et rentable. »</p>
+          <strong style="color: #fff;">Startup e-commerce, Nantes</strong>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank">APPEL DÉCOUVERTE –
+          Découvrez comment booster votre visibilité à Nantes</a>
       </div>
     </div>
   </section>
@@ -528,7 +601,7 @@
               <th style="padding: 15px;">Critères</th>
               <th style="padding: 15px; color: #10b981;">Freelance SEO</th>
               <th style="padding: 15px;">Agence SEO</th>
-              <th style="padding: 15px;">DIY</th>
+              <th style="padding: 15px;">DIY (Faites-le vous-même)</th>
             </tr>
           </thead>
           <tbody>
@@ -536,7 +609,7 @@
               <td style="padding: 15px;"><strong>Prix</strong></td>
               <td style="padding: 15px;">Moyen</td>
               <td style="padding: 15px;">Élevé</td>
-              <td style="padding: 15px;">Faible</td>
+              <td style="padding: 15px;">Faible mais risqué</td>
             </tr>
             <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
               <td style="padding: 15px;"><strong>Réactivité</strong></td>
@@ -544,298 +617,222 @@
               <td style="padding: 15px;">Moyenne</td>
               <td style="padding: 15px;">Variable</td>
             </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td style="padding: 15px;"><strong>Expertise</strong></td>
+              <td style="padding: 15px;">Très élevée</td>
+              <td style="padding: 15px;">Élevée</td>
+              <td style="padding: 15px;">Faible</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td style="padding: 15px;"><strong>ROI</strong></td>
+              <td style="padding: 15px;">Mesurable</td>
+              <td style="padding: 15px;">Limité</td>
+              <td style="padding: 15px;">Risqué</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td style="padding: 15px;"><strong>Personnalisation</strong></td>
+              <td style="padding: 15px;">Sur-mesure</td>
+              <td style="padding: 15px;">Standardisée</td>
+              <td style="padding: 15px;">Limitée</td>
+            </tr>
+            <tr>
+              <td style="padding: 15px;"><strong>Accompagnement</strong></td>
+              <td style="padding: 15px;">Direct et humain</td>
+              <td style="padding: 15px;">Support distant</td>
+              <td style="padding: 15px;">Aucun</td>
+            </tr>
           </tbody>
         </table>
       </div>
+      <p style="text-align: center; color: #fff; margin-top: 20px;">
+        <strong>Conclusion :</strong> Le freelance combine expertise, personnalisation et ROI à un prix compétitif.
+      </p>
+      <div style="text-align: center; margin-top: 30px;">
+        <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-secondary" target="_blank">APPEL DÉCOUVERTE –
+          Profitez d’un accompagnement SEO personnalisé à Nantes</a>
+      </div>
     </div>
   </section>
 
-  <!-- 4️⃣ Quel accompagnement pour votre stade de maturité ? -->
-  <section style="background: #0f0f0f; padding: 100px 0;">
+  <!-- [SECTION 6 : PRESTATIONS] -->
+  <section style="background: #0f0f0f;">
     <div class="container">
-      <h2 class="section-title" style="text-align: center; margin-bottom: 60px;">
-        Quel accompagnement pour votre <span class="text-green">stade de maturité</span> ?
+      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
+        Prestations de consultant <span>SEO freelance à Nantes</span>
       </h2>
-      <p style="text-align: center; color: #94a3b8; max-width: 800px; margin: -40px auto 60px;">
-        Une stratégie SEO ne se duplique pas. J'adapte mon intervention selon votre ADN business :
-      </p>
-
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-
-        <!-- Startup / Scale-up -->
-        <div class="service-card"
-          style="background: rgba(255, 255, 255, 0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05); border-top: 3px solid #3b82f6;">
-          <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 10px;">🚀 Startup / Scale-up (Île de Nantes /
-            Euronantes)</h3>
-          <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 15px;">
-            <strong>Objectif :</strong> Hyper-croissance et Traction.
-          </p>
-          <p style="color: #cbd5e1; font-size: 0.95rem;">
-            ⚡ <strong>Action :</strong> Programmatic SEO pour générer des milliers de pages qualifiées, Autorité rapide
-            via Digital PR.
+      <div class="service-grid">
+        <div class="service-card">
+          <h3 style="color: #fff; margin-bottom: 15px;">📍 SEO local & Google Business Profile</h3>
+          <p style="color: #94a3b8;">Attirer des clients locaux and optimiser votre présence sur Google Maps à Nantes.
           </p>
         </div>
-
-        <!-- PME / ETI -->
-        <div class="service-card"
-          style="background: rgba(255, 255, 255, 0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05); border-top: 3px solid #10b981;">
-          <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 10px;">🏭 PME / ETI (Saint-Herblain / Orvault)</h3>
-          <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 15px;">
-            <strong>Objectif :</strong> Génération de Leads B2B qualifiés.
-          </p>
-          <p style="color: #cbd5e1; font-size: 0.95rem;">
-            ⚡ <strong>Action :</strong> Nettoyage technique (Dette technique), Ciblage transactionnel, Optimisation
-            UX/Conversion.
-          </p>
+        <div class="service-card">
+          <h3 style="color: #fff; margin-bottom: 15px;">🛠️ Audit SEO technique</h3>
+          <p style="color: #94a3b8;">Corriger les problèmes techniques, vitesse, maillage and balises pour un site
+            performant.</p>
         </div>
-
-        <!-- E-commerçants -->
-        <div class="service-card"
-          style="background: rgba(255, 255, 255, 0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05); border-top: 3px solid #a855f7;">
-          <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 10px;">🛍️ E-commerçant (Région Nantaise)</h3>
-          <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 15px;">
-            <strong>Objectif :</strong> Maximisation du Chiffre d'Affaires.
-          </p>
-          <p style="color: #cbd5e1; font-size: 0.95rem;">
-            ⚡ <strong>Action :</strong> Optimisation IA des fiches produits, Maillage interne prédictif, SEO Local pour
-            le Drive-to-Store.
-          </p>
+        <div class="service-card">
+          <h3 style="color: #fff; margin-bottom: 15px;">📝 Stratégie éditoriale / cocon sémantique</h3>
+          <p style="color: #94a3b8;">Générer du trafic qualifié grâce à un contenu structuré and ciblé pour le marché
+            nantais.</p>
         </div>
+        <div class="service-card">
+          <h3 style="color: #fff; margin-bottom: 15px;">🔗 Netlinking et popularité</h3>
+          <p style="color: #94a3b8;">Augmenter l’autorité de votre site pour un meilleur positionnement durable.</p>
+        </div>
+        <div class="service-card">
+          <h3 style="color: #fff; margin-bottom: 15px;">🤖 SEO & IA</h3>
+          <p style="color: #94a3b8;">Scalabilité et automatisation : automatiser certaines tâches SEO pour gagner du
+            temps tout en augmentant l’efficacité.</p>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank">APPEL DÉCOUVERTE –
+          Commencez votre optimisation SEO à Nantes</a>
       </div>
     </div>
   </section>
 
-  <!-- 5️⃣ Pourquoi choisir un Consultant orienté Data & IA ? -->
-  <section style="padding: 100px 0; background: #0a0a0a;">
+  <!-- [SECTION 7 : PROFILS] -->
+  <section style="background: #0a0a0a;">
     <div class="container">
-      <div class="grid-2-cols" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;">
-        <div>
-          <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">
-            Pourquoi choisir un Consultant orienté <span class="text-green">Data & IA</span> ?
-          </h2>
-          <h3 style="color: #fff; font-size: 1.3rem; margin-bottom: 20px;">L'ère du "SEO au doigt mouillé" est terminée
-          </h3>
-          <p style="color: #cbd5e1; margin-bottom: 25px; line-height: 1.7;">
-            La majorité des consultants nantais travaillent à l'intuition. Je travaille à la Preuve. Mon approche repose
-            sur l'exploitation massive de données (Log Analysis, Scraping, API Google) pour prendre des décisions
-            factuelles.
-          </p>
-
-          <div style="margin-bottom: 25px;">
-            <p style="color: #cbd5e1; font-size: 1rem; margin-bottom: 10px;">✅ <strong>Pas de devinettes :</strong> Nous
-              savons exactement ce que Google attend grâce au Reverse Engineering des SERPs.</p>
-            <p style="color: #cbd5e1; font-size: 1rem; margin-bottom: 10px;">✅ <strong>Pas de perte de temps :</strong>
-              L'IA rédige les brouillons, je sublime l'expertise et la conversion.</p>
-            <p style="color: #cbd5e1; font-size: 1rem;">✅ <strong>Pas de plafond de verre :</strong> L'automatisation
-              (Python) permet de déployer des stratégies impossibles à réaliser manuellement.</p>
-          </div>
-        </div>
-
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 40px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05);">
-          <h3 style="color: #fff; text-align: center; margin-bottom: 30px;">Ma Stack Technique (Votre avantage)</h3>
-          <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
-            <span
-              style="padding: 8px 15px; background: rgba(59, 130, 246, 0.1); color: #60a5fa; border-radius: 50px; font-size: 0.9rem;">Thot
-              SEO</span>
-            <span
-              style="padding: 8px 15px; background: rgba(16, 185, 129, 0.1); color: #34d399; border-radius: 50px; font-size: 0.9rem;">OpenAI
-              API</span>
-            <span
-              style="padding: 8px 15px; background: rgba(168, 85, 247, 0.1); color: #c084fc; border-radius: 50px; font-size: 0.9rem;">Screaming
-              Frog</span>
-            <span
-              style="padding: 8px 15px; background: rgba(245, 158, 11, 0.1); color: #fbbf24; border-radius: 50px; font-size: 0.9rem;">Looker
-              Studio</span>
-            <span
-              style="padding: 8px 15px; background: rgba(255, 99, 71, 0.1); color: #ff6347; border-radius: 50px; font-size: 0.9rem;">SEMRush</span>
-            <span
-              style="padding: 8px 15px; background: rgba(75, 192, 192, 0.1); color: #4bc0c0; border-radius: 50px; font-size: 0.9rem;">Google
-              Search Console</span>
-          </div>
-          <p style="text-align: center; margin-top: 20px; color: #94a3b8; font-size: 0.9rem;">
-            Des outils que 99% des freelances ne maîtrisent pas.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 6️⃣ Services SEO Data-Driven à Nantes -->
-  <section style="padding: 100px 0; background: #0f0f0f;">
-    <div class="container">
-      <h2 class="section-title" style="text-align: center; margin-bottom: 60px;">
-        Mes Services SEO <span class="text-green">Data-Driven</span> à Nantes
+      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
+        <span>Profils accompagnés</span> à Nantes
       </h2>
-      <p style="text-align: center; color: #94a3b8; max-width: 800px; margin: -40px auto 60px;">
-        Je ne vends pas du temps, je vends de la performance.
-      </p>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
-          <div style="font-size: 2.5rem; margin-bottom: 20px;">🔍</div>
-          <h3 style="color: #fff; margin-bottom: 10px;">1. Audit Technique & Data Mining</h3>
-          <p style="color: #94a3b8; font-size: 0.95rem;">
-            Analyse profonde de votre site (Crawl, Logs) pour identifier les freins invisibles à la croissance.
-          </p>
-        </div>
-
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
-          <div style="font-size: 2.5rem; margin-bottom: 20px;">📝</div>
-          <h3 style="color: #fff; margin-bottom: 10px;">2. Stratégie Sémantique & NLP</h3>
-          <p style="color: #94a3b8; font-size: 0.95rem;">
-            Création de cocons sémantiques optimisés pour les entités nommées (Google comprend de quoi vous parlez, pas
-            juste vos mots-clés).
-          </p>
-        </div>
-
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
-          <div style="font-size: 2.5rem; margin-bottom: 20px;">🔗</div>
-          <h3 style="color: #fff; margin-bottom: 10px;">3. Netlinking & Autorité Locale</h3>
-          <p style="color: #94a3b8; font-size: 0.95rem;">
-            Acquisition de liens depuis des sites influents (Presse locale Ouest, Blogs thématiques) pour booster votre
-            "Trust Flow".
-          </p>
-        </div>
-
-        <div
-          style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
-          <div style="font-size: 2.5rem; margin-bottom: 20px;">📊</div>
-          <h3 style="color: #fff; margin-bottom: 10px;">4. Suivi & Reporting Data Studio</h3>
-          <p style="color: #94a3b8; font-size: 0.95rem;">
-            Tableaux de bord connectés en temps réel. Vous suivez votre ROI, pas des métriques vaniteuses.
-          </p>
-        </div>
+      <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        <span
+          style="background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 50px; color: #fff;">Freelances /
+          indépendants</span>
+        <span style="background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 50px; color: #fff;">PME
+          industrielles</span>
+        <span style="background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 50px; color: #fff;">Startups
+          Tech (Nantes Tech)</span>
+        <span
+          style="background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 50px; color: #fff;">E-commerçants</span>
+        <span style="background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 50px; color: #fff;">Grands
+          groupes</span>
       </div>
+      <p style="text-align: center; color: #10b981; margin-top: 30px; font-weight: bold;">
+        Votre ambition de croissance est notre priorité, chaque stratégie est adaptée à votre secteur nantais.
+      </p>
     </div>
   </section>
 
-  <!-- 7️⃣ Offres & Packages -->
-  <section style="background: #0a0a0a; padding: 100px 0;">
-    <div class="container container-medium">
-      <!-- 7️⃣ Offres & Packages -->
-      <!-- Inner duplicate removed -->
-      <h2 class="section-title" style="text-align: center; margin-bottom: 50px;">Investissez dans un actif, pas dans
-        une dépense</h2>
-      <p style="text-align: center; color: #cbd5e1; max-width: 800px; margin: -30px auto 50px;">
-        Offres & Packages
-      </p>
-
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-        <!-- Package Sprint -->
-        <div
-          style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.1); padding: 40px; border-radius: 16px; text-align: left;">
-          <h3 style="color: #fff; font-size: 1.5rem; margin-bottom: 10px;">📦 1. Le Sprint SEO</h3>
-          <p style="color: #38bdf8; font-weight: 700; margin-bottom: 20px; text-transform: uppercase;">AUDIT &
-            ROADMAP</p>
-          <p style="color: #e2e8f0; margin-bottom: 20px; font-size: 0.9rem;">Pour ceux qui veulent un plan d'action
-            clair avant d'internaliser ou d'exécuter.</p>
-          <ul style="list-style: none; padding: 0; margin-bottom: 20px; color: #cbd5e1;">
-            <li style="margin-bottom: 10px;">✅ Audit Technique Complet (Crawl, Logs)</li>
-            <li style="margin-bottom: 10px;">✅ Audit Sémantique & Concurrentiel</li>
-            <li style="margin-bottom: 10px;">✅ Roadmap priorisée sur 6 mois</li>
-            <li style="margin-bottom: 10px;">✅ Bonus : 1h de consultation de restitution</li>
-          </ul>
-          <a href="contact" class="hero-btn-secondary"
-            style="width: 100%; text-align: center; margin-top: 20px; display: block;">Demander un devis</a>
-        </div>
-
-        <!-- Package Acceleration -->
-        <div
-          style="background: rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.2); padding: 40px; border-radius: 16px; text-align: left;">
-          <h3 style="color: #fff; font-size: 1.5rem; margin-bottom: 10px;">🤝 2. L'Accompagnement Mensuel</h3>
-          <p style="color: #10b981; font-weight: 700; margin-bottom: 20px; text-transform: uppercase;">RETAINER (Dès
-            1000€/mois)</p>
-          <p style="color: #e2e8f0; margin-bottom: 20px; font-size: 0.9rem;">Pour ceux qui veulent déléguer la
-            croissance et sécuriser leurs positions.</p>
-          <ul style="list-style: none; padding: 0; margin-bottom: 20px; color: #cbd5e1;">
-            <li style="margin-bottom: 10px;">✅ Mise en œuvre de la Roadmap</li>
-            <li style="margin-bottom: 10px;">✅ Gestion du Netlinking & Digital PR</li>
-            <li style="margin-bottom: 10px;">✅ Monitoring quotidien & Ajustements</li>
-            <li style="margin-bottom: 10px;">✅ Reporting ROI Mensuel</li>
-          </ul>
-          <a href="contact" class="hero-btn-primary"
-            style="width: 100%; text-align: center; margin-top: 20px; display: block;">Démarrer maintenant</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  </div>
-  </section>
-
-  <!-- 8️⃣ Qui suis-je ? & Case Studies -->
-  <section style="background: #0f0f0f; padding: 100px 0;">
-    <div class="container text-center">
-      <h2 class="section-title" style="margin-bottom: 40px;">Qui suis-je ? Votre partenaire <span
-          style="white-space: nowrap;">de croissance à Nantes</span></h2>
-      <p style="color: #cbd5e1; max-width: 800px; margin: 0 auto 60px;">
-        Loin des "gourous" du web, j'ai une approche d'ingénieur appliquée au Marketing. Basé à Nantes, je connais les
-        spécificités du tissu économique local. Je ne cherche pas à vous vendre une prestation, mais à construire un
-        Système d'Acquisition durable qui continuera de vous rapporter des clients même quand vous dormez.
-      </p>
-
-      <div
-        style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 40px; border-radius: 20px; max-width: 900px; margin: 0 auto; text-align: left;">
-        <h3 style="color: #fff; margin-bottom: 20px;">Ils ont hacké leur croissance (Case Studies)</h3>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
-          <div>
-            <h4 style="color: #3b82f6; margin-bottom: 10px;">Client SaaS B2B (Nantes)</h4>
-            <p style="color: #94a3b8; font-size: 0.9rem;">
-              <strong>+315% de trafic organique</strong> en 6 mois grâce à une stratégie de Programmatic SEO.
-            </p>
-          </div>
-          <div>
-            <h4 style="color: #10b981; margin-bottom: 10px;">PME Industrielle (Rezé)</h4>
-            <p style="color: #94a3b8; font-size: 0.9rem;">
-              <strong>x4 sur les demandes de devis entrants</strong> après une refonte sémantique complète.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 9️⃣ Cessez d'offrir vos clients à vos concurrents -->
-  <section style="background: #0a0a0a; padding: 100px 0;">
-    <div class="container text-center">
-      <h2 class="section-title" style="margin-bottom: 30px;">Cessez d'offrir vos clients <br>à vos concurrents</h2>
-      <p style="color: #cbd5e1; font-size: 1rem; max-width: 800px; margin: 20px auto;">
-        Le SEO est un jeu à somme nulle : si vous n'êtes pas premier, c'est votre concurrent qui encaisse. Arrêtez de
-        louer votre trafic via la publicité (Google Ads) et commencez à construire votre propre patrimoine numérique.
-      </p>
-
-      <div class="paris-stats-box" style=" max-width: 800px; margin: 40px auto; overflow-x: auto;">
-        <table style="width: 100%; border-collapse: collapse; color: #94a3b8; text-align: left; font-size: 0.9rem;">
+  <!-- [SECTION 8 : METHODE] -->
+  <section style="background: #0f0f0f;">
+    <div class="container">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
+        Ma méthode de <span>travail</span>
+      </h2>
+      <div class="nantes-stats-box" style="overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; color: #cbd5e1; text-align: left; min-width: 600px;">
           <thead>
-            <tr style="border-bottom: 2px solid #3b82f6;">
-              <th style="padding: 15px; color: #fff;">Canal</th>
-              <th style="padding: 15px; color: #fff;">Durée de vie</th>
-              <th style="padding: 15px; color: #fff;">Coût marginal</th>
-              <th style="padding: 15px; color: #fff;">Rentabilité Long Terme</th>
+            <tr style="border-bottom: 2px solid #10b981;">
+              <th style="padding: 15px; color: #fff;">Phase & Durée</th>
+              <th style="padding: 15px; color: #fff;">Description & Actions</th>
             </tr>
           </thead>
           <tbody>
             <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-              <td style="padding: 15px;"><strong>Google Ads (SEA)</strong></td>
-              <td style="padding: 15px;">Immédiat (Stop = Zéro)</td>
-              <td style="padding: 15px;">Augmente avec le temps</td>
-              <td style="padding: 15px;">Faible</td>
+              <td style="padding: 15px;">
+                <strong style="color: #10b981;">Audit & Diagnostic</strong><br>
+                <span style="font-size: 0.9rem; color: #94a3b8;">(1-2 semaines)</span>
+              </td>
+              <td style="padding: 15px;">Analyse complète technique et sémantique</td>
             </tr>
             <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-              <td style="padding: 15px;"><strong>SEO Data (Moi)</strong></td>
-              <td style="padding: 15px;">Infini (Capitalisation)</td>
-              <td style="padding: 15px;">Tend vers Zéro</td>
-              <td style="padding: 15px; color: #10b981;"><strong>Très Élevée</strong></td>
+              <td style="padding: 15px;">
+                <strong style="color: #10b981;">Stratégie sur-mesure</strong><br>
+                <span style="font-size: 0.9rem; color: #94a3b8;">(2-3 semaines)</span>
+              </td>
+              <td style="padding: 15px;">Définition de la feuille de route SEO personnalisée</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td style="padding: 15px;">
+                <strong style="color: #10b981;">Optimisation & Action</strong><br>
+                <span style="font-size: 0.9rem; color: #94a3b8;">(3-6 mois)</span>
+              </td>
+              <td style="padding: 15px;">Mise en œuvre des actions techniques et éditoriales</td>
+            </tr>
+            <tr>
+              <td style="padding: 15px;">
+                <strong style="color: #10b981;">Pilotage & ROI</strong><br>
+                <span style="font-size: 0.9rem; color: #94a3b8;">(Continu)</span>
+              </td>
+              <td style="padding: 15px;">Suivi des KPIs et ajustements pour maximiser le retour sur investissement</td>
             </tr>
           </tbody>
         </table>
       </div>
-      <div style="margin-top: 40px; text-align: center;">
-        <a href="contact" class="hero-btn-primary">📅 Réserver ma consultation stratégique offerte</a>
+      <div style="text-align: center; margin-top: 30px;">
+        <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-secondary" target="_blank">APPEL DÉCOUVERTE –
+          Planifiez votre audit gratuit</a>
       </div>
+    </div>
+  </section>
+
+  <!-- [SECTION 9 : PRICING] -->
+  <section style="background: #0a0a0a;">
+    <div class="container">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
+        Mes offres <span>et tarifs</span>
+      </h2>
+      <div class="grid-2-cols" style="max-width: 900px; margin: 0 auto; gap: 30px;">
+        <div class="package-card">
+          <h3 style="color: #fff; margin-bottom: 15px;">Accompagnement Mensuel</h3>
+          <p style="color: #10b981; font-size: 1.5rem; font-weight: bold; margin-bottom: 15px;">dès 1 000 €/mois</p>
+          <p style="color: #94a3b8;">Pour les PME et sites en croissance constante à Nantes.</p>
+        </div>
+        <div class="package-card">
+          <h3 style="color: #fff; margin-bottom: 15px;">Forfaits Personnalisés</h3>
+          <p style="color: #10b981; font-size: 1.5rem; font-weight: bold; margin-bottom: 15px;">Sur devis</p>
+          <p style="color: #94a3b8;">Selon objectifs et taille du site.</p>
+        </div>
+      </div>
+      <p style="text-align: center; color: #fff; margin-top: 30px;">Transparence totale sur le scope et les livrables.
+      </p>
+      <div style="text-align: center; margin-top: 30px;">
+        <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank">APPEL DÉCOUVERTE –
+          Audit gratuit ou rendez-vous</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- [SECTION 10 : OUTILS] -->
+  <section style="background: #0f0f0f;">
+    <div class="container">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
+        Les outils <span>utilisés</span>
+      </h2>
+      <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; align-items: center;">
+        <div style="text-align: center;">
+          <strong style="display: block; color: #fff; margin-bottom: 5px;">Screaming Frog</strong>
+          <span style="color: #94a3b8; font-size: 0.9rem;">Audit technique complet</span>
+        </div>
+        <div style="text-align: center;">
+          <strong style="display: block; color: #fff; margin-bottom: 5px;">Google Search Console</strong>
+          <span style="color: #94a3b8; font-size: 0.9rem;">Suivi performance et indexation</span>
+        </div>
+        <div style="text-align: center;">
+          <strong style="display: block; color: #fff; margin-bottom: 5px;">SEMrush / Ahrefs</strong>
+          <span style="color: #94a3b8; font-size: 0.9rem;">Analyse concurrentielle et backlinks</span>
+        </div>
+        <div style="text-align: center;">
+          <strong style="display: block; color: #fff; margin-bottom: 5px;">Thot SEO</strong>
+          <span style="color: #94a3b8; font-size: 0.9rem;">Champ sémantique & IA</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- [SECTION 11 : LOCAL] -->
+  <section style="background: #0a0a0a;">
+    <div class="container container-medium" style="text-align: center;">
+      <h2 class="section-title" style="margin-bottom: 20px;">Un consultant <span>proche de vous à Nantes</span></h2>
+      <p style="color: #cbd5e1; font-size: 1.1rem; line-height: 1.6;">
+        Basé à Nantes, je connais parfaitement le marché local et ses enjeux. Faire appel à un freelance local vous
+        garantit réactivité, proximité et conseils adaptés à votre environnement.
+      </p>
     </div>
   </section>
 
@@ -940,15 +937,14 @@
     </div>
   </section>
 
-  <!-- 1️⃣3️⃣ Final CTA -->
-  <section class="cta-final"
-    style="padding: 80px 0; text-align: center; background: linear-gradient(to bottom, #0f0f0f, #000);">
-    <div class="container">
-      <h2 style="color: #fff; font-size: 2.2rem; margin-bottom: 20px;">Besoin d’un consultant SEO freelance à Nantes ?
+  <!-- [SECTION 13 : CTA FINAL] -->
+  <section style="background: #0a0a0a; padding-bottom: 160px; text-align: center;">
+    <div class="container container-medium">
+      <h2 class="section-title" style="margin-bottom: 20px;">Prêt à <span>propulser votre business à Nantes ?</span>
       </h2>
-      <p style="color: #94a3b8; margin-bottom: 40px; font-size: 1.2rem;">Audit SEO offert – échange de 15 minutes, sans
-        engagement.</p>
-      <a href="contact" class="hero-btn-primary">Prendre contact</a>
+      <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary"
+        style="font-size: 1.2rem; padding: 20px 40px;" target="_blank">APPEL DÉCOUVERTE – 2
+        slots disponibles ce mois</a>
     </div>
   </section>
 
