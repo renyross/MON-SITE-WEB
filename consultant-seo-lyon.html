@@ -89,9 +89,86 @@
         </script>
 
   <style>
-    /* Custom Styles for Lyon Page similar to Paris */
+    /* Specific overrides for consultant-seo-lyon page */
+    :root {
+      --section-padding: 100px 0;
+      --mobile-padding: 60px 0;
+    }
+
     section {
-      padding: 100px 0;
+      padding: var(--section-padding);
+    }
+
+    .hero-lyon {
+      background: #0a0a0a;
+      padding: 160px 0 100px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-lyon h1 {
+      font-size: clamp(2.5rem, 8vw, 3.5rem);
+      line-height: 1.2;
+      margin-bottom: 25px;
+      color: #fff;
+      font-weight: 800;
+    }
+
+    .hero-lyon .hero-subtitle {
+      font-size: clamp(1.2rem, 4vw, 1.5rem);
+      color: #e2e8f0;
+      margin-bottom: 20px;
+      font-weight: 500;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-lyon .hero-meta {
+      color: #94a3b8;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .grid-2-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .lyon-stats-box {
+      background: rgba(255, 255, 255, 0.02);
+      padding: 40px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .service-card {
+      background: rgba(255, 255, 255, 0.02);
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .package-card {
+      background: rgba(34, 197, 94, 0.05);
+      border: 1px solid rgba(34, 197, 94, 0.2);
+      padding: 40px;
+      border-radius: 16px;
+      text-align: center;
     }
 
     .section-title {
@@ -106,7 +183,7 @@
     }
 
     .section-title span {
-      background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+      background: linear-gradient(135deg, #3b82f6 0%, #2ecc71 100%);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -144,7 +221,37 @@
       background: rgba(59, 130, 246, 0.05);
     }
 
+    /* Mobile Responsive Overrides */
     @media (max-width: 768px) {
+      section {
+        padding: var(--mobile-padding) !important;
+      }
+
+      .hero-lyon {
+        padding: 100px 0 60px !important;
+      }
+
+      .grid-2-cols {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+        text-align: center;
+      }
+
+      .section-title {
+        font-size: 2.2rem !important;
+        margin-bottom: 30px !important;
+      }
+
+      .hero-btn-primary,
+      .hero-btn-secondary {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .lyon-stats-box {
+        padding: 25px !important;
+      }
+
       .prob-sol-item {
         grid-template-columns: 1fr;
       }
@@ -152,37 +259,6 @@
       .prob-part {
         border-right: none;
         border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-      }
-    }
-
-    .hero-lyon h1 {
-      font-weight: 800;
-    }
-
-    @media (max-width: 900px) {
-      .hero-lyon .container>div {
-        grid-template-columns: 1fr !important;
-        text-align: center;
-      }
-
-      .hero-text-col {
-        text-align: center !important;
-        /* Text first on mobile? User didn't specify, but usually standard. Keeping current order for now unless requested */
-      }
-
-      .hero-lyon .hero-btn-primary,
-      .hero-lyon .hero-btn-secondary {
-        justify-content: center;
-      }
-    }
-
-    .lyon-local-grid {
-      grid-template-columns: 1fr 1fr;
-    }
-
-    @media (max-width: 900px) {
-      .lyon-local-grid {
-        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -233,86 +309,88 @@
   </nav>
 
   <!-- [SECTION 1 : HERO HEADER] -->
-  <section class="hero-lyon" style="background: #0a0a0a; padding: 160px 0 100px; position: relative; overflow: hidden;">
+  <section class="hero-lyon">
     <div class="container">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;">
-
-        <!-- Left Column: Text -->
-        <div class="hero-text-col" style="text-align: left;">
-          <h1 style="font-size: 3.5rem; line-height: 1.1; margin-bottom: 20px; color: #fff;">
-            Renel Rosené – Consultant SEO Freelance <span>Lyon</span>
+      <div class="grid-2-cols" style="gap: 50px;">
+        <div class="hero-content" style="text-align: left;">
+          <h1 id="cta-audit">
+            Renel Rosené – Consultant SEO Freelance à <span>Lyon</span>
           </h1>
-          <p class="hero-subtitle" style="font-size: 1.3rem; color: #cbd5e1; margin-bottom: 30px;">
-            Maximisez votre visibilité et vos revenus sur Google.
+          <p class="hero-subtitle" style="margin-left: 0; color: #cbd5e1;">
+            Maximisez votre visibilité et vos revenus sur Google grâce à une stratégie SEO sur-mesure.
           </p>
 
-          <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 40px;">
+          <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 30px;">
             <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank">APPEL
               DÉCOUVERTE</a>
             <a href="audit-seo-gratuit" class="hero-btn-secondary">AUDIT SEO GRATUIT</a>
           </div>
-
-
         </div>
-
-        <!-- Right Column: Image -->
-        <div class="hero-image-col">
-          <div
-            style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.4); height: 500px;">
-            <img src="assets/images/renel-portrait.jpg" alt="Renel Rosene Consultant SEO Lyon"
-              style="width: 100%; height: 100%; object-fit: cover; display: block;">
-          </div>
+        <div class="hero-image" style="text-align: center;">
+          <img src="renel-portrait.jpg" alt="Renel Rosené Consultant SEO Lyon"
+            style="max-width: 100%; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.5);">
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- [SECTION 2 : POURQUOI SEO LOCAL] -->
-  <section style="background: #0f0f0f;">
-    <div class="container">
-      <div class="lyon-local-grid" style="display: grid; gap: 60px; align-items: center;">
-
-        <!-- Left Column: Text -->
-        <div>
-          <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">
-            Pourquoi le SEO local à Lyon est <span>votre meilleur levier de croissance en 2026</span>
-          </h2>
-          <div style="color: #cbd5e1; line-height: 1.7; font-size: 1.05rem;">
-            <p style="margin-bottom: 20px;">
-              Lyon est un carrefour économique majeur où la concurrence digitale est féroce. Saviez-vous que 46% de
-              toutes les recherches sur Google ont une intention locale? Pour une entreprise lyonnaise, apparaître dans
-              le "Local Pack" ou en tête des résultats naturels n'est plus une option, c'est une nécessité vitale.
-            </p>
-            <p>
-              Contrairement aux campagnes Ads dont le coût par clic (CPC) ne cesse d'augmenter, le référencement naturel
-              offre un ROI supérieur sur le long terme en installant votre marque durablement dans l'esprit des
-              consommateurs lyonnais. Agir maintenant permet de devancer les acteurs locaux qui utilisent encore des
-              stratégies génériques dépassées.
-            </p>
-          </div>
-        </div>
-
-        <!-- Right Column: Image -->
-        <div>
-          <div style="border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.4); height: 400px;">
-            <img src="assets/images/lyon-seo.png" alt="Référencement Local Lyon"
-              style="width: 100%; height: 100%; object-fit: cover; display: block;">
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- [SECTION 3 : PROBLEMES / SOLUTIONS] -->
+  <!-- [SECTION 1.5 : POURQUOI INVESTIR] -->
   <section style="background: #0a0a0a;">
     <div class="container">
       <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
-        Résoudre vos problèmes de visibilité : <span>de l'agitation à la solution SEO</span>
+        Pourquoi investir dans <br> <span>le SEO à Lyon ?</span>
       </h2>
-      <p style="text-align: center; color: #94a3b8; margin-bottom: 50px;">
-        Votre site internet ne doit pas être une simple carte de visite, mais votre meilleur commercial 24h/24.
+      <div class="grid-2-cols" style="align-items: center;">
+
+        <!-- Text Column -->
+        <div>
+          <p style="color: #cbd5e1; margin-bottom: 25px; line-height: 1.7;">
+            Lyon est un carrefour économique majeur où la concurrence digitale est féroce. Les entreprises B2B et
+            e-commerce recherchent une visibilité maximale sur Google pour capter du trafic qualifié. Dans un marché
+            lyonnais très dynamique, le SEO reste le levier le plus rentable sur le long terme.
+          </p>
+          <ul style="list-style: none; padding: 0; color: #cbd5e1; font-size: 1rem;">
+            <li style="margin-bottom: 15px; display: flex; gap: 10px;">
+              <span style="color: #3b82f6; font-weight: bold;">↗</span> Écosystème lyonnais en forte croissance
+            </li>
+            <li style="margin-bottom: 15px; display: flex; gap: 10px;">
+              <span style="color: #3b82f6; font-weight: bold;">↗</span> Forte demande B2B (Auvergne-Rhône-Alpes)
+            </li>
+            <li style="margin-bottom: 15px; display: flex; gap: 10px;">
+              <span style="color: #3b82f6; font-weight: bold;">↗</span> ROI long terme supérieur aux campagnes Ads
+            </li>
+          </ul>
+        </div>
+
+        <!-- Visual/Stat Column -->
+        <div
+          style="position: relative; border-radius: 20px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); min-height: 400px; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+          <img src="assets/images/lyon-seo.png" alt="Lyon SEO Skyline"
+            style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          <!-- Vignette Overlay (4 sides) + Text Gradient -->
+          <div
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle, transparent 40%, rgba(0,0,0,0.8) 100%), linear-gradient(to top, rgba(0,0,0,0.9), transparent 50%); pointer-events: none;">
+          </div>
+          <div
+            style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 40px 20px 20px; text-align: center; z-index: 2;">
+            <h3 style="color: #fff; font-size: 1.5rem; margin: 0; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Dominez votre
+              marché lyonnais</h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- [SECTION 2 : PROBLÈMES / SOLUTIONS] -->
+  <section style="background: #0f0f0f;">
+    <div class="container">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
+        Problèmes SEO fréquents <span style="white-space: nowrap;">et solutions concrètes</span>
+      </h2>
+      <p style="text-align: center; color: #94a3b8; max-width: 800px; margin: 0 auto 50px;">
+        Beaucoup d’entreprises peinent à transformer leur site en générateur de trafic et de leads. Voici les
+        problématiques typiques et nos solutions.
       </p>
 
       <div class="prob-sol-grid">
@@ -323,9 +401,7 @@
               ⚠️ Manque de trafic qualifié
             </h3>
             <p style="color: #cbd5e1; font-size: 0.95rem;">
-              <strong>Arrêtez de dépenser votre budget dans des clics inutiles.</strong><br>
-              De nombreux sites attirent du monde mais personne n'achète. C'est souvent le signe d'une stratégie trop
-              orientée vers le haut de funnel (ToFu).
+              <strong>Problème :</strong> Votre site attire peu de visiteurs réellement intéressés.
             </p>
           </div>
           <div class="prob-sol-part sol-part">
@@ -333,7 +409,7 @@
               💡 La Solution
             </h3>
             <p style="color: #cbd5e1; font-size: 0.95rem;">
-              Je recentre votre visibilité sur des requêtes à forte intention commerciale.
+              Audit SEO complet et recherche de mots-clés ciblés pour générer un trafic qualifié prêt à convertir.
             </p>
           </div>
         </div>
@@ -345,8 +421,7 @@
               ⚠️ Leads peu qualifiés
             </h3>
             <p style="color: #cbd5e1; font-size: 0.95rem;">
-              <strong>Ciblez les décideurs lyonnais au moment précis de leur décision.</strong><br>
-              Recevoir des demandes qui ne correspondent pas à votre offre est une perte de temps.
+              <strong>Problème :</strong> Les contacts obtenus ne sont pas pertinents.
             </p>
           </div>
           <div class="prob-sol-part sol-part">
@@ -354,8 +429,7 @@
               💡 La Solution
             </h3>
             <p style="color: #cbd5e1; font-size: 0.95rem;">
-              En optimisant les pages pour des intentions "décisionnelles" et "actionnelles", nous filtrons l'audience
-              pour ne garder que les prospects à haute valeur ajoutée.
+              Stratégie éditoriale et cocon sémantique pour attirer des prospects alignés sur vos services et objectifs.
             </p>
           </div>
         </div>
@@ -367,8 +441,7 @@
               ⚠️ Site mal optimisé
             </h3>
             <p style="color: #cbd5e1; font-size: 0.95rem;">
-              <strong>Transformez votre vitrine technique en une véritable machine à cash.</strong><br>
-              Un site lent ou mal structuré fait fuir 70% des utilisateurs mobiles.
+              <strong>Problème :</strong> Votre site manque de structure SEO et de contenus pertinents.
             </p>
           </div>
           <div class="prob-sol-part sol-part">
@@ -376,240 +449,260 @@
               💡 La Solution
             </h3>
             <p style="color: #cbd5e1; font-size: 0.95rem;">
-              Je corrige vos Core Web Vitals (LCP, INP, CLS) pour garantir une expérience utilisateur fluide qui
-              favorise la conversion.
+              Optimisation technique et création de contenus stratégiques pour améliorer visibilité et positionnement
+              durable.
             </p>
           </div>
         </div>
 
+        <!-- Item 4 -->
+        <div class="prob-sol-item">
+          <div class="prob-sol-part prob-part">
+            <h3 style="color: #f87171; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+              ⚠️ ROI SEO difficile à mesurer
+            </h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem;">
+              <strong>Problème :</strong> Vous investissez sans savoir ce qui fonctionne.
+            </p>
+          </div>
+          <div class="prob-sol-part sol-part">
+            <h3 style="color: #3b82f6; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+              💡 La Solution
+            </h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem;">
+              KPIs clairs, reporting transparent et suivi continu pour chaque action afin de maximiser votre ROI.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank">APPEL DÉCOUVERTE –
+          Transformez votre site en générateur de leads</a>
       </div>
     </div>
   </section>
 
-  <!-- [SECTION 4 : FREELANCE VS AGENCE] -->
-  <section style="background: #0f0f0f;">
-    <div class="container container-medium" style="text-align: center;">
-      <h2 class="section-title" style="margin-bottom: 30px;">
-        Freelance vs agence : pourquoi choisir la proximité <span>et l'expertise directe à Lyon ?</span>
+  <!-- [SECTION 3 : POURQUOI FREELANCE] -->
+  <section style="background: #0a0a0a;">
+    <div class="container">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
+        Pourquoi choisir <span>un freelance</span> plutôt<br>qu’une agence ?
       </h2>
-      <div class="paris-stats-box" style="overflow-x: auto; margin-top: 30px;">
+      <div class="lyon-stats-box" style="overflow-x: auto;">
         <table style="width: 100%; border-collapse: collapse; color: #cbd5e1; text-align: left; min-width: 600px;">
           <thead>
             <tr style="border-bottom: 2px solid #3b82f6;">
-              <th style="padding: 15px; color: #fff;">Critère</th>
-              <th style="padding: 15px; color: #3b82f6;">Consultant Indépendant (Moi)</th>
-              <th style="padding: 15px; color: #fff;">Agence Classique</th>
+              <th style="padding: 15px; color: #fff;">Atout & Différenciation</th>
+              <th style="padding: 15px; color: #fff;">Bénéfice pour votre Business</th>
             </tr>
           </thead>
           <tbody>
             <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-              <td style="padding: 15px;"><strong>Interlocuteur & Réactivité</strong></td>
-              <td style="padding: 15px;">Interlocuteur unique qui connaît réellement votre dossier. Réactivité totale.
+              <td style="padding: 15px;">
+                <strong style="color: #3b82f6;">Expertise combinée SEO + IA</strong>
               </td>
-              <td style="padding: 15px;">Délègue souvent l'exécution à des profils juniors.</td>
+              <td style="padding: 15px;">Stratégies scalables et optimisées grâce à l’alliance SEO et intelligence
+                artificielle.</td>
             </tr>
             <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-              <td style="padding: 15px;"><strong>Expertise & Technologie</strong></td>
-              <td style="padding: 15px;">+3 ans d'expérience concrète chez l'annonceur. Maîtrise avancée de l'IA pour
-                scaler la qualité.</td>
-              <td style="padding: 15px;">Processus standards, souvent moins agiles sur l'IA.</td>
+              <td style="padding: 15px;">
+                <strong style="color: #3b82f6;">Expérience concrète chez l’annonceur</strong>
+              </td>
+              <td style="padding: 15px;">Compréhension des enjeux business pour des actions directement alignées avec
+                vos objectifs.</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td style="padding: 15px;">
+                <strong style="color: #3b82f6;">Réactivité & Accompagnement</strong>
+              </td>
+              <td style="padding: 15px;">Suivi dédié et disponibilité maximale pour ajuster chaque action en temps réel.
+              </td>
             </tr>
             <tr>
-              <td style="padding: 15px;"><strong>Approche ROI</strong></td>
-              <td style="padding: 15px;">Strictement orientée ROI : chaque action est mesurable et justifiée par un gain
-                business.</td>
-              <td style="padding: 15px;">Vision parfois limitée aux livrables techniques.</td>
+              <td style="padding: 15px;">
+                <strong style="color: #3b82f6;">Focus ROI</strong>
+              </td>
+              <td style="padding: 15px;">Optimisations mesurables et ajustées selon vos KPIs pour un retour sur
+                investissement garanti.</td>
             </tr>
           </tbody>
         </table>
       </div>
-    </div>
-  </section>
-
-  <!-- [SECTION 5 : SOCIAL PROOF] -->
-  <section style="background: #0a0a0a;">
-    <div class="container">
-      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
-        Ils me <span>font confiance</span> : résultats et avis de clients lyonnais
-      </h2>
-      <div class="service-grid"
-        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-        <div class="service-card"
-          style="background: rgba(255, 255, 255, 0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05);">
-          <p style="color: #cbd5e1; font-style: italic; margin-bottom: 20px;">"Position 3 sur 'Consultant SEO Lyon' en
-            seulement 6 semaines. Un flux constant de leads qualifiés."</p>
-          <strong style="color: #fff;">PME Tech Lyon</strong>
-        </div>
-        <div class="service-card"
-          style="background: rgba(255, 255, 255, 0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05);">
-          <p style="color: #cbd5e1; font-style: italic; margin-bottom: 20px;">"Une stratégie de cocon sémantique qui a
-            multiplié notre trafic par 3."</p>
-          <strong style="color: #fff;">Indépendant Rhône</strong>
-        </div>
-        <div class="service-card"
-          style="background: rgba(255, 255, 255, 0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05);">
-          <p style="color: #cbd5e1; font-style: italic; margin-bottom: 20px;">"Une expertise IA bluffante qui nous
-            permet de dominer notre niche."</p>
-          <strong style="color: #fff;">Startup Confluence</strong>
-        </div>
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-secondary" target="_blank">APPEL DÉCOUVERTE –
+          Échangez sur votre projet SEO à Lyon</a>
       </div>
     </div>
   </section>
 
-  <!-- [SECTION 6 : COMPARISON TABLE] -->
+  <!-- [SECTION 4 : SOCIAL PROOF] -->
   <section style="background: #0f0f0f;">
     <div class="container">
       <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
-        Pourquoi mon <span>approche est différente</span>
+        Ils nous <span>font confiance</span> à Lyon
       </h2>
-      <div class="paris-stats-box"
-        style="overflow-x: auto; background: rgba(255, 255, 255, 0.02); padding: 40px; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.05);">
+      <div class="service-grid">
+        <div class="service-card">
+          <p style="color: #cbd5e1; font-style: italic; margin-bottom: 20px;">« Grâce à l’audit SEO et à la stratégie
+            mise en place, notre trafic a augmenté de 75% en 6 mois et nos leads qualifiés ont doublé. »</p>
+          <strong style="color: #fff;">PME Tech, Lyon</strong>
+        </div>
+        <div class="service-card">
+          <p style="color: #cbd5e1; font-style: italic; margin-bottom: 20px;">« Optimisation SEO local et Google
+            Business Profile : +60% de visites qualifiées sur nos points de vente en 4 mois. »</p>
+          <strong style="color: #fff;">Indépendant, Rhône</strong>
+        </div>
+        <div class="service-card">
+          <p style="color: #cbd5e1; font-style: italic; margin-bottom: 20px;">« Une approche personnalisée et orientée
+            ROI : chaque action SEO était mesurable et rentable. »</p>
+          <strong style="color: #fff;">Startup Confluence, Lyon</strong>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank">APPEL DÉCOUVERTE –
+          Découvrez comment booster votre visibilité à
+          Lyon</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- [SECTION 5 : COMPARATIF] -->
+  <section style="background: #0a0a0a;">
+    <div class="container">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
+        Freelance vs Agence vs DIY – <span>Quelle solution choisir ?</span>
+      </h2>
+      <div class="lyon-stats-box" style="overflow-x: auto;">
         <table style="width: 100%; border-collapse: collapse; color: #cbd5e1; text-align: left; min-width: 600px;">
           <thead>
             <tr style="border-bottom: 2px solid #3b82f6;">
-              <th style="padding: 15px; color: #fff;">Critères</th>
-              <th style="padding: 15px; color: #3b82f6;">Consultant SEO IA (Moi)</th>
-              <th style="padding: 15px; color: #fff;">Agences Classiques</th>
-              <th style="padding: 15px; color: #fff;">DIY (Faire soi-même)</th>
+              <th style="padding: 15px;">Critères</th>
+              <th style="padding: 15px; color: #3b82f6;">Freelance SEO</th>
+              <th style="padding: 15px;">Agence SEO</th>
+              <th style="padding: 15px;">DIY (Faites-le vous-même)</th>
             </tr>
           </thead>
           <tbody>
             <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
               <td style="padding: 15px;"><strong>Prix</strong></td>
-              <td style="padding: 15px;">Compétitif & Transparent</td>
-              <td style="padding: 15px;">Élevé (Frais de structure)</td>
-              <td style="padding: 15px;">Gratuit (mais chronophage)</td>
-            </tr>
-            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-              <td style="padding: 15px;"><strong>Expertise IA</strong></td>
-              <td style="padding: 15px;">Intégrée (Scalabilité)</td>
-              <td style="padding: 15px;">Limitée ou en test</td>
-              <td style="padding: 15px;">Inexistante</td>
+              <td style="padding: 15px;">Moyen</td>
+              <td style="padding: 15px;">Élevé</td>
+              <td style="padding: 15px;">Faible mais risqué</td>
             </tr>
             <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
               <td style="padding: 15px;"><strong>Réactivité</strong></td>
-              <td style="padding: 15px;">Immédiate (Direct)</td>
-              <td style="padding: 15px;">Délais de validation</td>
-              <td style="padding: 15px;">Aléatoire</td>
+              <td style="padding: 15px;">Très rapide</td>
+              <td style="padding: 15px;">Moyenne</td>
+              <td style="padding: 15px;">Variable</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td style="padding: 15px;"><strong>Expertise</strong></td>
+              <td style="padding: 15px;">Très élevée</td>
+              <td style="padding: 15px;">Élevée</td>
+              <td style="padding: 15px;">Faible</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td style="padding: 15px;"><strong>ROI</strong></td>
+              <td style="padding: 15px;">Mesurable</td>
+              <td style="padding: 15px;">Limité</td>
+              <td style="padding: 15px;">Risqué</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td style="padding: 15px;"><strong>Personnalisation</strong></td>
+              <td style="padding: 15px;">Sur-mesure</td>
+              <td style="padding: 15px;">Standardisée</td>
+              <td style="padding: 15px;">Limitée</td>
             </tr>
             <tr>
-              <td style="padding: 15px;"><strong>Focus</strong></td>
-              <td style="padding: 15px;">ROI & Conversion</td>
-              <td style="padding: 15px;">Visibilité globale</td>
-              <td style="padding: 15px;">Technique pure</td>
+              <td style="padding: 15px;"><strong>Accompagnement</strong></td>
+              <td style="padding: 15px;">Direct et humain</td>
+              <td style="padding: 15px;">Support distant</td>
+              <td style="padding: 15px;">Aucun</td>
             </tr>
           </tbody>
         </table>
       </div>
+      <p style="text-align: center; color: #fff; margin-top: 20px;">
+        <strong>Conclusion :</strong> Le freelance combine expertise, personnalisation et ROI à un prix compétitif.
+      </p>
+      <div style="text-align: center; margin-top: 30px;">
+        <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-secondary" target="_blank">APPEL DÉCOUVERTE –
+          Profitez d’un accompagnement SEO
+          personnalisé</a>
+      </div>
     </div>
   </section>
 
-  <!-- [SECTION 7 : SERVICES] -->
+  <!-- [SECTION 6 : PRESTATIONS] -->
+  <section style="background: #0f0f0f;">
+    <div class="container">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
+        Prestations de consultant <span>SEO freelance à Lyon</span>
+      </h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <h3 style="color: #fff; margin-bottom: 15px;">📍 SEO local & Google Business Profile</h3>
+          <p style="color: #94a3b8;">Attirer des clients locaux et optimiser votre présence sur Google Maps.</p>
+        </div>
+        <div class="service-card">
+          <h3 style="color: #fff; margin-bottom: 15px;">🛠️ Audit SEO technique</h3>
+          <p style="color: #94a3b8;">Corriger les problèmes techniques, vitesse, maillage et balises pour un site
+            performant.</p>
+        </div>
+        <div class="service-card">
+          <h3 style="color: #fff; margin-bottom: 15px;">📝 Stratégie éditoriale / cocon sémantique</h3>
+          <p style="color: #94a3b8;">Générer du trafic qualifié grâce à un contenu structuré et ciblé.</p>
+        </div>
+        <div class="service-card">
+          <h3 style="color: #fff; margin-bottom: 15px;">🔗 Netlinking et popularité</h3>
+          <p style="color: #94a3b8;">Augmenter l’autorité de votre site pour un meilleur positionnement.</p>
+        </div>
+        <div class="service-card">
+          <h3 style="color: #fff; margin-bottom: 15px;">🤖 SEO & IA</h3>
+          <p style="color: #94a3b8;">Scalabilité et automatisation : automatiser certaines tâches SEO pour gagner du
+            temps tout en augmentant l’efficacité.</p>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank">APPEL DÉCOUVERTE –
+          Commencez votre optimisation SEO à Lyon</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- [SECTION 7 : PROFILS] -->
   <section style="background: #0a0a0a;">
     <div class="container">
       <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
-        Mes prestations de consultant <span>SEO à Lyon : une approche orientée ROI</span>
+        <span>Profils accompagnés</span> à Lyon
       </h2>
-      <div class="service-grid"
-        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-        <div class="service-card"
-          style="background: rgba(255, 255, 255, 0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05);">
-          <h3 style="color: #fff; margin-bottom: 15px;">Audit SEO technique et sémantique</h3>
-          <p style="color: #94a3b8; margin-bottom: 15px;"><strong>Le diagnostic complet de votre performance</strong>
-          </p>
-          <p style="color: #b0c4de;">Je passe votre site au crible : indexation, structure HTML, balisage Schema.org et
-            performance mobile. Vous recevez une roadmap claire des corrections à appliquer pour débloquer votre
-            ranking.</p>
-        </div>
-        <div class="service-card"
-          style="background: rgba(255, 255, 255, 0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05);">
-          <h3 style="color: #fff; margin-bottom: 15px;">Stratégie de cocon sémantique</h3>
-          <p style="color: #94a3b8; margin-bottom: 15px;"><strong>Dominez les intentions de recherche bofu</strong></p>
-          <p style="color: #b0c4de;">Je structure votre contenu pour répondre aux questions précises de vos futurs
-            clients. Chaque page est conçue comme une "Money Page" entourée de "Spokes" qui renforcent son autorité
-            sémantique.</p>
-        </div>
-        <div class="service-card"
-          style="background: rgba(255, 255, 255, 0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05);">
-          <h3 style="color: #fff; margin-bottom: 15px;">Netlinking et notoriété locale</h3>
-          <p style="color: #94a3b8; margin-bottom: 15px;"><strong>Le signal d'autorité indispensable pour
-              google</strong></p>
-          <p style="color: #b0c4de;">La notoriété repose sur la qualité des liens qui pointent vers vous. Je déploie des
-            campagnes pour obtenir des backlinks depuis des sources locales lyonnaises et des médias sectoriels
-            influents.</p>
-        </div>
-        <div class="service-card"
-          style="background: rgba(255, 255, 255, 0.02); padding: 30px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05);">
-          <h3 style="color: #fff; margin-bottom: 15px;">Seo et intelligence artificielle</h3>
-          <p style="color: #94a3b8; margin-bottom: 15px;"><strong>Scalabilité et automatisation de votre
-              croissance</strong></p>
-          <p style="color: #b0c4de;">Grâce aux LLMs, je génère des contenus qui apportent une réelle Information Gain
-            (données uniques, cas clients) tout en respectant la "pureté vectorielle" nécessaire pour ranker face aux IA
-            de Google.</p>
-        </div>
+      <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        <span
+          style="background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 50px; color: #fff;">Freelances /
+          indépendants</span>
+        <span style="background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 50px; color: #fff;">PME
+          industrielles</span>
+        <span style="background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 50px; color: #fff;">Startups
+          Tech</span>
+        <span
+          style="background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 50px; color: #fff;">E-commerçants</span>
+        <span style="background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 50px; color: #fff;">Grands
+          groupes</span>
       </div>
+      <p style="text-align: center; color: #3b82f6; margin-top: 30px; font-weight: bold;">
+        Votre ambition de croissance est notre priorité, chaque stratégie est adaptée à votre secteur.
+      </p>
     </div>
   </section>
 
-  <!-- [SECTION 8 : AUDIENCE] -->
-  <section style="background: #0f0f0f; padding: 100px 0;">
-    <div class="container">
-      <h2 class="section-title" style="text-align: center; margin-bottom: 50px;">
-        Qui j'accompagne à Lyon : <span>du freelance à la PME industrielle</span>
-      </h2>
-
-      <div
-        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 50px;">
-
-        <!-- Card 1: Indépendant -->
-        <div
-          style="background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%); border: 1px solid rgba(255,255,255,0.05); padding: 35px; border-radius: 24px; transition: transform 0.3s ease;">
-          <div style="font-size: 2.5rem; margin-bottom: 20px;">📅</div>
-          <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 15px; font-weight: 700;">Indépendants & Freelances
-          </h3>
-          <p style="color: #94a3b8; line-height: 1.6;">Vous cherchez à <strong>remplir votre agenda</strong> sans passer
-            vos journées à prospecter. Votre visibilité doit travailler pour vous.</p>
-        </div>
-
-        <!-- Card 2: Startup -->
-        <div
-          style="background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%); border: 1px solid rgba(255,255,255,0.05); padding: 35px; border-radius: 24px; transition: transform 0.3s ease;">
-          <div style="font-size: 2.5rem; margin-bottom: 20px;">🚀</div>
-          <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 15px; font-weight: 700;">Startups Tech</h3>
-          <p style="color: #94a3b8; line-height: 1.6;">Pour les acteurs de la <strong>Confluence</strong> qui visent une
-            hyper-croissance. Scalabilité et acquisition rapide sont vos priorités.</p>
-        </div>
-
-        <!-- Card 3: PME -->
-        <div
-          style="background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%); border: 1px solid rgba(255,255,255,0.05); padding: 35px; border-radius: 24px; transition: transform 0.3s ease;">
-          <div style="font-size: 2.5rem; margin-bottom: 20px;">🏭</div>
-          <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 15px; font-weight: 700;">PME Industrielles</h3>
-          <p style="color: #94a3b8; line-height: 1.6;">Basées à <strong>Vénissieux ou Saint-Priest</strong>, vous voulez
-            digitaliser votre acquisition et sécuriser votre place de leader local.</p>
-        </div>
-
-      </div>
-
-      <div
-        style="text-align: center; max-width: 700px; margin: 0 auto; background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); padding: 20px 30px; border-radius: 100px; backdrop-filter: blur(10px);">
-        <p style="color: #cbd5e1; font-size: 1.1rem; font-weight: 500; margin: 0;">
-          <span style="color: #3b82f6; margin-right: 10px;">✨</span> Mon message est simple : <strong
-            style="color: #fff;">votre succès est le mien.</strong>
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- [SECTION 9 : METHODOLOGY] -->
-  <section style="background: #0a0a0a;">
+  <!-- [SECTION 8 : MÉTHODE] -->
+  <section style="background: #0f0f0f;">
     <div class="container">
       <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
-        Ma méthodologie SEO en 4 étapes <span>pour un succès durable et mesurable</span>
+        Ma méthode de <span>travail</span>
       </h2>
-      <div class="paris-stats-box"
-        style="overflow-x: auto; background: rgba(255, 255, 255, 0.02); padding: 40px; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.05);">
+      <div class="lyon-stats-box" style="overflow-x: auto;">
         <table style="width: 100%; border-collapse: collapse; color: #cbd5e1; text-align: left; min-width: 600px;">
           <thead>
             <tr style="border-bottom: 2px solid #3b82f6;">
@@ -623,217 +716,120 @@
                 <strong style="color: #3b82f6;">Audit & Diagnostic</strong><br>
                 <span style="font-size: 0.9rem; color: #94a3b8;">(1-2 semaines)</span>
               </td>
-              <td style="padding: 15px;">Analyse concurrentielle et technique pour identifier les "Quick Wins".</td>
+              <td style="padding: 15px;">Analyse complète technique et sémantique</td>
             </tr>
             <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
               <td style="padding: 15px;">
                 <strong style="color: #3b82f6;">Stratégie sur-mesure</strong><br>
                 <span style="font-size: 0.9rem; color: #94a3b8;">(2-3 semaines)</span>
               </td>
-              <td style="padding: 15px;">Définition de la MVS (Minimal Viable Strategy) pour obtenir des résultats dès
-                le 3ème mois.</td>
+              <td style="padding: 15px;">Définition de la feuille de route SEO personnalisée</td>
             </tr>
             <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
               <td style="padding: 15px;">
                 <strong style="color: #3b82f6;">Optimisation & Action</strong><br>
                 <span style="font-size: 0.9rem; color: #94a3b8;">(3-6 mois)</span>
               </td>
-              <td style="padding: 15px;">Production de contenus BoFu (>1000 mots), maillage interne et netlinking local.
-              </td>
+              <td style="padding: 15px;">Mise en œuvre des actions techniques et éditoriales</td>
             </tr>
             <tr>
               <td style="padding: 15px;">
                 <strong style="color: #3b82f6;">Pilotage & ROI</strong><br>
                 <span style="font-size: 0.9rem; color: #94a3b8;">(Continu)</span>
               </td>
-              <td style="padding: 15px;">Suivi des positions et ajustement en fonction des conversions réelles.</td>
+              <td style="padding: 15px;">Suivi des KPIs et ajustements pour maximiser le retour</td>
             </tr>
           </tbody>
         </table>
       </div>
+      <div style="text-align: center; margin-top: 30px;">
+        <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-secondary" target="_blank">APPEL DÉCOUVERTE –
+          Planifiez votre audit gratuit</a>
+      </div>
     </div>
   </section>
 
-  <!-- [SECTION 10 : PRICING] -->
-  <section style="background: #0f0f0f; padding: 100px 0;">
-    <div class="container container-medium" style="display: flex; flex-direction: column; align-items: center;">
-      <h2 class="section-title" style="text-align: center; margin-bottom: 50px;">
-        Tarifs et offres de coaching SEO : <span>un investissement transparent</span>
+  <!-- [SECTION 9 : PRICING] -->
+  <section style="background: #0a0a0a;">
+    <div class="container">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
+        Mes offres <span>et tarifs</span>
       </h2>
-
-      <div
-        style="background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%); border: 1px solid rgba(255,255,255,0.05); border-radius: 30px; padding: 50px; text-align: center; position: relative; max-width: 600px; width: 100%; box-shadow: 0 20px 50px rgba(0,0,0,0.3);">
-
-        <!-- Badge -->
-        <div
-          style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #3b82f6; color: white; padding: 8px 20px; border-radius: 50px; font-weight: 600; font-size: 0.9rem; letter-spacing: 0.5px; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);">
-          OFFRE MENSUELLE
+      <div class="grid-2-cols" style="max-width: 900px; margin: 0 auto; gap: 30px;">
+        <div class="package-card">
+          <h3 style="color: #fff; margin-bottom: 15px;">Accompagnement Mensuel</h3>
+          <p style="color: #3b82f6; font-size: 1.5rem; font-weight: bold; margin-bottom: 15px;">dès 1 000 €/mois</p>
+          <p style="color: #94a3b8;">Pour les PME et sites en croissance constante.</p>
         </div>
-
-        <p style="color: #94a3b8; font-size: 1.1rem; margin-bottom: 10px;">Accompagnement SEO Complet</p>
-
-        <div style="display: flex; justify-content: center; align-items: baseline; gap: 5px; margin-bottom: 30px;">
-          <span style="font-size: 1.2rem; color: #cbd5e1;">à partir de</span>
-          <span style="font-size: 4rem; font-weight: 800; color: #fff; line-height: 1;">1 000€</span>
-          <span style="font-size: 1.2rem; color: #94a3b8;">/mois</span>
+        <div class="package-card">
+          <h3 style="color: #fff; margin-bottom: 15px;">Forfaits Personnalisés</h3>
+          <p style="color: #3b82f6; font-size: 1.5rem; font-weight: bold; margin-bottom: 15px;">Sur devis</p>
+          <p style="color: #94a3b8;">Selon objectifs et taille du site.</p>
         </div>
-
-        <div
-          style="background: rgba(255,255,255,0.03); border-radius: 20px; padding: 30px; margin-bottom: 30px; text-align: left;">
-          <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 15px;">
-            <li style="color: #cbd5e1; display: flex; align-items: center; gap: 15px; font-size: 1.05rem;">
-              <span style="color: #10b981; font-size: 1.2rem;">✔</span> Stratégie & Roadmap sur-mesure
-            </li>
-            <li style="color: #cbd5e1; display: flex; align-items: center; gap: 15px; font-size: 1.05rem;">
-              <span style="color: #10b981; font-size: 1.2rem;">✔</span> Suivi Technique & Core Web Vitals
-            </li>
-            <li style="color: #cbd5e1; display: flex; align-items: center; gap: 15px; font-size: 1.05rem;">
-              <span style="color: #10b981; font-size: 1.2rem;">✔</span> Production de Contenus Optimisés IA
-            </li>
-            <li style="color: #cbd5e1; display: flex; align-items: center; gap: 15px; font-size: 1.05rem;">
-              <span style="color: #10b981; font-size: 1.2rem;">✔</span> Reporting ROI & Performance
-            </li>
-          </ul>
-        </div>
-
-        <div
-          style="display: inline-block; background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.2); padding: 10px 20px; border-radius: 50px;">
-          <span style="color: #fca5a5; font-weight: 500; font-size: 0.95rem;">🚫 Pas de coûts cachés. Focus
-            Rentabilité.</span>
-        </div>
-
+      </div>
+      <p style="text-align: center; color: #fff; margin-top: 30px;">Transparence totale sur le scope et les livrables.
+      </p>
+      <div style="text-align: center; margin-top: 30px;">
+        <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank">APPEL DÉCOUVERTE –
+          Audit gratuit ou rendez-vous</a>
       </div>
     </div>
   </section>
 
-  <!-- [SECTION 11 : TOOLS] -->
-  <div class="container container-medium">
-    <h2 class="section-title" style="text-align: center; margin-bottom: 50px;">
-      Mes outils SEO <span>au service de votre performance commerciale</span>
-    </h2>
-
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;">
-
-      <!-- Tool 1 -->
-      <div
-        style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 25px; border-radius: 16px; text-align: center; transition: all 0.3s ease;"
-        onmouseover="this.style.borderColor='#10b981'; this.style.transform='translateY(-5px)'"
-        onmouseout="this.style.borderColor='rgba(255,255,255,0.05)'; this.style.transform='translateY(0)'">
-        <div style="margin-bottom: 15px; display: flex; justify-content: center;">
-          <!-- Icon: Spider/Crawl (Screaming Frog) -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-            stroke="#10b981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
-            <path d="M12 12m-8 0a8 8 0 1 0 16 0a8 8 0 1 0 -16 0" />
-            <path d="M12 2l0 2" />
-            <path d="M12 20l0 2" />
-            <path d="M20 12l2 0" />
-            <path d="M2 12l2 0" />
-            <path d="M18 18l1.5 1.5" />
-            <path d="M18 6l1.5 -1.5" />
-            <path d="M6 18l-1.5 1.5" />
-            <path d="M6 6l-1.5 -1.5" />
-          </svg>
-        </div>
-        <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">Screaming Frog</h3>
-        <p style="color: #94a3b8; font-size: 0.9rem;">Audit Technique & Crawl</p>
-      </div>
-
-      <!-- Tool 2 -->
-      <div
-        style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 25px; border-radius: 16px; text-align: center; transition: all 0.3s ease;"
-        onmouseover="this.style.borderColor='#f59e0b'; this.style.transform='translateY(-5px)'"
-        onmouseout="this.style.borderColor='rgba(255,255,255,0.05)'; this.style.transform='translateY(0)'">
-        <div style="margin-bottom: 15px; display: flex; justify-content: center;">
-          <!-- Icon: Bar Chart (SEMrush/Ahrefs) -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-            stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M3 3v18h18" />
-            <path d="M18 17v-5" />
-            <path d="M13 17v-9" />
-            <path d="M8 17v-3" />
-          </svg>
-        </div>
-        <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">SEMrush / Ahrefs</h3>
-        <p style="color: #94a3b8; font-size: 0.9rem;">Analyse Concurrentielle</p>
-      </div>
-
-      <!-- Tool 3 -->
-      <div
-        style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 25px; border-radius: 16px; text-align: center; transition: all 0.3s ease;"
-        onmouseover="this.style.borderColor='#3b82f6'; this.style.transform='translateY(-5px)'"
-        onmouseout="this.style.borderColor='rgba(255,255,255,0.05)'; this.style.transform='translateY(0)'">
-        <div style="margin-bottom: 15px; display: flex; justify-content: center;">
-          <!-- Icon: Activity/Pulse (GSC) -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-            stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M3 12h4l3 8l4 -16l3 8h4" />
-          </svg>
-        </div>
-        <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">Google Search Console</h3>
-        <p style="color: #94a3b8; font-size: 0.9rem;">Pilotage Temps Réel</p>
-      </div>
-
-      <!-- Tool 4 -->
-      <div
-        style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 25px; border-radius: 16px; text-align: center; transition: all 0.3s ease;"
-        onmouseover="this.style.borderColor='#8b5cf6'; this.style.transform='translateY(-5px)'"
-        onmouseout="this.style.borderColor='rgba(255,255,255,0.05)'; this.style.transform='translateY(0)'">
-        <div style="margin-bottom: 15px; display: flex; justify-content: center;">
-          <!-- Icon: Brain/Chip (IA) -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-            stroke="#8b5cf6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 16a4 4 0 1 0 0 -8a4 4 0 0 0 0 8z" />
-            <path d="M12 8v-6" />
-            <path d="M12 22v-6" />
-            <path d="M8 12h-6" />
-            <path d="M22 12h-6" />
-            <path d="M15 9l3 -3" />
-            <path d="M6 18l3 -3" />
-            <path d="M9 9l-3 -3" />
-            <path d="M18 18l-3 -3" />
-          </svg>
-        </div>
-        <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">Scripts IA Custom</h3>
-        <p style="color: #94a3b8; font-size: 0.9rem;">Sémantique Vectorielle</p>
-      </div>
-
-    </div>
-  </div>
-  </section>
-
-  <!-- [SECTION 12 : LOCAL] -->
+  <!-- [SECTION 10 : OUTILS] -->
   <section style="background: #0f0f0f;">
-    <div class="container container-medium" style="text-align: center;">
-      <h2 class="section-title" style="margin-bottom: 20px;">
-        Votre expert SEO de proximité <span>au cœur de l'écosystème économique lyonnais</span>
+    <div class="container">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
+        Les outils <span>utilisés</span>
       </h2>
+      <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; align-items: center;">
+        <div style="text-align: center;">
+          <strong style="display: block; color: #fff; margin-bottom: 5px;">Screaming Frog</strong>
+          <span style="color: #94a3b8; font-size: 0.9rem;">Audit technique complet</span>
+        </div>
+        <div style="text-align: center;">
+          <strong style="display: block; color: #fff; margin-bottom: 5px;">Google Search Console</strong>
+          <span style="color: #94a3b8; font-size: 0.9rem;">Suivi performance et indexing</span>
+        </div>
+        <div style="text-align: center;">
+          <strong style="display: block; color: #fff; margin-bottom: 5px;">SEMrush / Ahrefs</strong>
+          <span style="color: #94a3b8; font-size: 0.9rem;">Analyse concurrentielle et backlinks</span>
+        </div>
+        <div style="text-align: center;">
+          <strong style="display: block; color: #fff; margin-bottom: 5px;">Geneva / Thot</strong>
+          <span style="color: #94a3b8; font-size: 0.9rem;">Champ sémantique & IA</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- [SECTION 11 : LOCAL] -->
+  <section style="background: #0a0a0a;">
+    <div class="container container-medium" style="text-align: center;">
+      <h2 class="section-title" style="margin-bottom: 20px;">Un consultant <span>proche de vous</span></h2>
       <p style="color: #cbd5e1; font-size: 1.1rem; line-height: 1.6;">
-        Être basé à Lyon me permet de comprendre les spécificités de votre marché local, des quartiers d'affaires de la
-        Part-Dieu aux zones d'innovation de Gerland. Cette proximité est un atout majeur pour créer des contenus qui
-        résonnent avec votre audience locale.
+        Basé à Lyon, je connais parfaitement le marché local et ses enjeux. Faire appel à un freelance local vous
+        garantit réactivité, proximité et conseils adaptés à votre environnement lyonnais.
       </p>
     </div>
   </section>
 
-
-  <!-- [SECTION 13 : FAQ] -->
-  <section class="faq-section" style="background: #0a0a0a; padding: 100px 0;">
+  <!-- [SECTION 12 : FAQ] -->
+  <section class="faq-section" style="background: #0f0f0f; padding: 100px 0;">
     <div class="container container-medium">
-      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">FAQ : <span>tout savoir sur le
-          référencement naturel et le SEO à Lyon</span></h2>
+      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">FAQ – <span>Questions fréquentes</span>
+      </h2>
       <div class="faq-list" style="display: grid; gap: 20px; max-width: 800px; margin: 0 auto;">
 
         <details
           style="padding: 25px; background: rgba(255,255,255,0.02); border-radius: 16px; border: 1px solid rgba(255,255,255,0.05); cursor: pointer;">
           <summary
             style="font-weight: 600; font-size: 1.1rem; color: #fff; list-style: none; display: flex; align-items: center; gap: 10px;">
-            <span style="color: #3b82f6; font-size: 1.5em; line-height: 1;">+</span> Quel est le prix moyen d'un
-            consultant seo à lyon ?
+            <span style="color: #3b82f6; font-size: 1.5em; line-height: 1;">+</span> Q1 : Prix moyen d’un consultant SEO
+            à Lyon ?
           </summary>
           <div style="margin-top: 15px; color: #94a3b8; line-height: 1.7; padding-left: 30px;">
-            <p>Les tarifs varient entre 500 € et 1500 € par jour. Mon offre forfaitaire à partir de 1 000 €/mois permet
-              de lisser l'investissement tout en garantissant une action continue sur tous les piliers du SEO.</p>
+            <p>En moyenne, un accompagnement freelance commence à 1 000 €/mois pour les PME et sites medium.</p>
           </div>
         </details>
 
@@ -841,13 +837,12 @@
           style="padding: 25px; background: rgba(255,255,255,0.02); border-radius: 16px; border: 1px solid rgba(255,255,255,0.05); cursor: pointer;">
           <summary
             style="font-weight: 600; font-size: 1.1rem; color: #fff; list-style: none; display: flex; align-items: center; gap: 10px;">
-            <span style="color: #3b82f6; font-size: 1.5em; line-height: 1;">+</span> Combien de temps faut-il pour voir
-            des résultats concrets à lyon ?
+            <span style="color: #3b82f6; font-size: 1.5em; line-height: 1;">+</span> Q2 : Un freelance suffit-il pour un
+            gros site ?
           </summary>
           <div style="margin-top: 15px; color: #94a3b8; line-height: 1.7; padding-left: 30px;">
-            <p>En général, les premiers signaux positifs (hausse d'impressions) apparaissent sous 4 à 8 semaines. Pour
-              des positions en top 3 sur des requêtes concurrentielles, comptez 3 à 6 mois selon l'historique de votre
-              domaine.</p>
+            <p>Oui, avec une expertise SEO solide, le freelance peut gérer de grands sites et coordonner le netlinking
+              et la technique.</p>
           </div>
         </details>
 
@@ -855,12 +850,10 @@
           style="padding: 25px; background: rgba(255,255,255,0.02); border-radius: 16px; border: 1px solid rgba(255,255,255,0.05); cursor: pointer;">
           <summary
             style="font-weight: 600; font-size: 1.1rem; color: #fff; list-style: none; display: flex; align-items: center; gap: 10px;">
-            <span style="color: #3b82f6; font-size: 1.5em; line-height: 1;">+</span> Un consultant freelance peut-il
-            gérer le seo d'un site à fort trafic ?
+            <span style="color: #3b82f6; font-size: 1.5em; line-height: 1;">+</span> Q3 : Durée avant résultats ?
           </summary>
           <div style="margin-top: 15px; color: #94a3b8; line-height: 1.7; padding-left: 30px;">
-            <p>Absolument. Grâce à l'automatisation et aux outils d'IA, un freelance expert peut gérer des structures
-              complexes avec une agilité que les agences n'ont pas toujours.</p>
+            <p>En général 3 à 6 mois pour voir un trafic qualifié et un ROI tangible.</p>
           </div>
         </details>
 
@@ -868,12 +861,12 @@
           style="padding: 25px; background: rgba(255,255,255,0.02); border-radius: 16px; border: 1px solid rgba(255,255,255,0.05); cursor: pointer;">
           <summary
             style="font-weight: 600; font-size: 1.1rem; color: #fff; list-style: none; display: flex; align-items: center; gap: 10px;">
-            <span style="color: #3b82f6; font-size: 1.5em; line-height: 1;">+</span> Quelles sont vos zones
-            d'intervention à lyon et dans le rhône ?
+            <span style="color: #3b82f6; font-size: 1.5em; line-height: 1;">+</span> Q4 : Zone d’intervention ?
           </summary>
           <div style="margin-top: 15px; color: #94a3b8; line-height: 1.7; padding-left: 30px;">
-            <p>Je couvre l'intégralité de la métropole de Lyon : Villeurbanne, Vénissieux, Caluire-et-Cuire,
-              Saint-Priest, ainsi que les zones d'activités périphériques.</p>
+            <p>Principalement Lyon et Auvergne-Rhône-Alpes, avec interventions possibles à distance pour tout type de
+              client.
+            </p>
           </div>
         </details>
 
@@ -881,13 +874,11 @@
           style="padding: 25px; background: rgba(255,255,255,0.02); border-radius: 16px; border: 1px solid rgba(255,255,255,0.05); cursor: pointer;">
           <summary
             style="font-weight: 600; font-size: 1.1rem; color: #fff; list-style: none; display: flex; align-items: center; gap: 10px;">
-            <span style="color: #3b82f6; font-size: 1.5em; line-height: 1;">+</span> Quels sont les risques d'une
-            mauvaise stratégie de référencement ?
+            <span style="color: #3b82f6; font-size: 1.5em; line-height: 1;">+</span> Q5 : Risques SEO ?
           </summary>
           <div style="margin-top: 15px; color: #94a3b8; line-height: 1.7; padding-left: 30px;">
-            <p>Le risque principal est la stagnation ou la pénalité Google (spam, contenu dupliqué). Une stratégie
-              "White Hat" basée sur la qualité et l'autorité est le seul rempart contre les mises à jour de
-              l'algorithme.</p>
+            <p>Travail 100% conforme aux bonnes pratiques Google, chaque action est mesurée et ajustée pour limiter les
+              risques.</p>
           </div>
         </details>
 
@@ -895,81 +886,13 @@
     </div>
   </section>
 
-  <!-- [SECTION 14 : QUIZ] -->
-  <section style="background: #0f0f0f; padding: 100px 0;">
-    <div class="container container-medium" style="text-align: center;">
-      <h2 class="section-title" style="margin-bottom: 30px;">
-        Votre site est-il <span>prêt pour 2026 ?</span>
-      </h2>
-      <div id="seo-quiz"
-        style="background: #ffffff; padding: 25px; border: 2px solid #000; border-radius: 12px; font-family: sans-serif; max-width: 500px; margin: 20px auto; color: #000;">
-        <h3 style="margin-top: 0; color: #000;">Testez votre score de visibilité à Lyon</h3>
-        <div id="quiz-content">
-          <p>Avez-vous une fiche Google Business Profile optimisée avec plus de 20 avis ?</p>
-          <div style="margin-top: 15px;">
-            <button onclick="nextStep(1)"
-              style="background: #000; color: #fff; border: none; padding: 10px 20px; cursor: pointer; border-radius: 6px; margin-right: 10px;">Oui</button>
-            <button onclick="nextStep(0)"
-              style="background: #ccc; color: #000; border: none; padding: 10px 20px; cursor: pointer; border-radius: 6px;">Non</button>
-          </div>
-        </div>
-      </div>
-      <script>
-        let score = 0;
-        function nextStep(val) {
-          score += val;
-          document.getElementById('quiz-content').innerHTML = "<p>Votre contenu est-il unique à plus de 70% par rapport à vos concurrents ?</p>" +
-            "<div style='margin-top: 15px;'>" +
-            "<button onclick='finish(1)' style='background: #000; color: #fff; border: none; padding: 10px 20px; cursor: pointer; border-radius: 6px; margin-right: 10px;'>Oui</button> " +
-            "<button onclick='finish(0)' style='background: #ccc; color: #000; border: none; padding: 10px 20px; cursor: pointer; border-radius: 6px;'>Non</button>" +
-            "</div>";
-        }
-        function finish(val) {
-          score += val;
-          let msg = score > 1 ? "Bon début ! Mais on peut faire mieux." : "Attention, votre visibilité est en danger.";
-          document.getElementById('quiz-content').innerHTML = "<h4>Résultat : " + msg + "</h4><p>Réservez votre appel pour un diagnostic complet.</p>";
-        }
-      </script>
-    </div>
-  </section>
-
-  <!-- [SECTION 15 : CTA FINAL] -->
+  <!-- [SECTION 13 : CTA FINAL] -->
   <section style="background: #0a0a0a; padding-bottom: 160px; text-align: center;">
     <div class="container container-medium">
-      <h2 class="section-title" style="margin-bottom: 20px;">Prêt à <span>dominer la recherche locale ?</span> réservez
-        votre appel découverte maintenant</h2>
-      <p style="color: #cbd5e1; font-size: 1.1rem; margin-bottom: 30px;">
-        Ne laissez pas vos concurrents capter vos futurs clients. Profitez d'une expertise de pointe pour transformer
-        votre présence sur Google en un moteur de croissance infatigable.
-      </p>
+      <h2 class="section-title" style="margin-bottom: 20px;">Prêt à <span>propulser votre business ?</span></h2>
       <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary"
-        style="font-size: 1.2rem; padding: 20px 40px;" target="_blank">RÉSERVER MON APPEL DÉCOUVERTE</a>
-      <p style="color: #ef4444; margin-top: 20px; font-weight: bold; font-size: 0.9rem;">Attention : Seulement 2 slots
-        disponibles ce mois-ci pour garantir un accompagnement ultra-qualitatif.</p>
-    </div>
-  </section>
-
-  <!-- [SECTION 16 : LIENS INTERNES] -->
-  <section style="background: #000; padding: 40px 0; border-top: 1px solid #1e293b;">
-    <div class="container">
-      <h3 style="color: #fff; font-size: 1.2rem; margin-bottom: 20px; text-align: center;">Expertises SEO & Zones
-        d'Intervention</h3>
-      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; font-size: 0.9rem;">
-        <a href="/" style="color: #64748b; text-decoration: none;">Expert SEO Freelance (Accueil)</a>
-        <span style="color: #334155;">|</span>
-        <a href="services-seo" style="color: #64748b; text-decoration: none;">Accompagnement SEO sur-mesure
-          (Services)</a>
-        <span style="color: #334155;">|</span>
-        <a href="consultant-seo-paris" style="color: #64748b; text-decoration: none;">Consultant SEO à Paris (Maillage
-          Ville)</a>
-        <span style="color: #334155;">|</span>
-        <a href="audit-seo-technique" style="color: #64748b; text-decoration: none;">Audit SEO Technique complet
-          (Action)</a>
-        <span style="color: #334155;">|</span>
-        <!-- Example link for Proximité -->
-        <a href="consultant-seo-lyon" style="color: #64748b; text-decoration: none;">Stratégie SEO à Villeurbanne
-          (Proximité)</a>
-      </div>
+        style="font-size: 1.2rem; padding: 20px 40px;" target="_blank">APPEL DÉCOUVERTE – 2
+        slots disponibles ce mois</a>
     </div>
   </section>
 
@@ -1073,6 +996,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
