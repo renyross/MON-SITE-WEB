@@ -308,7 +308,7 @@
     <div class="container">
       <div class="grid-2-cols" style="gap: 50px;">
         <div class="hero-content" style="text-align: left;">
-          
+
           <h1 id="cta-audit">
             Renel Rosené – Consultant SEO Freelance à <span>Bordeaux</span>
           </h1>
@@ -330,7 +330,7 @@
     </div>
   </section>
 
-<!-- [SECTION 2 : CONTEXTE & OPPORTUNITÉ] -->
+  <!-- [SECTION 2 : CONTEXTE & OPPORTUNITÉ] -->
   <section style="background: #0a0a0a;">
     <div class="container">
       <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
@@ -340,7 +340,11 @@
 
         <!-- Text Column -->
         <div>
-          <p style="color: #cbd5e1; margin-bottom: 25px; line-height: 1.7;">Bordeaux n'est pas seulement un pôle économique majeur de sa région ; c'est un bassin dynamique porté par Place de la Bourse, Cité du Vin, Vin de Bordeaux. Dans ce marché où la compétition digitale s'intensifie, la visibilité organique est devenue une nécessité stratégique. Que vous soyez une PME locale ou un acteur industriel, vos futurs clients utilisent Google pour comparer les solutions avant de vous solliciter.</p>
+          <p style="color: #cbd5e1; margin-bottom: 25px; line-height: 1.7;">Bordeaux n'est pas seulement un pôle
+            économique majeur de sa région ; c'est un bassin dynamique porté par Place de la Bourse, Cité du Vin, Vin de
+            Bordeaux. Dans ce marché où la compétition digitale s'intensifie, la visibilité organique est devenue une
+            nécessité stratégique. Que vous soyez une PME locale ou un acteur industriel, vos futurs clients utilisent
+            Google pour comparer les solutions avant de vous solliciter.</p>
           <p style="color: #cbd5e1; margin-bottom: 25px; line-height: 1.7;">
             En tant que consultant SEO expert, je transforme votre site en actif stratégique. Je ne vise pas "plus de
             trafic", mais la domination des intentions de recherche à haute valeur ajoutée, captant ainsi des leads
@@ -382,13 +386,9 @@
   <!-- [SECTION 3 : PROBLÈMES / SOLUTIONS - MÉTHODE PAS] -->
   <section style="background: #0f0f0f;">
     <div class="container">
-      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
-        Stop au trafic invisible : <span>transformez votre site en levier de croissance</span>
+      <h2 class="section-title" style="text-align: center; margin-bottom: 50px;">
+        Stop au trafic invisible : <span>Explosez votre ROI SEO à Bordeaux</span>
       </h2>
-      <p style="text-align: center; color: #94a3b8; max-width: 800px; margin: 0 auto 50px;">
-        Ce bloc utilise la psychologie de vente pour montrer que je comprends parfaitement les défis des entrepreneurs
-        et directeurs marketing à Bordeaux.
-      </p>
 
       <style>
         .pas-grid {
@@ -501,7 +501,8 @@
         </div>
       </div>
       <div style="text-align: center; margin-top: 50px;">
-        <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank">RÉSERVER MON AUDIT À BORDEAUX</a>
+        <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank">RÉSERVER MON AUDIT À
+          BORDEAUX</a>
       </div>
     </div>
   </section>
@@ -632,7 +633,12 @@
   </section>
 
   <!-- [SECTION 5 : ILS ME FONT CONFIANCE - TRUST SIGNALS] -->
-  <section style="background: #0f0f0f; padding: 100px 0;">
+  <section style="background: #0f0f0f; padding: 100px 0; position: relative; overflow: hidden;">
+    <!-- Abstract background glow -->
+    <div
+      style="position: absolute; top: 20%; right: -10%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(46, 92, 255, 0.08) 0%, transparent 70%); pointer-events: none;">
+    </div>
+
     <div class="container">
       <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
         Des résultats concrets pour <span>des entreprises ambitieuses</span>
@@ -642,42 +648,146 @@
         présence à Bordeaux et à l'international.
       </p>
 
-      
-      </div>
+      <style>
+        .trust-grid-premium {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+          gap: 30px;
+          margin-bottom: 60px;
+        }
 
-      
+        .trust-card-premium {
+          background: rgba(255, 255, 255, 0.02);
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          padding: 50px 40px;
+          border-radius: 24px;
+          position: relative;
+          transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+          overflow: hidden;
+        }
 
-      <div class="trust-grid">
-        <div class="trust-card"
-          style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); padding: 40px; border-radius: 20px;">
-          <div class="trust-quote" style="color: #fff; font-size: 1.15rem; font-weight: 700; margin-bottom: 20px;">«
-            +150% de leads qualifiés en 6 mois »</div>
-          <p class="trust-text"
-            style="color: #94a3b8; font-size: 0.95rem; line-height: 1.7; margin-bottom: 30px; font-style: italic;">
+        .trust-card-premium:hover {
+          transform: translateY(-10px);
+          background: rgba(255, 255, 255, 0.04);
+          border-color: rgba(59, 130, 246, 0.3);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .trust-card-premium::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 4px;
+          height: 0;
+          background: linear-gradient(to bottom, #3b82f6, #2ecc71);
+          transition: height 0.4s ease;
+        }
+
+        .trust-card-premium:hover::before {
+          height: 100%;
+        }
+
+        .metric-badge {
+          display: inline-block;
+          background: rgba(59, 130, 246, 0.1);
+          color: #3b82f6;
+          padding: 8px 16px;
+          border-radius: 12px;
+          font-weight: 800;
+          font-size: 1.2rem;
+          margin-bottom: 25px;
+          letter-spacing: -0.02em;
+        }
+
+        .trust-quote-text {
+          color: #e2e8f0;
+          font-size: 1.1rem;
+          line-height: 1.7;
+          margin-bottom: 40px;
+          font-weight: 500;
+          position: relative;
+        }
+
+        .trust-quote-text::before {
+          content: "“";
+          position: absolute;
+          top: -20px;
+          left: -10px;
+          font-size: 4rem;
+          color: rgba(59, 130, 246, 0.1);
+          font-family: serif;
+        }
+
+        .author-box {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+        }
+
+        .author-info strong {
+          display: block;
+          color: #fff;
+          font-size: 1rem;
+          margin-bottom: 2px;
+        }
+
+        .author-info span {
+          color: #64748b;
+          font-size: 0.85rem;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+        }
+
+        @media (max-width: 768px) {
+          .trust-grid-premium {
+            grid-template-columns: 1fr;
+          }
+
+          .trust-card-premium {
+            padding: 40px 30px;
+          }
+        }
+      </style>
+
+      <div class="trust-grid-premium">
+        <!-- Card 1 -->
+        <div class="trust-card-premium">
+          <div class="metric-badge">+150% de leads qualifiés en 6 mois</div>
+          <p class="trust-quote-text">
             "L'audit de Renel a été le déclencheur de notre croissance organique. Nous dominons désormais nos mots-clés
-            stratégiques."</p>
-          <div class="trust-author" style="border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 20px;">
-            <strong style="display: block; color: #fff;">Directeur Marketing</strong>
-            <span style="color: #3b82f6;">E-commerce Luxe (Bordeaux)</span>
+            stratégiques."
+          </p>
+          <div class="author-box">
+            <div class="author-info">
+              <strong>Directeur Marketing</strong>
+              <span>E-commerce Luxe (Bordeaux)</span>
+            </div>
           </div>
         </div>
-        <div class="trust-card"
-          style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); padding: 40px; border-radius: 20px;">
-          <div class="trust-quote" style="color: #fff; font-size: 1.15rem; font-weight: 700; margin-bottom: 20px;">« Une
-            expertise business rare »</div>
-          <p class="trust-text"
-            style="color: #94a3b8; font-size: 0.95rem; line-height: 1.7; margin-bottom: 30px; font-style: italic;">
+
+        <!-- Card 2 -->
+        <div class="trust-card-premium">
+          <div class="metric-badge" style="background: rgba(46, 204, 113, 0.1); color: #2ecc71;">Une expertise business
+            rare</div>
+          <p class="trust-quote-text">
             "Renel comprend parfaitement les enjeux d'acquisition client. Son approche SEO est un vrai levier de
-            rentabilité."</p>
-          <div class="trust-author" style="border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 20px;">
-            <strong style="display: block; color: #fff;">Fondateur</strong>
-            <span style="color: #3b82f6;">SaaS B2B (Bordeaux)</span>
+            rentabilité."
+          </p>
+          <div class="author-box">
+            <div class="author-info">
+              <strong>Fondateur</strong>
+              <span>SaaS B2B (Bordeaux)</span>
+            </div>
           </div>
         </div>
       </div>
 
-      <div style="text-align: center; margin-top: 60px;">
-        <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank">RÉSERVER MON AUDIT ROI À BORDEAUX</a>
+      <div style="text-align: center;">
+        <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank">RÉSERVER MON AUDIT ROI
+          À BORDEAUX</a>
       </div>
     </div>
   </section>
@@ -958,327 +1068,6 @@
       </div>
     </div>
   </section>
-
-
-  <!-- [SECTION 11 : LOCAL] -->
-  <section style="background: #0a0a0a;">
-    <div class="container container-medium" style="text-align: center;">
-      <h2 class="section-title" style="margin-bottom: 20px;">Un consultant <span>proche de vous</span></h2>
-      <p style="color: #cbd5e1; font-size: 1.1rem; line-height: 1.6;">
-        Intervenant partout à Bordeaux (Place de la Bourse, Cité du Vin, Vin de Bordeaux) et en Nouvelle-Aquitaine. Je connais
-        parfaitement le marché local et ses enjeux de compétitivité.
-      </p>
-    </div>
-  </section>
-
-Stack Outils -->
-  <section id="outils" style="padding: 100px 0; background: #0f0f0f;">
-    <div class="container">
-      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
-        Les meilleurs outils <span>au service de votre visibilité</span>
-      </h2>
-      <p
-        style="text-align: center; color: #94a3b8; margin-bottom: 60px; font-size: 1.1rem; max-width: 850px; margin-left: auto; margin-right: auto;">
-        Pour obtenir des résultats d'expert, j'utilise une suite logicielle de pointe. Chaque outil me permet d'extraire
-        de la donnée précise pour prendre des décisions rentables pour votre business.
-      </p>
-
-      <div
-        style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; align-items: flex-start; margin-bottom: 40px;">
-        <!-- Outil 1 -->
-        <div style="text-align: center; max-width: 260px;">
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.15rem;">🐸 Screaming Frog</h3>
-          <p style="color: #7dd3fc; font-size: 0.9rem; margin-bottom: 10px; font-weight: bold;">Audit Technique</p>
-          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
-            Pour réaliser des audits techniques complets. Il me permet de détecter instantanément les erreurs 404, les
-            problèmes d'indexation ou les balises manquantes.
-          </p>
-        </div>
-
-        <!-- Outil 2 -->
-        <div style="text-align: center; max-width: 260px;">
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.15rem;">📊 Google Search Console</h3>
-          <p style="color: #7dd3fc; font-size: 0.9rem; margin-bottom: 10px; font-weight: bold;">Pilotage de la
-            Performance</p>
-          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
-            Mon tableau de bord de pilotage. C'est ici que je surveille votre trafic réel, vos positions exactes et la
-            santé de votre site via les données de Google.
-          </p>
-        </div>
-
-        <!-- Outil 3 -->
-        <div style="text-align: center; max-width: 260px;">
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.15rem;">🚀 SEMrush / Ahrefs</h3>
-          <p style="color: #7dd3fc; font-size: 0.9rem; margin-bottom: 10px; font-weight: bold;">Analyse Concurrentielle
-          </p>
-          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
-            Pour surveiller ce que font vos concurrents à Bordeaux et vous positionner sur les opportunités les plus
-            lucratives.
-          </p>
-        </div>
-
-        <!-- Outil 4 -->
-        <div style="text-align: center; max-width: 260px;">
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.15rem;">🧠 ThotSEO</h3>
-          <p style="color: #7dd3fc; font-size: 0.9rem; margin-bottom: 10px; font-weight: bold;">Optimisation Sémantique
-          </p>
-          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
-            L'outil indispensable pour structurer vos contenus et dominer la sémantique de votre marché (topical
-            authority).
-          </p>
-        </div>
-      </div>
-
-      <div
-        style="background: rgba(46, 92, 255, 0.05); padding: 20px; border-radius: 12px; text-align: center; border: 1px solid rgba(46, 92, 255, 0.1); max-width: 800px; margin: 0 auto;">
-        <p style="color: #cbd5e1; font-size: 1rem; margin: 0;">
-          <strong>Le bénéfice pour vous :</strong> Une stratégie basée sur des chiffres réels et une vision claire de la
-          concurrence pour ne laisser aucune place au hasard.
-        </p>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- [SECTION 11 : LOCAL] -->
-  <section style="background: #0a0a0a;">
-    <div class="container container-medium" style="text-align: center;">
-      <h2 class="section-title" style="margin-bottom: 20px;">Un consultant <span>proche de vous</span></h2>
-      <p style="color: #cbd5e1; font-size: 1.1rem; line-height: 1.6;">
-        Intervenant partout à Bordeaux (Place de la Bourse, Cité du Vin, Vin de Bordeaux) et en Nouvelle-Aquitaine. Je connais
-        parfaitement le marché local et ses enjeux de compétitivité.
-      </p>
-    </div>
-  </section>
-
-Stack Outils -->
-  <section id="outils" style="padding: 100px 0; background: #0f0f0f;">
-    <div class="container">
-      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
-        Les meilleurs outils <span>au service de votre visibilité</span>
-      </h2>
-      <p
-        style="text-align: center; color: #94a3b8; margin-bottom: 60px; font-size: 1.1rem; max-width: 850px; margin-left: auto; margin-right: auto;">
-        Pour obtenir des résultats d'expert, j'utilise une suite logicielle de pointe. Chaque outil me permet d'extraire
-        de la donnée précise pour prendre des décisions rentables pour votre business.
-      </p>
-
-      <div
-        style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; align-items: flex-start; margin-bottom: 40px;">
-        <!-- Outil 1 -->
-        <div style="text-align: center; max-width: 260px;">
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.15rem;">🐸 Screaming Frog</h3>
-          <p style="color: #7dd3fc; font-size: 0.9rem; margin-bottom: 10px; font-weight: bold;">Audit Technique</p>
-          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
-            Pour réaliser des audits techniques complets. Il me permet de détecter instantanément les erreurs 404, les
-            problèmes d'indexation ou les balises manquantes.
-          </p>
-        </div>
-
-        <!-- Outil 2 -->
-        <div style="text-align: center; max-width: 260px;">
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.15rem;">📊 Google Search Console</h3>
-          <p style="color: #7dd3fc; font-size: 0.9rem; margin-bottom: 10px; font-weight: bold;">Pilotage de la
-            Performance</p>
-          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
-            Mon tableau de bord de pilotage. C'est ici que je surveille votre trafic réel, vos positions exactes et la
-            santé de votre site via les données de Google.
-          </p>
-        </div>
-
-        <!-- Outil 3 -->
-        <div style="text-align: center; max-width: 260px;">
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.15rem;">🚀 SEMrush / Ahrefs</h3>
-          <p style="color: #7dd3fc; font-size: 0.9rem; margin-bottom: 10px; font-weight: bold;">Analyse Concurrentielle
-          </p>
-          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
-            Pour surveiller ce que font vos concurrents à Bordeaux et vous positionner sur les opportunités les plus
-            lucratives.
-          </p>
-        </div>
-
-        <!-- Outil 4 -->
-        <div style="text-align: center; max-width: 260px;">
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.15rem;">🧠 ThotSEO</h3>
-          <p style="color: #7dd3fc; font-size: 0.9rem; margin-bottom: 10px; font-weight: bold;">Optimisation Sémantique
-          </p>
-          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
-            L'outil indispensable pour structurer vos contenus et dominer la sémantique de votre marché (topical
-            authority).
-          </p>
-        </div>
-      </div>
-
-      <div
-        style="background: rgba(46, 92, 255, 0.05); padding: 20px; border-radius: 12px; text-align: center; border: 1px solid rgba(46, 92, 255, 0.1); max-width: 800px; margin: 0 auto;">
-        <p style="color: #cbd5e1; font-size: 1rem; margin: 0;">
-          <strong>Le bénéfice pour vous :</strong> Une stratégie basée sur des chiffres réels et une vision claire de la
-          concurrence pour ne laisser aucune place au hasard.
-        </p>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- [SECTION 11 : LOCAL] -->
-  <section style="background: #0a0a0a;">
-    <div class="container container-medium" style="text-align: center;">
-      <h2 class="section-title" style="margin-bottom: 20px;">Un consultant <span>proche de vous</span></h2>
-      <p style="color: #cbd5e1; font-size: 1.1rem; line-height: 1.6;">
-        Intervenant partout à Bordeaux (Place de la Bourse, Cité du Vin, Vin de Bordeaux) et en Nouvelle-Aquitaine. Je connais
-        parfaitement le marché local et ses enjeux de compétitivité.
-      </p>
-    </div>
-  </section>
-
-Stack Outils -->
-  <section id="outils" style="padding: 100px 0; background: #0f0f0f;">
-    <div class="container">
-      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
-        Les meilleurs outils <span>au service de votre visibilité</span>
-      </h2>
-      <p
-        style="text-align: center; color: #94a3b8; margin-bottom: 60px; font-size: 1.1rem; max-width: 850px; margin-left: auto; margin-right: auto;">
-        Pour obtenir des résultats d'expert, j'utilise une suite logicielle de pointe. Chaque outil me permet d'extraire
-        de la donnée précise pour prendre des décisions rentables pour votre business.
-      </p>
-
-      <div
-        style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; align-items: flex-start; margin-bottom: 40px;">
-        <!-- Outil 1 -->
-        <div style="text-align: center; max-width: 260px;">
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.15rem;">🐸 Screaming Frog</h3>
-          <p style="color: #7dd3fc; font-size: 0.9rem; margin-bottom: 10px; font-weight: bold;">Audit Technique</p>
-          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
-            Pour réaliser des audits techniques complets. Il me permet de détecter instantanément les erreurs 404, les
-            problèmes d'indexation ou les balises manquantes.
-          </p>
-        </div>
-
-        <!-- Outil 2 -->
-        <div style="text-align: center; max-width: 260px;">
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.15rem;">📊 Google Search Console</h3>
-          <p style="color: #7dd3fc; font-size: 0.9rem; margin-bottom: 10px; font-weight: bold;">Pilotage de la
-            Performance</p>
-          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
-            Mon tableau de bord de pilotage. C'est ici que je surveille votre trafic réel, vos positions exactes et la
-            santé de votre site via les données de Google.
-          </p>
-        </div>
-
-        <!-- Outil 3 -->
-        <div style="text-align: center; max-width: 260px;">
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.15rem;">🚀 SEMrush / Ahrefs</h3>
-          <p style="color: #7dd3fc; font-size: 0.9rem; margin-bottom: 10px; font-weight: bold;">Analyse Concurrentielle
-          </p>
-          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
-            Pour surveiller ce que font vos concurrents à Bordeaux et vous positionner sur les opportunités les plus
-            lucratives.
-          </p>
-        </div>
-
-        <!-- Outil 4 -->
-        <div style="text-align: center; max-width: 260px;">
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.15rem;">🧠 ThotSEO</h3>
-          <p style="color: #7dd3fc; font-size: 0.9rem; margin-bottom: 10px; font-weight: bold;">Optimisation Sémantique
-          </p>
-          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
-            L'outil indispensable pour structurer vos contenus et dominer la sémantique de votre marché (topical
-            authority).
-          </p>
-        </div>
-      </div>
-
-      <div
-        style="background: rgba(46, 92, 255, 0.05); padding: 20px; border-radius: 12px; text-align: center; border: 1px solid rgba(46, 92, 255, 0.1); max-width: 800px; margin: 0 auto;">
-        <p style="color: #cbd5e1; font-size: 1rem; margin: 0;">
-          <strong>Le bénéfice pour vous :</strong> Une stratégie basée sur des chiffres réels et une vision claire de la
-          concurrence pour ne laisser aucune place au hasard.
-        </p>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- [SECTION 11 : LOCAL] -->
-  <section style="background: #0a0a0a;">
-    <div class="container container-medium" style="text-align: center;">
-      <h2 class="section-title" style="margin-bottom: 20px;">Un consultant <span>proche de vous</span></h2>
-      <p style="color: #cbd5e1; font-size: 1.1rem; line-height: 1.6;">
-        Intervenant partout à Bordeaux (Place de la Bourse, Cité du Vin, Vin de Bordeaux) et en Nouvelle-Aquitaine. Je connais
-        parfaitement le marché local et ses enjeux de compétitivité.
-      </p>
-    </div>
-  </section>
-
-Stack Outils -->
-  <section id="outils" style="padding: 100px 0; background: #0f0f0f;">
-    <div class="container">
-      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
-        Les meilleurs outils <span>au service de votre visibilité</span>
-      </h2>
-      <p
-        style="text-align: center; color: #94a3b8; margin-bottom: 60px; font-size: 1.1rem; max-width: 850px; margin-left: auto; margin-right: auto;">
-        Pour obtenir des résultats d'expert, j'utilise une suite logicielle de pointe. Chaque outil me permet d'extraire
-        de la donnée précise pour prendre des décisions rentables pour votre business.
-      </p>
-
-      <div
-        style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; align-items: flex-start; margin-bottom: 40px;">
-        <!-- Outil 1 -->
-        <div style="text-align: center; max-width: 260px;">
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.15rem;">🐸 Screaming Frog</h3>
-          <p style="color: #7dd3fc; font-size: 0.9rem; margin-bottom: 10px; font-weight: bold;">Audit Technique</p>
-          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
-            Pour réaliser des audits techniques complets. Il me permet de détecter instantanément les erreurs 404, les
-            problèmes d'indexation ou les balises manquantes.
-          </p>
-        </div>
-
-        <!-- Outil 2 -->
-        <div style="text-align: center; max-width: 260px;">
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.15rem;">📊 Google Search Console</h3>
-          <p style="color: #7dd3fc; font-size: 0.9rem; margin-bottom: 10px; font-weight: bold;">Pilotage de la
-            Performance</p>
-          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
-            Mon tableau de bord de pilotage. C'est ici que je surveille votre trafic réel, vos positions exactes et la
-            santé de votre site via les données de Google.
-          </p>
-        </div>
-
-        <!-- Outil 3 -->
-        <div style="text-align: center; max-width: 260px;">
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.15rem;">🚀 SEMrush / Ahrefs</h3>
-          <p style="color: #7dd3fc; font-size: 0.9rem; margin-bottom: 10px; font-weight: bold;">Analyse Concurrentielle
-          </p>
-          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
-            Pour surveiller ce que font vos concurrents à Bordeaux et vous positionner sur les opportunités les plus
-            lucratives.
-          </p>
-        </div>
-
-        <!-- Outil 4 -->
-        <div style="text-align: center; max-width: 260px;">
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.15rem;">🧠 ThotSEO</h3>
-          <p style="color: #7dd3fc; font-size: 0.9rem; margin-bottom: 10px; font-weight: bold;">Optimisation Sémantique</p>
-          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
-            L'outil indispensable pour structurer vos contenus et dominer la sémantique de votre marché (topical authority).
-          </p>
-        </div>
-      </div>
-
-      <div
-        style="background: rgba(46, 92, 255, 0.05); padding: 20px; border-radius: 12px; text-align: center; border: 1px solid rgba(46, 92, 255, 0.1); max-width: 800px; margin: 0 auto;">
-        <p style="color: #cbd5e1; font-size: 1rem; margin: 0;">
-          <strong>Le bénéfice pour vous :</strong> Une stratégie basée sur des chiffres réels et une vision claire de la
-          concurrence pour ne laisser aucune place au hasard.
-        </p>
-      </div>
-    </div>
-  </section>
-
-
-
   <section style="background: #0a0a0a;">
     <div class="container container-medium" style="text-align: center;">
       <h2 class="section-title" style="margin-bottom: 20px;">Un consultant SEO <span>proche de vous</span> à Bordeaux
