@@ -880,36 +880,100 @@
   </section>
 
   <!-- [SECTION 6 : PRESTATIONS] -->
-  <section style="background: #0f0f0f;">
+  <section style="background: #0f0f0f; position: relative; overflow: hidden;">
+    <!-- Abstract decorative element -->
+    <div
+      style="position: absolute; bottom: 0; left: -10%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(59, 130, 246, 0.05) 0%, transparent 70%); pointer-events: none;">
+    </div>
+
     <div class="container">
-      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 40px;">
         Prestations de consultant <span>SEO freelance à Toulouse</span>
       </h2>
-      <div class="service-grid">
-        <div class="service-card">
-          <h3 style="color: #fff; margin-bottom: 15px;">📍 SEO local & Google Business Profile</h3>
-          <p style="color: #94a3b8;">Attirer des clients locaux et optimiser votre présence sur Google Maps.</p>
+
+      <style>
+        .service-grid-premium {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 30px;
+        }
+
+        .service-card-premium {
+          background: rgba(255, 255, 255, 0.02);
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          padding: 40px 30px;
+          border-radius: 20px;
+          transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .service-card-premium:hover {
+          transform: translateY(-5px);
+          background: rgba(255, 255, 255, 0.04);
+          border-color: rgba(59, 130, 246, 0.3);
+          box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Gradient line on top on hover */
+        .service-card-premium::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background: linear-gradient(90deg, #3b82f6, #ec4899);
+          transition: width 0.3s ease;
+        }
+
+        .service-card-premium:hover::before {
+          width: 100%;
+        }
+
+        .service-icon {
+          font-size: 2.5rem;
+          margin-bottom: 20px;
+          display: inline-block;
+        }
+      </style>
+
+      <div class="service-grid-premium">
+        <div class="service-card-premium">
+          <div class="service-icon">📍</div>
+          <h3 style="color: #fff; margin-bottom: 15px; font-size: 1.25rem;">SEO local & Google Business Profile</h3>
+          <p style="color: #94a3b8; line-height: 1.6;">Attirer des clients locaux et optimiser votre présence sur Google
+            Maps.</p>
         </div>
-        <div class="service-card">
-          <h3 style="color: #fff; margin-bottom: 15px;">🛠️ Audit SEO technique</h3>
-          <p style="color: #94a3b8;">Corriger les problèmes techniques, vitesse, maillage et balises pour un site
-            performant.</p>
+        <div class="service-card-premium">
+          <div class="service-icon">🛠️</div>
+          <h3 style="color: #fff; margin-bottom: 15px; font-size: 1.25rem;">Audit SEO technique</h3>
+          <p style="color: #94a3b8; line-height: 1.6;">Corriger les problèmes techniques, vitesse, maillage et balises
+            pour un site performant.</p>
         </div>
-        <div class="service-card">
-          <h3 style="color: #fff; margin-bottom: 15px;">📝 Stratégie éditoriale / cocon sémantique</h3>
-          <p style="color: #94a3b8;">Générer du trafic qualifié grâce à un contenu structuré et ciblé.</p>
+        <div class="service-card-premium">
+          <div class="service-icon">📝</div>
+          <h3 style="color: #fff; margin-bottom: 15px; font-size: 1.25rem;">Stratégie éditoriale / cocon sémantique
+          </h3>
+          <p style="color: #94a3b8; line-height: 1.6;">Générer du trafic qualifié grâce à un contenu structuré et ciblé.
+          </p>
         </div>
-        <div class="service-card">
-          <h3 style="color: #fff; margin-bottom: 15px;">🔗 Netlinking et popularité</h3>
-          <p style="color: #94a3b8;">Augmenter l’autorité de votre site pour un meilleur positionnement.</p>
+        <div class="service-card-premium">
+          <div class="service-icon">🔗</div>
+          <h3 style="color: #fff; margin-bottom: 15px; font-size: 1.25rem;">Netlinking et popularité</h3>
+          <p style="color: #94a3b8; line-height: 1.6;">Augmenter l’autorité de votre site pour un meilleur
+            positionnement.</p>
         </div>
-        <div class="service-card">
-          <h3 style="color: #fff; margin-bottom: 15px;">🤖 SEO & IA</h3>
-          <p style="color: #94a3b8;">Scalabilité et automatisation : automatiser certaines tâches SEO pour gagner du
-            temps tout en augmentant l’efficacité.</p>
+        <div class="service-card-premium">
+          <div class="service-icon">🤖</div>
+          <h3 style="color: #fff; margin-bottom: 15px; font-size: 1.25rem;">SEO & IA</h3>
+          <p style="color: #94a3b8; line-height: 1.6;">Scalabilité et automatisation : automatiser certaines tâches SEO
+            pour gagner du temps tout en augmentant l’efficacité.</p>
         </div>
       </div>
-      <div style="text-align: center; margin-top: 40px;">
+      <div style="text-align: center; margin-top: 50px;">
         <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank">APPEL DÉCOUVERTE –
           Commencez votre optimisation SEO à Toulouse</a>
       </div>
@@ -995,26 +1059,82 @@
   </section>
 
   <!-- [SECTION 9 : PRICING] -->
-  <section style="background: #0a0a0a;">
+  <section style="background: #0a0a0a; position: relative; overflow: hidden;">
     <div class="container">
-      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 40px;">
         Mes offres <span>et tarifs</span>
       </h2>
-      <div class="grid-2-cols" style="max-width: 900px; margin: 0 auto; gap: 30px;">
-        <div class="package-card">
-          <h3 style="color: #fff; margin-bottom: 15px;">Accompagnement Mensuel</h3>
-          <p style="color: #3b82f6; font-size: 1.5rem; font-weight: bold; margin-bottom: 15px;">dès 1 000 €/mois</p>
-          <p style="color: #94a3b8;">Pour les PME et sites en croissance constante.</p>
+
+      <style>
+        .pricing-card-premium {
+          background: rgba(255, 255, 255, 0.02);
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          padding: 50px 40px;
+          border-radius: 24px;
+          text-align: center;
+          transition: all 0.3s ease;
+          position: relative;
+          z-index: 1;
+        }
+
+        .pricing-card-premium:hover {
+          transform: translateY(-5px);
+          border-color: rgba(59, 130, 246, 0.3);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .pricing-card-highlight {
+          background: rgba(59, 130, 246, 0.05);
+          border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+
+        .pricing-price {
+          font-size: 2.5rem;
+          font-weight: 800;
+          color: #fff;
+          margin-bottom: 10px;
+          background: linear-gradient(to right, #fff, #94a3b8);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        .pricing-sub {
+          font-size: 0.95rem;
+          color: #64748b;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin-bottom: 20px;
+          display: block;
+        }
+      </style>
+
+      <div class="grid-2-cols" style="max-width: 900px; margin: 0 auto; gap: 30px; align-items: stretch;">
+        <div class="pricing-card-premium">
+          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.4rem;">Accompagnement Mensuel</h3>
+          <span class="pricing-sub">Sérénité & Croissance</span>
+          <div class="pricing-price">dès 1 000 €<span style="font-size: 1rem; color: #64748b;">/mois</span></div>
+          <p style="color: #94a3b8; line-height: 1.6; margin-top: 20px;">
+            Pour les PME et sites en croissance constante qui veulent déléguer leur SEO à un expert senior.
+          </p>
         </div>
-        <div class="package-card">
-          <h3 style="color: #fff; margin-bottom: 15px;">Forfaits Personnalisés</h3>
-          <p style="color: #3b82f6; font-size: 1.5rem; font-weight: bold; margin-bottom: 15px;">Sur devis</p>
-          <p style="color: #94a3b8;">Selon objectifs et taille du site.</p>
+
+        <div class="pricing-card-premium pricing-card-highlight">
+          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.4rem;">Forfaits Personnalisés</h3>
+          <span class="pricing-sub">Sur-Mesure</span>
+          <div class="pricing-price">Sur Devis</div>
+          <p style="color: #94a3b8; line-height: 1.6; margin-top: 20px;">
+            Selon objectifs et taille du site. Idéal pour les refontes, migrations ou besoins spécifiques.
+          </p>
         </div>
       </div>
-      <p style="text-align: center; color: #fff; margin-top: 30px;">Transparence totale sur le scope et les livrables.
+
+      <p style="text-align: center; color: #64748b; margin-top: 40px; font-size: 0.95rem;">
+        <span style="color: #3b82f6;">ℹ️</span> Transparence totale sur le scope et les livrables.
       </p>
-      <div style="text-align: center; margin-top: 30px;">
+
+      <div style="text-align: center; margin-top: 40px;">
         <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank">APPEL DÉCOUVERTE –
           Audit gratuit ou rendez-vous</a>
       </div>
