@@ -1150,39 +1150,98 @@
   </section>
 
   <!-- 9️⃣ FAQ -->
+  <!-- 9️⃣ FAQ -->
   <section class="faq-section" style="padding: 100px 0; background: #0a0a0a;">
-    <div class="container container-medium">
+    <div class="container container-medium" style="max-width: 800px;">
       <h2 class="section-title" style="text-align: center; margin-bottom: 50px;">FAQ Consultant SEO Grenoble</h2>
 
-      <div class="faq-item" style="border-bottom: 1px solid #1e293b; padding: 20px 0;">
-        <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 10px;">Combien coûte un consultant SEO à Grenoble ?
-        </h3>
-        <p style="color: #94a3b8;">Sur devis selon le projet, mais généralement à partir de 1 000€/mois pour un travail
-          de fond sérieux.</p>
+      <style>
+        .faq-accordion details {
+          background: rgba(255, 255, 255, 0.02);
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          border-radius: 12px;
+          margin-bottom: 15px;
+          overflow: hidden;
+          transition: all 0.3s ease;
+        }
+
+        .faq-accordion details:hover {
+          background: rgba(255, 255, 255, 0.04);
+          border-color: rgba(59, 130, 246, 0.3);
+        }
+
+        .faq-accordion summary {
+          padding: 20px 25px;
+          cursor: pointer;
+          color: #fff;
+          font-weight: 600;
+          font-size: 1.1rem;
+          list-style: none;
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .faq-accordion summary::-webkit-details-marker {
+          display: none;
+        }
+
+        .faq-accordion summary::after {
+          content: "+";
+          font-size: 1.5rem;
+          color: #3b82f6;
+          transition: transform 0.3s ease;
+        }
+
+        .faq-accordion details[open] summary::after {
+          transform: rotate(45deg);
+        }
+
+        .faq-content {
+          padding: 0 25px 25px;
+          color: #94a3b8;
+          line-height: 1.6;
+        }
+      </style>
+
+      <div class="faq-accordion">
+        <details>
+          <summary>Combien coûte un consultant SEO à Grenoble ?</summary>
+          <div class="faq-content">
+            Sur devis selon le projet, mais généralement à partir de 1 000€/mois pour un travail de fond sérieux.
+          </div>
+        </details>
+
+        <details>
+          <summary>Travaillez-vous avec les entreprises locales ?</summary>
+          <div class="faq-content">
+            Oui, c'est ma priorité. Je connais le marché grenoblois.
+          </div>
+        </details>
+
+        <details>
+          <summary>En combien de temps voit-on les résultats ?</summary>
+          <div class="faq-content">
+            Premiers signaux techniques en 1 mois, trafic business en 3 à 6 mois.
+          </div>
+        </details>
+
+        <details>
+          <summary>Proposez-vous un audit SEO gratuit ?</summary>
+          <div class="faq-content">
+            Oui, un audit flash de 20 minutes pour qualifier le projet.
+          </div>
+        </details>
+
+        <details>
+          <summary>Quelle place pour l’IA dans votre travail ?</summary>
+          <div class="faq-content">
+            Elle est au coeur de la productivité pour l'analyse et la structure de contenu.
+          </div>
+        </details>
       </div>
 
-      <div class="faq-item" style="border-bottom: 1px solid #1e293b; padding: 20px 0;">
-        <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 10px;">Travaillez-vous avec les entreprises locales ?
-        </h3>
-        <p style="color: #94a3b8;">Oui, c'est ma priorité. Je connais le marché grenoblois.</p>
-      </div>
-
-      <div class="faq-item" style="border-bottom: 1px solid #1e293b; padding: 20px 0;">
-        <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 10px;">En combien de temps voit-on les résultats ?
-        </h3>
-        <p style="color: #94a3b8;">Premiers signaux techniques en 1 mois, trafic business en 3 à 6 mois.</p>
-      </div>
-
-      <div class="faq-item" style="border-bottom: 1px solid #1e293b; padding: 20px 0;">
-        <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 10px;">Proposez-vous un audit SEO gratuit ?</h3>
-        <p style="color: #94a3b8;">Oui, un audit flash de 20 minutes pour qualifier le projet.</p>
-      </div>
-
-      <div class="faq-item" style="border-bottom: 1px solid #1e293b; padding: 20px 0;">
-        <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 10px;">Quelle place pour l’IA dans votre travail ?
-        </h3>
-        <p style="color: #94a3b8;">Elle est au coeur de la productivité pour l'analyse et la structure de contenu.</p>
-      </div>
     </div>
   </section>
 
