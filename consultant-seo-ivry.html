@@ -150,15 +150,40 @@
     }
 
     .hero-ivry {
-      background: #0a0a0a;
+      background: #080808;
       padding: 160px 0 100px;
       position: relative;
       overflow: hidden;
     }
 
+    /* Ambient background effect */
+    .hero-ivry::before {
+      content: '';
+      position: absolute;
+      top: -10%;
+      right: -10%;
+      width: 50%;
+      height: 50%;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .hero-glass-card {
+      background: rgba(255, 255, 255, 0.01);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 50px;
+      border-radius: 30px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      position: relative;
+      z-index: 2;
+    }
+
     .grid-2-cols {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1.2fr 0.8fr;
       gap: 60px;
       align-items: center;
     }
@@ -287,27 +312,42 @@
       </div>
     </div>
   </nav>
-  <section class="hero-ivry" style="background: #0a0a0a; padding: 160px 0 100px; position: relative; overflow: hidden;">
+  <section class="hero-ivry">
     <div class="container">
-      <div class="grid-2-cols" style="gap: 50px;">
-        <div class="hero-content" style="text-align: left;">
-          <h1 class="hero-title anim-fade-up" id="cta-audit">
-            Renel Rosene – Consultant SEO freelance à <span class="text-gradient">Ivry-sur-Seine</span>
-          </h1>
-          <p class="hero-subtitle anim-fade-up"
-            style="margin-left: 0; color: #cbd5e1; font-size: 1.5rem; margin-bottom: 40px;">
-            Transformez votre site web en un moteur de croissance mesurable et pérenne.
-          </p>
-          <div class="hero-cta-group anim-fade-up" style="display: flex; gap: 20px; flex-wrap: wrap;">
-            <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank"
-              style="padding: 20px 40px; font-size: 1.1rem;">APPEL DÉCOUVERTE</a>
-            <a href="audit-seo-gratuit" class="hero-btn-secondary" style="padding: 20px 40px; font-size: 1.1rem;">AUDIT
-              SEO GRATUIT</a>
+      <div class="grid-2-cols">
+        <div class="hero-content anim-fade-up">
+          <div class="hero-glass-card">
+            <h1 class="hero-title" id="cta-audit"
+              style="font-size: clamp(2.5rem, 5vw, 3.8rem); line-height: 1.1; margin-bottom: 25px; font-weight: 900;">
+              Renel Rosene – Consultant SEO freelance à <span class="text-gradient"
+                style="background: linear-gradient(135deg, #3b82f6 0%, #2dd4bf 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">Ivry-sur-Seine</span>
+            </h1>
+            <p class="hero-subtitle"
+              style="color: #94a3b8; font-size: 1.25rem; line-height: 1.6; margin-bottom: 40px; max-width: 600px;">
+              Transformez votre site web en un actif stratégique. Je combine <strong>Expertise SEO</strong> et
+              <strong>Intelligence Artificielle</strong> pour dominer votre marché local.
+            </p>
+            <div class="hero-cta-group" style="display: flex; gap: 20px; flex-wrap: wrap;">
+              <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank"
+                style="padding: 18px 35px; border-radius: 12px; font-weight: 700; letter-spacing: 0.5px; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);">
+                APPEL DÉCOUVERTE
+              </a>
+              <a href="audit-seo-gratuit" class="hero-btn-secondary"
+                style="padding: 18px 35px; border-radius: 12px; font-weight: 700; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); transition: all 0.4s ease;">
+                AUDIT SEO GRATUIT
+              </a>
+            </div>
           </div>
         </div>
-        <div class="hero-image anim-fade-up" style="text-align: center;">
+        <div class="hero-image anim-fade-up" style="position: relative;">
+          <!-- Decorative element behind image -->
+          <div
+            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 120%; height: 120%; background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 60%); pointer-events: none; z-index: 0;">
+          </div>
           <img src="renel-portrait.jpg" alt="Renel Rosene Consultant SEO Ivry-sur-Seine"
-            style="max-width: 100%; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.5);">
+            style="position: relative; z-index: 1; max-width: 100%; border-radius: 30px; box-shadow: 0 30px 60px -15px rgba(0,0,0,0.7); border: 1px solid rgba(255,255,255,0.1); transition: transform 0.5s ease;"
+            onmouseover="this.style.transform='scale(1.02) rotate(1deg)'"
+            onmouseout="this.style.transform='scale(1) rotate(0deg)'">
         </div>
       </div>
     </div>
