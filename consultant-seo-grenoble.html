@@ -228,12 +228,28 @@
   </section>
 
   <!-- [SECTION 2 : CONTEXTE & OPPORTUNITÉ] -->
+  <style>
+    .grid-2-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    @media (max-width: 768px) {
+      .grid-2-cols {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+        text-align: center;
+      }
+    }
+  </style>
   <section style="background: #0a0a0a;">
     <div class="container">
       <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
         Pourquoi booster votre SEO à Grenoble est une <span>opportunité stratégique en 2026 ?</span>
       </h2>
-      <div class="grid-2-cols" style="align-items: center; gap: 50px;">
+      <div class="grid-2-cols">
 
         <!-- Text Column -->
         <div style="padding-right: 20px;">
