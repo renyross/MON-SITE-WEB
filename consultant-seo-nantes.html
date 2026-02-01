@@ -228,6 +228,100 @@
       display: none;
     }
 
+    /* Trust Signals Premium */
+    .trust-grid-premium {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+
+    .trust-card-premium {
+      background: rgba(255, 255, 255, 0.02);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 50px 40px;
+      border-radius: 24px;
+      position: relative;
+      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+      overflow: hidden;
+      text-align: left;
+    }
+
+    .trust-card-premium:hover {
+      transform: translateY(-10px);
+      background: rgba(255, 255, 255, 0.04);
+      border-color: rgba(46, 92, 255, 0.3);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .trust-card-premium::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 0;
+      background: linear-gradient(to bottom, var(--accent-primary), var(--accent-secondary));
+      transition: height 0.4s ease;
+    }
+
+    .trust-card-premium:hover::before {
+      height: 100%;
+    }
+
+    .metric-badge {
+      display: inline-block;
+      background: rgba(46, 92, 255, 0.1);
+      color: var(--accent-primary);
+      padding: 8px 16px;
+      border-radius: 12px;
+      font-weight: 800;
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+      letter-spacing: -0.02em;
+    }
+
+    .trust-quote-text {
+      color: #e2e8f0;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 40px;
+      font-weight: 500;
+      position: relative;
+    }
+
+    .trust-quote-text::before {
+      content: "“";
+      position: absolute;
+      top: -20px;
+      left: -10px;
+      font-size: 4rem;
+      color: rgba(46, 92, 255, 0.1);
+      font-family: serif;
+    }
+
+    .author-box {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .author-info strong {
+      display: block;
+      color: #fff;
+      font-size: 1rem;
+      margin-bottom: 2px;
+    }
+
+    .author-info span {
+      color: #64748b;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
     /* Mobile Responsive Overrides */
     @media (max-width: 768px) {
       section {
@@ -647,47 +741,47 @@
       </p>
 
 
-    </div>
+      <div class="container" style="position: relative; z-index: 1;">
+        <div class="trust-grid-premium">
+          <!-- Card 1 -->
+          <div class="trust-card-premium">
+            <div class="metric-badge">+150% de leads qualifiés en 6 mois</div>
+            <p class="trust-quote-text">
+              "L'audit de Renel a été le déclencheur de notre croissance organique. Nous dominons désormais nos
+              mots-clés
+              stratégiques."
+            </p>
+            <div class="author-box">
+              <div class="author-info">
+                <strong>Directeur Marketing</strong>
+                <span>E-commerce Luxe (Nantes)</span>
+              </div>
+            </div>
+          </div>
 
-
-
-    <div class="trust-grid-premium">
-      <!-- Card 1 -->
-      <div class="trust-card-premium">
-        <div class="metric-badge">+150% de leads qualifiés en 6 mois</div>
-        <p class="trust-quote-text">
-          "L'audit de Renel a été le déclencheur de notre croissance organique. Nous dominons désormais nos mots-clés
-          stratégiques."
-        </p>
-        <div class="author-box">
-          <div class="author-info">
-            <strong>Directeur Marketing</strong>
-            <span>E-commerce Luxe (Nantes)</span>
+          <!-- Card 2 -->
+          <div class="trust-card-premium">
+            <div class="metric-badge" style="background: rgba(0, 242, 255, 0.1); color: var(--accent-secondary);">Une
+              expertise business
+              rare</div>
+            <p class="trust-quote-text">
+              "Renel comprend parfaitement les enjeux d'acquisition client. Son approche SEO est un vrai levier de
+              rentabilité."
+            </p>
+            <div class="author-box">
+              <div class="author-info">
+                <strong>Fondateur</strong>
+                <span>SaaS B2B (Nantes)</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Card 2 -->
-      <div class="trust-card-premium">
-        <div class="metric-badge" style="background: rgba(0, 242, 255, 0.1); color: #00F2FF;">Une expertise business
-          rare</div>
-        <p class="trust-quote-text">
-          "Renel comprend parfaitement les enjeux d'acquisition client. Son approche SEO est un vrai levier de
-          rentabilité."
-        </p>
-        <div class="author-box">
-          <div class="author-info">
-            <strong>Fondateur</strong>
-            <span>SaaS B2B (Nantes)</span>
-          </div>
-        </div>
+      <div style="text-align: center; margin-top: 60px;">
+        <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank">RÉSERVER MON AUDIT ROI
+          À NANTES</a>
       </div>
-    </div>
-
-    <div style="text-align: center; margin-top: 60px;">
-      <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank">RÉSERVER MON AUDIT ROI
-        À NANTES</a>
-    </div>
     </div>
   </section>
 
