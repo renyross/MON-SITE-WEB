@@ -900,30 +900,66 @@
   </section>
 
   <!-- [SECTION 9 : PRICING] -->
-  <section style="background: #0a0a0a;">
+  <section class="lille-pricing-section" style="background: #0a0a0a; padding: 100px 0;">
     <div class="container">
-      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 60px;">
         Mes offres <span>et tarifs</span>
       </h2>
-      <div class="grid-2-cols" style="max-width: 900px; margin: 0 auto; gap: 30px;">
-        <div class="package-card">
-          <h3 style="color: #fff; margin-bottom: 15px;">Accompagnement Mensuel</h3>
-          <p style="color: #3b82f6; font-size: 1.5rem; font-weight: bold; margin-bottom: 15px;">dès 1 000 €/mois</p>
-          <p style="color: #94a3b8;">Pour les PME et sites en croissance constante.</p>
+
+      <div class="pricing-grid-premium"
+        style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; max-width: 1000px; margin: 0 auto;">
+        <!-- Monthly Support -->
+        <div class="pricing-glass-card"
+          style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); padding: 50px 40px; border-radius: 30px; backdrop-filter: blur(10px); text-align: center; transition: all 0.4s ease;">
+          <div style="font-size: 3rem; margin-bottom: 20px;">🗓️</div>
+          <h3 style="color: #fff; font-size: 1.6rem; margin-bottom: 15px; font-weight: 700;">Accompagnement Mensuel</h3>
+          <p style="color: var(--accent-primary); font-size: 2rem; font-weight: 800; margin-bottom: 20px;">dès 1 000
+            €<span style="font-size: 1rem; color: #a1a1a6;">/mois</span></p>
+          <p style="color: #a1a1a6; font-size: 1.1rem; line-height: 1.6; margin: 0;">Pour les PME et sites en croissance
+            constante qui exigent une performance durable.</p>
         </div>
-        <div class="package-card">
-          <h3 style="color: #fff; margin-bottom: 15px;">Forfaits Personnalisés</h3>
-          <p style="color: #3b82f6; font-size: 1.5rem; font-weight: bold; margin-bottom: 15px;">Sur devis</p>
-          <p style="color: #94a3b8;">Selon objectifs et taille du site.</p>
+
+        <!-- Custom Packages -->
+        <div class="pricing-glass-card"
+          style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); padding: 50px 40px; border-radius: 30px; backdrop-filter: blur(10px); text-align: center; transition: all 0.4s ease;">
+          <div style="font-size: 3rem; margin-bottom: 20px;">⚖️</div>
+          <h3 style="color: #fff; font-size: 1.6rem; margin-bottom: 15px; font-weight: 700;">Forfaits Personnalisés</h3>
+          <p style="color: var(--accent-secondary); font-size: 2rem; font-weight: 800; margin-bottom: 20px;">Sur devis
+          </p>
+          <p style="color: #a1a1a6; font-size: 1.1rem; line-height: 1.6; margin: 0;">Solutions sur mesure adaptées à vos
+            objectifs spécifiques et à la taille de votre site.</p>
         </div>
       </div>
-      <p style="text-align: center; color: #fff; margin-top: 30px;">Transparence totale sur le scope et les livrables.
+
+      <p style="text-align: center; color: #a1a1a6; margin-top: 40px; font-size: 1.1rem; font-weight: 500;">
+        <span style="color: var(--accent-primary);">✓</span> Transparence totale sur le scope et les livrables.
       </p>
-      <div style="text-align: center; margin-top: 30px;">
-        <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank">APPEL DÉCOUVERTE –
-          Audit gratuit ou rendez-vous</a>
+
+      <div style="text-align: center; margin-top: 50px;">
+        <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank"
+          style="padding: 20px 40px; font-size: 1.1rem;">APPEL DÉCOUVERTE – Audit gratuit ou rendez-vous</a>
       </div>
     </div>
+
+    <style>
+      .pricing-glass-card:hover {
+        transform: translateY(-12px);
+        border-color: var(--accent-secondary) !important;
+        background: rgba(255, 255, 255, 0.05) !important;
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+      }
+
+      @media (max-width: 850px) {
+        .pricing-grid-premium {
+          grid-template-columns: 1fr !important;
+          gap: 30px !important;
+        }
+
+        .pricing-glass-card {
+          padding: 40px 30px !important;
+        }
+      }
+    </style>
   </section>
 
 
