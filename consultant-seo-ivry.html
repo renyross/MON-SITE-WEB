@@ -138,13 +138,119 @@
 </script>
 
 
-  <!-- Pour Google Search (ICO) -->
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <!-- Pour Google Search (PNG) -->
-  <link rel="icon" href="logo-seo.png" sizes="192x192" type="image/png">
-  <!-- Pour iOS/Android -->
-  <link rel="apple-touch-icon" href="logo-seo.png">
+  <style>
+    /* Specific overrides for consultant-seo-ivry page */
+    :root {
+      --section-padding: 100px 0;
+      --mobile-padding: 60px 0;
+    }
+
+    section {
+      padding: var(--section-padding);
+    }
+
+    .hero-ivry {
+      background: #0a0a0a;
+      padding: 160px 0 100px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .grid-2-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .paris-stats-box {
+      background: rgba(255, 255, 255, 0.02);
+      padding: 40px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .service-card {
+      background: rgba(255, 255, 255, 0.02);
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .prob-sol-grid {
+      display: grid;
+      gap: 30px;
+    }
+
+    .prob-sol-item {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .prob-sol-part {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .prob-part {
+      background: rgba(239, 68, 68, 0.05);
+      border-right: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .sol-part {
+      background: rgba(59, 130, 246, 0.05);
+    }
+
+    /* Mobile Responsive Overrides */
+    @media (max-width: 768px) {
+      section {
+        padding: var(--mobile-padding) !important;
+      }
+
+      .hero-ivry {
+        padding: 100px 0 60px !important;
+      }
+
+      .grid-2-cols {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+        text-align: center;
+      }
+
+      .section-title {
+        font-size: 2.2rem !important;
+        margin-bottom: 30px !important;
+      }
+
+      .prob-sol-item {
+        grid-template-columns: 1fr;
+      }
+
+      .prob-part {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -181,13 +287,11 @@
       </div>
     </div>
   </nav>
-  <!-- Hero Section -->
-  <!-- Hero Section -->
   <section class="hero-ivry" style="background: #0a0a0a; padding: 160px 0 100px; position: relative; overflow: hidden;">
     <div class="container">
       <div class="grid-2-cols" style="gap: 50px;">
         <div class="hero-content" style="text-align: left;">
-          <h1 class="hero-title anim-fade-up">
+          <h1 class="hero-title anim-fade-up" id="cta-audit">
             Renel Rosene – Consultant SEO freelance à <span class="text-gradient">Ivry-sur-Seine</span>
           </h1>
           <p class="hero-subtitle anim-fade-up"
@@ -267,111 +371,67 @@
         problématiques typiques et nos solutions pour Ivry-sur-Seine.
       </p>
 
-      <style>
-        .pas-grid {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 30px;
-        }
-
-        .pas-card {
-          padding: 40px;
-          border-radius: 20px;
-          border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .pas-problems {
-          background: rgba(239, 68, 68, 0.03);
-          border-color: rgba(239, 68, 68, 0.1);
-        }
-
-        .pas-solutions {
-          background: rgba(59, 130, 246, 0.03);
-          border-color: rgba(59, 130, 246, 0.1);
-        }
-
-        .pas-title {
-          font-size: 1.5rem;
-          margin-bottom: 30px;
-          font-weight: 700;
-          display: flex;
-          align-items: center;
-          gap: 12px;
-        }
-
-        .pas-list {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-        }
-
-        .pas-item {
-          margin-bottom: 25px;
-        }
-
-        .pas-item strong {
-          display: block;
-          margin-bottom: 10px;
-          font-size: 1.1rem;
-          font-weight: 800;
-        }
-
-        .pas-item p {
-          color: #cbd5e1;
-          font-size: 0.95rem;
-          line-height: 1.6;
-          margin: 0;
-        }
-
-        @media (max-width: 992px) {
-          .pas-grid {
-            grid-template-columns: 1fr;
-          }
-        }
-      </style>
-
-      <div class="pas-grid">
-        <div class="pas-card pas-problems">
-          <h3 class="pas-title" style="color: #f87171;"><span style="font-size: 1.5rem;">⚠️</span> Problèmes</h3>
-          <ul class="pas-list">
-            <li class="pas-item">
-              <strong style="color: #fca5a5;">Trafic non qualifié</strong>
-              <p>Vous recevez des visites, mais pas de demandes de devis.</p>
-            </li>
-            <li class="pas-item">
-              <strong style="color: #fca5a5;">Peu de leads</strong>
-              <p>Votre site est une simple carte de visite que personne ne consulte.</p>
-            </li>
-            <li class="pas-item">
-              <strong style="color: #fca5a5;">Site mal exploité</strong>
-              <p>Un bel outil technique qui ne rapporte aucun centime.</p>
-            </li>
-            <li class="pas-item">
-              <strong style="color: #fca5a5;">Contenu sans impact</strong>
-              <p>Vous publiez sans savoir si cela répond à une intention d'achat.</p>
-            </li>
-            <li class="pas-item">
-              <strong style="color: #fca5a5;">ROI flou</strong>
-              <p>Vous investissez sans savoir ce que chaque euro vous rapporte.</p>
-            </li>
-          </ul>
+      <div class="prob-sol-grid">
+        <!-- Item 1 -->
+        <div class="prob-sol-item">
+          <div class="prob-sol-part prob-part">
+            <h3 style="color: #f87171; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+              ⚠️ Trafic non qualifié
+            </h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem;">
+              <strong>Problème :</strong> Vous recevez des visites à Ivry, mais pas de demandes de devis réelles.
+            </p>
+          </div>
+          <div class="prob-sol-part sol-part">
+            <h3 style="color: #3b82f6; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+              💡 La Solution
+            </h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem;">
+              Audit SEO actionnable pour corriger les freins techniques et sémantiques qui bloquent vos ventes.
+            </p>
+          </div>
         </div>
-        <div class="pas-card pas-solutions">
-          <h3 class="pas-title" style="color: #3b82f6;"><span style="font-size: 1.5rem;">💡</span> Solutions</h3>
-          <ul class="pas-list">
-            <li class="pas-item">
-              <strong style="color: #93c5fd;">Audit SEO actionnable</strong>
-              <p>Une feuille de route claire pour corriger ce qui bloque vos ventes.</p>
-            </li>
-            <li class="pas-item">
-              <strong style="color: #93c5fd;">Stratégie éditoriale ciblée</strong>
-              <p>Des contenus conçus pour attirer des décideurs, pas des touristes du web.</p>
-            </li>
-            <li class="pas-item">
-              <strong style="color: #93c5fd;">Optimisation technique & popularité</strong>
-              <p>Une base saine et une autorité forte pour dominer Ivry-sur-Seine durablement.</p>
-            </li>
-          </ul>
+
+        <!-- Item 2 -->
+        <div class="prob-sol-item">
+          <div class="prob-sol-part prob-part">
+            <h3 style="color: #f87171; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+              ⚠️ Peu de leads
+            </h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem;">
+              <strong>Problème :</strong> Votre site est une simple carte de visite que personne ne consulte dans le
+              Val-de-Marne.
+            </p>
+          </div>
+          <div class="prob-sol-part sol-part">
+            <h3 style="color: #3b82f6; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+              💡 La Solution
+            </h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem;">
+              Stratégie éditoriale ciblée pour attirer des décideurs et transformer votre site en apporteur d'affaires.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="prob-sol-item">
+          <div class="prob-sol-part prob-part">
+            <h3 style="color: #f87171; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+              ⚠️ ROI flou
+            </h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem;">
+              <strong>Problème :</strong> Vous investissez dans le web sans savoir ce que chaque euro vous rapporte à
+              Ivry.
+            </p>
+          </div>
+          <div class="prob-sol-part sol-part">
+            <h3 style="color: #3b82f6; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+              💡 La Solution
+            </h3>
+            <p style="color: #cbd5e1; font-size: 0.95rem;">
+              Pilotage par la donnée et reporting ROI transparent pour ne laisser aucune place au hasard.
+            </p>
+          </div>
         </div>
       </div>
       <div style="text-align: center; margin-top: 50px;">
@@ -497,7 +557,7 @@
     </div>
   </section>
 
-  <section style="background: #0f0f0f; padding: 100px 0;">
+  <section style="background: #0f0f0f;">
     <div class="container">
       <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
         Des résultats concrets <span>pour mes clients</span>
@@ -568,7 +628,7 @@
   </section>
 
   <!-- [SECTION 6 : DIFFÉRENCIATION - COMPARATIF] -->
-  <section style="background: #0a0a0a; padding-bottom: 100px;">
+  <section style="background: #0a0a0a;">
     <div class="container">
       <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
         Pourquoi choisir un <span>freelance plutôt qu’une agence ?</span>
@@ -677,43 +737,23 @@
         enjeux spécifiques.
       </p>
 
-      <div class="service-grid"
-        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
-        <div class="service-card"
-          style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); padding: 30px; border-radius: 20px;">
-          <h3 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">👤 Indépendants & Artisans</h3>
-          <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.6;">Gagnez en visibilité immédiate sur Ivry pour
-            vos services de proximité. Ne laissez plus vos clients locaux chercher ailleurs ce que vous proposez juste à
-            côté.</p>
-        </div>
-        <div class="service-card"
-          style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); padding: 30px; border-radius: 20px;">
-          <h3 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">🏢 TPE & PME du Val-de-Marne</h3>
-          <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.6;">Passez à la vitesse supérieure. Je transforme
-            votre site institutionnel en un levier d'acquisition de leads qualifiés pour alimenter votre force
-            commerciale.</p>
-        </div>
-        <div class="service-card"
-          style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); padding: 30px; border-radius: 20px;">
-          <h3 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">🚀 Startups en croissance</h3>
-          <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.6;">Scalez votre acquisition grâce au SEO couplé
-            à l'IA. Une stratégie agile pour gagner des parts de marché rapidement sur des requêtes à forte valeur
-            ajoutée.</p>
-        </div>
-        <div class="service-card"
-          style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); padding: 30px; border-radius: 20px;">
-          <h3 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">🛒 E-commerce & Boutiques locales</h3>
-          <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.6;">Boostez votre trafic transactionnel.
-            J'optimise vos fiches produits et votre maillage interne pour maximiser vos ventes en ligne et le
-            "web-to-store".</p>
-        </div>
-        <div class="service-card"
-          style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); padding: 30px; border-radius: 20px;">
-          <h3 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">📊 Grands comptes</h3>
-          <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.6;">Expertise technique avancée pour des
-            structures complexes. Audit, stratégie de contenu globale et pilotage de la performance ROI.</p>
-        </div>
+      <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        <span
+          style="background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 50px; color: #fff;">Indépendants
+          & Artisans</span>
+        <span style="background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 50px; color: #fff;">TPE & PME
+          du Val-de-Marne</span>
+        <span style="background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 50px; color: #fff;">Startups
+          en croissance</span>
+        <span
+          style="background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 50px; color: #fff;">E-commerce &
+          Boutiques</span>
+        <span style="background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 50px; color: #fff;">Grands
+          comptes</span>
       </div>
+      <p style="text-align: center; color: #3b82f6; margin-top: 30px; font-weight: bold;">
+        Votre ambition de croissance est ma priorité, chaque stratégie est adaptée à votre secteur.
+      </p>
     </div>
   </section>
 
@@ -905,10 +945,22 @@
       </div>
     </div>
   </section>
+  <!-- [SECTION 11.5 : LOCAL] -->
+  <section style="background: #0a0a0a;">
+    <div class="container container-medium" style="text-align: center;">
+      <h2 class="section-title" style="margin-bottom: 20px;">Un consultant <span>proche de vous</span></h2>
+      <p style="color: #cbd5e1; font-size: 1.1rem; line-height: 1.6;">
+        Intervenant partout à Ivry (Recherche, Innovation, Confluences) et dans le Val-de-Marne. Je connais parfaitement
+        le marché local et ses enjeux de compétitivité. Faire appel à un freelance de proximité vous garantit réactivité
+        et conseils adaptés à votre zone de chalandise.
+      </p>
+    </div>
+  </section>
+
 
 
   <!-- FAQ -->
-  <section class="faq-localized" style="padding: 120px 0; background: #080808;">
+  <section class="faq-localized" style="background: #080808;">
     <div class="container container-medium">
       <h2 class="section-title">Questions fréquentes sur le <span>SEO à Ivry-sur-Seine</span></h2>
       <div class="faq-list" style="margin-top: 60px; display: grid; grid-template-columns: 1fr; gap: 20px;">
