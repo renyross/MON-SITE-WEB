@@ -658,7 +658,12 @@
   </section>
 
   <!-- [SECTION 5 : ILS ME FONT CONFIANCE - TRUST SIGNALS] -->
-  <section style="background: #0f0f0f; padding: 100px 0;">
+  <section style="background: #0f0f0f; padding: 100px 0; position: relative; overflow: hidden;">
+    <!-- Abstract background glow -->
+    <div
+      style="position: absolute; top: 20%; right: -10%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(46, 92, 255, 0.08) 0%, transparent 70%); pointer-events: none;">
+    </div>
+
     <div class="container">
       <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
         Des résultats concrets pour <span>des entreprises ambitieuses</span>
@@ -668,44 +673,147 @@
         présence à Toulouse et à l'international.
       </p>
 
+      <style>
+        .trust-grid-premium {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+          gap: 30px;
+          margin-bottom: 60px;
+        }
 
-    </div>
+        .trust-card-premium {
+          background: rgba(255, 255, 255, 0.02);
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          padding: 50px 40px;
+          border-radius: 24px;
+          position: relative;
+          transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+          overflow: hidden;
+        }
 
+        .trust-card-premium:hover {
+          transform: translateY(-10px);
+          background: rgba(255, 255, 255, 0.04);
+          border-color: rgba(59, 130, 246, 0.3);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
 
+        .trust-card-premium::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 4px;
+          height: 0;
+          background: linear-gradient(to bottom, #3b82f6, #2ecc71);
+          transition: height 0.4s ease;
+        }
 
-    <div class="trust-grid">
-      <div class="trust-card"
-        style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); padding: 40px; border-radius: 20px;">
-        <div class="trust-quote" style="color: #fff; font-size: 1.15rem; font-weight: 700; margin-bottom: 20px;">«
-          +150% de leads qualifiés en 6 mois »</div>
-        <p class="trust-text"
-          style="color: #94a3b8; font-size: 0.95rem; line-height: 1.7; margin-bottom: 30px; font-style: italic;">
-          "L'audit de Renel a été le déclencheur de notre croissance organique. Nous dominons désormais nos mots-clés
-          stratégiques."</p>
-        <div class="trust-author" style="border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 20px;">
-          <strong style="display: block; color: #fff;">Directeur Marketing</strong>
-          <span style="color: #3b82f6;">E-commerce Luxe (Toulouse)</span>
+        .trust-card-premium:hover::before {
+          height: 100%;
+        }
+
+        .metric-badge {
+          display: inline-block;
+          background: rgba(59, 130, 246, 0.1);
+          color: #3b82f6;
+          padding: 8px 16px;
+          border-radius: 12px;
+          font-weight: 800;
+          font-size: 1.2rem;
+          margin-bottom: 25px;
+          letter-spacing: -0.02em;
+        }
+
+        .trust-quote-text {
+          color: #e2e8f0;
+          font-size: 1.1rem;
+          line-height: 1.7;
+          margin-bottom: 40px;
+          font-weight: 500;
+          position: relative;
+        }
+
+        .trust-quote-text::before {
+          content: "“";
+          position: absolute;
+          top: -20px;
+          left: -10px;
+          font-size: 4rem;
+          color: rgba(59, 130, 246, 0.1);
+          font-family: serif;
+        }
+
+        .author-box {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+        }
+
+        .author-info strong {
+          display: block;
+          color: #fff;
+          font-size: 1rem;
+          margin-bottom: 2px;
+        }
+
+        .author-info span {
+          color: #64748b;
+          font-size: 0.85rem;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+        }
+
+        @media (max-width: 768px) {
+          .trust-grid-premium {
+            grid-template-columns: 1fr;
+          }
+
+          .trust-card-premium {
+            padding: 40px 30px;
+          }
+        }
+      </style>
+
+      <div class="trust-grid-premium">
+        <!-- Card 1 -->
+        <div class="trust-card-premium">
+          <div class="metric-badge">+150% de leads qualifiés en 6 mois</div>
+          <p class="trust-quote-text">
+            "L'audit de Renel a été le déclencheur de notre croissance organique. Nous dominons désormais nos mots-clés
+            stratégiques."
+          </p>
+          <div class="author-box">
+            <div class="author-info">
+              <strong>Directeur Marketing</strong>
+              <span>E-commerce Luxe (Toulouse)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="trust-card-premium">
+          <div class="metric-badge" style="background: rgba(46, 204, 113, 0.1); color: #2ecc71;">Une expertise business
+            rare</div>
+          <p class="trust-quote-text">
+            "Renel comprend parfaitement les enjeux d'acquisition client. Son approche SEO est un vrai levier de
+            rentabilité."
+          </p>
+          <div class="author-box">
+            <div class="author-info">
+              <strong>Fondateur</strong>
+              <span>SaaS B2B (Toulouse)</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="trust-card"
-        style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); padding: 40px; border-radius: 20px;">
-        <div class="trust-quote" style="color: #fff; font-size: 1.15rem; font-weight: 700; margin-bottom: 20px;">« Une
-          expertise business rare »</div>
-        <p class="trust-text"
-          style="color: #94a3b8; font-size: 0.95rem; line-height: 1.7; margin-bottom: 30px; font-style: italic;">
-          "Renel comprend parfaitement les enjeux d'acquisition client. Son approche SEO est un vrai levier de
-          rentabilité."</p>
-        <div class="trust-author" style="border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 20px;">
-          <strong style="display: block; color: #fff;">Fondateur</strong>
-          <span style="color: #3b82f6;">SaaS B2B (Toulouse)</span>
-        </div>
-      </div>
-    </div>
 
-    <div style="text-align: center; margin-top: 60px;">
-      <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank">RÉSERVER MON AUDIT ROI À
-        TOULOUSE</a>
-    </div>
+      <div style="text-align: center;">
+        <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank">RÉSERVER MON AUDIT ROI
+          À TOULOUSE</a>
+      </div>
     </div>
   </section>
 
