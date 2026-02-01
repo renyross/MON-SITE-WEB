@@ -958,26 +958,110 @@
   </section>
 
   <!-- [SECTION 9 : PRICING] -->
-  <section style="background: #0a0a0a;">
+  <section style="background: #0a0a0a; padding: 100px 0;">
     <div class="container">
       <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
         Mes offres <span>et tarifs</span>
       </h2>
-      <div class="grid-2-cols" style="max-width: 900px; margin: 0 auto; gap: 30px;">
-        <div class="package-card">
-          <h3 style="color: #fff; margin-bottom: 15px;">Accompagnement Mensuel</h3>
-          <p style="color: #3b82f6; font-size: 1.5rem; font-weight: bold; margin-bottom: 15px;">dès 1 000 €/mois</p>
-          <p style="color: #94a3b8;">Pour les PME et sites en croissance constante.</p>
+      <p style="text-align: center; color: #94a3b8; max-width: 800px; margin: 0 auto 60px;">
+        Des solutions adaptées à votre maturité digitale et vos ambitions de croissance.
+      </p>
+
+      <style>
+        .pricing-grid-premium {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 40px;
+          max-width: 900px;
+          margin: 0 auto;
+        }
+
+        .pricing-card-premium {
+          background: rgba(255, 255, 255, 0.02);
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          border-radius: 24px;
+          padding: 50px 40px;
+          text-align: center;
+          position: relative;
+          transition: all 0.3s ease;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .pricing-card-premium:hover {
+          transform: translateY(-5px);
+          background: rgba(255, 255, 255, 0.04);
+          border-color: rgba(59, 130, 246, 0.3);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .pricing-title {
+          color: #fff;
+          font-size: 1.5rem;
+          font-weight: 700;
+          margin-bottom: 20px;
+        }
+
+        .pricing-amount {
+          color: #3b82f6;
+          font-size: 2.5rem;
+          font-weight: 800;
+          margin-bottom: 10px;
+          line-height: 1;
+        }
+
+        .pricing-sub {
+          color: #64748b;
+          font-size: 0.9rem;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          margin-bottom: 30px;
+        }
+
+        .pricing-desc {
+          color: #cbd5e1;
+          line-height: 1.6;
+          font-size: 1.05rem;
+        }
+
+        .pricing-badge {
+          background: rgba(59, 130, 246, 0.1);
+          color: #3b82f6;
+          padding: 5px 15px;
+          border-radius: 20px;
+          font-size: 0.85rem;
+          font-weight: 600;
+          margin-bottom: 20px;
+          display: inline-block;
+        }
+      </style>
+
+      <div class="pricing-grid-premium">
+        <!-- Offer 1 -->
+        <div class="pricing-card-premium">
+          <div class="pricing-badge">POPULAIRE</div>
+          <h3 class="pricing-title">Accompagnement Mensuel</h3>
+          <div class="pricing-amount">dès 1 000 €<span
+              style="font-size: 1rem; color: #64748b; font-weight: 500;">/mois</span></div>
+          <p class="pricing-desc">Pour les PME et sites en croissance constante.</p>
         </div>
-        <div class="package-card">
-          <h3 style="color: #fff; margin-bottom: 15px;">Forfaits Personnalisés</h3>
-          <p style="color: #3b82f6; font-size: 1.5rem; font-weight: bold; margin-bottom: 15px;">Sur devis</p>
-          <p style="color: #94a3b8;">Selon objectifs et taille du site.</p>
+
+        <!-- Offer 2 -->
+        <div class="pricing-card-premium">
+          <div class="pricing-badge" style="background: rgba(255, 255, 255, 0.1); color: #fff;">SUR MESURE</div>
+          <h3 class="pricing-title">Forfaits Personnalisés</h3>
+          <div class="pricing-amount" style="font-size: 2rem;">Sur devis</div>
+          <p class="pricing-desc" style="margin-top: 10px;">Selon objectifs et taille du site.</p>
         </div>
       </div>
-      <p style="text-align: center; color: #fff; margin-top: 30px;">Transparence totale sur le scope et les livrables.
+
+      <p
+        style="text-align: center; color: #94a3b8; margin-top: 50px; font-size: 1rem; display: flex; align-items: center; justify-content: center; gap: 10px;">
+        <span style="color: #3b82f6;">✓</span> Transparence totale sur le scope et les livrables.
       </p>
-      <div style="text-align: center; margin-top: 30px;">
+
+      <div style="text-align: center; margin-top: 40px;">
         <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank">APPEL DÉCOUVERTE –
           Audit gratuit ou rendez-vous</a>
       </div>
