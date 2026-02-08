@@ -390,13 +390,109 @@ a {
 
 /* Specific adjustment for very small screens */
 @media (max-width: 480px) {
-  .logo-text {
-    font-size: 1rem;
+  .nav-btn-header-mobile {
+    padding: 6px 10px;
+    font-size: 0.6rem;
+  }
+}
+
+/* Redesign Mobile - Adjustments for Homepage Sections */
+@media (max-width: 768px) {
+
+  /* Qui suis-je section mobile adjustments */
+  .about-grid-mobile {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+    text-align: center;
   }
 
-  .nav-btn-header-mobile {
-    padding: 7px 10px;
-    font-size: 0.65rem;
+  .about-image-wrapper {
+    max-width: 280px;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+
+  .about-content h2 {
+    font-size: 2rem !important;
+  }
+
+  .about-content p {
+    font-size: 1rem !important;
+    line-height: 1.6;
+  }
+
+  /* Results box in Qui suis-je */
+  .results-box {
+    padding: 20px !important;
+    margin-bottom: 25px !important;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .stat-item {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .stat-item:last-child {
+    border-bottom: none;
+  }
+
+  .about-content .counter-value {
+    font-size: 1.5rem !important;
+  }
+
+  /* Tags centering */
+  .about-content div[style*="display: flex"] {
+    justify-content: center;
+  }
+
+  /* Section "Consultant Augmenté" mobile adjustments */
+  .cinematic-grid {
+    grid-template-columns: 1fr !important;
+    border-radius: 24px !important;
+  }
+
+  .cinematic-visual {
+    padding: 30px !important;
+    min-height: auto !important;
+    order: 1;
+    /* Photo remains at top or bottom? Usually top for bio */
+  }
+
+  .portrait-main {
+    max-width: 260px;
+    margin: 0 auto;
+    mask-image: radial-gradient(ellipse at center 40%, black 50%, transparent 85%) !important;
+    -webkit-mask-image: radial-gradient(ellipse at center 40%, black 50%, transparent 85%) !important;
+  }
+
+  .cinematic-content {
+    padding: 30px 20px 40px !important;
+    text-align: center;
+    order: 2;
+  }
+
+  .cinematic-h2 {
+    font-size: 1.8rem !important;
+    margin-bottom: 25px !important;
+  }
+
+  .highlight-p {
+    font-size: 1.1rem !important;
+  }
+
+  .secondary-p {
+    font-size: 1rem !important;
+  }
+
+  .cinematic-footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
   }
 }
 
