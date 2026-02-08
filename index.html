@@ -305,15 +305,18 @@
               Résultats moyens constatés :</h4>
             <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
               <div>
-                <div style="color: #3b82f6; font-size: 1.8rem; font-weight: 900;">+80%</div>
+                <div style="color: #3b82f6; font-size: 1.8rem; font-weight: 900;">+<span class="counter-value"
+                    data-target="80">0</span>%</div>
                 <div style="font-size: 0.75rem; opacity: 0.6; color: #fff;">Trafic organique</div>
               </div>
               <div>
-                <div style="color: #3b82f6; font-size: 1.8rem; font-weight: 900;">+30%</div>
+                <div style="color: #3b82f6; font-size: 1.8rem; font-weight: 900;">+<span class="counter-value"
+                    data-target="30">0</span>%</div>
                 <div style="font-size: 0.75rem; opacity: 0.6; color: #fff;">Leads qualifiés</div>
               </div>
               <div>
-                <div style="color: #3b82f6; font-size: 1.8rem; font-weight: 900;">-35%</div>
+                <div style="color: #3b82f6; font-size: 1.8rem; font-weight: 900;">-<span class="counter-value"
+                    data-target="35">0</span>%</div>
                 <div style="font-size: 0.75rem; opacity: 0.6; color: #fff;">Coût par lead</div>
               </div>
             </div>
@@ -326,11 +329,46 @@
               style="padding: 8px 18px; background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 50px; font-size: 0.8rem; color: #60a5fa; font-weight: 600;">E-commerce</span>
             <span
               style="padding: 8px 18px; background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 50px; font-size: 0.8rem; color: #60a5fa; font-weight: 600;">Local</span>
-
           </div>
         </div>
       </div>
     </div>
+    <script>
+      // Animation des chiffres
+      document.addEventListener('DOMContentLoaded', () => {
+        const counters = document.querySelectorAll('.counter-value');
+        const observerOptions = {
+          root: null,
+          rootMargin: '0px',
+          threshold: 0.5
+        };
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const counter = entry.target;
+              const target = +counter.getAttribute('data-target');
+              const duration = 2000; // 2 secondes
+              const increment = target / (duration / 16); // 60fps
+              let current = 0;
+              const updateCounter = () => {
+                current += increment;
+                if (current < target) {
+                  counter.textContent = Math.ceil(current);
+                  requestAnimationFrame(updateCounter);
+                } else {
+                  counter.textContent = target;
+                }
+              };
+              updateCounter();
+              observer.unobserve(counter);
+            }
+          });
+        }, observerOptions);
+        counters.forEach(counter => {
+          observer.observe(counter);
+        });
+      });
+    </script>
   </section>
   <div class="section-separator"></div>
   <!-- Problem Section (Design 2: The Triple Pillar) -->
