@@ -2002,7 +2002,9 @@ h2 span.text-gradient {
 
 
 @media (max-width: 768px) {
-  .cta-title {
+
+  .cta-title,
+  .hero-title {
     font-size: 2.5rem;
   }
 
@@ -2022,13 +2024,6 @@ h2 span.text-gradient {
     gap: 20px;
     flex-wrap: wrap;
   }
-}
-
-
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.5rem;
-  }
 
   .section-title {
     font-size: 2rem !important;
@@ -2039,6 +2034,26 @@ h2 span.text-gradient {
   .offers-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* About Section Styles */
+.about-grid-mobile {
+  display: grid;
+  grid-template-columns: 1.2fr 1.1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.about-img {
+  width: 100%;
+  display: block;
+  filter: grayscale(20%);
 }
 
 /* About Section - Design 4: The Cinematic Split */
