@@ -296,7 +296,7 @@
         <!-- Visual Column -->
         <div
           style="position: relative; border-radius: 20px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); min-height: 480px; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
-          <img src="assets/images/caen-seo.png" alt="Opportunité SEO à Caen - Port et Centre-ville dynamique"
+          <img src="assets/images/caen-port-centre.png" alt="Opportunité SEO à Caen - Port et Centre-ville dynamique"
             style="width: 100%; height: 100%; object-fit: cover;">
           <div
             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, rgba(0,0,0,0.7), transparent 40%); pointer-events: none;">
@@ -595,10 +595,13 @@
 
 
 
-    <div class="trust-grid">
+    <div class="trust-grid"
+      style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
       <!-- Card 1 -->
       <div class="trust-card"
-        style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); padding: 40px; border-radius: 20px;">
+        style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.05); padding: 40px; border-radius: 20px; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: default;"
+        onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.3)';"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
         <div class="trust-quote" style="color: #fff; font-size: 1.15rem; font-weight: 700; margin-bottom: 20px;">
           « Un flux de leads multiplié par 3 »
         </div>
@@ -615,7 +618,9 @@
 
       <!-- Card 2 -->
       <div class="trust-card"
-        style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); padding: 40px; border-radius: 20px;">
+        style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.05); padding: 40px; border-radius: 20px; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: default;"
+        onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.3)';"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
         <div class="trust-quote" style="color: #fff; font-size: 1.15rem; font-weight: 700; margin-bottom: 20px;">
           « Une expertise technique et humaine »
         </div>
@@ -632,7 +637,9 @@
 
       <!-- Card 3 -->
       <div class="trust-card"
-        style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); padding: 40px; border-radius: 20px;">
+        style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.05); padding: 40px; border-radius: 20px; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: default;"
+        onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.3)';"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
         <div class="trust-quote" style="color: #fff; font-size: 1.15rem; font-weight: 700; margin-bottom: 20px;">
           « Le partenaire de notre croissance locale »
         </div>
@@ -715,56 +722,78 @@
         </table>
       </div>
 
-      <div
-        style="margin-top: 40px; padding: 30px; background: rgba(59, 130, 246, 0.05); border-left: 4px solid #3b82f6; border-radius: 0 10px 10px 0;">
-        <p style="color: #cbd5e1; font-size: 1.1rem; line-height: 1.7; margin: 0;">
-          <strong style="color: #fff;">Ma différenciation unique :</strong> Contrairement aux agences qui vendent du
-          "temps passé", je vends des systèmes de croissance. J'allie la puissance d'automatisation de l'IA à une
-          connaissance chirurgicale du marché caennais pour obtenir des résultats 2x plus vite qu'une approche
-          traditionnelle.
-        </p>
-      </div>
+
     </div>
   </section>
 
   <!-- [SECTION 6 : PRESTATIONS] -->
-  <section style="background: #0f0f0f;">
+  <section style="background: #0f0f0f; padding: 100px 0;">
     <div class="container">
       <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
         Une stratégie complète pour dominer <span>Google en Normandie</span>
       </h2>
-      <p style="text-align: center; color: #94a3b8; max-width: 800px; margin: 0 auto 50px;">
+      <p
+        style="text-align: center; color: #94a3b8; max-width: 800px; margin: 0 auto 60px; font-size: 1.1rem; line-height: 1.7;">
         Chaque prestation est conçue pour répondre à un levier de croissance spécifique. Je n'exécute pas de tâches
         isolées, je déploie un écosystème de visibilité.
       </p>
-      <div class="service-grid">
-        <div class="service-card">
-          <h3 style="color: #fff; margin-bottom: 15px;">📍 SEO local & Google Business Profile</h3>
-          <p style="color: #94a3b8;">Optimisation de votre fiche établissement pour apparaître dans le "Pack Local" (la
-            carte Google) lors des recherches à Caen.</p>
+
+      <div class="services-grid"
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+
+        <!-- Service 1 -->
+        <div class="service-card"
+          style="background: rgba(255,255,255,0.03); padding: 35px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05); transition: transform 0.3s ease;"
+          onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="font-size: 2rem; margin-bottom: 20px;">📍</div>
+          <h3 style="color: #fff; margin-bottom: 15px; font-size: 1.25rem;">SEO local & Google Business Profile</h3>
+          <p style="color: #94a3b8; line-height: 1.6;">Optimisation de votre fiche établissement pour apparaître dans le
+            "Pack Local" (la carte Google) lors des recherches à Caen.</p>
         </div>
-        <div class="service-card">
-          <h3 style="color: #fff; margin-bottom: 15px;">🛠️ Audit SEO 360°</h3>
-          <p style="color: #94a3b8;">Analyse technique, sémantique et concurrentielle pour identifier vos gisements de
-            profit.</p>
+
+        <!-- Service 2 -->
+        <div class="service-card"
+          style="background: rgba(255,255,255,0.03); padding: 35px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05); transition: transform 0.3s ease;"
+          onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="font-size: 2rem; margin-bottom: 20px;">🛠️</div>
+          <h3 style="color: #fff; margin-bottom: 15px; font-size: 1.25rem;">Audit SEO 360°</h3>
+          <p style="color: #94a3b8; line-height: 1.6;">Analyse technique, sémantique et concurrentielle pour identifier
+            vos gisements de profit.</p>
         </div>
-        <div class="service-card">
-          <h3 style="color: #fff; margin-bottom: 15px;">📝 Stratégie éditoriale</h3>
-          <p style="color: #94a3b8;">Création de contenus haute performance qui répondent aux intentions d'achat de vos
-            clients.</p>
+
+        <!-- Service 3 -->
+        <div class="service-card"
+          style="background: rgba(255,255,255,0.03); padding: 35px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05); transition: transform 0.3s ease;"
+          onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="font-size: 2rem; margin-bottom: 20px;">📝</div>
+          <h3 style="color: #fff; margin-bottom: 15px; font-size: 1.25rem;">Stratégie éditoriale</h3>
+          <p style="color: #94a3b8; line-height: 1.6;">Création de contenus haute performance qui répondent aux
+            intentions d'achat de vos clients.</p>
         </div>
-        <div class="service-card">
-          <h3 style="color: #fff; margin-bottom: 15px;">🔗 Netlinking (Popularité)</h3>
-          <p style="color: #94a3b8;">Acquisition de liens de qualité pour renforcer l'autorité de votre domaine aux yeux
-            de Google.</p>
+
+        <!-- Service 4 -->
+        <div class="service-card"
+          style="background: rgba(255,255,255,0.03); padding: 35px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05); transition: transform 0.3s ease;"
+          onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="font-size: 2rem; margin-bottom: 20px;">🔗</div>
+          <h3 style="color: #fff; margin-bottom: 15px; font-size: 1.25rem;">Netlinking (Popularité)</h3>
+          <p style="color: #94a3b8; line-height: 1.6;">Acquisition de liens de qualité pour renforcer l'autorité de
+            votre domaine aux yeux de Google.</p>
         </div>
-        <div class="service-card">
-          <h3 style="color: #fff; margin-bottom: 15px;">🤖 SEO & IA (Scalabilité)</h3>
-          <p style="color: #94a3b8;">Utilisation de l'intelligence artificielle pour accélérer la production de contenus
-            sans sacrifier la qualité.</p>
+
+        <!-- Service 5 -->
+        <div class="service-card"
+          style="background: rgba(255,255,255,0.03); padding: 35px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05); transition: transform 0.3s ease;"
+          onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="font-size: 2rem; margin-bottom: 20px;">🤖</div>
+          <h3 style="color: #fff; margin-bottom: 15px; font-size: 1.25rem;">SEO & IA (Scalabilité)</h3>
+          <p style="color: #94a3b8; line-height: 1.6;">Utilisation de l'intelligence artificielle pour produire plus
+            vite et mieux, sans sacrifier la qualité.</p>
         </div>
+
       </div>
-      <div style="text-align: center; margin-top: 40px;">
+
+      <div style="text-align: center; margin-top: 60px;">
         <a href="https://calendly.com/rosenerenel/30min" class="hero-btn-primary" target="_blank">APPEL DÉCOUVERTE –
           Commencez votre optimisation SEO à Caen</a>
       </div>
@@ -1589,48 +1618,63 @@
 
 
   <!-- [SECTION 11 : LOCAL] -->
-  <section style="background: #0a0a0a; padding: 80px 0;">
+  <section style="background: #0a0a0a; padding: 100px 0;">
     <div class="container">
-      <div class="grid-2-cols" style="align-items: center; gap: 50px;">
-        <!-- Text Column -->
-        <div>
-          <h2 class="section-title" style="margin-bottom: 20px; text-align: left;">
-            Votre partenaire SEO de <span>proximité en Normandie</span>
-          </h2>
-          <p style="color: #cbd5e1; font-size: 1.1rem; line-height: 1.6; margin-bottom: 30px;">
-            Choisir un freelance à Caen, c’est bénéficier d’une réactivité et d’une connaissance fine du tissu
-            économique local. Je ne suis pas seulement un prestataire, je suis un acteur de l’écosystème normand.
-          </p>
+      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
+        Votre partenaire SEO de <span>proximité en Normandie</span>
+      </h2>
+      <p
+        style="text-align: center; color: #cbd5e1; font-size: 1.1rem; line-height: 1.6; margin-bottom: 50px; max-width: 800px; margin-left: auto; margin-right: auto;">
+        Choisir un freelance à Caen, c’est bénéficier d’une réactivité et d’une connaissance fine du tissu
+        économique local. Je ne suis pas seulement un prestataire, je suis un acteur de l’écosystème normand.
+      </p>
 
-          <div style="margin-bottom: 25px;">
-            <h3 style="color: #fff; font-size: 1.2rem; margin-bottom: 10px;">🏙️ Écosystème local</h3>
-            <p style="color: #94a3b8; line-height: 1.6;">Je collabore avec les entrepreneurs de l'agglomération
-              caennaise, des Rives de l'Orne au plateau du Citis, en passant par le centre-ville historique.</p>
-          </div>
-
-          <div style="margin-bottom: 25px;">
-            <h3 style="color: #fff; font-size: 1.2rem; margin-bottom: 10px;">📍 Zones d’activité</h3>
-            <p style="color: #94a3b8; line-height: 1.6;">J'interviens partout dans le Calvados (Hérouville-Saint-Clair,
-              Mondeville, Ifs, Carpiquet) pour des réunions en présentiel ou des points stratégiques.</p>
-          </div>
-
-          <div>
-            <h3 style="color: #fff; font-size: 1.2rem; margin-bottom: 10px;">🤝 Avantage freelance local</h3>
-            <p style="color: #94a3b8; line-height: 1.6;">Une meilleure compréhension de votre clientèle régionale et une
-              disponibilité immédiate pour échanger sur vos objectifs de croissance.</p>
-          </div>
-        </div>
-
-        <!-- Image Column -->
-        <div style="text-align: center;">
-          <img src="assets/images/renel-caen-coworking.png" alt="Renel Rosené consultant SEO à Caen"
-            style="width: 100%; max-width: 500px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
-        </div>
+      <div style="overflow-x: auto;">
+        <table
+          style="width: 100%; max-width: 900px; margin: 0 auto; border-collapse: collapse; background: rgba(255,255,255,0.02); border-radius: 15px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05);">
+          <thead>
+            <tr style="background: rgba(255,255,255,0.03); border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <th style="padding: 25px; text-align: left; color: #fff; font-size: 1.1rem; width: 35%;">Impact Local</th>
+              <th style="padding: 25px; text-align: left; color: #fff; font-size: 1.1rem;">Mon Engagement à Caen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td style="padding: 25px; color: #fff; font-weight: 600;">
+                <span style="font-size: 1.5rem; margin-right: 10px; vertical-align: middle;">🏙️</span> Écosystème local
+              </td>
+              <td style="padding: 25px; color: #94a3b8; line-height: 1.6;">
+                Je collabore avec les entrepreneurs de l'agglomération caennaise, des Rives de l'Orne au plateau du
+                Citis, en passant par le centre-ville historique.
+              </td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td style="padding: 25px; color: #fff; font-weight: 600;">
+                <span style="font-size: 1.5rem; margin-right: 10px; vertical-align: middle;">📍</span> Zones d’activité
+              </td>
+              <td style="padding: 25px; color: #94a3b8; line-height: 1.6;">
+                J'interviens partout dans le Calvados (Hérouville-Saint-Clair, Mondeville, Ifs, Carpiquet) pour des
+                réunions en présentiel ou des points stratégiques.
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 25px; color: #fff; font-weight: 600;">
+                <span style="font-size: 1.5rem; margin-right: 10px; vertical-align: middle;">🤝</span> Avantage
+                freelance local
+              </td>
+              <td style="padding: 25px; color: #94a3b8; line-height: 1.6;">
+                Une meilleure compréhension de votre clientèle régionale et une disponibilité immédiate pour échanger
+                sur
+                vos objectifs de croissance.
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
 
-  Stack Outils -->
+
   <section id="outils" style="padding: 100px 0; background: #0f0f0f;">
     <div class="container">
       <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
@@ -1779,84 +1823,7 @@
   </section>
 
 
-  <!-- [SECTION 11 : LOCAL] -->
-  <section style="background: #0a0a0a;">
-    <div class="container container-medium" style="text-align: center;">
-      <h2 class="section-title" style="margin-bottom: 20px;">Un consultant <span>proche de vous</span></h2>
-      <p style="color: #cbd5e1; font-size: 1.1rem; line-height: 1.6;">
-        Intervenant partout à Caen (Histoire, Mémorial, Normandie) et en Calvados. Je connais
-        parfaitement le marché local et ses enjeux de compétitivité.
-      </p>
-    </div>
-  </section>
 
-  Stack Outils -->
-  <section id="outils" style="padding: 100px 0; background: #0f0f0f;">
-    <div class="container">
-      <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">
-        Les meilleurs outils <span>au service de votre visibilité</span>
-      </h2>
-      <p
-        style="text-align: center; color: #94a3b8; margin-bottom: 60px; font-size: 1.1rem; max-width: 850px; margin-left: auto; margin-right: auto;">
-        Pour obtenir des résultats d'expert, j'utilise une suite logicielle de pointe. Chaque outil me permet d'extraire
-        de la donnée précise pour prendre des décisions rentables pour votre business.
-      </p>
-
-      <div
-        style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; align-items: flex-start; margin-bottom: 40px;">
-        <!-- Outil 1 -->
-        <div style="text-align: center; max-width: 260px;">
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.15rem;">🐸 Screaming Frog</h3>
-          <p style="color: #7dd3fc; font-size: 0.9rem; margin-bottom: 10px; font-weight: bold;">Audit Technique</p>
-          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
-            Pour réaliser des audits techniques complets. Il me permet de détecter instantanément les erreurs 404, les
-            problèmes d'indexation ou les balises manquantes.
-          </p>
-        </div>
-
-        <!-- Outil 2 -->
-        <div style="text-align: center; max-width: 260px;">
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.15rem;">📊 Google Search Console</h3>
-          <p style="color: #7dd3fc; font-size: 0.9rem; margin-bottom: 10px; font-weight: bold;">Pilotage de la
-            Performance</p>
-          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
-            Mon tableau de bord de pilotage. C'est ici que je surveille votre trafic réel, vos positions exactes et la
-            santé de votre site via les données de Google.
-          </p>
-        </div>
-
-        <!-- Outil 3 -->
-        <div style="text-align: center; max-width: 260px;">
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.15rem;">🚀 SEMrush / Ahrefs</h3>
-          <p style="color: #7dd3fc; font-size: 0.9rem; margin-bottom: 10px; font-weight: bold;">Analyse Concurrentielle
-          </p>
-          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
-            Pour surveiller ce que font vos concurrents à Caen et vous positionner sur les opportunités les plus
-            lucratives.
-          </p>
-        </div>
-
-        <!-- Outil 4 -->
-        <div style="text-align: center; max-width: 260px;">
-          <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.15rem;">🧠 ThotSEO</h3>
-          <p style="color: #7dd3fc; font-size: 0.9rem; margin-bottom: 10px; font-weight: bold;">Optimisation Sémantique
-          </p>
-          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
-            L'outil indispensable pour structurer vos contenus et dominer la sémantique de votre marché (topical
-            authority).
-          </p>
-        </div>
-      </div>
-
-      <div
-        style="background: rgba(46, 92, 255, 0.05); padding: 20px; border-radius: 12px; text-align: center; border: 1px solid rgba(46, 92, 255, 0.1); max-width: 800px; margin: 0 auto;">
-        <p style="color: #cbd5e1; font-size: 1rem; margin: 0;">
-          <strong>Le bénéfice pour vous :</strong> Une stratégie basée sur des chiffres réels et une vision claire de la
-          concurrence pour ne laisser aucune place au hasard.
-        </p>
-      </div>
-    </div>
-  </section>
 
 
   <!-- FAQ -->
