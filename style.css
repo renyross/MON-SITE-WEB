@@ -470,6 +470,19 @@ a {
     -webkit-mask-image: radial-gradient(ellipse at center 40%, black 50%, transparent 85%) !important;
   }
 
+  /* Force display of the About photo on mobile */
+  .about-image-wrapper {
+    display: block !important;
+    max-width: 280px !important;
+    margin: 0 auto !important;
+  }
+
+  .about-img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+  }
+
   .cinematic-content {
     padding: 30px 20px 40px !important;
     text-align: center;
