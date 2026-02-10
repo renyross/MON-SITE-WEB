@@ -194,8 +194,8 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: #1A1A1A;
-  /* Simple solid dark gray */
+  background: #005eff;
+  /* Electric Blue */
   color: #FFFFFF;
   padding: 8px 16px;
   border-radius: 8px;
@@ -205,14 +205,15 @@ a {
   letter-spacing: 0.05em;
   transition: all 0.3s ease;
   text-transform: uppercase;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid #005eff;
+  box-shadow: 0 4px 15px rgba(0, 94, 255, 0.3);
 }
 
 .nav-btn-premium:hover {
-  background: #2E2E2E;
-  /* Slightly lighter on hover */
-  border-color: #FFFFFF;
+  background: #004de6;
+  border-color: #004de6;
   transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 94, 255, 0.4);
 }
 
 
