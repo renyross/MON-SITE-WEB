@@ -835,15 +835,36 @@
   <!-- Who Am I Section -->
   <section id="who-am-i" style="padding: 100px 0; background: #080808;">
     <div class="container">
-      <div class="section-header" style="text-align: center; max-width: 800px; margin: 0 auto;">
-        <h2 class="section-title" style="font-weight: 800; margin-bottom: 30px;">D'où me vient mon <span
-            class="text-blue">expérience</span> ?</h2>
-        <p class="section-intro" style="font-size: 1.1rem; line-height: 1.8; color: rgba(255,255,255,0.8);">
-          J’ai commencé en freelance tout en étudiant, puis j’ai travaillé plusieurs années chez l'annonceur.
-          <br><br>
-          Aujourd’hui, je gère des sites B2B et e-commerce de toutes tailles, et je sais ce qui fait marcher le SEO pour
-          générer des clients.
-        </p>
+      <div class="who-am-i-card"
+        style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: center; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 32px; padding: 50px; overflow: hidden; position: relative;">
+        <!-- Photo Side -->
+        <div class="who-portrait-wrapper" style="position: relative;">
+          <div
+            style="position: absolute; top: -20px; left: -20px; width: 100px; height: 100px; background: #3b82f6; filter: blur(60px); opacity: 0.2; z-index: 0;">
+          </div>
+          <img src="renel-portrait.jpg" alt="Renel Rosene - Consultant SEO"
+            style="width: 100%; border-radius: 20px; position: relative; z-index: 1; filter: grayscale(0.2); transition: filter 0.5s ease;"
+            onmouseover="this.style.filter='grayscale(0)'" onmouseout="this.style.filter='grayscale(0.2)'">
+          <div
+            style="position: absolute; bottom: 15px; right: 15px; background: rgba(0,0,0,0.6); backdrop-filter: blur(10px); color: #fff; padding: 8px 15px; border-radius: 100px; font-size: 0.8rem; font-weight: 700; border: 1px solid rgba(255,255,255,0.1); z-index: 2;">
+            Renel R.</div>
+        </div>
+        <!-- Text Side -->
+        <div class="who-text-content">
+          <span class="minimal-eyebrow" style="margin-bottom: 20px;">À propos</span>
+          <h2 class="section-title" style="font-weight: 800; margin-bottom: 25px; text-align: left;">Mon parcours en
+            <span class="text-blue">quelques mots</span></h2>
+          <p class="section-intro"
+            style="font-size: 1.1rem; line-height: 1.8; color: rgba(255,255,255,0.85); text-align: left;">
+            J’ai commencé le SEO pendant mes études, en apprenant par moi-même.
+            <br><br>
+            Ensuite, j’ai continué à me perfectionner directement chez l’annonceur pendant deux ans, au contact de
+            problématiques réelles et orientées business.
+            <br><br>
+            Aujourd’hui, j’accompagne des sites B2B et e-commerce de toutes tailles, et je sais concrètement ce qui fait
+            fonctionner le SEO pour générer des clients et du chiffre d’affaires.
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -1207,7 +1228,6 @@
         <h2 class="section-title" style="font-weight: 800;">Formulaire de <span class="text-blue">contact</span></h2>
       </div>
       <div class="contact-form-card-premium">
-        <h3 class="form-title" style="margin-bottom: 30px; text-align: center;">Dites-moi tout :</h3>
         <form action="https://formsubmit.co/contact@renelrosene.com" class="premium-form" method="POST">
           <input name="_next" type="hidden" value="https://www.renelrosene.com/success.html" />
           <input name="_subject" type="hidden" value="Nouveau Lead SEO - Homepage (Détaillé)" />
