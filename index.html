@@ -275,108 +275,11 @@
     </div>
   </section>
   <div class="section-separator"></div>
-  <section class="about-section" id="who-am-i"
-    style="padding: 100px 0; background: #0a0a0a; border-bottom: 1px solid rgba(255,255,255,0.05);">
-    <div class="container" style="max-width: 1100px;">
-      <div class="about-grid-mobile">
-        <div class="about-image-wrapper">
-          <img alt="Renel Rosené - Consultant SEO Freelance" src="renel_portrait.jpg" class="about-img" />
-          <div
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 50% 50%, transparent 45%, #0a0a0a 105%), linear-gradient(to top, #0a0a0a 2%, transparent 20%); pointer-events: none; z-index: 2;">
-          </div>
-        </div>
-        <div class="about-content">
-          <span class="eyebrow"
-            style="color: #3b82f6; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; display: block; margin-bottom: 20px;">Qui
-            suis-je ?</span>
-          <h2 style="font-size: 2.8rem; font-weight: 800; line-height: 1.1; color: #fff; margin-bottom: 30px;">
-            Consultant SEO <span class="text-gradient">Freelance</span>
-          </h2>
-          <p style="font-size: 1.1rem; line-height: 1.8; color: #d1d1d6; margin-bottom: 30px;">
-            Depuis 2024, j'aide les entreprises B2B et E-commerce à transformer leur visibilité en moteur de croissance.
-            En tant que consultant SEO, je privilégie l'efficacité aux méthodes compliquées. Pas de jargon, pas de
-            fausses promesses : j'optimise votre présence sur Google pour attirer plus de clients et maximiser votre
-            rentabilité.
-          </p>
-          <div class="results-box"
-            style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05); margin-bottom: 30px;">
-            <h4
-              style="color: #fff; margin-bottom: 20px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1.5px; opacity: 0.8;">
-              Résultats moyens constatés :</h4>
-            <div class="stats-grid" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
-              <div class="stat-item">
-                <div style="color: #3b82f6; font-size: 1.8rem; font-weight: 900;">+<span class="counter-value"
-                    data-target="80">0</span>%</div>
-                <div style="font-size: 0.75rem; opacity: 0.6; color: #fff;">Trafic organique</div>
-              </div>
-              <div class="stat-item">
-                <div style="color: #3b82f6; font-size: 1.8rem; font-weight: 900;">+<span class="counter-value"
-                    data-target="30">0</span>%</div>
-                <div style="font-size: 0.75rem; opacity: 0.6; color: #fff;">Leads qualifiés</div>
-              </div>
-              <div class="stat-item">
-                <div style="color: #3b82f6; font-size: 1.8rem; font-weight: 900;">-<span class="counter-value"
-                    data-target="35">0</span>%</div>
-                <div style="font-size: 0.75rem; opacity: 0.6; color: #fff;">Coût par lead</div>
-              </div>
-            </div>
-          </div>
-          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-            <span
-              style="padding: 8px 18px; background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 50px; font-size: 0.8rem; color: #60a5fa; font-weight: 600;">B2B
-              SaaS</span>
-            <span
-              style="padding: 8px 18px; background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 50px; font-size: 0.8rem; color: #60a5fa; font-weight: 600;">E-commerce</span>
-            <span
-              style="padding: 8px 18px; background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 50px; font-size: 0.8rem; color: #60a5fa; font-weight: 600;">Local</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script>
-      // Animation des chiffres
-      document.addEventListener('DOMContentLoaded', () => {
-        const counters = document.querySelectorAll('.counter-value');
-        const observerOptions = {
-          root: null,
-          rootMargin: '0px',
-          threshold: 0.5
-        };
-        const observer = new IntersectionObserver((entries, observer) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              const counter = entry.target;
-              const target = +counter.getAttribute('data-target');
-              const duration = 2000; // 2 secondes
-              const increment = target / (duration / 16); // 60fps
-              let current = 0;
-              const updateCounter = () => {
-                current += increment;
-                if (current < target) {
-                  counter.textContent = Math.ceil(current);
-                  requestAnimationFrame(updateCounter);
-                } else {
-                  counter.textContent = target;
-                }
-              };
-              updateCounter();
-              observer.unobserve(counter);
-            }
-          });
-        }, observerOptions);
-        counters.forEach(counter => {
-          observer.observe(counter);
-        });
-      });
-    </script>
-  </section>
-  <div class="section-separator"></div>
-  <!-- Problem Section (Design 2: The Triple Pillar) -->
-  <section class="problem-pillars" id="problem">
+  <section class="problem-pillars" id="problem" style="padding: 100px 0;">
     <div class="container">
       <div class="pillar-header">
-        <h2 class="section-title" style="font-weight: 800;">Pourquoi votre <span class="text-blue">SEO</span>
-          ne vend pas ?</h2>
+        <h2 class="section-title" style="font-weight: 800;">Pourquoi votre <span class="text-blue">SEO</span> ne vend
+          pas ?</h2>
         <p class="section-intro"
           style="font-size: 1.15rem; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.6;">
           <strong>Votre visibilité Google</strong> stagne alors que vos concurrents captent vos clients ? Le problème
@@ -415,16 +318,51 @@
           <h3 class="pillar-title">Visibilité Locale : Devenez n°1</h3>
           <p class="pillar-text">
             Soyez le premier choix dans votre ville. J'optimise votre <strong>Google Business Profile</strong> pour
-            capter la clientèle de proximité (ex: <a href="consultant-seo-paris"
-              style="color: #3b82f6; text-decoration: underline;">Paris</a> / <a href="consultant-seo-nantes"
-              style="color: #3b82f6; text-decoration: underline;">Nantes</a>).
+            capter la clientèle de proximité.
           </p>
         </div>
       </div>
-      <!-- CTA Secondaire (Vert) -->
+    </div>
+  </section>
 
+  <div class="section-separator"></div>
+
+  <section class="results-stats-section" style="padding: 100px 0; background: #0a0a0a;">
+    <div class="container" style="max-width: 1100px;">
+      <div class="results-box"
+        style="background: rgba(255,255,255,0.02); padding: 40px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05); text-align: center;">
+        <h4
+          style="color: #fff; margin-bottom: 30px; font-size: 1rem; text-transform: uppercase; letter-spacing: 2px; opacity: 0.8;">
+          Résultats moyens constatés :</h4>
+        <div class="stats-grid"
+          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px;">
+          <div class="stat-item">
+            <div style="color: #3b82f6; font-size: 2.5rem; font-weight: 900;">+<span class="counter-value"
+                data-target="80">0</span>%</div>
+            <div style="font-size: 0.9rem; opacity: 0.6; color: #fff; margin-top: 10px;">Trafic organique</div>
+          </div>
+          <div class="stat-item">
+            <div style="color: #3b82f6; font-size: 2.5rem; font-weight: 900;">+<span class="counter-value"
+                data-target="30">0</span>%</div>
+            <div style="font-size: 0.9rem; opacity: 0.6; color: #fff; margin-top: 10px;">Leads qualifiés</div>
+          </div>
+          <div class="stat-item">
+            <div style="color: #3b82f6; font-size: 2.5rem; font-weight: 900;">-<span class="counter-value"
+                data-target="35">0</span>%</div>
+            <div style="font-size: 0.9rem; opacity: 0.6; color: #fff; margin-top: 10px;">Coût par lead</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="section-separator"></div>
+
+  <!-- CTA Secondaire (Vert) -->
+
+  <section class="audit-cta-card-section" style="padding: 60px 0;">
+    <div class="container">
       <div
-        style="margin-top: 80px; position: relative; background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%); border: 1px solid rgba(255,255,255,0.05); border-radius: 24px; padding: 60px 40px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+        style="position: relative; background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%); border: 1px solid rgba(255,255,255,0.05); border-radius: 24px; padding: 60px 40px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
         <!-- Glow effects -->
         <div
           style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 70%; height: 1px; background: linear-gradient(90deg, transparent, #3b82f6, transparent); opacity: 0.7;">
@@ -435,45 +373,40 @@
         <div style="text-align: center; position: relative; z-index: 1;">
           <span
             style="background: rgba(59, 130, 246, 0.1); color: #60a5fa; padding: 8px 16px; border-radius: 100px; font-size: 0.8rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; border: 1px solid rgba(59, 130, 246, 0.2); display: inline-block; margin-bottom: 30px;">
-            ✅ Mon Plan d'Action
-          </span>
+            ✅ Mon Plan d'Action </span>
           <h2 style="font-size: 2rem; color: #fff; margin-bottom: 20px; line-height: 1.3; font-weight: 800;">
-            Transformez votre <span class="text-gradient">Trafic</span> en Leads
-          </h2>
+            Transformez votre <span class="text-gradient">Trafic</span> en Leads </h2>
           <p
             style="font-size: 1.15rem; color: rgba(255,255,255,0.8); margin-bottom: 50px; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.6;">
-            via mon <strong>Audit SEO gratuit</strong>. J'identifie les freins techniques et stratégiques,
-            puis je construis une feuille de route sur-mesure pour :
-          </p>
-          <!-- Features Grid -->
+            via mon <strong>Audit SEO gratuit</strong>. J'identifie les freins techniques et stratégiques, puis je
+            construis une feuille de route sur-mesure pour : </p>
           <div
             style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; text-align: left; max-width: 1000px; margin: 0 auto 60px auto;">
             <div
               style="background: rgba(255,255,255,0.03); padding: 30px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; align-items: flex-start; transition: transform 0.3s ease;">
               <span style="font-size: 2.5rem; margin-bottom: 15px; line-height: 1;">🛍️</span>
-              <h4 style="color: #e2e8f0; font-weight: 700; font-size: 1.1rem; margin-bottom: 10px;">
-                SEO Local & E-commerce</h4>
+              <h4 style="color: #e2e8f0; font-weight: 700; font-size: 1.1rem; margin-bottom: 10px;"> SEO Local &
+                E-commerce</h4>
               <p style="color: rgba(255,255,255,0.7); font-size: 0.95rem; line-height: 1.6;">Correction des freins
                 techniques et sémantiques. Chaque fiche produit devient un levier de conversion transactionnel.</p>
             </div>
             <div
               style="background: rgba(255,255,255,0.03); padding: 30px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; align-items: flex-start; transition: transform 0.3s ease;">
               <span style="font-size: 2.5rem; margin-bottom: 15px; line-height: 1;">🛡️</span>
-              <h4 style="color: #e2e8f0; font-weight: 700; font-size: 1.1rem; margin-bottom: 10px;">
-                Sécurisation Technique</h4>
+              <h4 style="color: #e2e8f0; font-weight: 700; font-size: 1.1rem; margin-bottom: 10px;"> Sécurisation
+                Technique</h4>
               <p style="color: rgba(255,255,255,0.7); font-size: 0.95rem; line-height: 1.6;">Fiabilité critique pour B2B
                 & E-commerce. Je sécurise vos Core Web Vitals et votre indexation.</p>
             </div>
             <div
               style="background: rgba(255,255,255,0.03); padding: 30px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; align-items: flex-start; transition: transform 0.3s ease;">
               <span style="font-size: 2.5rem; margin-bottom: 15px; line-height: 1;">🎯</span>
-              <h4 style="color: #e2e8f0; font-weight: 700; font-size: 1.1rem; margin-bottom: 10px;">
-                Leads B2B Qualifiés</h4>
+              <h4 style="color: #e2e8f0; font-weight: 700; font-size: 1.1rem; margin-bottom: 10px;"> Leads B2B Qualifiés
+              </h4>
               <p style="color: rgba(255,255,255,0.7); font-size: 0.95rem; line-height: 1.6;">Ciblez les décideurs.
                 Attirez des prospects matures grâce à une autorité thématique incontestable.</p>
             </div>
           </div>
-          <!-- Social Proof before CTA -->
           <div style="margin-bottom: 30px; display: flex; justify-content: center; align-items: center; gap: 15px;">
             <div style="display: flex;">
               <div
@@ -489,191 +422,22 @@
                 <img alt="Client" src="https://i.pravatar.cc/100?img=12" width="35" />
               </div>
             </div>
-            <div style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">
-              <span style="color: #fbbf24;">★★★★★</span> "Un audit qui a tout changé"
-            </div>
+            <div style="color: rgba(255,255,255,0.8); font-size: 0.9rem;"> <span style="color: #fbbf24;">★★★★★</span>
+              "Un audit qui a tout changé" </div>
           </div>
-          <!-- CTA Section -->
           <div style="display: flex; flex-direction: column; align-items: center;">
-            <p style="margin-bottom: 25px; font-weight: 700; color: #fff; letter-spacing: 1px; font-size: 1.1rem;">
-              🚀 PASSEZ À L’ACTION</p>
+            <p style="margin-bottom: 25px; font-weight: 700; color: #fff; letter-spacing: 1px; font-size: 1.1rem;"> 🚀
+              PASSEZ À L’ACTION</p>
             <a class="hero-btn-primary" href="audit-seo-gratuit"
               style="padding: 16px 32px; font-size: 1rem; box-shadow: 0 10px 40px rgba(59, 130, 246, 0.2); margin-bottom: 15px;">
-              OBTENIR MON AUDIT SEO GRATUIT
-            </a>
+              OBTENIR MON AUDIT SEO GRATUIT </a>
           </div>
         </div>
       </div>
     </div>
   </section>
   <div class="section-separator"></div>
-  <section id="solution" style="padding-top: 60px;">
-    <div class="container">
-      <h2 class="section-title" style="font-weight: 800;">Ce que je fais <span class="text-blue">pour vous en SEO</span>
-      </h2>
-      <p class="section-intro">
-        Pourquoi choisir entre la qualité artisanale et la rigueur industrielle ?
-        Je fusionne les <strong>fondamentaux du SEO</strong> avec <strong>l'avant-garde de l'IA</strong> pour
-        construire une croissance organique pérenne et mesurable.
-      </p>
-      <!-- Part 1: Le Socle SEO -->
-      <h3 class="subsection-title">Socle de Performance</h3>
-      <div class="pillars-container" style="flex-wrap: wrap; justify-content: center; gap: 20px; margin-bottom: 40px;">
-        <a class="pillar-item small-pillar" href="audit-seo-technique" onmouseout="this.style.transform='translateY(0)'"
-          onmouseover="this.style.transform='translateY(-5px)'"
-          style="text-decoration: none; color: inherit; transition: transform 0.3s;">
-          <div class="pillar-icon">⚙️</div>
-          <h3 class="pillar-title">Technique &amp; Architecture</h3>
-          <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 5px;">Les 50 erreurs qui bloquent votre
-            trafic</p>
-        </a>
-        <a class="pillar-item small-pillar" href="strategie-semantique-seo"
-          onmouseout="this.style.transform='translateY(0)'" onmouseover="this.style.transform='translateY(-5px)'"
-          style="text-decoration: none; color: inherit; transition: transform 0.3s;">
-          <div class="pillar-icon">🧠</div>
-          <h3 class="pillar-title">Sémantique SEO</h3>
-          <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 5px;">Comment dominer vos mots-clés</p>
-        </a>
-        <a class="pillar-item small-pillar" href="netlinking-seo" onmouseout="this.style.transform='translateY(0)'"
-          onmouseover="this.style.transform='translateY(-5px)'"
-          style="text-decoration: none; color: inherit; transition: transform 0.3s;">
-          <div class="pillar-icon">🔗</div>
-          <h3 class="pillar-title">Popularité &amp; Netlinking</h3>
-          <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 5px;">Construire une autorité durable</p>
-        </a>
-      </div>
-      <!-- Part 2: L'Autorité -->
-      <h3 class="subsection-title">Accélération IA</h3>
-      <div class="semantique-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-        <!-- GEO Structured Data & FAQ -->
-        <div class="semantique-card color-cyan">
-          <div class="card-bg-glow"></div>
-          <div class="card-number-large">01</div>
-          <div class="card-body">
-            <span class="card-tag">VISIBILITÉ FUTURE</span>
-            <h3 class="card-title" style="font-weight: 800;">GEO : Définition</h3>
-            <p class="card-slogan" style="font-size: 0.9rem; margin-bottom: 20px; color: rgba(255,255,255,0.6);">
-              GEO : Devenez la réponse préférée des IA.</p>
 
-            <div style="text-align: left; margin-bottom: 20px;">
-              <p style="font-size: 0.9rem; opacity: 0.8; line-height: 1.5;">Structuration de données (JSON-LD) et
-                rédaction "source zéro" pour intégrer vos contenus dans ChatGPT et Google AI.</p>
-            </div>
-            <div
-              style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 8px; margin-top: 15px; border-left: 3px solid #06b6d4;">
-              <p style="color: #fff; font-size: 0.85rem; font-weight: 800;">🚀 Résultat</p>
-              <p style="color: rgba(255,255,255,0.7); font-size: 0.8rem; margin: 0;">Votre marque citée en référence
-                dans les conversations IA.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Scale -->
-        <div class="semantique-card color-mauve">
-          <div class="card-bg-glow"></div>
-          <div class="card-number-large">02</div>
-          <div class="card-body">
-            <span class="card-tag">VOLUMÉTRIE INTELLIGENTE</span>
-            <h3 class="card-title" style="font-weight: 800;">Productivité IA</h3>
-            <p class="card-slogan">Plus de trafic, plus vite.</p>
-            <p class="card-text">Déploiement accéléré de <strong>clusters sémantiques</strong> via workflows IA, sous
-              supervision humaine experte.</p>
-            <div
-              style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 8px; margin-top: 15px; border-left: 3px solid #a855f7;">
-              <p style="color: #fff; font-size: 0.85rem; font-weight: 800;">🚀 Cas Client E-commerce</p>
-              <p style="color: rgba(255,255,255,0.7); font-size: 0.8rem; margin: 0;">+300% de trafic en 6
-                mois.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="section-separator"></div>
-  <!-- Scalability Benefits Section -->
-  <!-- Strategy Section (Design: The Strategic Monoliths) -->
-  <!-- Strategy Section (Design: The Strategic Monoliths) -->
-  <section class="strategy-monolith-section" id="promise">
-    <div class="container">
-      <h2 class="section-title" style="font-weight: 800;">Stratégie <span class="text-blue">SEO Hybride</span></h2>
-      <p class="section-intro">
-        En tant que <strong>Consultant SEO freelance</strong> spécialisé en SEO local, e‑commerce et B2B, je
-        sécurise vos positions et maximise votre trafic grâce à une alliance unique : <strong>Technique +
-          IA</strong>.
-      </p>
-      <div class="monolith-container">
-        <!-- Monolith 1: Le Socle Technique (Shield) -->
-        <a class="monolith defense" href="methode-safe-seo"
-          style="text-decoration: none; display: block; height: 100%;">
-          <div class="monolith-bg-text">SAFE</div>
-          <div class="monolith-content" style="height: 100%; display: flex; flex-direction: column;">
-            <div class="monolith-header">
-              <div class="monolith-icon-wrapper">🛡️</div>
-              <h3 class="monolith-title">Assurance Technique</h3>
-              <p class="monolith-subtitle">FIABILISER VOTRE SOCLE</p>
-            </div>
-            <div class="monolith-body" style="flex-grow: 1;">
-              <ul class="monolith-list" style="color: rgba(255,255,255,0.7); list-style: none; padding-left: 0;">
-                <li style="margin-bottom: 10px;">✅ <strong>Securité &amp; Vitesse</strong> : HTTPS, Core Web
-                  Vitals, Protection anti-hack.</li>
-                <li style="margin-bottom: 10px;">✅ <strong>Architecture</strong> : Structure en silos
-                  étanches, maillage interne optimisé.</li>
-                <li style="margin-bottom: 10px;">✅ <strong>Zéro Erreur</strong> : Suppression des liens
-                  cassés et du contenu dupliqué.</li>
-              </ul>
-            </div>
-            <div class="monolith-footer" style="margin-top: auto;">
-              <div
-                style="margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.1); margin-bottom: 15px;">
-                <p style="color: #4ade80; font-weight: 700; font-size: 0.95rem; margin-bottom: 5px;">🚀
-                  IMPACT : Socle sain & rapide</p>
-                <p style="color: rgba(255,255,255,0.5); font-size: 0.8rem; margin: 0;">(Gains de performance durables)
-                </p>
-              </div>
-              <div
-                style="text-align: center; color: #fff; font-size: 0.9rem; text-decoration: underline; padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;">
-                Découvrir la méthode SAFE →
-              </div>
-            </div>
-          </div>
-        </a>
-        <!-- Monolith 2: La Croissance Sémantique (Strike) -->
-        <a class="monolith offense" href="methode-grow-seo"
-          style="text-decoration: none; display: block; height: 100%;">
-          <div class="monolith-bg-text">GROW</div>
-          <div class="monolith-content" style="height: 100%; display: flex; flex-direction: column;">
-            <div class="monolith-header">
-              <div class="monolith-icon-wrapper">⚔️</div>
-              <h3 class="monolith-title">Portée Sémantique</h3>
-              <p class="monolith-subtitle">CONSOLIDER VOS POSITIONS</p>
-            </div>
-            <div class="monolith-body" style="flex-grow: 1;">
-              <ul class="monolith-list" style="color: rgba(255,255,255,0.7); list-style: none; padding-left: 0;">
-                <li style="margin-bottom: 10px;">🎯 <strong>Goal &amp; Reach</strong> : Ciblage des mots-clés
-                  transactionnels à fort ROI.</li>
-                <li style="margin-bottom: 10px;">🤖 <strong>Optimization IA</strong> : Contenus calibrés pour Google ET
-                  les LLMs.</li>
-                <li style="margin-bottom: 10px;">🏆 <strong>Win (Autorité)</strong> : Netlinking puissant pour dépasser
-                  les concurrents.</li>
-              </ul>
-            </div>
-            <div class="monolith-footer" style="margin-top: auto;">
-              <div
-                style="margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.1); margin-bottom: 15px;">
-                <p style="color: #f87171; font-weight: 700; font-size: 0.95rem; margin-bottom: 5px;">🚀 IMPACT :
-                  Visibilité ciblée</p>
-                <p style="color: rgba(255,255,255,0.5); font-size: 0.8rem; margin: 0;">(Positionnement sur requêtes
-                  clés)</p>
-              </div>
-              <div
-                style="text-align: center; color: #fff; font-size: 0.9rem; text-decoration: underline; padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;">
-                Découvrir la méthode GROW →
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
   <!-- Reviews Section (Carousel) -->
   <section id="reviews">
     <div class="container">
@@ -1140,77 +904,7 @@
       </div>
     </div>
   </section>
-  <div class="section-separator"></div>
-  <!-- About Section (Design 4: The Cinematic Split) -->
-  <section class="about-cinematic" id="about">
-    <div class="container container-large">
-      <h2 class="section-title" style="font-weight: 800;">Pourquoi me <span class="text-blue">choisir</span> ?</h2>
-      <div class="cinematic-grid">
-        <!-- Visual Side -->
-        <div class="cinematic-visual">
-          <div class="image-mask">
-            <img alt="Renel Rosené - Consultant Expert SEO et IA" class="portrait-main" height="800" loading="lazy"
-              src="renel_portrait.jpg" width="600" />
-            <div class="vignette-overlay"></div>
-          </div>
-        </div>
-        <!-- Text Side -->
-        <div class="cinematic-content">
-          <div class="content-inner">
-            <span class="eyebrow" style="color: #3b82f6; font-weight: 700; letter-spacing: 2px;">CONSULTANT
-              AUGMENTÉ</span>
-            <h2 class="cinematic-h2">Agilité Freelance &amp; <br /><span class="text-gradient">Puissance IA</span></h2>
-            <div class="message-block">
-              <p class="secondary-p" style="margin-bottom: 25px; font-size: 1.1rem; line-height: 1.6;">
-                Contre les agences lourdes, une alternative chirurgicale. Je suis votre <strong>interlocuteur
-                  unique</strong> : pas d'intermédiaire, pas de frais de structure, juste de la
-                <strong>performance</strong>.
-              </p>
-              <div style="margin-bottom: 30px;">
-                <div style="display: flex; align-items: start; margin-bottom: 15px;">
 
-                  <div>
-                    <strong style="color: #fff; display: block; margin-bottom: 5px; font-weight: 800;">Réactivité
-                      Totale</strong>
-                    <span style="color: #aaa; font-size: 0.95rem;">Vos demandes traitées en <strong>heures</strong>, pas
-                      en semaines. Adaptation immédiate aux updates Google.</span>
-                  </div>
-                </div>
-                <div style="display: flex; align-items: start; margin-bottom: 15px;">
-
-                  <div>
-                    <strong style="color: #fff; display: block; margin-bottom: 5px; font-weight: 800;">Proximité &amp;
-                      Local</strong>
-                    <span style="color: #aaa; font-size: 0.95rem;">Spécialiste du terrain. Je positionne votre business
-                      là où sont <strong>vos clients</strong>.</span>
-                  </div>
-                </div>
-                <div style="display: flex; align-items: start;">
-
-                  <div>
-                    <strong style="color: #fff; display: block; margin-bottom: 5px; font-weight: 800;">Orienté
-                      Résultats</strong>
-                    <span style="color: #aaa; font-size: 0.95rem;">Ma méthode : Audit > Stratégie > Suivi. Pas de
-                      blabla, des <strong>courbes qui montent</strong>.</span>
-                  </div>
-                </div>
-              </div>
-              <p class="secondary-p"
-                style="font-size: 0.95rem; opacity: 0.7; border-left: 2px solid #3b82f6; padding-left: 15px;">
-                "Mon objectif : faire de votre site votre meilleur commercial, 24h/24 et 7j/7."
-              </p>
-            </div>
-            <div class="cinematic-footer">
-              <div class="name-display">
-                <strong>Renel Rosené</strong>
-                <span>Consultant SEO &amp; IA</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
   <div class="section-separator"></div>
   <!-- Methodology & Expertise Section -->
   <!-- Methodology & Expertise Section -->
@@ -1322,6 +1016,77 @@
       <div style="text-align: center; margin-top: 60px;">
         <a class="hero-btn-secondary" href="ressources" style="border-radius: 100px; padding: 15px 40px;">Voir mes
           ressources</a>
+      </div>
+    </div>
+  </section>
+  <div class="section-separator"></div>
+  <!-- About Section (Design 4: The Cinematic Split) -->
+  <section class="about-cinematic" id="about">
+    <div class="container container-large">
+      <h2 class="section-title" style="font-weight: 800;">Pourquoi me <span class="text-blue">choisir</span> ?</h2>
+      <div class="cinematic-grid">
+        <!-- Visual Side -->
+        <div class="cinematic-visual">
+          <div class="image-mask">
+            <img alt="Renel Rosené - Consultant Expert SEO et IA" class="portrait-main" height="800" loading="lazy"
+              src="renel_portrait.jpg" width="600" />
+            <div class="vignette-overlay"></div>
+          </div>
+        </div>
+        <!-- Text Side -->
+        <div class="cinematic-content">
+          <div class="content-inner">
+            <span class="eyebrow" style="color: #3b82f6; font-weight: 700; letter-spacing: 2px;">CONSULTANT
+              AUGMENTÉ</span>
+            <h2 class="cinematic-h2">Agilité Freelance &amp; <br /><span class="text-gradient">Puissance IA</span></h2>
+            <div class="message-block">
+              <p class="secondary-p" style="margin-bottom: 25px; font-size: 1.1rem; line-height: 1.6;">
+                Contre les agences lourdes, une alternative chirurgicale. Je suis votre <strong>interlocuteur
+                  unique</strong> : pas d'intermédiaire, pas de frais de structure, juste de la
+                <strong>performance</strong>.
+              </p>
+              <div style="margin-bottom: 30px;">
+                <div style="display: flex; align-items: start; margin-bottom: 15px;">
+
+                  <div>
+                    <strong style="color: #fff; display: block; margin-bottom: 5px; font-weight: 800;">Réactivité
+                      Totale</strong>
+                    <span style="color: #aaa; font-size: 0.95rem;">Vos demandes traitées en <strong>heures</strong>, pas
+                      en semaines. Adaptation immédiate aux updates Google.</span>
+                  </div>
+                </div>
+                <div style="display: flex; align-items: start; margin-bottom: 15px;">
+
+                  <div>
+                    <strong style="color: #fff; display: block; margin-bottom: 5px; font-weight: 800;">Proximité &amp;
+                      Local</strong>
+                    <span style="color: #aaa; font-size: 0.95rem;">Spécialiste du terrain. Je positionne votre business
+                      là où sont <strong>vos clients</strong>.</span>
+                  </div>
+                </div>
+                <div style="display: flex; align-items: start;">
+
+                  <div>
+                    <strong style="color: #fff; display: block; margin-bottom: 5px; font-weight: 800;">Orienté
+                      Résultats</strong>
+                    <span style="color: #aaa; font-size: 0.95rem;">Ma méthode : Audit > Stratégie > Suivi. Pas de
+                      blabla, des <strong>courbes qui montent</strong>.</span>
+                  </div>
+                </div>
+              </div>
+              <p class="secondary-p"
+                style="font-size: 0.95rem; opacity: 0.7; border-left: 2px solid #3b82f6; padding-left: 15px;">
+                "Mon objectif : faire de votre site votre meilleur commercial, 24h/24 et 7j/7."
+              </p>
+            </div>
+            <div class="cinematic-footer">
+              <div class="name-display">
+                <strong>Renel Rosené</strong>
+                <span>Consultant SEO &amp; IA</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
