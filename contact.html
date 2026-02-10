@@ -123,21 +123,69 @@
             <input name="_next" type="hidden" value="https://www.renelrosene.com/success.html" />
             <input name="_subject" type="hidden" value="Nouveau Lead SEO - Site Web" />
             <input name="_captcha" type="hidden" value="false" />
-            <div class="form-group">
-              <input aria-label="Nom complet" name="name" placeholder="Nom complet" required="" type="text" />
+
+            <!-- Row 1: Prénom / Nom -->
+            <div class="form-row">
+              <div class="form-group">
+                <label>Prénom *</label>
+                <input aria-label="Prénom" name="prenom" placeholder="Prénom" required="" type="text" />
+              </div>
+              <div class="form-group">
+                <label>Nom *</label>
+                <input aria-label="Nom" name="nom" placeholder="Nom" required="" type="text" />
+              </div>
             </div>
-            <div class="form-group">
-              <input aria-label="Email professionnel" name="email" placeholder="Email professionnel" required=""
-                type="email" />
+
+            <!-- Row 2: Email / Téléphone -->
+            <div class="form-row">
+              <div class="form-group">
+                <label>E-mail *</label>
+                <input aria-label="Email professionnel" name="email" placeholder="email@entreprise.com" required=""
+                  type="email" />
+              </div>
+              <div class="form-group">
+                <label>Téléphone *</label>
+                <input aria-label="Téléphone" name="phone" placeholder="06 12 34 56 78" required="" type="tel" />
+              </div>
             </div>
-            <div class="form-group">
-              <input aria-label="URL de votre site" name="website" placeholder="URL de votre site (ex: monsite.com)"
-                required="" type="text" />
+
+            <!-- Row 3: URL / Budget -->
+            <div class="form-row">
+              <div class="form-group">
+                <label>URL / Site *</label>
+                <input aria-label="URL de votre site" name="website" placeholder="https://..." required=""
+                  type="text" />
+              </div>
+              <div class="form-group">
+                <label>Budget SEO *</label>
+                <select aria-label="Budget SEO" name="budget" required="">
+                  <option value="" disabled selected>Sélectionnez votre budget...</option>
+                  <option value="< 1 000 € / mois">&lt; 1 000 € / mois</option>
+                  <option value="1 000 – 2 000 € / mois">1 000 – 2 000 € / mois</option>
+                  <option value="2 000 – 5 000 € / mois">2 000 – 5 000 € / mois</option>
+                  <option value="> 5 000 € / mois">&gt; 5 000 € / mois</option>
+                </select>
+              </div>
             </div>
+
+            <!-- Message -->
             <div class="form-group">
-              <textarea aria-label="Description de votre challenge" name="message"
-                placeholder="Décrivez votre challenge principal..." required="" rows="4"></textarea>
+              <label>Message *</label>
+              <textarea aria-label="Message" name="message" placeholder="Parlez-moi de votre projet..." required=""
+                rows="4"></textarea>
             </div>
+
+            <!-- Consent Checkbox -->
+            <div class="form-group"
+              style="display: flex; align-items: center; gap: 12px; margin-bottom: 35px; margin-top: 10px;">
+              <input type="checkbox" name="consent" id="consent" required=""
+                style="width: 20px; height: 20px; accent-color: #3b82f6; cursor: pointer;">
+              <label for="consent" style="color: #aaa; font-size: 0.85rem; cursor: pointer; margin: 0;">J’accepte la
+                protection des
+                données (voir <a href="mentions-legales" style="color: #fff; text-decoration: underline;">mentions
+                  légales</a>)</label>
+            </div>
+
             <button class="form-submit-btn" type="submit">INITIALISER LA DOMINATION</button>
           </form>
         </div>
