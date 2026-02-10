@@ -2056,162 +2056,126 @@ h2 span.text-gradient {
   filter: grayscale(20%);
 }
 
-/* About Section - Design 4: The Cinematic Split */
-.about-cinematic {
-  padding: 100px 0;
+/* About Section - Minimalist Redesign */
+.about-premium {
+  padding: 120px 0;
   background: #000;
 }
 
-.container-large {
-  max-width: 1300px;
-}
-
-.cinematic-grid {
+.minimal-about-grid {
   display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
   align-items: center;
-  gap: 60px;
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 40px;
-  overflow: hidden;
-  box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.8),
-    0 0 80px rgba(46, 92, 255, 0.03);
-  /* Subtle blue radial glow */
 }
 
-.cinematic-visual {
-  height: 100%;
-  min-height: 550px;
-  padding: 100px;
-  opacity: 1;
-}
-
-.image-mask {
-  position: relative;
-  height: 100%;
+.minimal-portrait {
   width: 100%;
   border-radius: 20px;
-  overflow: hidden;
+  filter: grayscale(1);
+  transition: filter 0.5s ease;
 }
 
-.portrait-main {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: saturate(1.1) contrast(1.1);
-  transition: transform 0.8s cubic-bezier(0.2, 0, 0.2, 1);
-  /* Strong radial mask to hide image background */
-  mask-image: radial-gradient(ellipse at center 30%, black 40%, transparent 75%);
-  -webkit-mask-image: radial-gradient(ellipse at center 30%, black 40%, transparent 75%);
+.about-image-col:hover .minimal-portrait {
+  filter: grayscale(0);
 }
 
-.vignette-overlay {
-  position: absolute;
-  inset: 0;
-  /* Custom Radiant Black Vignette (Corner Blocker) */
-  /* Custom Radiant Black Vignette (Nano 10%) */
-  background:
-    radial-gradient(circle at top left, #000 0%, transparent 10%),
-    radial-gradient(circle at top right, #000 0%, transparent 10%),
-    linear-gradient(to top, #000 0%, transparent 10%);
-  pointer-events: none;
-  z-index: 2;
-  pointer-events: none;
-  z-index: 2;
-}
-
-.cinematic-content {
-  padding: 60px 80px 60px 0;
-}
-
-.eyebrow {
-  display: block;
+.minimal-eyebrow {
   font-size: 0.75rem;
+  letter-spacing: 4px;
+  color: #3b82f6;
+  text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 0.2em;
-  color: var(--accent-primary);
-  margin-bottom: 24px;
+  margin-bottom: 15px;
+  display: block;
 }
 
-.cinematic-h2 {
-  font-size: 3rem;
-  line-height: 1.1;
+.minimal-h2 {
+  font-size: 3.5rem;
   font-weight: 800;
   color: #fff;
-  letter-spacing: -0.04em;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  line-height: 1.1;
 }
 
-.text-blue {
-  color: var(--accent-primary);
-}
-
-.message-block {
-  margin-bottom: 60px;
-}
-
-.highlight-p {
-  font-size: 1.4rem;
-  line-height: 1.4;
-  color: #fff;
-  margin-bottom: 24px;
-  font-weight: 500;
-}
-
-.secondary-p {
-  font-size: 1.1rem;
+.minimal-description {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.7);
   line-height: 1.6;
-  color: var(--text-secondary);
+  margin-bottom: 40px;
+  max-width: 500px;
 }
 
-.cinematic-footer {
+.minimal-pillars {
+  display: grid;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.minimal-pillar-item h4 {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
+}
+
+.minimal-pillar-item p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.minimal-footer {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 30px;
 }
 
-.name-display {
-  display: flex;
-  flex-direction: column;
+.minimal-quote {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
-.name-display strong {
-  font-size: 1.25rem;
+.minimal-sig strong {
+  display: block;
+  font-size: 1.2rem;
   color: #fff;
 }
 
-.name-display span {
-  font-size: 0.85rem;
-  color: #666;
+.minimal-sig span {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 2px;
 }
 
-/* Hover dynamic */
-.cinematic-grid:hover .portrait-main {
-  transform: scale(1.03);
-}
-
-@media (max-width: 1100px) {
-  .cinematic-grid {
+@media (max-width: 1024px) {
+  .minimal-about-grid {
     grid-template-columns: 1fr;
-    gap: 0;
+    gap: 50px;
+    text-align: center;
   }
 
-  .cinematic-visual {
-    min-height: 400px;
-    padding: 40px;
+  .about-image-col {
+    max-width: 400px;
+    margin: 0 auto;
   }
 
-  .cinematic-content {
-    padding: 60px 40px;
+  .minimal-description {
+    margin: 0 auto 40px;
   }
 
-  .cinematic-h2 {
-    font-size: 2.2rem;
+  .minimal-pillar-item h4 {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .minimal-h2 {
+    font-size: 2.5rem;
   }
 }
 
@@ -2865,7 +2829,67 @@ h2 span.text-gradient {
 }
 
 .qual-box.not-for-you h4 {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Minimalist Services Section */
+.minimal-services {
+  padding: 120px 0;
+  background: #050505;
+}
+
+.minimal-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.service-minimal-card {
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-minimal-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(59, 130, 246, 0.3);
+  transform: translateY(-8px);
+}
+
+.service-minimal-icon {
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+  display: block;
+}
+
+.service-minimal-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 15px;
+  letter-spacing: -0.02em;
+}
+
+.service-minimal-text {
+  font-size: 0.95rem;
+  color: #a1a1a6;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .minimal-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .minimal-services-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .qual-box ul {
