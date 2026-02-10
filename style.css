@@ -1088,6 +1088,8 @@ h2 span.text-gradient {
 @media (max-width: 768px) {
   .pillars-container {
     grid-template-columns: 1fr;
+    gap: 30px;
+    /* More space between cards */
   }
 
   .pillar-item:nth-child(3) {
@@ -1096,6 +1098,41 @@ h2 span.text-gradient {
 
   .pillar-item {
     padding: 40px 30px;
+    background: rgba(255, 255, 255, 0.03);
+    /* Distinct card background */
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    /* Visible border */
+    border-radius: 24px;
+    margin-bottom: 20px;
+    /* Extra separation if grid gap fails */
+  }
+
+  .pillar-icon {
+    font-size: 3rem;
+    /* Larger icon */
+    margin-bottom: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pillar-title {
+    font-size: 1.5rem;
+    /* Larger title */
+    text-align: center;
+  }
+
+  .pillar-text {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .pillar-number {
+    font-size: 2.5rem;
+    opacity: 0.1;
+    top: 20px;
+    right: 20px;
   }
 }
 
@@ -5840,76 +5877,78 @@ h2 span.text-gradient {
   .hero-title {
     font-size: 2rem !important;
   }
-}/* ROADMAP VISUALIZATION */
+}
+
+/* ROADMAP VISUALIZATION */
 .roadmap-steps {
-    position: relative;
+  position: relative;
 }
 
 @media (min-width: 992px) {
-    .roadmap-steps {
-        padding-top: 50px !important;
-        /* Space for the line */
-    }
+  .roadmap-steps {
+    padding-top: 50px !important;
+    /* Space for the line */
+  }
 
-    /* The Horizontal Line */
-    .roadmap-steps::before {
-        content: '';
-        position: absolute;
-        top: 10px;
-        left: 10%;
-        /* Start line a bit in */
-        right: 10%;
-        /* End line a bit in */
-        height: 3px;
-        background: linear-gradient(90deg, rgba(59, 130, 246, 0.2), #3b82f6, #8b5cf6, rgba(139, 92, 246, 0.2));
-        border-radius: 4px;
-        z-index: 0;
-    }
+  /* The Horizontal Line */
+  .roadmap-steps::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10%;
+    /* Start line a bit in */
+    right: 10%;
+    /* End line a bit in */
+    height: 3px;
+    background: linear-gradient(90deg, rgba(59, 130, 246, 0.2), #3b82f6, #8b5cf6, rgba(139, 92, 246, 0.2));
+    border-radius: 4px;
+    z-index: 0;
+  }
 
-    /* The Dots on the Line */
-    .roadmap-steps .stat-item::before {
-        content: '';
-        position: absolute;
-        top: -47px;
-        /* Position on the main line */
-        left: 50%;
-        transform: translateX(-50%);
-        width: 20px;
-        height: 20px;
-        background: #050505;
-        /* Match section bg */
-        border: 3px solid #3b82f6;
-        border-radius: 50%;
-        z-index: 2;
-        box-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
-        transition: all 0.3s ease;
-    }
+  /* The Dots on the Line */
+  .roadmap-steps .stat-item::before {
+    content: '';
+    position: absolute;
+    top: -47px;
+    /* Position on the main line */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: #050505;
+    /* Match section bg */
+    border: 3px solid #3b82f6;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
+    transition: all 0.3s ease;
+  }
 
-    /* Hover effect on Dot */
-    .roadmap-steps .stat-item:hover::before {
-        background: #3b82f6;
-        /* Fill the dot */
-        box-shadow: 0 0 25px rgba(59, 130, 246, 0.8);
-        transform: translateX(-50%) scale(1.2);
-    }
+  /* Hover effect on Dot */
+  .roadmap-steps .stat-item:hover::before {
+    background: #3b82f6;
+    /* Fill the dot */
+    box-shadow: 0 0 25px rgba(59, 130, 246, 0.8);
+    transform: translateX(-50%) scale(1.2);
+  }
 
-    /* Vertical Connector from Dot to Card */
-    .roadmap-steps .stat-item::after {
-        content: '';
-        position: absolute;
-        top: -27px;
-        /* Start below the dot */
-        left: 50%;
-        transform: translateX(-50%);
-        width: 2px;
-        height: 27px;
-        background: linear-gradient(180deg, #3b82f6, rgba(59, 130, 246, 0));
-        z-index: 1;
-        opacity: 0.7;
-    }
+  /* Vertical Connector from Dot to Card */
+  .roadmap-steps .stat-item::after {
+    content: '';
+    position: absolute;
+    top: -27px;
+    /* Start below the dot */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 27px;
+    background: linear-gradient(180deg, #3b82f6, rgba(59, 130, 246, 0));
+    z-index: 1;
+    opacity: 0.7;
+  }
 
-    /* Enhance Card Style for Roadmap */
-    .roadmap-steps .stat-item {
-        border-top: 2px solid rgba(59, 130, 246, 0.3) !important;
-    }
+  /* Enhance Card Style for Roadmap */
+  .roadmap-steps .stat-item {
+    border-top: 2px solid rgba(59, 130, 246, 0.3) !important;
+  }
 }
