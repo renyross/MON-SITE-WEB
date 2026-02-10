@@ -4112,13 +4112,18 @@ h2 span.text-gradient {
 
 /* HERO SECTION SPECIFIC FIXES */
 @media (max-width: 768px) {
+  section {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+
   .hero {
     /* Force height to adapt to content */
     height: auto !important;
     min-height: auto !important;
-    padding-top: 140px !important;
+    padding-top: 100px !important;
     /* Account for fixed navbar */
-    padding-bottom: 80px !important;
+    padding-bottom: 60px !important;
     align-items: flex-start !important;
     /* Align to top */
   }
@@ -4154,8 +4159,10 @@ h2 span.text-gradient {
     width: 100%;
     display: block;
     max-width: none;
-    padding: 16px 24px;
-    /* Easier to tap */
+    padding: 18px 24px;
+    font-size: 1rem;
+    min-height: 54px;
+    /* Ensure > 48px touch target */
   }
 
   .hero-visual,
