@@ -1,4 +1,11 @@
 {
+    "redirects": [
+        {
+            "source": "/portfolio",
+            "destination": "/ressources",
+            "permanent": true
+        }
+    ],
     "headers": [
         {
             "source": "/(.*)",
