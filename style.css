@@ -2926,6 +2926,15 @@ h2 span.text-gradient {
 @media (max-width: 768px) {
   .minimal-services-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .service-minimal-card {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    /* Unified premium border */
+    border-radius: 20px;
   }
 }
 
@@ -4158,7 +4167,8 @@ h2 span.text-gradient {
     /* Force height to adapt to content */
     height: auto !important;
     min-height: auto !important;
-    padding-top: 100px !important;
+    padding-top: 80px !important;
+    /* Optimised for visibility */
     /* Account for fixed navbar */
     padding-bottom: 60px !important;
     align-items: flex-start !important;
