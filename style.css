@@ -6232,54 +6232,171 @@ h2 span.text-gradient {
   color: var(--accent-primary);
 }
 
-/* Mobile Version (Redo Mobile First) */
-@media (max-width: 768px) {
-  .comparison-row.header {
-    display: none;
-    /* Hide header on mobile */
-  }
+/* PREMIUM COMPARISON GRID (RE-DESIGN) */
+.premium-comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-  .comparison-row {
-    grid-template-columns: 1fr;
-    /* Stack vertically */
-    padding: 20px 0;
-  }
+.premium-comp-card {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 32px;
+  padding: 40px 30px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
 
-  .comp-col.label {
-    background: transparent;
-    padding-bottom: 10px;
-    font-size: 1.2rem;
-    color: var(--accent-primary);
-  }
+.premium-comp-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
 
-  .comp-col.agency,
-  .comp-col.me {
-    padding: 15px 30px;
-    position: relative;
-    display: block;
-  }
+.premium-comp-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(59, 130, 246, 0.3);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+}
 
-  .comp-col.agency::before,
-  .comp-col.me::before {
-    content: attr(data-label);
-    display: block;
-    font-size: 0.7rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 8px;
-    opacity: 0.5;
-  }
+.premium-comp-card:hover::before {
+  opacity: 1;
+}
 
-  .comp-col.me {
-    background: rgba(59, 130, 246, 0.05);
-    border-left: none;
-    border-top: 1px solid rgba(59, 130, 246, 0.1);
-    margin: 10px 20px;
-    border-radius: 12px;
+.premium-comp-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.premium-comp-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.premium-comp-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+.premium-comp-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.comp-box {
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.comp-box.agency {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.comp-box.me {
+  background: rgba(59, 130, 246, 0.05);
+  border: 1px solid rgba(59, 130, 246, 0.15);
+  color: #fff;
+  box-shadow: inset 0 0 20px rgba(59, 130, 246, 0.05);
+}
+
+.comp-box strong {
+  color: #3b82f6;
+}
+
+.comp-type {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+  opacity: 0.5;
+}
+
+.comp-vs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 36px;
+  height: 36px;
+  background: #050505;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: 900;
+  color: #666;
+  z-index: 2;
+}
+
+/* Quote Box Enhancement */
+.premium-quote-box {
+  background: radial-gradient(circle at center, rgba(59, 130, 246, 0.05) 0%, transparent 70%);
+  padding: 40px;
+  border-radius: 40px;
+}
+
+.minimal-quote {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  background: linear-gradient(90deg, #fff, #aaa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Mobile Adjustments for Grid */
+@media (max-width: 991px) {
+  .premium-comparison-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0 20px;
   }
 }
 
+@media (max-width: 768px) {
+  .premium-comparison-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .minimal-quote {
+    font-size: 1.8rem;
+  }
+}
+
+/* Unified Premium CTA Button */
 /* Unified Premium CTA Button */
 .unified-cta-button {
   display: flex;
@@ -6290,13 +6407,13 @@ h2 span.text-gradient {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 50px 40px;
-  border-radius: 32px;
+  padding: 60px 40px;
+  border-radius: 40px;
   text-decoration: none;
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
   position: relative;
   overflow: hidden;
-  max-width: 650px;
+  max-width: 700px;
   margin: 0 auto;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
 }
@@ -6305,78 +6422,111 @@ h2 span.text-gradient {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at center, rgba(59, 130, 246, 0.15), transparent 70%);
+  background: radial-gradient(circle at center, rgba(59, 130, 246, 0.2), transparent 70%);
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.6s ease;
+}
+
+/* Shimmer Animation */
+.unified-cta-button::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -150%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(to right,
+      transparent,
+      rgba(255, 255, 255, 0.08),
+      transparent);
+  transform: rotate(35deg);
+  transition: all 0.6s ease;
+  pointer-events: none;
 }
 
 .unified-cta-button:hover {
-  transform: translateY(-8px) scale(1.02);
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(59, 130, 246, 0.5);
-  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.6), 0 0 40px rgba(59, 130, 246, 0.2);
+  transform: translateY(-12px) scale(1.02);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(59, 130, 246, 0.6);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.6), 0 0 50px rgba(59, 130, 246, 0.25);
 }
 
 .unified-cta-button:hover::before {
   opacity: 1;
 }
 
+.unified-cta-button:hover::after {
+  left: 100%;
+  transition: all 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
 .unified-cta-button .cta-upper {
   font-family: 'Outfit', sans-serif;
-  font-size: 2.2rem;
-  font-weight: 800;
+  font-size: 2.5rem;
+  font-weight: 900;
   color: #fff;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   line-height: 1.1;
-  letter-spacing: -0.04em;
-  transition: transform 0.3s ease;
+  letter-spacing: -0.05em;
+  transition: all 0.4s ease;
   display: block;
+}
+
+.unified-cta-button:hover .cta-upper {
+  transform: translateY(-3px);
+  text-shadow: 0 0 30px rgba(59, 130, 246, 0.5);
 }
 
 .unified-cta-button .cta-middle {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 15px;
   font-weight: 800;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #fff;
-  transition: all 0.3s ease;
-  padding: 10px 0;
-}
-
-.unified-cta-button .cta-middle svg {
-  width: 24px;
-  height: 24px;
-  transition: transform 0.3s ease;
+  letter-spacing: 4px;
+  color: #3b82f6;
+  background: rgba(59, 130, 246, 0.1);
+  padding: 12px 30px;
+  border-radius: 100px;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  transition: all 0.4s ease;
 }
 
 .unified-cta-button:hover .cta-middle {
+  background: rgba(59, 130, 246, 0.2);
+  color: #fff;
+  border-color: rgba(59, 130, 246, 0.5);
   transform: scale(1.05);
-  color: #3b82f6;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
 }
 
-.unified-cta-button:hover .cta-middle svg {
+.unified-cta-button .btn-arrow {
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.unified-cta-button:hover .btn-arrow {
   transform: translateX(8px);
 }
 
 @media (max-width: 768px) {
   .unified-cta-button {
-    padding: 40px 20px;
-    border-radius: 24px;
+    padding: 50px 20px;
+    border-radius: 30px;
   }
 
   .unified-cta-button .cta-upper {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   .unified-cta-button .cta-middle {
     font-size: 1.1rem;
-    width: 100%;
+    padding: 10px 20px;
+    letter-spacing: 2px;
   }
 }
+
 /* CTA Header outside frame */
 .cta-header {
   text-align: center;
@@ -6397,6 +6547,7 @@ h2 span.text-gradient {
   .cta-title {
     font-size: 2.2rem;
   }
+
   .cta-header {
     margin-bottom: 30px;
   }
