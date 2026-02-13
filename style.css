@@ -6256,30 +6256,6 @@ h2 span.text-gradient {
   }
 }
 
-color: #fff;
-}
-
-.sig-details span {
-  font-size: 0.75rem;
-  color: #666;
-}
-
-@media (max-width: 768px) {
-  .split-card-body {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
-  .side-vs {
-    padding: 10px 0;
-  }
-
-  .split-card {
-    padding: 30px 20px;
-  }
-}
-
-/* Unified Premium CTA Button */
 /* Unified Premium CTA Button */
 .unified-cta-button {
   display: flex;
