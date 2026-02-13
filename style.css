@@ -5864,6 +5864,60 @@ h2 span.text-gradient {
   }
 }
 
+.premium-form .form-group {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.premium-form .form-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #aaa;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.premium-form input,
+.premium-form select,
+.premium-form textarea {
+  width: 100%;
+  padding: 18px 25px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  color: #fff;
+  font-size: 1rem;
+  font-family: 'Outfit', sans-serif;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.premium-form select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 25px center;
+  background-size: 16px;
+}
+
+.premium-form input:focus,
+.premium-form select:focus,
+.premium-form textarea:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15), inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.premium-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
 .form-footer-landscape {
   display: flex;
   align-items: center;
