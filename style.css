@@ -6151,121 +6151,62 @@ h2 span.text-gradient {
   color: var(--accent-primary);
 }
 
-/* PREMIUM SPLIT COMPARISON */
-.split-comparison-grid {
-  display: flex;
-  flex-direction: column;
+/* BENEFITS ONLY SECTION */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
-.split-card {
+.benefit-card {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 30px;
   padding: 40px;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
   position: relative;
-  transition: all 0.4s ease;
   overflow: hidden;
 }
 
-.split-card:hover {
-  background: rgba(255, 255, 255, 0.03);
-  border-color: rgba(59, 130, 246, 0.2);
-  transform: translateY(-5px);
+.benefit-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(59, 130, 246, 0.3);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(59, 130, 246, 0.1);
 }
 
-.split-card-header {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 30px;
-}
-
-.split-card-icon {
-  font-size: 1.8rem;
-}
-
-.split-card-title {
-  font-family: 'Outfit', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #fff;
-  margin: 0;
-}
-
-.split-card-body {
-  display: grid;
-  grid-template-columns: 1fr 60px 1fr;
-  align-items: center;
-  gap: 20px;
-  position: relative;
-}
-
-.side {
-  padding: 25px;
-  border-radius: 20px;
-  min-height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.side.agency {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.03);
-  color: rgba(255, 255, 255, 0.4);
-}
-
-.side.me {
-  background: rgba(59, 130, 246, 0.05);
-  border: 1px solid rgba(59, 130, 246, 0.1);
-  color: #fff;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.side-label {
+.benefit-icon {
+  font-size: 3rem;
+  margin-bottom: 25px;
   display: block;
-  font-size: 0.75rem;
+  transition: transform 0.4s ease;
+}
+
+.benefit-card:hover .benefit-icon {
+  transform: scale(1.1);
+}
+
+.benefit-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.6rem;
   font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
-  opacity: 0.5;
+  color: #fff;
+  margin-bottom: 15px;
+  letter-spacing: -0.02em;
 }
 
-.side p {
-  margin: 0;
+.benefit-text {
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
 }
 
-.side.me p {
-  font-weight: 600;
-}
-
-.side-vs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 2;
-}
-
-.vs-circle {
-  width: 40px;
-  height: 40.px;
-  background: #050505;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.7rem;
-  font-weight: 900;
-  color: #444;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+.benefit-card:hover .benefit-text {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 /* Sig Footer Update */
@@ -6287,6 +6228,35 @@ h2 span.text-gradient {
   display: block;
   font-size: 0.95rem;
   color: #fff;
+}
+
+.sig-details span {
+  font-size: 0.75rem;
+  color: #666;
+}
+
+@media (max-width: 991px) {
+  .benefits-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit-card {
+    padding: 35px 25px;
+  }
+
+  .benefit-title {
+    font-size: 1.4rem;
+  }
+}
+
+color: #fff;
 }
 
 .sig-details span {
