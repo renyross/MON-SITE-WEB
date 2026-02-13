@@ -6151,106 +6151,85 @@ h2 span.text-gradient {
   color: var(--accent-primary);
 }
 
-/* ULTRA-PREMIUM BENTO BENEFITS */
-.bento-benefits-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 1fr;
-  gap: 25px;
-  max-width: 1200px;
+/* EDITORIAL MINIMALIST BENEFITS */
+.minimalist-benefits-list {
+  max-width: 800px;
   margin: 0 auto;
 }
 
-.bento-card {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 40px;
-  padding: 50px;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-  display: flex;
-  flex-direction: column;
-}
-
-.bento-wide {
-  grid-column: span 2;
-}
-
-.bento-full {
-  grid-column: span 3;
-}
-
-.bento-card:hover {
-  background: rgba(255, 255, 255, 0.04);
-  border-color: rgba(59, 130, 246, 0.3);
-  transform: scale(1.01);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
-}
-
-.bento-card-content {
-  position: relative;
-  z-index: 2;
-  display: flex;
+.min-benefit-item {
+  padding: 50px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: grid;
+  grid-template-columns: 250px 1fr;
   align-items: flex-start;
   gap: 30px;
+  transition: all 0.4s ease;
 }
 
-.bento-icon {
-  font-size: 3.5rem;
-  line-height: 1;
-  background: linear-gradient(135deg, #fff, rgba(255, 255, 255, 0.3));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+.min-benefit-item:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.bento-title {
-  font-family: 'Outfit', sans-serif;
+.min-benefit-item:hover {
+  background: rgba(255, 255, 255, 0.01);
+}
+
+.min-benefit-head {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.min-benefit-icon {
   font-size: 1.8rem;
-  font-weight: 800;
-  color: #fff;
-  margin-bottom: 15px;
-  letter-spacing: -0.03em;
+  opacity: 0.8;
 }
 
-.bento-text {
+.min-benefit-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.min-benefit-body p {
   font-size: 1.1rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.5);
   margin: 0;
-  max-width: 800px;
 }
 
-.bento-card:hover .bento-text {
-  color: rgba(255, 255, 255, 0.8);
+.min-benefit-item:hover .min-benefit-body p {
+  color: rgba(255, 255, 255, 0.9);
 }
 
-/* Specific Card Visuals */
-.bento-card.proximite .bento-bg-gradient {
-  position: absolute;
-  top: -50%;
-  right: -20%;
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.08) 0%, transparent 70%);
-  z-index: 1;
-  pointer-events: none;
+.min-benefit-body strong {
+  color: #fff;
 }
 
-.bento-card.resultats .bento-highlight-glow {
-  position: absolute;
-  bottom: -40px;
-  right: 10%;
-  width: 150px;
-  height: 150px;
-  background: rgba(59, 130, 246, 0.1);
-  filter: blur(60px);
-  border-radius: 50%;
-  z-index: 1;
+@media (max-width: 768px) {
+  .min-benefit-item {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 35px 0;
+  }
+
+  .min-benefit-icon {
+    font-size: 1.4rem;
+  }
+
+  .min-benefit-title {
+    font-size: 1.2rem;
+  }
+
+  .min-benefit-body p {
+    font-size: 1rem;
+  }
 }
 
-/* Sig Footer Badge */
 .sig-badge {
   display: inline-flex;
   align-items: center;
