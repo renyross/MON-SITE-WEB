@@ -1193,52 +1193,42 @@
 
     <!-- Homepage Contact Form -->
     <section id="contact-form" style="padding: 100px 0; position: relative;">
-      <div class="container" style="max-width: 800px;">
+      <div class="container" style="max-width: 1100px;">
         <div class="section-header" style="text-align: center; margin-bottom: 50px;">
           <h2 class="section-title">Formulaire de <span class="text-blue">contact</span></h2>
         </div>
         <div class="contact-form-card-premium">
           <form action="https://formsubmit.co/contact@renelrosene.com" class="premium-form" method="POST">
             <input name="_next" type="hidden" value="https://www.renelrosene.com/success.html" />
-            <input name="_subject" type="hidden" value="Nouveau Lead SEO - Homepage (Détaillé)" />
+            <input name="_subject" type="hidden" value="Nouveau Lead SEO - Homepage (Landscape)" />
             <input name="_captcha" type="hidden" value="false" />
 
-            <!-- Row 1: Prénom / Nom -->
-            <div class="form-row">
+            <!-- Row 1: Identité & Contact -->
+            <div class="form-row landscape-row">
               <div class="form-group">
-                <label>Prénom *</label>
-                <input aria-label="Prénom" name="prenom" placeholder="Prénom" required="" type="text" />
+                <input aria-label="Prénom" name="prenom" placeholder="Prénom *" required="" type="text" />
               </div>
               <div class="form-group">
-                <label>Nom *</label>
-                <input aria-label="Nom" name="nom" placeholder="Nom" required="" type="text" />
-              </div>
-            </div>
-
-            <!-- Row 2: Email / Téléphone -->
-            <div class="form-row">
-              <div class="form-group">
-                <label>E-mail *</label>
-                <input aria-label="Email professionnel" name="email" placeholder="email@entreprise.com" required=""
-                  type="email" />
+                <input aria-label="Nom" name="nom" placeholder="Nom *" required="" type="text" />
               </div>
               <div class="form-group">
-                <label>Téléphone *</label>
-                <input aria-label="Téléphone" name="phone" placeholder="06 12 34 56 78" required="" type="tel" />
+                <input aria-label="Email professionnel" name="email" placeholder="E-mail * (email@entreprise.com)"
+                  required="" type="email" />
               </div>
             </div>
 
-            <!-- Row 3: URL / Budget -->
-            <div class="form-row">
+            <!-- Row 2: Business details -->
+            <div class="form-row landscape-row">
               <div class="form-group">
-                <label>URL / Site *</label>
-                <input aria-label="URL de votre site" name="website" placeholder="https://..." required=""
+                <input aria-label="Téléphone" name="phone" placeholder="Téléphone *" required="" type="tel" />
+              </div>
+              <div class="form-group">
+                <input aria-label="URL de votre site" name="website" placeholder="URL Site * (https://...)" required=""
                   type="text" />
               </div>
               <div class="form-group">
-                <label>Budget SEO *</label>
                 <select aria-label="Budget SEO" name="budget" required="">
-                  <option value="" disabled selected>Sélectionnez votre budget...</option>
+                  <option value="" disabled selected>Budget SEO *</option>
                   <option value="< 1 000 € / mois">&lt; 1 000 € / mois</option>
                   <option value="1 000 – 2 000 € / mois">1 000 – 2 000 € / mois</option>
                   <option value="2 000 – 5 000 € / mois">2 000 – 5 000 € / mois</option>
@@ -1247,25 +1237,21 @@
               </div>
             </div>
 
-            <!-- Message -->
+            <!-- Row 3: Message -->
             <div class="form-group">
-              <label>Message *</label>
-              <textarea aria-label="Message" name="message" placeholder="Parlez-moi de votre projet..." required=""
-                rows="4"></textarea>
+              <textarea aria-label="Message" name="message" placeholder="Parlez-moi de votre projet... *" required=""
+                rows="3"></textarea>
             </div>
 
-            <!-- Consent Checkbox -->
-            <div class="form-group"
-              style="display: flex; align-items: center; gap: 12px; margin-bottom: 35px; margin-top: 10px;">
-              <input type="checkbox" name="consent" id="consent" required=""
-                style="width: 20px; height: 20px; accent-color: #3b82f6; cursor: pointer;">
-              <label for="consent" style="color: #aaa; font-size: 0.85rem; cursor: pointer; margin: 0;">J’accepte la
-                protection des
-                données (voir <a href="mentions-legales" style="color: #fff; text-decoration: underline;">mentions
-                  légales</a>)</label>
+            <!-- Footer Row: Consent & Submit -->
+            <div class="form-footer-landscape">
+              <div class="consent-group">
+                <input type="checkbox" name="consent" id="consent" required="">
+                <label for="consent">J’accepte la protection des données (<a href="mentions-legales">mentions
+                    légales</a>)</label>
+              </div>
+              <button class="form-submit-btn-minimal" type="submit">LANCER MON ACCÉLÉRATION</button>
             </div>
-
-            <button class="form-submit-btn" type="submit">LANCER MON ACCÉLÉRATION</button>
           </form>
         </div>
       </div>
