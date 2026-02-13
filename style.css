@@ -6151,139 +6151,161 @@ h2 span.text-gradient {
   color: var(--accent-primary);
 }
 
-/* MINIMAL COMPARISON SECTION */
-.minimal-comparison-list {
-  max-width: 900px;
-  margin: 0 auto;
+/* PREMIUM SPLIT COMPARISON */
+.split-comparison-grid {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-}
-
-.min-comp-item {
-  display: flex;
   gap: 30px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  transition: transform 0.3s ease;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.min-comp-item:last-child {
-  border-bottom: none;
+.split-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 30px;
+  padding: 40px;
+  position: relative;
+  transition: all 0.4s ease;
+  overflow: hidden;
 }
 
-.min-comp-icon {
-  font-size: 2rem;
-  opacity: 0.8;
-  padding-top: 5px;
+.split-card:hover {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(59, 130, 246, 0.2);
+  transform: translateY(-5px);
 }
 
-.min-comp-body {
-  flex: 1;
+.split-card-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
 }
 
-.min-comp-title {
+.split-card-icon {
+  font-size: 1.8rem;
+}
+
+.split-card-title {
   font-family: 'Outfit', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 20px;
-  letter-spacing: -0.01em;
+  margin: 0;
 }
 
-.min-comp-row {
+.split-card-body {
   display: grid;
-  grid-template-columns: 1fr 40px 1fr;
+  grid-template-columns: 1fr 60px 1fr;
   align-items: center;
   gap: 20px;
+  position: relative;
 }
 
-.min-comp-col {
-  padding: 15px 0;
+.side {
+  padding: 25px;
+  border-radius: 20px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.min-comp-label {
-  display: block;
-  font-size: 0.7rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 8px;
-  color: #666;
-}
-
-.min-comp-col.me {
-  color: #fff;
-}
-
-.min-comp-col.me p {
-  font-weight: 500;
-}
-
-.min-comp-vs {
-  font-size: 0.7rem;
-  font-weight: 900;
-  color: #333;
-  text-align: center;
-}
-
-.min-comp-col p {
-  margin: 0;
-  line-height: 1.5;
-  font-size: 0.95rem;
-}
-
-.min-comp-col.agency p {
+.side.agency {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.03);
   color: rgba(255, 255, 255, 0.4);
 }
 
-/* Minimal Signature Footer */
-.minimal-sig-footer {
-  margin-top: 80px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.side.me {
+  background: rgba(59, 130, 246, 0.05);
+  border: 1px solid rgba(59, 130, 246, 0.1);
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-.sig-line {
-  width: 40px;
-  height: 2px;
-  background: #3b82f6;
-  margin-bottom: 20px;
+.side-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
   opacity: 0.5;
 }
 
-.sig-content strong {
+.side p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.side.me p {
+  font-weight: 600;
+}
+
+.side-vs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.vs-circle {
+  width: 40px;
+  height: 40.px;
+  background: #050505;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 900;
+  color: #444;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Sig Footer Update */
+.sig-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 12px 25px;
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sig-details {
+  text-align: left;
+}
+
+.sig-details strong {
   display: block;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   color: #fff;
 }
 
-.sig-content span {
-  font-size: 0.85rem;
+.sig-details span {
+  font-size: 0.75rem;
   color: #666;
 }
 
 @media (max-width: 768px) {
-  .min-comp-row {
+  .split-card-body {
     grid-template-columns: 1fr;
-    gap: 10px;
-  }
-  
-  .min-comp-vs {
-    padding: 10px 0;
-    text-align: left;
-    opacity: 0.5;
-  }
-  
-  .min-comp-item {
-    flex-direction: column;
     gap: 15px;
   }
 
-  .min-comp-icon {
-    font-size: 1.5rem;
+  .side-vs {
+    padding: 10px 0;
+  }
+
+  .split-card {
+    padding: 30px 20px;
   }
 }
 
