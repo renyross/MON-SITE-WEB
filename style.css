@@ -996,144 +996,63 @@ h2 span.text-gradient {
 }
 
 /* Problem Section - Triple Pillar Redesign */
+/* Minimalist Problem Section */
 .problem-pillars {
-  padding: 140px 0;
+  padding: 100px 0;
   background: var(--bg-color);
 }
 
 .pillar-header {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .pillars-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  align-items: stretch;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.pillar-item {
-  position: relative;
+.pillar-simple-card {
   background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 32px;
-  padding: 60px 40px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 40px;
   text-align: center;
-  transition: all 0.5s cubic-bezier(0.2, 0, 0, 1);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  transition: border-color 0.3s ease, background 0.3s ease;
   height: 100%;
 }
 
-.pillar-item:hover {
-  transform: translateY(-15px);
+.pillar-simple-card:hover {
   background: rgba(255, 255, 255, 0.04);
-  border-color: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  border-color: var(--accent-primary);
 }
 
-.pillar-item.featured {
-  background: rgba(0, 242, 255, 0.03);
-  border-color: rgba(0, 242, 255, 0.2);
-}
-
-.pillar-item.featured:hover {
-  background: rgba(0, 242, 255, 0.05);
-  box-shadow: 0 30px 60px rgba(0, 242, 255, 0.1);
-}
-
-.pillar-number {
-  position: absolute;
-  top: 30px;
-  right: 40px;
-  font-size: 3rem;
-  font-weight: 900;
-  color: rgba(255, 255, 255, 0.03);
-  line-height: 1;
-  pointer-events: none;
-}
-
-.pillar-icon {
-  font-size: 2.2rem;
-  /* Reduced from 3.5rem */
+.pillar-simple-icon {
+  font-size: 2.5rem;
   margin-bottom: 20px;
-  filter: drop-shadow(0 0 15px rgba(0, 242, 255, 0.2));
 }
 
-.pillar-title {
-  font-size: 1.6rem;
-  font-weight: 400;
+.pillar-simple-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
   color: #fff;
-  margin-bottom: 20px;
-  letter-spacing: -0.02em;
+  margin-bottom: 15px;
 }
 
-.pillar-text {
-  font-size: 1.05rem;
-  line-height: 1.7;
+.pillar-simple-text {
+  font-size: 1rem;
   color: #aaa;
+  line-height: 1.6;
 }
 
 @media (max-width: 1024px) {
   .pillars-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .pillar-item:nth-child(3) {
-    grid-column: span 2;
-  }
-}
-
-@media (max-width: 768px) {
-  .pillars-container {
     grid-template-columns: 1fr;
-    gap: 30px;
-    /* More space between cards */
-  }
-
-  .pillar-item:nth-child(3) {
-    grid-column: span 1;
-  }
-
-  .pillar-item {
-    padding: 40px 30px;
-    background: rgba(255, 255, 255, 0.03);
-    /* Distinct card background */
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    /* Visible border */
-    border-radius: 24px;
-    margin-bottom: 20px;
-    /* Extra separation if grid gap fails */
-  }
-
-  .pillar-icon {
-    font-size: 3rem;
-    /* Larger icon */
-    margin-bottom: 25px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .pillar-title {
-    font-size: 1.5rem;
-    /* Larger title */
-    text-align: center;
-  }
-
-  .pillar-text {
-    text-align: center;
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-
-  .pillar-number {
-    font-size: 2.5rem;
-    opacity: 0.1;
-    top: 20px;
-    right: 20px;
+    padding: 0 20px;
   }
 }
 
