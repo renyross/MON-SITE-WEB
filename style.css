@@ -5856,15 +5856,21 @@ h2 span.text-gradient {
 }
 
 .editorial-contact-wrapper {
-  display: grid;
-  grid-template-columns: 1.2fr 1.5fr;
-  gap: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
   align-items: center;
+  text-align: center;
+}
+
+.contact-info-panel {
+  max-width: 800px;
+  width: 100%;
 }
 
 .contact-info-panel .editorial-title {
   font-family: 'Outfit', sans-serif;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 800;
   color: #fff;
   line-height: 1.1;
@@ -5873,16 +5879,18 @@ h2 span.text-gradient {
 }
 
 .contact-info-panel .editorial-text {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.6;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .contact-features {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .feature-item {
@@ -5906,6 +5914,11 @@ h2 span.text-gradient {
 }
 
 /* Form Panel Styling */
+.contact-form-panel {
+  width: 100%;
+  max-width: 800px;
+}
+
 .contact-form-card-minimal {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.05);
