@@ -6465,3 +6465,44 @@ h2 span.text-gradient {
     margin-bottom: 30px;
   }
 }
+
+/* FLOATING SCROLL TO TOP (Iteration 15) */
+.scroll-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 56px;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10000;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.scroll-to-top:hover {
+  background: rgba(59, 130, 246, 0.15);
+  border-color: #3b82f6;
+  color: #3b82f6;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(59, 130, 246, 0.2);
+}
+
+@media (max-width: 768px) {
+  .scroll-to-top {
+    bottom: 25px;
+    right: 25px;
+    width: 48px;
+    height: 48px;
+  }
+}
