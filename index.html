@@ -1172,67 +1172,92 @@
 
 
     <!-- Homepage Contact Form -->
-    <section id="contact-form" style="padding: 100px 0; position: relative;">
-      <div class="container" style="max-width: 950px;">
-        <div class="section-header" style="text-align: center; margin-bottom: 50px;">
-          <h2 class="section-title">Formulaire de <span class="text-blue">contact</span></h2>
-        </div>
-        <div class="contact-form-card-premium">
-          <form action="https://formsubmit.co/contact@renelrosene.com" class="premium-form" method="POST">
-            <input name="_next" type="hidden" value="https://www.renelrosene.com/success.html" />
-            <input name="_subject" type="hidden" value="Nouveau Lead SEO - Homepage (Premium 2-Col)" />
-            <input name="_captcha" type="hidden" value="false" />
+    <section id="contact-form" class="editorial-contact-section">
+      <div class="container">
+        <div class="editorial-contact-wrapper anim-fade-up">
 
-            <div class="form-grid-premium">
-              <!-- Pair 1 -->
-              <div class="form-group">
-                <input aria-label="Prénom" name="prenom" placeholder="Prénom *" required="" type="text" />
-              </div>
-              <div class="form-group">
-                <input aria-label="Nom" name="nom" placeholder="Nom *" required="" type="text" />
-              </div>
+          <!-- Left: Info Panel -->
+          <div class="contact-info-panel">
+            <span class="minimal-eyebrow">Contact d'élite</span>
+            <h2 class="editorial-title">Prêt à dominer votre <span class="text-blue">marché</span> ?</h2>
+            <p class="editorial-text">
+              Ne laissez plus vos concurrents prendre l'ascendant. Parlons de votre stratégie SEO pour transformer votre
+              site en leader de votre secteur.
+            </p>
 
-              <!-- Pair 2 -->
-              <div class="form-group">
-                <input aria-label="Email professionnel" name="email" placeholder="E-mail * (email@entreprise.com)"
-                  required="" type="email" />
+            <div class="contact-features">
+              <div class="feature-item">
+                <span class="feature-icon">✨</span>
+                <span>Réponse personnalisée sous 24h</span>
               </div>
-              <div class="form-group">
-                <input aria-label="Téléphone" name="phone" placeholder="Téléphone *" required="" type="tel" />
+              <div class="feature-item">
+                <span class="feature-icon">⚡</span>
+                <span>Analyse rapide de votre domaine</span>
               </div>
-
-              <!-- Pair 3 -->
-              <div class="form-group">
-                <input aria-label="URL de votre site" name="website" placeholder="URL Site * (https://...)" required=""
-                  type="text" />
-              </div>
-              <div class="form-group">
-                <select aria-label="Budget SEO" name="budget" required="">
-                  <option value="" disabled selected>Budget SEO *</option>
-                  <option value="< 1 000 € / mois">&lt; 1 000 € / mois</option>
-                  <option value="1 000 – 2 000 € / mois">1 000 – 2 000 € / mois</option>
-                  <option value="2 000 – 5 000 € / mois">2 000 – 5 000 € / mois</option>
-                  <option value="> 5 000 € / mois">&gt; 5 000 € / mois</option>
-                </select>
+              <div class="feature-item">
+                <span class="feature-icon">💎</span>
+                <span>Expertise directe, sans intermédiaire</span>
               </div>
             </div>
+          </div>
 
-            <!-- Full Width Message -->
-            <div class="form-group">
-              <textarea aria-label="Message" name="message" placeholder="Parlez-moi de votre projet... *" required=""
-                rows="4"></textarea>
-            </div>
+          <!-- Right: Form Panel -->
+          <div class="contact-form-panel">
+            <div class="contact-form-card-minimal">
+              <form action="https://formsubmit.co/contact@renelrosene.com" class="premium-form-v2" method="POST">
+                <input name="_next" type="hidden" value="https://www.renelrosene.com/success.html" />
+                <input name="_subject" type="hidden" value="Nouveau Lead SEO - Homepage (Editorial Masterpiece)" />
+                <input name="_captcha" type="hidden" value="false" />
 
-            <!-- Footer: Consent & Submit -->
-            <div class="form-footer-premium">
-              <div class="consent-group">
-                <input type="checkbox" name="consent" id="consent" required="">
-                <label for="consent">J’accepte la protection des données (<a href="mentions-legales">mentions
-                    légales</a>)</label>
-              </div>
-              <button class="form-submit-btn-premium" type="submit">LANCER MON ACCÉLÉRATION</button>
+                <div class="form-row-v2">
+                  <div class="form-group-v2">
+                    <input name="prenom" placeholder="Prénom *" required="" type="text" />
+                  </div>
+                  <div class="form-group-v2">
+                    <input name="nom" placeholder="Nom *" required="" type="text" />
+                  </div>
+                </div>
+
+                <div class="form-group-v2">
+                  <input name="email" placeholder="E-mail * (email@entreprise.com)" required="" type="email" />
+                </div>
+
+                <div class="form-row-v2">
+                  <div class="form-group-v2">
+                    <input name="phone" placeholder="Téléphone *" required="" type="tel" />
+                  </div>
+                  <div class="form-group-v2">
+                    <input name="website" placeholder="URL Site * (https://...)" required="" type="text" />
+                  </div>
+                </div>
+
+                <div class="form-group-v2">
+                  <select name="budget" required="">
+                    <option value="" disabled selected>Budget SEO *</option>
+                    <option value="< 1 000 € / mois">&lt; 1 000 € / mois</option>
+                    <option value="1 000 – 2 000 € / mois">1 000 – 2 000 € / mois</option>
+                    <option value="2 000 – 5 000 € / mois">2 000 – 5 000 € / mois</option>
+                    <option value="> 5 000 € / mois">&gt; 5 000 € / mois</option>
+                  </select>
+                </div>
+
+                <div class="form-group-v2">
+                  <textarea name="message" placeholder="Parlez-moi de votre projet... *" required=""
+                    rows="3"></textarea>
+                </div>
+
+                <div class="form-footer-v2">
+                  <div class="consent-group-v2">
+                    <input type="checkbox" name="consent" id="consent" required="">
+                    <label for="consent">J’accepte la protection des données (<a href="mentions-legales">mentions
+                        légales</a>)</label>
+                  </div>
+                  <button class="form-submit-btn-v2" type="submit">Lancer mon accélération</button>
+                </div>
+              </form>
             </div>
-          </form>
+          </div>
+
         </div>
       </div>
     </section>
