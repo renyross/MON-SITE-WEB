@@ -66,7 +66,7 @@ Ce document recense la stratégie de mots-clés pour chaque page du site `renelr
 | `consultant-seo-wordpress.html` | **Consultant SEO Wordpress** | Local / Transactionnel 📍 | SEO WordPress : Performance & Domination | Consultant SEO WordPress |
 | `contact.html` | **Contact & Audit SEO Gratuit** | Navigation / Autre | Contact & Audit SEO Gratuit : Réservez | Contact & Audit : Dominez votre Marché |
 | `freelance-seo.html` | **Freelance SEO** | Navigation / Autre | Freelance SEO : L'Alternative Agile aux Agences | Votre Freelance SEO de Confiance |
-| `index.html` | **Consultant SEO Freelance B2B & E-commerce** | Commercial 💼 | Consultant SEO Freelance B2B & E-commerce | Consultant SEO Freelance B2B & E-commerce |
+| `index.html` | **Je transforme votre site en machine à leads sans dépendre de Google Ads.** | Commercial 💼 | Je transforme votre site en machine à leads sans dépendre de Google Ads. | Je transforme votre site en machine à leads sans dépendre de Google Ads. |
 | `portfolio.html` | **Ressources SEO & IA** | Navigation / Autre | Ressources SEO & IA : Outils & Prompts Experts | Ressources SEO & IA Premium |
 | `services-seo.html` | **Services SEO** | Commercial 💼 | Services SEO & IA : Croissance Sur-Mesure | Mes Services SEO & IA |
 | `tarifs-seo.html` | **Tarifs SEO Freelance** | Navigation / Autre | Tarifs SEO Freelance : Audit, Forfait & Coaching | Tarifs Consultant SEO Freelance |
