@@ -991,7 +991,7 @@ h2 span.text-gradient {
   margin: 0 auto 80px auto;
   font-size: 1.25rem;
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--text-secondary);
 }
 
@@ -1150,7 +1150,7 @@ h2 span.text-gradient {
 
 .card-slogan {
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 700;
   color: #fff;
   opacity: 0.9;
   margin-bottom: 30px;
