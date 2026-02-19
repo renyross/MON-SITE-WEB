@@ -956,6 +956,43 @@
               problématiques réelles et orientées business.</p>
             <p>Aujourd’hui, j’accompagne des sites B2B et e-commerce de toutes tailles, et je sais concrètement ce qui
               fait fonctionner le SEO pour générer des clients et du chiffre d’affaires.</p>
+
+            <!-- Résultats Section Moved from Services -->
+            <div
+              style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05); margin-top: 30px; margin-bottom: 30px;">
+              <h4
+                style="color: #fff; margin-bottom: 20px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1.5px; opacity: 0.8;">
+                Résultats moyens constatés :</h4>
+              <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+                <div>
+                  <div style="color: #3b82f6; font-size: 1.8rem; font-weight: 900;">+<span class="counter-value"
+                      data-target="80">0</span>%</div>
+                  <div style="font-size: 0.75rem; opacity: 0.6; color: #fff;">Trafic organique
+                  </div>
+                </div>
+                <div>
+                  <div style="color: #3b82f6; font-size: 1.8rem; font-weight: 900;">+<span class="counter-value"
+                      data-target="30">0</span>%</div>
+                  <div style="font-size: 0.75rem; opacity: 0.6; color: #fff;">Leads qualifiés</div>
+                </div>
+                <div>
+                  <div style="color: #3b82f6; font-size: 1.8rem; font-weight: 900;">-<span class="counter-value"
+                      data-target="35">0</span>%</div>
+                  <div style="font-size: 0.75rem; opacity: 0.6; color: #fff;">Coût par lead</div>
+                </div>
+              </div>
+            </div>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+              <span
+                style="padding: 8px 18px; background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 50px; font-size: 0.8rem; color: #60a5fa; font-weight: 600;">B2B
+                SaaS</span>
+              <span
+                style="padding: 8px 18px; background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 50px; font-size: 0.8rem; color: #60a5fa; font-weight: 600;">E-commerce</span>
+              <span
+                style="padding: 8px 18px; background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 50px; font-size: 0.8rem; color: #60a5fa; font-weight: 600;">Local</span>
+              <span
+                style="padding: 8px 18px; background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 50px; font-size: 0.8rem; color: #60a5fa; font-weight: 600;">WordPress</span>
+            </div>
           </div>
         </div>
       </div>
@@ -1416,6 +1453,43 @@
               }
             });
           }
+        });
+      });
+    </script>
+
+    <script>
+      // Animation des chiffres
+      document.addEventListener('DOMContentLoaded', () => {
+        const counters = document.querySelectorAll('.counter-value');
+        const observerOptions = {
+          root: null,
+          rootMargin: '0px',
+          threshold: 0.5
+        };
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const counter = entry.target;
+              const target = +counter.getAttribute('data-target');
+              const duration = 2000; // 2 secondes
+              const increment = target / (duration / 16); // 60fps
+              let current = 0;
+              const updateCounter = () => {
+                current += increment;
+                if (current < target) {
+                  counter.textContent = Math.ceil(current);
+                  requestAnimationFrame(updateCounter);
+                } else {
+                  counter.textContent = target;
+                }
+              };
+              updateCounter();
+              observer.unobserve(counter);
+            }
+          });
+        }, observerOptions);
+        counters.forEach(counter => {
+          observer.observe(counter);
         });
       });
     </script>
