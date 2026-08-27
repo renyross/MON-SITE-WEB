@@ -2,89 +2,138 @@
 
 <html lang="fr">
 <head>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TSZK5676');</script>
-<!-- End Google Tag Manager -->
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Page Introuvable - 404 | Ross SEO</title>
+<title>Maintenance en cours | Ross SEO</title>
 <meta content="website" property="og:type"/>
-<meta content="https://www.renelrosene.com/404" property="og:url"/>
-<meta content="Page Introuvable - 404 | Ross SEO" property="og:title"/>
+<meta content="https://www.renelrosene.com/maintenance" property="og:url"/>
+<meta content="Maintenance en cours | Ross SEO" property="og:title"/>
 <meta content="" property="og:description"/>
 <meta content="https://www.renelrosene.com/renel-portrait.jpg" property="og:image"/>
 <meta content="fr_FR" property="og:locale"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="Page Introuvable - 404 | Ross SEO" name="twitter:title"/>
+<meta content="summary_large_image" name="twitter:card">
+<meta content="Maintenance en cours | Ross SEO" name="twitter:title">
 <meta content="" name="twitter:description"/>
 <meta content="https://www.renelrosene.com/renel-portrait.jpg" name="twitter:image"/>
-<meta content="noindex" name="robots"/>
-<link href="style.css" rel="stylesheet"/>
 <style>
-        .error-page {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            text-align: center;
-            background: #ffffff;
-            color: #0a0a0a;
-            padding: 20px;
+        :root {
+            --bg-color: #050505;
+            --text-color: #0a0a0a;
+            --accent-color: #1B2A4E;
+            --secondary-color: #111111;
         }
-        .error-content h1 {
-            font-size: 8rem;
-            font-family: 'Outfit', sans-serif;
-            font-weight: 900;
-            background: linear-gradient(135deg, #0a0a0a 0%, #1B2A4E 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
+        * {
             margin: 0;
-            line-height: 1;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         }
-        .error-content h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: #0a0a0a;
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
         }
-        .error-content p {
-            color: #475569;
+        /* Hero Glows */
+        .glow {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(47, 76, 219, 0.15) 0%, rgba(47, 76, 219, 0) 70%);
+            border-radius: 50%;
+            z-index: -1;
+            filter: blur(80px);
+        }
+        .glow-1 { top: -200px; left: -200px; }
+        .glow-2 { bottom: -200px; right: -200px; }
+        .container {
+            max-width: 600px;
+            padding: 40px;
+            z-index: 1;
+        }
+        .logo {
             margin-bottom: 40px;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
+            animation: fadeInDown 1s ease-out;
+        }
+        .logo img {
+            height: 60px;
+            filter: brightness(0) invert(1);
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #0a0a0a, #64748b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+        .loader {
+            width: 48px;
+            height: 48px;
+            border: 3px solid #1a1a1a;
+            border-bottom-color: var(--accent-color);
+            border-radius: 50%;
+            display: inline-block;
+            box-sizing: border-box;
+            animation: rotation 1s linear infinite, fadeInUp 1s ease-out 0.6s both;
+        }
+        .contact-info {
+            margin-top: 60px;
+            font-size: 0.9rem;
+            color: #666;
+            animation: fadeInUp 1s ease-out 0.8s both;
+        }
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        @keyframes rotation {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Mobile adjustments */
+        @media (max-width: 480px) {
+            h1 { font-size: 1.8rem; }
+            p { font-size: 1rem; }
         }
     </style>
-<script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Page Introuvable - 404 | Ross SEO",
-  "description": "Consultant SEO - Page Introuvable - 404 | Ross SEO",
-  "url": "https://www.renelrosene.com/404",
-  "datePublished": "2026-01-01",
-  "dateModified": "2026-01-05",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Ross SEO",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.renelrosene.com/assets/logos/logo.png"
-    }
-  }
-}</script>
-<!-- Pour Google Search (ICO) -->
-<link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
-<link href="favicon.ico" rel="icon" type="image/x-icon"/>
-<!-- Pour Google Search (PNG) -->
-<link href="logo-seo.png" rel="icon" sizes="192x192" type="image/png"/>
-<!-- Pour iOS/Android -->
-<link href="logo-seo.png" rel="apple-touch-icon"/>
-</head>
-<body class="error-page">
+</meta></meta></head>
+<body>
 <nav class="navbar">
 <div class="container nav-container">
 <div class="nav-left">
@@ -146,21 +195,22 @@
 </div>
 </div>
 </nav>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-TSZK5676" style="display:none;visibility:hidden" width="0"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<div class="error-content">
-<h1>404</h1>
-<h2>Oups ! Cette page s'est perdue dans l'algorithme.</h2>
-<p>L'URL que vous cherchez n'existe pas ou a été déplacée. Revenons aux fondamentaux.</p>
-<a class="nav-btn-premium" href="/">RETOUR À L'ACCUEIL</a>
+<div class="glow glow-1"></div>
+<div class="glow glow-2"></div>
+<div class="container">
+<div class="logo">
+<img alt="Ross" src="assets/logos/logo.svg"/>
 </div>
-<!-- Option 1 : Le "Status Bar" (Spécial Freelance) -->
-<!-- Option 1 : Le "Status Bar" (Spécial Freelance) -->
-<!-- Option 1 : Le "Status Bar" (Spécial Freelance) -->
-<!-- Option 1 : Le "Status Bar" (Spécial Freelance) -->
-<!-- Option 1 : Le "Status Bar" (Spécial Freelance) -->
-<!-- Option 1 : Le "Status Bar" (Spécial Freelance) -->
+<h1>Maintenance en cours</h1>
+<p>
+            Nous mettons à jour notre plateforme pour mieux vous accompagner dans votre stratégie SEO et IA. 
+            Le site sera de retour très prochainement avec de nouvelles opportunités pour votre croissance.
+        </p>
+<span class="loader"></span>
+<div class="contact-info">
+            Besoin d'aide ? <a href="mailto:contact@renelrosene.com">contact@renelrosene.com</a>
+</div>
+</div>
 <!-- FAQ SECTION -->
 <section id="faq" style="background: #ffffff;">
 <div class="container-premium">

@@ -2,367 +2,152 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.renelrosene.com/</loc>
-    <lastmod>2026-01-30</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.renelrosene.com/agence-seo-ia</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
+    <loc>https://www.renelrosene.com/services-seo</loc>
+    <lastmod>2026-08-26</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.renelrosene.com/audit-geo</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-08-26</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.renelrosene.com/audit-seo-gratuit</loc>
-    <lastmod>2026-01-30</lastmod>
+    <lastmod>2026-08-26</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.renelrosene.com/tarifs-consultant-seo-freelance</loc>
+    <lastmod>2026-08-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.renelrosene.com/audit-seo-technique</loc>
-    <lastmod>2026-01-30</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.renelrosene.com/blog-agence</loc>
-    <lastmod>2026-01-30</lastmod>
+    <loc>https://www.renelrosene.com/seo-local</loc>
+    <lastmod>2026-08-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.renelrosene.com/blog-automatisation</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
+    <loc>https://www.renelrosene.com/seo-technique</loc>
+    <lastmod>2026-08-26</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.renelrosene.com/blog-consultant-seo-b2b</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
+    <loc>https://www.renelrosene.com/strategie-contenu-seo</loc>
+    <lastmod>2026-08-26</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.renelrosene.com/blog-consultant-seo-ecommerce</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
+    <loc>https://www.renelrosene.com/netlinking-seo</loc>
+    <lastmod>2026-08-26</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.renelrosene.com/blog-consultant-seo-immobilier</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
+    <loc>https://www.renelrosene.com/accompagnement-seo</loc>
+    <lastmod>2026-08-26</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.renelrosene.com/blog-consultant-seo-local</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
+    <loc>https://www.renelrosene.com/formation-seo</loc>
+    <lastmod>2026-08-26</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.renelrosene.com/blog-credibilite-ia</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/blog-freelance-vs-agence</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/blog-geo</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/blog-resultats-consultant-seo</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/blog-seo-ia</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/blog-strategie-geo-2026</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/blog-vitals</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/consultant-searchgpt</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/consultant-seo-amiens</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/consultant-seo-angers</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/consultant-seo-argenteuil</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/consultant-seo-b2b</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/consultant-seo-besancon</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/consultant-seo-bordeaux</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/consultant-seo-boulogne-billancourt</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/consultant-seo-brest</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/consultant-seo-caen</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/consultant-seo-clermont-ferrand</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/consultant-seo-dijon</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/consultant-seo-ecommerce</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/consultant-seo-grenoble</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/consultant-seo-ia</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/consultant-seo-immobilier</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/consultant-seo-ivry</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/consultant-seo-le-mans</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/consultant-seo-levallois</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/consultant-seo-lille</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/consultant-seo-limoges</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/consultant-seo-local</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/consultant-seo-lyon-presqu-ile</loc>
-    <lastmod>2026-01-30</lastmod>
+    <loc>https://www.renelrosene.com/consultant-seo-paris</loc>
+    <lastmod>2026-08-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.renelrosene.com/consultant-seo-lyon</loc>
-    <lastmod>2026-01-30</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.renelrosene.com/consultant-seo-metz</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/consultant-seo-montpellier</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/consultant-seo-montreuil</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/consultant-seo-nanterre</loc>
-    <lastmod>2026-01-30</lastmod>
+    <loc>https://www.renelrosene.com/consultant-seo-bordeaux</loc>
+    <lastmod>2026-08-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.renelrosene.com/consultant-seo-nantes</loc>
-    <lastmod>2026-01-30</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.renelrosene.com/consultant-seo-orleans</loc>
-    <lastmod>2026-01-30</lastmod>
+    <loc>https://www.renelrosene.com/consultant-seo-lille</loc>
+    <lastmod>2026-08-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.renelrosene.com/consultant-seo-paris</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
+    <loc>https://www.renelrosene.com/blog-seo-ia</loc>
+    <lastmod>2026-08-26</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.renelrosene.com/consultant-seo-reims</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
+    <loc>https://www.renelrosene.com/blog-freelance-vs-agence</loc>
+    <lastmod>2026-08-26</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.renelrosene.com/consultant-seo-rennes</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
+    <loc>https://www.renelrosene.com/blog-strategie-geo-2026</loc>
+    <lastmod>2026-08-26</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.renelrosene.com/consultant-seo-saas</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
+    <loc>https://www.renelrosene.com/blog-consultant-seo-b2b</loc>
+    <lastmod>2026-08-26</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.renelrosene.com/consultant-seo-saint-denis</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
+    <loc>https://www.renelrosene.com/blog-consultant-seo-local</loc>
+    <lastmod>2026-08-26</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.renelrosene.com/consultant-seo-shopify</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
+    <loc>https://www.renelrosene.com/blog-agence</loc>
+    <lastmod>2026-08-26</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.renelrosene.com/consultant-seo-strasbourg</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
+    <loc>https://www.renelrosene.com/blog-automatisation</loc>
+    <lastmod>2026-08-26</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.renelrosene.com/consultant-seo-toulouse</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
+    <loc>https://www.renelrosene.com/blog-credibilite-ia</loc>
+    <lastmod>2026-08-26</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.renelrosene.com/consultant-seo-tours</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
+    <loc>https://www.renelrosene.com/blog-geo</loc>
+    <lastmod>2026-08-26</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.renelrosene.com/consultant-seo-wordpress</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
+    <loc>https://www.renelrosene.com/blog-vitals</loc>
+    <lastmod>2026-08-26</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.renelrosene.com/contact</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/faq-seo</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/freelance-seo</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/geo-generative-engine-optimization</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/methode-grow-seo</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/methode-safe-seo</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/methodologie-seo</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/netlinking-b2b</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/netlinking-seo</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
+    <loc>https://www.renelrosene.com/ressources</loc>
+    <lastmod>2026-08-26</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.renelrosene.com/plan-du-site</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-08-26</lastmod>
+    <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://www.renelrosene.com/portfolio</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/services-seo</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/strategie-semantique-seo</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/tarifs-consultant-seo-freelance</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.renelrosene.com/zones-intervention</loc>
-    <lastmod>2026-01-30</lastmod>
-    <priority>0.8</priority>
+    <loc>https://www.renelrosene.com/mentions-legales</loc>
+    <lastmod>2026-08-26</lastmod>
+    <priority>0.2</priority>
   </url>
 </urlset>
