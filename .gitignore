@@ -1,0 +1,17 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Temporary / Scratch scripts & logs
+scratch/
+*.py
+*.pyc
+__pycache__/
+*.txt
+*.backup
+.htaccess_backup
+remote_*
+new_body_*.html
+index_nav.html
+nav_template.html
+ressources_nav.html

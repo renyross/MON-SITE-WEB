@@ -158,103 +158,110 @@ document.addEventListener('DOMContentLoaded', () => {
     // SERVICES CAROUSEL LOGIC
     // =========================================
     const initServicesCarousel = () => {
-        const servicesTrack = document.getElementById('services-carousel-track');
-        const servicesPrevBtn = document.getElementById('services-carousel-prev');
-        const servicesNextBtn = document.getElementById('services-carousel-next');
-        const servicesDotsContainer = document.getElementById('services-carousel-dots');
-        const servicesItems = Array.from(document.querySelectorAll('.services-carousel-item'));
+        const carouselWrappers = document.querySelectorAll('.services-carousel-wrapper');
 
-        if (!servicesTrack || servicesItems.length === 0) return;
+        carouselWrappers.forEach((wrapper) => {
+            const servicesTrack = wrapper.querySelector('.services-carousel-track');
+            const controlsBar = wrapper.nextElementSibling;
+            if (!controlsBar || !controlsBar.classList.contains('carousel-controls-bar')) return;
 
-        let currentServicesIndex = 0;
+            const servicesPrevBtn = controlsBar.querySelector('.carousel-nav-btn:first-of-type');
+            const servicesNextBtn = controlsBar.querySelector('.carousel-nav-btn:last-of-type');
+            const servicesDotsContainer = controlsBar.querySelector('.carousel-dots-container');
+            const servicesItems = Array.from(wrapper.querySelectorAll('.services-carousel-item'));
 
-        const getVisibleCount = () => {
-            if (window.innerWidth <= 680) return 1;
-            if (window.innerWidth <= 1024) return 2;
-            return 3;
-        };
+            if (!servicesTrack || servicesItems.length === 0) return;
 
-        const getMaxIndex = () => {
-            const visible = getVisibleCount();
-            return Math.max(0, servicesItems.length - visible);
-        };
+            let currentServicesIndex = 0;
 
-        const updateDots = () => {
-            if (!servicesDotsContainer) return;
-            servicesDotsContainer.innerHTML = '';
-            const maxIdx = getMaxIndex();
-            const totalSteps = maxIdx + 1;
+            const getVisibleCount = () => {
+                if (window.innerWidth <= 680) return 1;
+                if (window.innerWidth <= 1024) return 2;
+                return 3;
+            };
 
-            if (totalSteps <= 1) {
-                servicesDotsContainer.style.display = 'none';
-                if (servicesPrevBtn) servicesPrevBtn.style.display = 'none';
-                if (servicesNextBtn) servicesNextBtn.style.display = 'none';
-                return;
-            } else {
-                servicesDotsContainer.style.display = 'flex';
-                if (servicesPrevBtn) servicesPrevBtn.style.display = 'flex';
-                if (servicesNextBtn) servicesNextBtn.style.display = 'flex';
-            }
+            const getMaxIndex = () => {
+                const visible = getVisibleCount();
+                return Math.max(0, servicesItems.length - visible);
+            };
 
-            for (let i = 0; i <= maxIdx; i++) {
-                const dot = document.createElement('div');
-                dot.className = 'carousel-dot' + (i === currentServicesIndex ? ' active' : '');
-                dot.addEventListener('click', () => {
-                    currentServicesIndex = i;
-                    updateCarouselPosition();
-                });
-                servicesDotsContainer.appendChild(dot);
-            }
-        };
-
-        const updateCarouselPosition = () => {
-            const maxIdx = getMaxIndex();
-            if (currentServicesIndex > maxIdx) currentServicesIndex = maxIdx;
-            if (currentServicesIndex < 0) currentServicesIndex = 0;
-
-            const itemWidth = servicesItems[0].getBoundingClientRect().width;
-            const gap = 28;
-            const offset = currentServicesIndex * (itemWidth + gap);
-            servicesTrack.style.transform = `translateX(-${offset}px)`;
-
-            if (servicesPrevBtn) servicesPrevBtn.disabled = currentServicesIndex === 0;
-            if (servicesNextBtn) servicesNextBtn.disabled = currentServicesIndex >= maxIdx;
-
-            if (servicesDotsContainer) {
-                const dots = servicesDotsContainer.querySelectorAll('.carousel-dot');
-                dots.forEach((dot, idx) => {
-                    dot.classList.toggle('active', idx === currentServicesIndex);
-                });
-            }
-        };
-
-        if (servicesPrevBtn) {
-            servicesPrevBtn.addEventListener('click', () => {
-                if (currentServicesIndex > 0) {
-                    currentServicesIndex--;
-                    updateCarouselPosition();
-                }
-            });
-        }
-
-        if (servicesNextBtn) {
-            servicesNextBtn.addEventListener('click', () => {
+            const updateDots = () => {
+                if (!servicesDotsContainer) return;
+                servicesDotsContainer.innerHTML = '';
                 const maxIdx = getMaxIndex();
-                if (currentServicesIndex < maxIdx) {
-                    currentServicesIndex++;
-                    updateCarouselPosition();
-                }
-            });
-        }
+                const totalSteps = maxIdx + 1;
 
-        window.addEventListener('resize', () => {
+                if (totalSteps <= 1) {
+                    servicesDotsContainer.style.display = 'none';
+                    if (servicesPrevBtn) servicesPrevBtn.style.display = 'none';
+                    if (servicesNextBtn) servicesNextBtn.style.display = 'none';
+                    return;
+                } else {
+                    servicesDotsContainer.style.display = 'flex';
+                    if (servicesPrevBtn) servicesPrevBtn.style.display = 'flex';
+                    if (servicesNextBtn) servicesNextBtn.style.display = 'flex';
+                }
+
+                for (let i = 0; i <= maxIdx; i++) {
+                    const dot = document.createElement('div');
+                    dot.className = 'carousel-dot' + (i === currentServicesIndex ? ' active' : '');
+                    dot.addEventListener('click', () => {
+                        currentServicesIndex = i;
+                        updateCarouselPosition();
+                    });
+                    servicesDotsContainer.appendChild(dot);
+                }
+            };
+
+            const updateCarouselPosition = () => {
+                const maxIdx = getMaxIndex();
+                if (currentServicesIndex > maxIdx) currentServicesIndex = maxIdx;
+                if (currentServicesIndex < 0) currentServicesIndex = 0;
+
+                const itemWidth = servicesItems[0].getBoundingClientRect().width;
+                const gap = 28;
+                const offset = currentServicesIndex * (itemWidth + gap);
+                servicesTrack.style.transform = `translateX(-${offset}px)`;
+
+                if (servicesPrevBtn) servicesPrevBtn.disabled = currentServicesIndex === 0;
+                if (servicesNextBtn) servicesNextBtn.disabled = currentServicesIndex >= maxIdx;
+
+                if (servicesDotsContainer) {
+                    const dots = servicesDotsContainer.querySelectorAll('.carousel-dot');
+                    dots.forEach((dot, idx) => {
+                        dot.classList.toggle('active', idx === currentServicesIndex);
+                    });
+                }
+            };
+
+            if (servicesPrevBtn) {
+                servicesPrevBtn.addEventListener('click', () => {
+                    if (currentServicesIndex > 0) {
+                        currentServicesIndex--;
+                        updateCarouselPosition();
+                    }
+                });
+            }
+
+            if (servicesNextBtn) {
+                servicesNextBtn.addEventListener('click', () => {
+                    const maxIdx = getMaxIndex();
+                    if (currentServicesIndex < maxIdx) {
+                        currentServicesIndex++;
+                        updateCarouselPosition();
+                    }
+                });
+            }
+
+            window.addEventListener('resize', () => {
+                updateDots();
+                updateCarouselPosition();
+            });
+
+            // Initialize position and pagination dots
             updateDots();
             updateCarouselPosition();
         });
-
-        // Initialize position and pagination dots
-        updateDots();
-        updateCarouselPosition();
     };
 
     createScrollToTopButton();
