@@ -127,62 +127,21 @@ a {
   box-shadow: 0 0 40px rgba(112, 0, 255, 0.2);
 }
 
-/* Navbar & Navigation — Hero Styled Theme */
+/* Navbar & Navigation — Floating Glass Pill (Organikk Style) */
 .navbar {
   position: fixed;
-  top: 0;
+  top: 14px;
   left: 0;
   width: 100%;
-  padding: 15px 0;
-  background-color: rgba(27, 42, 78, 0.96); /* Navy Blue Translucent Glassmorphism */
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0 20px;
+  box-sizing: border-box;
+  background: transparent !important;
+  border: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
   z-index: 1100;
-}
-
-/* Logo — already dark-background, no filter needed */
-.navbar .logo img {
-  filter: none;
-  border-radius: 4px;
-}
-
-/* Nav Links Color - Top Level Only */
-.navbar .nav-links > li > a {
-  color: rgba(255, 255, 255, 0.85) !important;
-  font-weight: 600;
-  font-size: 0.92rem;
-  transition: all 0.2s ease;
-}
-
-.navbar .nav-links > li > a:hover,
-.navbar .nav-links > li > a.active {
-  color: #ffffff !important;
-}
-
-/* Contact Button inside Navbar - Hero Contrast style */
-.navbar .nav-btn-contact {
-  background: #ffffff !important;
-  color: #1B2A4E !important;
-  font-weight: 800;
-  font-size: 0.9rem;
-  padding: 10px 22px;
-  border-radius: 4px !important;
-  text-decoration: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease;
-}
-
-.navbar .nav-btn-contact:hover {
-  background: rgba(255, 255, 255, 0.9) !important;
-  color: #1B2A4E !important;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-}
-
-/* Mobile Toggle Bar color in Dark Navbar */
-.navbar .menu-toggle .bar {
-  background-color: #ffffff !important;
+  pointer-events: none;
+  transition: transform 0.3s ease;
 }
 
 .nav-container {
@@ -191,19 +150,90 @@ a {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 8px 16px 8px 22px;
+  background: rgba(27, 42, 78, 0.82); /* Deep Navy Translucent Glass */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 100px;
+  box-shadow: 0 12px 32px rgba(10, 17, 40, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  pointer-events: auto;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+/* Logo */
+.navbar .logo img {
+  filter: none;
+  border-radius: 4px;
+  height: 36px;
+  width: auto;
+}
+
+/* Nav Links Color - Top Level Only */
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-links > li > a {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 8px 16px;
+  border-radius: 100px;
+  transition: all 0.2s ease;
+}
+
+.navbar .nav-links > li > a:hover,
+.navbar .nav-links > li > a.active {
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* Contact Button inside Navbar - Pure White Pill */
+.navbar .nav-btn-contact {
+  background: #ffffff !important;
+  color: #1B2A4E !important;
+  font-weight: 800;
+  font-size: 0.88rem;
+  padding: 10px 24px;
+  border-radius: 100px !important;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.navbar .nav-btn-contact:hover {
+  background: #f8fafc !important;
+  color: #1B2A4E !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(255, 255, 255, 0.3);
+}
+
+/* Mobile Toggle Bar color in Dark Navbar */
+.navbar .menu-toggle .bar {
+  background-color: #ffffff !important;
 }
 
 .nav-left {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 36px;
 }
 
 .nav-right {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 16px;
 }
 
 .logo {
@@ -505,60 +535,75 @@ a {
   background: #1B3BC0;
 }
 
-/* Hero Split Section */
+/* Hero Split Section — Organikk Card Format with Site Colors & Style Cahier */
 .hero-outer {
   max-width: 1200px;
-  margin: 110px auto 0 auto;
-  padding: 0 24px;
+  margin: 78px auto 0 auto;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 
 .hero-split {
-  min-height: 80vh;
-  background-color: #1B2A4E;
-  background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
-  background-size: 30px 30px;
+  min-height: 82vh;
+  background: linear-gradient(140deg, #1B2A4E 0%, #162a56 45%, #1e428a 80%, #2563eb 100%);
+  border-radius: 28px !important;
   overflow: hidden;
   position: relative;
   display: flex;
   align-items: center;
-  padding: 100px 0 80px 0;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 4px !important;
+  padding: 80px 0 65px 0;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 24px 60px rgba(10, 17, 40, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  isolation: isolate;
 }
 
 .hero-split::before {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(47, 76, 219, 0.25) 0%, transparent 70%);
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: radial-gradient(circle at 65% 50%, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.3) 70%, transparent 100%);
+  -webkit-mask-image: radial-gradient(circle at 65% 50%, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.3) 70%, transparent 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-split::after {
+  content: "";
+  position: absolute;
+  top: -120px;
+  right: -80px;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.35) 0%, rgba(37, 99, 235, 0.12) 50%, transparent 70%);
   pointer-events: none;
   z-index: 0;
 }
 
 .hero-split .container-premium {
   max-width: none;
-  padding: 0 48px;
+  padding: 0 40px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 @media (max-width: 1050px) {
   .hero-outer {
-    margin-top: 90px;
-    padding: 0 20px;
+    margin-top: 72px;
+    padding: 0 16px;
   }
 
   .hero-split {
-    border-radius: 6px;
+    border-radius: 22px !important;
+    padding: 60px 0 50px 0;
   }
 
   .hero-split .container-premium {
-    padding: 0 24px;
+    padding: 0 20px;
   }
 }
 
@@ -732,11 +777,13 @@ a {
 
 @media (max-width: 1050px) {
   .navbar {
-    padding: 10px 0;
+    top: 10px;
+    padding: 0 12px;
   }
 
   .nav-container {
-    padding: 0 20px;
+    padding: 8px 16px;
+    border-radius: 100px;
   }
 
   .logo {
