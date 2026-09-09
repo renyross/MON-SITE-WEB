@@ -130,7 +130,7 @@ a {
 /* Navbar & Navigation — Floating Glass Pill (Organikk Style) */
 .navbar {
   position: fixed;
-  top: 14px;
+  top: 24px;
   left: 0;
   width: 100%;
   padding: 0 20px;
@@ -538,7 +538,7 @@ a {
 /* Hero Split Section — Organikk Card Format with Site Colors */
 .hero-outer {
   max-width: 1200px;
-  margin: 78px auto 0 auto;
+  margin: 12px auto 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
 }
@@ -554,7 +554,7 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.16);
   box-shadow: 0 24px 64px rgba(10, 17, 40, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
   isolation: isolate;
-  padding: 85px 0 65px 0;
+  padding: 105px 0 65px 0;
 }
 
 .organikk-hero-visual-bg {
@@ -704,9 +704,14 @@ a {
 }
 
 @media (max-width: 900px) {
+  .hero-outer {
+    margin-top: 10px;
+    padding: 0 14px;
+  }
+
   .organikk-hero-layout {
     min-height: auto;
-    padding: 70px 0 50px 0;
+    padding: 85px 0 45px 0;
     border-radius: 20px !important;
   }
 
@@ -718,7 +723,7 @@ a {
   }
 
   .hero-unified-container {
-    padding: 0 20px;
+    padding: 0 18px;
   }
 
   .organikk-hero-title {
