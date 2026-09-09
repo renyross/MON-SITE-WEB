@@ -545,8 +545,13 @@ a {
 
 .organikk-hero-layout {
   position: relative;
-  min-height: 82vh;
-  background: linear-gradient(135deg, #1B2A4E 0%, #162a56 40%, #1e428a 75%, #2563eb 100%);
+  min-height: 80vh;
+  background-color: #1B2A4E;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(135deg, #1B2A4E 0%, #162a56 40%, #1e428a 75%, #2563eb 100%);
+  background-size: 26px 26px, 26px 26px, 100% 100%;
   border-radius: 4px !important;
   overflow: hidden;
   display: flex;
@@ -557,35 +562,6 @@ a {
   padding: 105px 0 65px 0;
 }
 
-.organikk-hero-visual-bg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 65%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.organikk-bg-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center right;
-  opacity: 0.92;
-  mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 45%, rgba(0, 0, 0, 0) 100%);
-  -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 45%, rgba(0, 0, 0, 0) 100%);
-}
-
-.organikk-overlay-gradient {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 80% 50%, rgba(59, 130, 246, 0.25) 0%, transparent 70%);
-  pointer-events: none;
-}
-
 .hero-unified-container {
   position: relative;
   z-index: 3;
@@ -594,6 +570,10 @@ a {
   margin: 0 auto;
   padding: 0 44px;
   box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 36px;
+  align-items: center;
 }
 
 .organikk-content {
@@ -602,7 +582,7 @@ a {
 }
 
 .organikk-hero-title {
-  font-size: clamp(2.3rem, 4.6vw, 3.8rem);
+  font-size: clamp(2.3rem, 4.2vw, 3.6rem);
   font-weight: 900;
   line-height: 1.1;
   color: #ffffff !important;
@@ -703,6 +683,116 @@ a {
   backdrop-filter: blur(8px);
 }
 
+/* Framed Notebook / Dashboard Card (Right Side) */
+.hero-cahier-visual-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-cahier-card {
+  width: 100%;
+  max-width: 480px;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px !important;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-cahier-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.3);
+}
+
+.cahier-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: rgba(27, 42, 78, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.78rem;
+}
+
+.cahier-header-dots {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cahier-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-red {
+  background: #ef4444;
+}
+
+.dot-yellow {
+  background: #f59e0b;
+}
+
+.dot-green {
+  background: #10b981;
+}
+
+.cahier-header-title {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 600;
+  font-size: 0.76rem;
+  letter-spacing: 0.3px;
+}
+
+.cahier-header-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #38bdf8;
+  font-weight: 700;
+  font-size: 0.74rem;
+}
+
+.cahier-pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #38bdf8;
+  box-shadow: 0 0 8px #38bdf8;
+  animation: pulseCahierDot 2s infinite;
+}
+
+@keyframes pulseCahierDot {
+  0% { transform: scale(0.95); opacity: 0.7; }
+  50% { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.7; }
+}
+
+.cahier-card-body {
+  padding: 0;
+  background: #0b132b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-cahier-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  aspect-ratio: 16/9;
+}
+
 @media (max-width: 900px) {
   .hero-outer {
     margin-top: 10px;
@@ -715,19 +805,18 @@ a {
     border-radius: 4px !important;
   }
 
-  .organikk-hero-visual-bg {
-    width: 100%;
-    opacity: 0.35;
-    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 100%);
-    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 100%);
-  }
-
   .hero-unified-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
     padding: 0 18px;
   }
 
   .organikk-hero-title {
     font-size: 2.1rem;
+  }
+
+  .hero-cahier-card {
+    max-width: 100%;
   }
 }
 
