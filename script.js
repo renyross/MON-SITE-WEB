@@ -264,8 +264,53 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
+    // =========================================
+    // SCROLL PARALLAX & FLOATING PANELS ENGINE
+    // =========================================
+    const initScrollParallaxEngine = () => {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+        const parallaxElements = document.querySelectorAll('.scroll-parallax-board, [data-parallax-speed]');
+        if (parallaxElements.length === 0) return;
+
+        let ticking = false;
+
+        const updateParallax = () => {
+            const viewportHeight = window.innerHeight;
+            const viewportCenter = viewportHeight / 2;
+
+            parallaxElements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.bottom >= -150 && rect.top <= viewportHeight + 150) {
+                    const elCenter = rect.top + rect.height / 2;
+                    const distanceFromCenter = elCenter - viewportCenter;
+                    const speed = parseFloat(el.getAttribute('data-parallax-speed')) || 0.12;
+                    
+                    const maxShift = 45;
+                    const targetY = Math.max(-maxShift, Math.min(maxShift, -distanceFromCenter * speed));
+                    
+                    el.style.setProperty('--parallax-y', `${targetY.toFixed(2)}px`);
+                }
+            });
+
+            ticking = false;
+        };
+
+        const onScroll = () => {
+            if (!ticking) {
+                requestAnimationFrame(updateParallax);
+                ticking = true;
+            }
+        };
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+        window.addEventListener('resize', onScroll, { passive: true });
+        updateParallax();
+    };
+
     createScrollToTopButton();
     initServicesCarousel();
+    initScrollParallaxEngine();
 
 });
 
