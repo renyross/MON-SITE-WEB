@@ -65,6 +65,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // =========================================
+    // LOGO CLICK / PAGE REFRESH LOGIC
+    // =========================================
+    const logoLinks = document.querySelectorAll('a.logo, a.footer-logo');
+    logoLinks.forEach(logoLink => {
+        logoLink.addEventListener('click', (e) => {
+            const isHomePage = currentPath === 'index.html' || currentPath === '' || window.location.pathname.endsWith('/');
+            if (isHomePage) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                // If already at top or after scroll start, reload the page
+                setTimeout(() => {
+                    window.location.reload();
+                }, 100);
+            }
+        });
+    });
+
+    // =========================================
     // FAQ ACCORDION LOGIC
     // =========================================
     const faqQuestions = document.querySelectorAll('.faq-question');
