@@ -155,7 +155,7 @@ a {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 12px;
+  border-radius: 4px !important;
   box-shadow: 0 12px 32px rgba(10, 17, 40, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.15);
   pointer-events: auto;
   box-sizing: border-box;
@@ -185,7 +185,7 @@ a {
   font-weight: 600;
   font-size: 0.9rem;
   padding: 6px 14px;
-  border-radius: 8px;
+  border-radius: 4px !important;
   transition: all 0.2s ease;
 }
 
@@ -202,7 +202,7 @@ a {
   font-weight: 800;
   font-size: 0.86rem;
   padding: 8px 20px;
-  border-radius: 8px !important;
+  border-radius: 4px !important;
   text-decoration: none;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
@@ -547,7 +547,7 @@ a {
   position: relative;
   min-height: 82vh;
   background: linear-gradient(135deg, #1B2A4E 0%, #162a56 40%, #1e428a 75%, #2563eb 100%);
-  border-radius: 28px !important;
+  border-radius: 4px !important;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -645,7 +645,7 @@ a {
   font-weight: 800;
   font-size: 0.92rem;
   padding: 13px 26px;
-  border-radius: 10px;
+  border-radius: 4px !important;
   text-decoration: none;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
@@ -666,7 +666,7 @@ a {
   font-weight: 700;
   font-size: 0.92rem;
   padding: 12px 24px;
-  border-radius: 10px;
+  border-radius: 4px !important;
   border: 1px solid rgba(255, 255, 255, 0.28);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -697,7 +697,7 @@ a {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.16);
   padding: 6px 14px;
-  border-radius: 8px;
+  border-radius: 4px !important;
   font-size: 0.78rem;
   color: #ffffff;
   backdrop-filter: blur(8px);
@@ -712,7 +712,7 @@ a {
   .organikk-hero-layout {
     min-height: auto;
     padding: 85px 0 45px 0;
-    border-radius: 20px !important;
+    border-radius: 4px !important;
   }
 
   .organikk-hero-visual-bg {
@@ -915,7 +915,7 @@ a {
 
   .nav-container {
     padding: 8px 16px;
-    border-radius: 12px;
+    border-radius: 4px !important;
   }
 
   .logo {
@@ -1047,7 +1047,7 @@ a {
     color: #ffffff !important; /* Force text color to white */
     border: none !important;
     padding: 15px 24px !important;
-    border-radius: 8px !important; /* Reduced rounding */
+    border-radius: 4px !important; /* Match footer 4px */
     font-size: 0.95rem !important;
     font-weight: 800 !important;
     text-align: center !important;
@@ -1083,7 +1083,7 @@ a {
     border: 1px solid #e2e8f0 !important; /* Light Border */
     color: #1B2A4E !important; /* Navy text */
     padding: 10px 8px !important;
-    border-radius: 8px !important; /* Reduced rounding */
+    border-radius: 4px !important; /* Match footer 4px */
     font-size: 0.78rem !important;
     font-weight: 600 !important;
     text-decoration: none !important;
