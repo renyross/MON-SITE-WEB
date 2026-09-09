@@ -535,7 +535,7 @@ a {
   background: #1B3BC0;
 }
 
-/* Hero Split Section — Organikk Card Format with Site Colors & Style Cahier */
+/* Hero Split Section — Organikk Card Format with Site Colors */
 .hero-outer {
   max-width: 1200px;
   margin: 78px auto 0 auto;
@@ -543,67 +543,186 @@ a {
   box-sizing: border-box;
 }
 
-.hero-split {
+.organikk-hero-layout {
+  position: relative;
   min-height: 82vh;
-  background: linear-gradient(140deg, #1B2A4E 0%, #162a56 45%, #1e428a 80%, #2563eb 100%);
+  background: linear-gradient(135deg, #1B2A4E 0%, #162a56 40%, #1e428a 75%, #2563eb 100%);
   border-radius: 28px !important;
   overflow: hidden;
-  position: relative;
   display: flex;
   align-items: center;
-  padding: 80px 0 65px 0;
   border: 1px solid rgba(255, 255, 255, 0.16);
-  box-shadow: 0 24px 60px rgba(10, 17, 40, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 0 24px 64px rgba(10, 17, 40, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
   isolation: isolate;
+  padding: 85px 0 65px 0;
 }
 
-.hero-split::before {
-  content: "";
+.organikk-hero-visual-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 65%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.organikk-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
+  opacity: 0.92;
+  mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 45%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 45%, rgba(0, 0, 0, 0) 100%);
+}
+
+.organikk-overlay-gradient {
   position: absolute;
   inset: 0;
-  background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 32px 32px;
-  mask-image: radial-gradient(circle at 65% 50%, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.3) 70%, transparent 100%);
-  -webkit-mask-image: radial-gradient(circle at 65% 50%, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.3) 70%, transparent 100%);
+  background: radial-gradient(circle at 80% 50%, rgba(59, 130, 246, 0.25) 0%, transparent 70%);
   pointer-events: none;
-  z-index: 0;
 }
 
-.hero-split::after {
-  content: "";
-  position: absolute;
-  top: -120px;
-  right: -80px;
-  width: 700px;
-  height: 700px;
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.35) 0%, rgba(37, 99, 235, 0.12) 50%, transparent 70%);
-  pointer-events: none;
-  z-index: 0;
-}
-
-.hero-split .container-premium {
-  max-width: none;
-  padding: 0 40px;
-  width: 100%;
+.hero-unified-container {
   position: relative;
-  z-index: 2;
+  z-index: 3;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 44px;
+  box-sizing: border-box;
 }
 
-@media (max-width: 1050px) {
-  .hero-outer {
-    margin-top: 72px;
-    padding: 0 16px;
+.organikk-content {
+  max-width: 580px;
+  color: #ffffff;
+}
+
+.organikk-hero-title {
+  font-size: clamp(2.3rem, 4.6vw, 3.8rem);
+  font-weight: 900;
+  line-height: 1.1;
+  color: #ffffff !important;
+  letter-spacing: -0.025em;
+  margin-bottom: 22px;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.organikk-hero-bio {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.9) !important;
+  line-height: 1.65;
+  margin-bottom: 24px;
+  font-weight: 400;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.organikk-hero-meta {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.organikk-btn-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.btn-organikk-white {
+  background: #ffffff !important;
+  color: #1B2A4E !important;
+  font-weight: 800;
+  font-size: 0.92rem;
+  padding: 13px 26px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-organikk-white:hover {
+  background: #f1f5f9 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.3);
+}
+
+.btn-organikk-ghost {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 0.92rem;
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  text-decoration: none;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-organikk-ghost:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+.organikk-trust-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.organikk-trust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  color: #ffffff;
+  backdrop-filter: blur(8px);
+}
+
+@media (max-width: 900px) {
+  .organikk-hero-layout {
+    min-height: auto;
+    padding: 70px 0 50px 0;
+    border-radius: 20px !important;
   }
 
-  .hero-split {
-    border-radius: 22px !important;
-    padding: 60px 0 50px 0;
+  .organikk-hero-visual-bg {
+    width: 100%;
+    opacity: 0.35;
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 100%);
   }
 
-  .hero-split .container-premium {
+  .hero-unified-container {
     padding: 0 20px;
+  }
+
+  .organikk-hero-title {
+    font-size: 2.1rem;
   }
 }
 
