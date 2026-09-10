@@ -9023,8 +9023,9 @@ h2 span.text-gradient {
 /* "Le SEO expliqué simplement" section */
 .seo-explain-section {
   background: #F8FAFC;
-  padding: 140px 0;
+  padding: 120px 0;
   border-top: 1px solid rgba(10, 10, 10, 0.05);
+  border-bottom: 1px solid rgba(10, 10, 10, 0.05);
 }
 
 .engagement-intro-grid {
@@ -9032,6 +9033,106 @@ h2 span.text-gradient {
   grid-template-columns: 1fr 1.3fr;
   gap: 50px;
   align-items: center;
+}
+
+/* Step Scroll Layout (Style Image 2) */
+.step-scroll-layout {
+  display: grid;
+  grid-template-columns: 0.95fr 1.25fr;
+  gap: 65px;
+  align-items: start !important; /* Starts on the exact same line */
+}
+
+.sticky-col {
+  position: sticky;
+  top: 120px;
+  align-self: start;
+}
+
+.sticky-notepad-card {
+  box-shadow: 0 16px 36px rgba(10, 17, 40, 0.08);
+  border-radius: 4px !important;
+}
+
+.step-items-scroll-col {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6px;
+}
+
+.step-scroll-item {
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  gap: 22px;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #e2e8f0;
+  align-items: start;
+  transition: transform 0.25s ease;
+}
+
+.step-scroll-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.step-num-badge {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #2563eb;
+  padding-top: 2px;
+  letter-spacing: -0.5px;
+}
+
+.step-item-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.step-item-title {
+  font-size: 1.32rem;
+  font-weight: 800;
+  color: #0a0a0a;
+  line-height: 1.3;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.step-item-desc {
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.65;
+  margin: 0;
+  font-weight: 450;
+}
+
+.step-checkmarks-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.step-checkmarks-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #334155;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.step-checkmarks-list .check-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin-top: 2px;
 }
 
 .benefits-board {
@@ -9058,9 +9159,21 @@ h2 span.text-gradient {
 }
 
 @media (max-width: 900px) {
-  .engagement-intro-grid {
+  .engagement-intro-grid,
+  .step-scroll-layout {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+
+  .sticky-col {
+    position: static;
+  }
+
+  .step-scroll-item {
+    grid-template-columns: 36px 1fr;
+    gap: 14px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 }
 
