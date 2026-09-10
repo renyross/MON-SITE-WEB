@@ -592,22 +592,22 @@ a {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 44px;
+  padding: 0 44px 0 76px;
   box-sizing: border-box;
 }
 
 .organikk-content {
-  max-width: 580px;
+  max-width: 560px;
   color: #ffffff;
 }
 
 .organikk-hero-title {
-  font-size: clamp(2.3rem, 4.6vw, 3.8rem);
+  font-size: clamp(1.85rem, 3.4vw, 2.75rem);
   font-weight: 900;
-  line-height: 1.1;
+  line-height: 1.15;
   color: #ffffff !important;
   letter-spacing: -0.025em;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
 }
 
@@ -723,11 +723,11 @@ a {
   }
 
   .hero-unified-container {
-    padding: 0 18px;
+    padding: 0 20px;
   }
 
   .organikk-hero-title {
-    font-size: 2.1rem;
+    font-size: 1.75rem;
   }
 }
 
