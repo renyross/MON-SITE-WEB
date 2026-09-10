@@ -326,9 +326,35 @@ document.addEventListener('DOMContentLoaded', () => {
         updateParallax();
     };
 
+    // =========================================
+    // STEP ITEMS SCROLL HIGHLIGHT OBSERVER
+    // =========================================
+    const initStepScrollHighlight = () => {
+        const stepItems = document.querySelectorAll('.step-scroll-item');
+        if (stepItems.length === 0) return;
+
+        const updateActiveSteps = () => {
+            const viewportMiddle = window.innerHeight * 0.55;
+
+            stepItems.forEach((item, index) => {
+                const rect = item.getBoundingClientRect();
+                // If item is in the reading zone
+                if (rect.top <= viewportMiddle && rect.bottom >= 120) {
+                    item.classList.add('active');
+                } else if (index !== 0 && rect.top > viewportMiddle) {
+                    item.classList.remove('active');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', updateActiveSteps, { passive: true });
+        updateActiveSteps();
+    };
+
     createScrollToTopButton();
     initServicesCarousel();
     initScrollParallaxEngine();
+    initStepScrollHighlight();
 
 });
 
