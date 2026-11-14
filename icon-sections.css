@@ -488,3 +488,15 @@ body.home-page #main-content #quiz.preaudit-duo-cards .preaudit-submit{min-heigh
 body.home-page #main-content #quiz.preaudit-duo-cards .preaudit-submit:hover{background:#b7eaf8!important;border-color:#b7eaf8!important}
 body.home-page #main-content #quiz.preaudit-duo-cards .preaudit-privacy{color:#a1bdce;margin-top:18px;font-size:10px;line-height:1.8}
 @media(max-width:760px){body.home-page #main-content #quiz.preaudit-duo-cards .preaudit-layout{grid-template-columns:1fr;gap:18px!important}body.home-page #main-content #quiz.preaudit-duo-cards .preaudit-copy,body.home-page #main-content #quiz.preaudit-duo-cards .preaudit-form{padding:27px 24px!important}.preaudit-duo-bar{gap:14px;padding-bottom:22px;margin-bottom:24px}.preaudit-duo-label{font-size:8px;letter-spacing:.6px}body.home-page #main-content #quiz.preaudit-duo-cards h2{font-size:34px!important}body.home-page #main-content #quiz.preaudit-duo-cards .preaudit-field input{font-size:16px}}
+/* Tarifs : proposition transparente, sans montants prédéfinis. */
+body.home-page #main-content>section.pricing-section{display:grid;grid-template-columns:1fr 1.1fr;align-items:center;gap:65px;background:var(--section-white)!important}
+.pricing-eyebrow{font:500 9px/1.5 'DM Sans',sans-serif;letter-spacing:1.5px;color:#48758d;margin-bottom:19px}
+body.home-page #main-content .pricing-section h2{font:500 clamp(32px,3vw,43px)/1.12 'Outfit',sans-serif!important;color:#102d42!important;letter-spacing:-1.2px!important;margin-bottom:23px}
+.pricing-copy>p:not(.pricing-eyebrow){max-width:450px;font:400 14px/1.85 'DM Sans',sans-serif;color:#587082;margin-bottom:27px}
+.pricing-cta{display:inline-flex;align-items:center;gap:28px;min-height:50px;padding:14px 19px;background:#143b54;border:1px solid #143b54;border-radius:6px;color:white;font:500 12px/1.4 'DM Sans',sans-serif;text-decoration:none}.pricing-cta:hover{background:#235d7c}.pricing-cta>span{font-size:20px}
+.pricing-options{border:1px solid #cbdce5;border-radius:14px;padding:0 27px;background:#f4f8fa}
+.pricing-options article{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:26px 0;border-bottom:1px solid #d5e2ea}.pricing-options article:last-child{border-bottom:0}
+body.home-page #main-content .pricing-options h3{font:500 21px/1.3 'Outfit',sans-serif!important;color:#102d42!important;letter-spacing:-.4px!important;margin-bottom:9px}
+.pricing-options p{font:400 12px/1.75 'DM Sans',sans-serif;color:#587082;margin:0}
+.pricing-options article>span{white-space:nowrap;font:500 10px/1.5 'DM Sans',sans-serif;color:#296480;background:#e2f0f6;border-radius:4px;padding:7px 10px}
+@media(max-width:760px){body.home-page #main-content>section.pricing-section{grid-template-columns:1fr;gap:30px}.pricing-options{padding:0 22px}.pricing-options article{gap:15px}.pricing-options article>span{font-size:9px;padding:6px 8px}}

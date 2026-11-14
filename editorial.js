@@ -252,3 +252,51 @@ document.addEventListener('DOMContentLoaded', () => {
     else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
   });
 });
+
+// Exit offer: once per tab session, after time to explore the page.
+document.addEventListener('DOMContentLoaded', () => {
+  const dialog = document.querySelector('#exit-offer');
+  if (!dialog || typeof dialog.show !== 'function') return;
+  const started = Date.now();
+  const storageKey = 'ross-seo-exit-offer-seen';
+  let shown = false;
+  try { shown = sessionStorage.getItem(storageKey) === '1'; } catch (_) {}
+  if (shown) return;
+  const mobile = window.matchMedia('(max-width: 760px)');
+  const busy = () => document.hidden || document.body.classList.contains('mobile-menu-open')
+    || !!document.querySelector('dialog[open]')
+    || !!document.activeElement?.matches('input,textarea,select');
+  const show = () => {
+    if (shown || busy()) return;
+    const previousFocus = document.activeElement;
+    dialog.show();
+    if (previousFocus && previousFocus !== document.body) previousFocus.focus({ preventScroll: true });
+    shown = true;
+    try { sessionStorage.setItem(storageKey, '1'); } catch (_) {}
+    document.removeEventListener('mouseleave', onExit);
+    window.removeEventListener('scroll', onMobileScroll);
+  };
+  const onExit = event => {
+    if (!mobile.matches && event.clientY <= 0 && Date.now() - started >= 15000) show();
+  };
+  const onMobileScroll = () => {
+    if (!mobile.matches || Date.now() - started < 45000) return;
+    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    if (scrollable > 0 && window.scrollY / scrollable >= 0.35) show();
+  };
+  document.addEventListener('mouseleave', onExit);
+  window.addEventListener('scroll', onMobileScroll, { passive: true });
+  window.setTimeout(onMobileScroll, 45000);
+  dialog.querySelector('.exit-offer-close').addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && dialog.open) dialog.close();
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target !== dialog) return;
+    const bounds = dialog.getBoundingClientRect();
+    if (event.clientX < bounds.left || event.clientX > bounds.right
+      || event.clientY < bounds.top || event.clientY > bounds.bottom) dialog.close();
+  });
+  dialog.querySelectorAll('a').forEach(link => link.addEventListener('click', () => dialog.close()));
+  dialog.addEventListener('close', () => document.body.classList.remove('exit-offer-open'));
+});
