@@ -1,4 +1,59 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Homepage navigation; existing inner-page menus keep their own behavior.
+    const siteMenu = document.querySelector('.site-menu');
+    if (siteMenu) {
+        const toggle = siteMenu.querySelector('.site-menu-toggle');
+        const panel = siteMenu.querySelector('.site-menu-panel');
+        const groups = [...siteMenu.querySelectorAll('details')];
+        const mobile = window.matchMedia('(max-width: 1000px)');
+        const setMenuOpen = (open) => {
+            toggle.setAttribute('aria-expanded', String(open));
+            panel.hidden = mobile.matches && !open;
+            if (!open) groups.forEach(group => { group.open = false; });
+        };
+        const syncMenu = () => {
+            toggle.hidden = !mobile.matches;
+            setMenuOpen(false);
+        };
+        toggle.addEventListener('click', () => {
+            setMenuOpen(toggle.getAttribute('aria-expanded') !== 'true');
+        });
+        groups.forEach(group => {
+            group.addEventListener('toggle', () => {
+                if (group.open) groups.forEach(other => {
+                    if (other !== group) other.open = false;
+                });
+            });
+        });
+        siteMenu.addEventListener('keydown', event => {
+            if (event.key !== 'Escape') return;
+            const activeGroup = groups.find(group => group.open && group.contains(document.activeElement));
+            if (activeGroup) {
+                activeGroup.open = false;
+                activeGroup.querySelector('summary').focus();
+            } else {
+                setMenuOpen(false);
+                if (mobile.matches) toggle.focus();
+            }
+        });
+        document.addEventListener('click', event => {
+            if (!siteMenu.contains(event.target)) setMenuOpen(false);
+        });
+        siteMenu.addEventListener('focusout', () => {
+            requestAnimationFrame(() => {
+                if (!siteMenu.contains(document.activeElement)) setMenuOpen(false);
+            });
+        });
+        panel.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (mobile.matches) toggle.focus();
+                setMenuOpen(false);
+            });
+        });
+        mobile.addEventListener('change', syncMenu);
+        syncMenu();
+    }
+
     // Mobile Menu Toggle logic
     const mobileMenu = document.getElementById('mobile-menu');
     const navLinks = document.querySelector('.nav-links');
@@ -104,13 +159,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // STAT NUMBER ANIMATION LOGIC
     // =========================================
     const animateStats = () => {
-        const stats = document.querySelectorAll('.stat-number');
+        const stats = document.querySelectorAll('.stat-number[data-target]');
         
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const el = entry.target;
                     const target = parseFloat(el.getAttribute('data-target'));
+                    if (!Number.isFinite(target)) {
+                        observer.unobserve(el);
+                        return;
+                    }
                     const prefix = el.getAttribute('data-prefix') || '';
                     const suffix = el.getAttribute('data-suffix') || '';
                     const decimals = parseInt(el.getAttribute('data-decimals')) || 0;

@@ -1,36 +1,451 @@
 {
-    "redirects": [
+  "redirects": [
+    {
+      "source": "/consultant-seo-lille",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/consultant-seo-lille.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-agence",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-agence.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/accompagnement-seo",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/accompagnement-seo.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/seo-technique",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/seo-technique.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/consultant-seo-bordeaux",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/consultant-seo-bordeaux.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index_nav",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index_nav.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-seo-ia",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-seo-ia.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-consultant-seo-b2b",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-consultant-seo-b2b.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/mentions-legales",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/mentions-legales.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/services-seo",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/services-seo.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-geo",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-geo.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/formation-seo",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/formation-seo.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/new_body_1",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/new_body_1.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/audit-geo",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/audit-geo.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-consultant-seo-local",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-consultant-seo-local.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/404",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/404.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-vitals",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-vitals.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/consultant-seo-lyon",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/consultant-seo-lyon.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-credibilite-ia",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-credibilite-ia.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/consultant-seo-paris",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/consultant-seo-paris.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/netlinking-seo",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/netlinking-seo.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/nav_template",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/nav_template.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/new_body_3",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/new_body_3.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/test_hero",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/test_hero.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/audit-seo-technique",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/audit-seo-technique.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-seo-ia",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/agence-seo-ia.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/strategie-contenu-seo",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/strategie-contenu-seo.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-automatisation",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-automatisation.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-freelance-vs-agence",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-freelance-vs-agence.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/ressources",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/ressources.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/new_body_2",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/new_body_2.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/success",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/success.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/ressources_nav",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/ressources_nav.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/audit-seo-gratuit",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/audit-seo-gratuit.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/consultant-seo-nantes",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/consultant-seo-nantes.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/seo-local",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/seo-local.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/plan-du-site",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/plan-du-site.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/maintenance",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/maintenance.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-strategie-geo-2026",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-strategie-geo-2026.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/new_body_4",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/new_body_4.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/tarifs-consultant-seo-freelance",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/tarifs-consultant-seo-freelance.html",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
         {
-            "source": "/portfolio",
-            "destination": "/ressources",
-            "permanent": true
-        }
-    ],
-    "headers": [
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
         {
-            "source": "/(.*)",
-            "headers": [
-                {
-                    "key": "X-Content-Type-Options",
-                    "value": "nosniff"
-                },
-                {
-                    "key": "X-Frame-Options",
-                    "value": "DENY"
-                },
-                {
-                    "key": "Strict-Transport-Security",
-                    "value": "max-age=63072000; includeSubDomains; preload"
-                },
-                {
-                    "key": "X-XSS-Protection",
-                    "value": "1; mode=block"
-                },
-                {
-                    "key": "Referrer-Policy",
-                    "value": "strict-origin-when-cross-origin"
-                }
-            ]
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
         }
-    ]
+      ]
+    }
+  ]
 }

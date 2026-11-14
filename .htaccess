@@ -11,29 +11,8 @@ AddDefaultCharset UTF-8
     RewriteCond %{HTTPS} off
     RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-    # Maintenance Mode Redirect
-    RewriteCond %{REQUEST_URI} !^/index\.html$
-    RewriteCond %{REQUEST_URI} !^/assets/.*$
-    RewriteCond %{REQUEST_URI} !^/favicon\.ico$
-    RewriteCond %{REQUEST_URI} !^/maintenance_test\.html$
-    RewriteRule ^(.*)$ /index.html [R=302,L]
-
-    # Disabled rules during maintenance
-    # Remove index.html
-    # RewriteCond %{THE_REQUEST} ^.*/index\.html [NC]
-    # RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
-
-    # Remove .html extension
-    # RewriteCond %{THE_REQUEST} \s/+(.+?)\.html(\s|\?) [NC]
-    # RewriteRule ^ /%1 [R=301,L]
-
-    # Redirect /portfolio to /ressources
-    # RewriteRule ^portfolio$ /ressources [L,R=301]
-
-    # Add .html extension
-    # RewriteCond %{REQUEST_FILENAME} !-d
-    # RewriteCond %{REQUEST_FILENAME}.html -f
-    # RewriteRule ^(.+)$ $1.html [L,QSA]
+    # Pages retirées : retour vers la page d’accueil.
+    RewriteRule ^(?:404|accompagnement\-seo|agence\-seo\-ia|audit\-geo|audit\-seo\-gratuit|audit\-seo\-technique|blog\-agence|blog\-automatisation|blog\-consultant\-seo\-b2b|blog\-consultant\-seo\-local|blog\-credibilite\-ia|blog\-freelance\-vs\-agence|blog\-geo|blog\-seo\-ia|blog\-strategie\-geo\-2026|blog\-vitals|consultant\-seo\-bordeaux|consultant\-seo\-lille|consultant\-seo\-lyon|consultant\-seo\-nantes|consultant\-seo\-paris|formation\-seo|index_nav|maintenance|mentions\-legales|nav_template|netlinking\-seo|new_body_1|new_body_2|new_body_3|new_body_4|plan\-du\-site|portfolio|ressources|ressources_nav|seo\-local|seo\-technique|services\-seo|strategie\-contenu\-seo|success|tarifs\-consultant\-seo\-freelance|test_hero)(?:\.html)?/?$ / [R=301,L]
 </IfModule>
 
 <IfModule mod_deflate.c>
@@ -101,4 +80,4 @@ AddDefaultCharset UTF-8
 </Files>
 
 # Custom 404 Page
-ErrorDocument 404 /404.html
+ErrorDocument 404 "Page introuvable. Consultez la page d'accueil : https://www.renelrosene.com/"
