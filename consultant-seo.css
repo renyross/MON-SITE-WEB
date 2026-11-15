@@ -1,0 +1,28 @@
+/* Page Consultant SEO — identité partagée avec l’accueil. */
+body.consultant-page{background:#f4f6f8}
+.consultant-page .ed-header{position:relative;background:#0a2132}
+.consultant-page #main-content{color:#15364a}
+body.consultant-page #main-content>section.cp-hero{display:grid;grid-template-columns:1.6fr 1fr;align-items:center;gap:65px;padding:80px max(24px,calc((100% - 1240px)/2))!important;background:#e6f0f5!important}
+.cp-eyebrow{font:500 10px/1.5 'Outfit',sans-serif;letter-spacing:1.7px;color:#48758d;margin-bottom:22px}
+.consultant-page .cp-hero h1{font:500 clamp(35px,3.5vw,52px)/1.07 'Outfit',sans-serif!important;letter-spacing:-1.6px!important;color:#102d42!important;margin-bottom:26px}
+.consultant-page .cp-hero-copy>p{font:400 14px/1.8 'Outfit',sans-serif;color:#526f82;margin-bottom:16px}
+.consultant-page .cp-hero-copy>p:first-child{font-size:10px;letter-spacing:1.7px}
+.cp-hero-copy>p>strong{font-weight:600;color:#15364a}
+.cp-portrait{margin:0;min-width:0}.cp-portrait img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:12px 12px 0 0}.cp-portrait figcaption{padding:20px 22px;background:#15364a;color:white;font:500 20px/1.4 'Outfit',sans-serif;border-radius:0 0 12px 12px}.cp-portrait figcaption span{display:block;font-size:8px;letter-spacing:1px;color:#bcd5e4;margin-top:5px}
+.cp-actions{display:flex;align-items:center;flex-wrap:wrap;gap:20px;margin-top:27px}
+.cp-button{display:inline-flex;align-items:center;justify-content:space-between;gap:20px;min-height:50px;padding:14px 19px;background:#143b54;color:white;border:1px solid #143b54;border-radius:6px;font:500 12px/1.5 'Outfit',sans-serif;text-decoration:none}.cp-button:hover{background:#235d7c}.cp-text-link{font:500 12px/1.5 'Outfit',sans-serif;color:#245e7c}
+.cp-toc{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 30px;padding:23px 24px;background:#fff;border-bottom:1px solid #d6e3eb}.cp-toc a{font:500 11px/1.5 'Outfit',sans-serif;color:#365b73;padding:5px 0}
+body.consultant-page #main-content>section.cp-section{padding:75px max(24px,calc((100% - 1240px)/2))!important;background:#fff!important;border-bottom:1px solid #dce6ed!important}
+body.consultant-page #main-content>section.cp-section:nth-of-type(even){background:#f4f6f8!important}
+body.consultant-page #main-content .cp-section>h2{font:500 clamp(29px,3vw,42px)/1.12 'Outfit',sans-serif!important;letter-spacing:-1px!important;max-width:900px;margin-bottom:30px;color:#102d42!important}
+body.consultant-page #main-content .cp-section h3{font:500 24px/1.2 'Outfit',sans-serif!important;letter-spacing:-.5px!important;color:#15364a!important;margin:0 0 20px}
+.cp-section p,.cp-section li{font:400 14px/1.9 'Outfit',sans-serif;color:#526f82}.cp-section>p{max-width:920px;margin-bottom:18px}.cp-section ul{padding-left:21px;margin:20px 0}.cp-section li{padding-left:4px;margin-bottom:8px}.cp-section strong{font-weight:600;color:#274c64}
+.cp-prestations-grid,.cp-experience-grid,.cp-methode-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:30px;align-items:start}
+.cp-detail-card{position:relative;min-width:0;border:1px solid #cbdce5;border-radius:12px;background:white;padding:30px}.cp-card-number{display:block;font:500 11px/1 'Outfit',sans-serif;letter-spacing:1.5px;color:#3884a2;margin-bottom:25px}.cp-detail-card p{margin-bottom:17px}.cp-detail-card>p:last-child{margin-bottom:0}
+.cp-service-details{margin-top:22px;padding-top:18px;border-top:1px solid #dce6ed}.cp-service-details>summary{cursor:pointer;color:#245e7c;font:500 12px/1.6 'Outfit',sans-serif}.cp-service-details[open]>summary{margin-bottom:20px}.cp-service-details p,.cp-service-details li{font-size:13px}
+body.consultant-page #main-content>section.cp-dark{background:#15364a!important}
+body.consultant-page #main-content>section.cp-dark h2{color:white!important}.cp-dark p,.cp-dark li{color:#c0d5e2}.cp-dark strong{color:white}.cp-dark .cp-button{background:#8bd9f0;border-color:#8bd9f0;color:#092638}.cp-dark .cp-text-link{color:#c9e3f1}
+#entreprises>p>strong:only-child{display:block;padding-top:22px;border-top:1px solid #d1dfe8;font:500 21px/1.3 'Outfit',sans-serif;color:#15364a}
+.cp-faq-item{padding:23px 0;border-top:1px solid #cbdce5}.cp-faq-item summary{cursor:pointer;font:500 17px/1.5 'Outfit',sans-serif;color:#15364a}.cp-faq-item>p{max-width:930px;margin:19px 0 0}
+@media(max-width:1000px){body.consultant-page #main-content>section.cp-hero{gap:35px;grid-template-columns:1.4fr 1fr}}
+@media(max-width:760px){body.consultant-page #main-content>section.cp-hero{grid-template-columns:1fr;padding-top:45px!important;padding-bottom:45px!important;gap:35px}.consultant-page .cp-hero h1{font-size:36px!important;letter-spacing:-1px!important}.cp-portrait{max-width:330px;width:100%;margin:auto}.cp-portrait img{aspect-ratio:1/1}.cp-actions{align-items:stretch;flex-direction:column;gap:18px}.cp-button{width:100%}.cp-prestations-grid,.cp-methode-grid,.cp-experience-grid{grid-template-columns:1fr}.cp-detail-card{padding:25px}body.consultant-page #main-content>section.cp-section{padding-top:50px!important;padding-bottom:50px!important}.cp-toc{justify-content:flex-start;gap:8px 20px}.cp-faq-item summary{font-size:16px}}
