@@ -1,0 +1,21 @@
+/* Commandes de carrousel communes, identiques à la section « Pour qui ? ». */
+body.home-page #main-content .site-carousel-controls > .site-carousel-button{display:inline-flex;align-items:center;justify-content:center;flex:0 0 42px;box-sizing:border-box;width:42px;height:42px;min-width:42px;min-height:42px;margin:0;padding:0;border:1px solid #b9cfdb;border-radius:6px;background:#fff;color:#15364a;box-shadow:none;font:400 23px/1 'Outfit',sans-serif;text-decoration:none;text-transform:none;letter-spacing:normal;cursor:pointer;appearance:none;transition:background-color .15s,border-color .15s,color .15s}
+body.home-page #main-content .site-carousel-controls > .site-carousel-button:hover:not(:disabled){background:#15364a;border-color:#15364a;color:#fff}
+body.home-page #main-content .site-carousel-controls > .site-carousel-button:disabled{opacity:.35;cursor:default;background:#fff;border-color:#b9cfdb;color:#15364a}
+body.home-page #main-content .site-carousel-controls > .site-carousel-button:focus-visible{outline:2px solid #287a9b;outline-offset:4px}
+body.home-page #main-content .site-carousel-controls > .site-carousel-button svg{width:20px;height:20px;flex-shrink:0}
+@media(prefers-reduced-motion:reduce){body.home-page #main-content .site-carousel-controls > .site-carousel-button{transition:none}}
+
+body.home-page #main-content .site-carousel-controls {
+  align-items: center;
+  gap: 18px;
+}
+
+body.home-page #main-content .site-carousel-status {
+  min-width: 54px;
+  margin: 0;
+  color: #245e7c;
+  font: 500 11px/1.4 'Outfit', sans-serif !important;
+  letter-spacing: 1px;
+  text-align: center;
+}

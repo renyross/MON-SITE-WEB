@@ -88,7 +88,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const controls = document.querySelector('.value-carousel-controls');
   if (!track || !controls) return;
   const slides = [...track.querySelectorAll('.value-reference-card')];
-  const dots = [...controls.querySelectorAll('[data-slide]')];
+  const previous = controls.querySelector('[data-direction="-1"]');
+  const next = controls.querySelector('[data-direction="1"]');
   const status = controls.querySelector('.value-carousel-status');
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
   let active = 0;
@@ -100,19 +101,16 @@ document.addEventListener('DOMContentLoaded', () => {
     active = track.scrollLeft >= max - 3 && max > 0 ? slides.length - 1
       : slides.reduce((closest, slide, index) =>
         Math.abs(position(slide) - track.scrollLeft) < Math.abs(position(slides[closest]) - track.scrollLeft) ? index : closest, 0);
-    dots.forEach((dot, index) => {
-      if (index === active) dot.setAttribute('aria-current', 'true');
-      else dot.removeAttribute('aria-current');
-    });
+    previous.disabled = track.scrollLeft <= 2;
+    next.disabled = track.scrollLeft >= max - 2;
     status.textContent = `${String(active + 1).padStart(2, '0')} / ${String(slides.length).padStart(2, '0')}`;
   };
   const go = index => {
-    const next = (index + slides.length) % slides.length;
-    track.scrollTo({ left: position(slides[next]), behavior: motion.matches ? 'instant' : 'smooth' });
+    const target = Math.max(0, Math.min(slides.length - 1, index));
+    track.scrollTo({ left: position(slides[target]), behavior: motion.matches ? 'instant' : 'smooth' });
   };
-  dots.forEach((dot, index) => dot.addEventListener('click', () => go(index)));
-  controls.querySelectorAll('[data-direction]').forEach(button =>
-    button.addEventListener('click', () => go(active + Number(button.dataset.direction))));
+  previous.addEventListener('click', () => go(active - 1));
+  next.addEventListener('click', () => go(active + 1));
   track.addEventListener('scroll', () => {
     if (!scheduled) { scheduled = true; requestAnimationFrame(update); }
   }, { passive: true });
@@ -299,4 +297,22 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   dialog.querySelectorAll('a').forEach(link => link.addEventListener('click', () => dialog.close()));
   dialog.addEventListener('close', () => document.body.classList.remove('exit-offer-open'));
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const button = document.createElement('button');
+  button.id = 'scroll-to-top';
+  button.className = 'scroll-to-top';
+  button.type = 'button';
+  button.setAttribute('aria-label', 'Retour en haut');
+  button.innerHTML = '<svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>';
+  document.body.append(button);
+
+  const syncVisibility = () => button.classList.toggle('visible', window.scrollY > 400);
+  syncVisibility();
+  window.addEventListener('scroll', syncVisibility, { passive: true });
+  button.addEventListener('click', () => {
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: reducedMotion ? 'instant' : 'smooth' });
+  });
 });

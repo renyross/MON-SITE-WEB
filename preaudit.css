@@ -1,0 +1,28 @@
+/* Pré-audit : composition éditoriale sur fond bleu nuit, formulaire conservé. */
+body.home-page #main-content>section#quiz.preaudit-reference{background:#0d293d!important;padding:75px max(24px,calc((100% - 1240px)/2))!important;color:#fff}
+body.home-page #main-content #quiz.preaudit-reference .preaudit-layout{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:70px!important;align-items:start;border:0;border-radius:0;background:transparent;overflow:visible}
+body.home-page #main-content #quiz.preaudit-reference .preaudit-copy,body.home-page #main-content #quiz.preaudit-reference .preaudit-form{display:flex;flex-direction:column;align-items:stretch;min-width:0;margin:0;padding:0!important;border:0!important;border-radius:0;background:transparent!important;box-shadow:none}
+body.home-page #main-content #quiz.preaudit-reference .preaudit-copy>.preaudit-duo-bar{display:inline-flex;align-items:center;justify-content:flex-start;align-self:flex-start;padding:7px 12px;margin:0 0 24px;border:1px solid #8bd9f026;border-radius:999px;background:#8bd9f00d;gap:0}
+body.home-page #main-content #quiz.preaudit-reference .preaudit-copy .preaudit-duo-label{display:flex;align-items:center;gap:8px;font:500 9px/1.5 'Outfit',sans-serif;letter-spacing:1.2px;color:#8bd9f0;text-align:left}
+.preaudit-reference .preaudit-copy .preaudit-duo-label::before{content:'';width:5px;height:5px;border-radius:50%;background:#8bd9f0;box-shadow:0 0 7px #8bd9f055}
+body.home-page #main-content #quiz.preaudit-reference .preaudit-eyebrow{font:500 10px/1.6 'Outfit',sans-serif!important;letter-spacing:1.2px!important;color:#a5d6e8!important;margin:0 0 14px}
+body.home-page #main-content #quiz.preaudit-reference h2{font:500 clamp(35px,4.1vw,56px)/1.1 'Outfit',sans-serif!important;letter-spacing:-1.6px!important;color:#fff!important;max-width:700px;margin:0 0 30px}
+body.home-page #main-content #quiz.preaudit-reference h2 span{color:#8bd9f0!important}
+.preaudit-reference .preaudit-reference-benefits{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:14px}
+.preaudit-reference-benefits li{display:flex;align-items:center;gap:10px;font:400 13px/1.8 'Outfit',sans-serif;color:#d2e3ed}
+.preaudit-reference-benefits li>span{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:21px;height:21px;border-radius:50%;background:#8bd9f018;color:#8bd9f0;font-size:12px}
+body.home-page #main-content #quiz.preaudit-reference .preaudit-description{font:400 15px/1.9 'Outfit',sans-serif!important;color:#d2e3ed!important;max-width:none;margin:0 0 24px}
+body.home-page #main-content #quiz.preaudit-reference .preaudit-form>.preaudit-duo-bar{margin:0 0 12px;padding:0;border:0;justify-content:flex-start}
+body.home-page #main-content #quiz.preaudit-reference .preaudit-form .preaudit-duo-label{font:500 9px/1.6 'Outfit',sans-serif;letter-spacing:1.2px;color:#a5d6e8;text-align:left}
+body.home-page #main-content #quiz.preaudit-reference .preaudit-form-heading{padding:0;margin:0 0 22px;border:0}
+body.home-page #main-content #quiz.preaudit-reference .preaudit-form h3{font:500 24px/1.25 'Outfit',sans-serif!important;letter-spacing:-.5px!important;color:#fff!important;margin:0}
+body.home-page #main-content #quiz.preaudit-reference .preaudit-field{margin:0 0 18px}
+body.home-page #main-content #quiz.preaudit-reference .preaudit-field label{display:block;font:400 11px/1.6 'Outfit',sans-serif;color:#d2e3ed;margin-bottom:8px}
+body.home-page #main-content #quiz.preaudit-reference .preaudit-field input{box-sizing:border-box;width:100%;min-height:48px;height:48px;padding:12px 14px;border:1px solid #779db366!important;border-radius:7px!important;background:#ffffff08!important;color:#fff!important;color-scheme:dark;font:400 14px/1.5 'Outfit',sans-serif}
+body.home-page #main-content #quiz.preaudit-reference .preaudit-field input::placeholder{color:#9cb9cc}
+body.home-page #main-content #quiz.preaudit-reference .preaudit-submit{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:50px;margin:4px 0 0;padding:14px 20px!important;background:#8bd9f0!important;border:1px solid #8bd9f0!important;border-radius:999px!important;color:#092638!important;font:500 12px/1.5 'Outfit',sans-serif!important;cursor:pointer;box-shadow:0 4px 20px #8bd9f012!important}
+body.home-page #main-content #quiz.preaudit-reference .preaudit-submit:hover{background:#b5e9f8!important;border-color:#b5e9f8!important}
+body.home-page #main-content #quiz.preaudit-reference .preaudit-privacy{font:400 11px/1.8 'Outfit',sans-serif;color:#b3ccdc;margin:18px 0 0}
+.preaudit-reference :is(input,button):focus-visible{outline:2px solid #8bd9f0;outline-offset:4px}
+@media(max-width:1000px){body.home-page #main-content #quiz.preaudit-reference .preaudit-layout{gap:38px!important}}
+@media(max-width:760px){body.home-page #main-content>section#quiz.preaudit-reference{padding:58px 24px!important}body.home-page #main-content #quiz.preaudit-reference .preaudit-layout{grid-template-columns:1fr;gap:32px!important}body.home-page #main-content #quiz.preaudit-reference h2{font-size:38px!important;letter-spacing:-1.1px!important;margin-bottom:24px}.preaudit-reference-benefits li{font-size:12px}body.home-page #main-content #quiz.preaudit-reference .preaudit-field input{font-size:16px}body.home-page #main-content #quiz.preaudit-reference .preaudit-description{font-size:14px!important}.preaudit-reference .preaudit-form{padding-top:28px!important;border-top:1px solid #ffffff26!important}}

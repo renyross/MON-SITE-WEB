@@ -1,0 +1,59 @@
+/* Composition de référence, en conservant la palette et les polices Ross SEO. */
+body.home-page #main-content :is(#for-who,#services,#engagements).audience-reference{background:#f3f6f8!important}
+body.home-page #main-content :is(#for-who,#services,#engagements).audience-reference .audience-heading{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:60px;align-items:end;margin-bottom:38px}
+.audience-reference-title,.audience-reference-aside{min-width:0}
+body.home-page #main-content :is(#for-who,#services,#engagements).audience-reference .audience-heading-bar{margin-bottom:20px}
+body.home-page #main-content :is(#for-who,#services,#engagements).audience-reference .audience-heading-category{font:500 9px/1.6 'Outfit',sans-serif;letter-spacing:1.3px;color:#537387}
+body.home-page #main-content :is(#for-who,#services,#engagements).audience-reference :is(#audience-title,#services-title,#engagements-title){font-size:clamp(34px,3.8vw,54px)!important;line-height:1.09!important;max-width:650px;margin:0 0 18px!important}
+body.home-page #main-content :is(#for-who,#services,#engagements).audience-reference .audience-eyebrow{margin-bottom:12px!important}
+.audience-reference-aside{display:flex;flex-direction:column;align-items:flex-end;gap:22px}
+body.home-page #main-content :is(#for-who,#services,#engagements).audience-reference .audience-intro{text-align:right;max-width:400px;margin:0}
+.audience-reference-controls{display:flex;align-items:center;gap:18px}
+body.home-page #main-content :is(#for-who,#services,#engagements).audience-reference .audience-grid{display:flex!important;align-items:stretch;gap:22px!important;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain;border:0!important;padding:3px 0 12px;margin:0}
+.audience-reference .audience-grid::-webkit-scrollbar{display:none}
+body.home-page #main-content :is(#for-who,#services,#engagements).audience-reference .audience-card{flex:0 0 calc((100% - 44px)/3);min-width:0;box-sizing:border-box;scroll-snap-align:start;scroll-snap-stop:always;border-radius:10px!important;box-shadow:none!important;padding:28px!important;min-height:470px}
+body.home-page #main-content :is(#for-who,#services,#engagements).audience-reference .audience-card-top{padding-bottom:20px;margin-bottom:24px;gap:14px}
+body.home-page #main-content :is(#for-who,#services,#engagements).audience-reference .audience-sector-icon{width:42px;height:42px;flex-shrink:0;border-radius:8px}
+.audience-reference .audience-sector-icon svg{width:24px;height:24px}
+body.home-page #main-content :is(#for-who,#services,#engagements).audience-reference .audience-sector-label{font-size:8px;letter-spacing:.7px}
+body.home-page #main-content :is(#for-who,#services,#engagements).audience-reference .audience-card h3{font-size:25px!important;line-height:1.18!important;margin-bottom:18px}
+body.home-page #main-content :is(#for-who,#services,#engagements).audience-reference .audience-card>p{font-size:13px!important;line-height:1.85!important;margin-bottom:20px}
+body.home-page #main-content :is(#for-who,#services,#engagements).audience-reference .audience-card .audience-priority{font-size:11px!important;line-height:1.7!important;margin-bottom:20px}
+.audience-reference-list{list-style:none;margin:0 0 25px;padding:18px 0 0;border-top:1px solid #cbdce5}
+.audience-reference-list li{position:relative;padding-left:18px;margin-bottom:10px;font:400 12px/1.8 'Outfit',sans-serif;color:#526f82}
+.audience-reference-list li::before{content:'+';position:absolute;left:0;color:#287a9b;font-weight:500}
+.audience-reference .audience-card:nth-child(even) .audience-reference-list{border-color:#ffffff26}
+.audience-reference .audience-card:nth-child(even) .audience-reference-list li{color:#c0d2de}
+.audience-reference .audience-card:nth-child(even) .audience-reference-list li::before{color:#8bd9f0}
+body.home-page #main-content :is(#for-who,#services,#engagements).audience-reference .audience-card>a{margin-top:auto;width:auto;min-height:44px;padding:8px 0;border:0;border-bottom:1px solid currentColor;border-radius:0;background:transparent!important;color:#245e7c!important;font-size:12px;gap:16px;text-decoration:none}
+body.home-page #main-content :is(#for-who,#services,#engagements).audience-reference .audience-card:nth-child(even)>a{color:#8bd9f0!important}
+body.home-page #main-content :is(#for-who,#services,#engagements).audience-reference .audience-card>a:hover{border-bottom-width:2px}
+.audience-reference-bottom{display:flex;align-items:center;justify-content:space-between;gap:32px;margin-top:28px;padding-top:24px;border-top:1px solid #cbdce5}
+.audience-reference-bottom p{font:400 14px/1.8 'Outfit',sans-serif;color:#526f82;max-width:620px;margin:0}
+.audience-reference-bottom>a{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;flex-shrink:0;padding:14px 18px;min-height:48px;box-sizing:border-box;background:#143b54;border:1px solid #143b54;border-radius:6px;color:#fff;font:500 12px/1.5 'Outfit',sans-serif;text-decoration:none}
+.audience-reference-bottom>a:hover{background:#235d7c;border-color:#235d7c}
+.audience-reference :is(a,button,[tabindex]):focus-visible{outline:2px solid #287a9b;outline-offset:4px}
+@media(max-width:1000px){body.home-page #main-content :is(#for-who,#services,#engagements).audience-reference .audience-heading{gap:32px}body.home-page #main-content :is(#for-who,#services,#engagements).audience-reference .audience-card{flex-basis:calc((100% - 22px)/2);padding:26px!important}.audience-reference-bottom{gap:24px}}
+@media(max-width:760px){body.home-page #main-content :is(#for-who,#services,#engagements).audience-reference .audience-heading{display:grid;grid-template-columns:1fr;gap:24px;margin-bottom:28px}.audience-reference-aside{align-items:flex-start;gap:18px}body.home-page #main-content :is(#for-who,#services,#engagements).audience-reference .audience-intro{text-align:left;max-width:none}.audience-reference-controls{align-self:flex-end}body.home-page #main-content :is(#for-who,#services,#engagements).audience-reference .audience-card{flex-basis:100%;min-height:450px;padding:24px!important}.audience-reference-bottom{flex-direction:column;align-items:stretch;gap:20px;margin-top:22px}.audience-reference-bottom>a{width:100%}}
+
+/* Les services partagent la composition et les cartes des profils d’entreprise. */
+body.home-page #main-content :is(#services,#engagements).audience-reference{background:#f3f6f8!important}
+body.home-page #main-content :is(#services,#engagements).audience-reference .ross-heading{display:grid!important;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);align-items:end;gap:60px;margin-bottom:38px}
+body.home-page #main-content :is(#services,#engagements).audience-reference :is(#services-title,#engagements-title){color:#102d42!important}
+body.home-page #main-content :is(#services,#engagements).audience-reference :is(#services-title,#engagements-title) span{color:#287a9b!important}
+body.home-page #main-content :is(#services,#engagements).audience-reference .ross-service{background:#fff!important;border:1px solid #cbdce5!important;justify-content:flex-start;isolation:auto}
+body.home-page #main-content :is(#services,#engagements).audience-reference .ross-service::after{display:none}
+body.home-page #main-content :is(#services,#engagements).audience-reference .ross-service:nth-child(even){background:#0d293d!important;border-color:#24485e!important}
+body.home-page #main-content :is(#services,#engagements).audience-reference .ross-service h3{color:#102d42!important}
+body.home-page #main-content :is(#services,#engagements).audience-reference .ross-service:nth-child(even) h3{color:#a5e3f5!important}
+body.home-page #main-content :is(#services,#engagements).audience-reference .ross-service>p{color:#587082!important}
+body.home-page #main-content :is(#services,#engagements).audience-reference .ross-service:nth-child(even)>p{color:#c0d2de!important}
+body.home-page #main-content :is(#services,#engagements).audience-reference .service-duo-top{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #dce6ec}
+body.home-page #main-content :is(#services,#engagements).audience-reference .ross-service:nth-child(even) .service-duo-top{border-color:#ffffff26}
+body.home-page #main-content :is(#services,#engagements).audience-reference .fs-icon{display:flex;align-items:center;justify-content:center;background:#e2f2f8;color:#1c617f;border-radius:8px;margin:0}
+body.home-page #main-content :is(#services,#engagements).audience-reference .ross-service:nth-child(even) .fs-icon{background:#8bd9f018;color:#8bd9f0}
+body.home-page #main-content :is(#services,#engagements).audience-reference .service-duo-category{color:#537387!important;text-align:right}
+body.home-page #main-content :is(#services,#engagements).audience-reference .ross-service:nth-child(even) .service-duo-category{color:#a1c4d8!important}
+body.home-page #main-content :is(#services,#engagements).audience-reference .ross-service>a{align-self:flex-start;margin-top:auto!important}
+@media(max-width:1000px){body.home-page #main-content :is(#services,#engagements).audience-reference .ross-heading{gap:32px}}
+@media(max-width:760px){body.home-page #main-content :is(#services,#engagements).audience-reference .ross-heading{grid-template-columns:1fr;gap:24px;margin-bottom:28px}}

@@ -205,33 +205,6 @@ document.addEventListener('DOMContentLoaded', () => {
     animateStats();
 
     // =========================================
-    // SCROLL TO TOP BUTTON (Dynamic Injection)
-    // =========================================
-    const createScrollToTopButton = () => {
-        const btn = document.createElement('button');
-        btn.id = 'scroll-to-top';
-        btn.className = 'scroll-to-top';
-        btn.setAttribute('aria-label', 'Retour en haut');
-        btn.innerHTML = '<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="display: block;"><polyline points="18 15 12 9 6 15"></polyline></svg>';
-        document.body.appendChild(btn);
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 400) {
-                btn.classList.add('visible');
-            } else {
-                btn.classList.remove('visible');
-            }
-        });
-
-        btn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    };
-
-    // =========================================
     // SERVICES CAROUSEL LOGIC
     // =========================================
     const initServicesCarousel = () => {
@@ -410,7 +383,6 @@ document.addEventListener('DOMContentLoaded', () => {
         updateActiveSteps();
     };
 
-    createScrollToTopButton();
     initServicesCarousel();
     initScrollParallaxEngine();
     initStepScrollHighlight();

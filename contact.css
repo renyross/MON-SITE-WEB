@@ -1,0 +1,32 @@
+/* Contact partagé : composition et palette de la page d’accueil. */
+body.home-page #main-content>section.site-contact{display:block;background:#8bd9f0!important;padding:75px max(24px,calc((100% - 1240px)/2))!important;border-bottom:1px solid #cbdce5;color:#15364a;font-family:'Outfit',sans-serif}
+body.home-page #main-content .site-contact .ross-container{max-width:1240px!important;margin:auto;padding:0}
+body.home-page #main-content .site-contact .ross-contact-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:55px!important;align-items:stretch}
+body.home-page #main-content .site-contact .ross-contact-copy{display:flex;flex-direction:column;max-width:520px;min-width:0}
+body.home-page #main-content .site-contact .ross-kicker{font:500 10px/1.6 'Outfit',sans-serif!important;letter-spacing:1.6px!important;color:#15364a!important;margin:0 0 18px}
+body.home-page #main-content .site-contact h2{font:500 clamp(32px,3.3vw,47px)/1.1 'Outfit',sans-serif!important;letter-spacing:-1.4px!important;color:#15364a!important;margin:0 0 26px}
+body.home-page #main-content .site-contact .ross-contact-copy>p{font-size:14px;line-height:1.85;color:#15364a!important;margin:0 0 24px}
+body.home-page #main-content .site-contact .ross-contact-links{display:flex;flex-direction:column;gap:0;margin:0}
+body.home-page #main-content .site-contact .ross-contact-links a{display:flex;align-items:center;justify-content:flex-start;gap:18px;min-height:44px;padding:10px 0;border:0;color:#15364a!important;font:400 14px/1.6 'Outfit',sans-serif;text-decoration:none;overflow-wrap:anywhere}
+body.home-page #main-content .site-contact .ross-contact-links a:hover{text-decoration:underline;text-underline-offset:4px}
+body.home-page #main-content .site-contact .ross-response{margin:auto 0 0!important;padding-top:24px;font-size:12px!important;color:#365467!important}
+body.home-page #main-content .site-contact .pricing-free-note{font-size:11px!important;line-height:1.8;border-top:1px solid #15364a35;margin-top:22px;padding-top:18px}
+body.home-page #main-content .site-contact :is(.ross-contact-form,.site-contact-form){padding:24px!important;border:0!important;border-radius:14px!important;background:#f4f6f8!important;color:#15364a;box-sizing:border-box;min-width:0;margin:0}
+body.home-page #main-content .site-contact .site-contact-form{display:flex;flex-direction:column;gap:16px}
+body.home-page #main-content .site-contact .geo-form-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+body.home-page #main-content .site-contact .site-contact-form .geo-form-title{font-size:23px;line-height:1.3;color:#15364a!important;margin:0 0 8px;font-weight:500}
+body.home-page #main-content .site-contact .site-contact-form label{display:flex;flex-direction:column;gap:6px;color:#365467!important;font:400 11px/1.5 'Outfit',sans-serif;min-width:0}
+body.home-page #main-content .site-contact .site-contact-form :is(input,select,textarea){box-sizing:border-box;width:100%;max-width:100%;min-width:0;min-height:42px;padding:10px 12px;border:1px solid #cad9e3!important;border-radius:6px!important;background:#fff!important;color:#15364a!important;font:400 14px/1.5 'Outfit',sans-serif;color-scheme:light}
+body.home-page #main-content .site-contact .site-contact-form textarea{min-height:100px;resize:vertical}
+body.home-page #main-content .site-contact .site-contact-form :is(input,textarea)::placeholder{color:#607889}
+body.home-page #main-content .site-contact .site-contact-form .cp-button{display:flex;justify-content:space-between;gap:18px;width:100%;min-height:46px;padding:12px 18px;background:#15364a;border:1px solid #15364a;border-radius:6px;color:#fff;font:500 12px/1.5 'Outfit',sans-serif;cursor:pointer;box-sizing:border-box}
+body.home-page #main-content .site-contact .site-contact-form .cp-button:hover{background:#235d7c;border-color:#235d7c}
+body.home-page #main-content .site-contact .site-contact-form .geo-form-help{font-size:10.5px;line-height:1.75;color:#365467!important;margin:0}
+body.home-page #main-content .site-contact .site-contact-form a{color:#245e7c;text-underline-offset:4px}
+body.home-page #main-content .site-contact .site-contact-form [role="status"]{font-size:12px;line-height:1.8;color:#365467!important;margin:0}
+body.home-page #main-content .site-contact :is(#geo-copy-brief,#seo-copy-brief,.pricing-copy-brief){color:#245e7c;font-size:12px}
+body.home-page #main-content .site-contact [hidden]{display:none!important}
+body.home-page #main-content .site-contact :is(a,button,input,textarea,select):focus-visible{outline:2px solid #245e7c;outline-offset:4px}
+@media(max-width:1000px){body.home-page #main-content .site-contact .ross-contact-layout{gap:32px!important}}
+@media(max-width:760px){body.home-page #main-content>section.site-contact{padding:58px 24px!important}body.home-page #main-content .site-contact .ross-contact-layout{grid-template-columns:1fr;gap:30px!important}body.home-page #main-content .site-contact h2{font-size:38px!important}body.home-page #main-content .site-contact .ross-contact-copy{max-width:none}body.home-page #main-content .site-contact .ross-response{margin-top:0!important}body.home-page #main-content .site-contact .site-contact-form :is(input,select,textarea){font-size:16px;min-height:46px}}
+@media(max-width:480px){body.home-page #main-content .site-contact .geo-form-row{grid-template-columns:1fr}}

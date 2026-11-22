@@ -1,0 +1,220 @@
+/* Consultant SEO : mêmes compositions, palette et composants que l’accueil. */
+body.seo-home-design{--seo-navy:#15364a;--seo-ink:#102d42;--seo-ice:#e6f0f5;--seo-gray:#f3f6f8;--seo-cyan:#8bd9f0;--seo-line:#cbdce5}
+body.seo-home-design #main-content>.ed-hero{background:#071b2c!important}
+body.seo-home-design .ed-hero-content{padding-bottom:70px}
+body.seo-home-design .ed-hero h1{font-size:clamp(40px,4.2vw,66px)!important;line-height:1.08!important;max-width:870px}
+body.seo-home-design #main-content>.cp-section{padding:75px max(24px,calc((100% - 1240px)/2))!important;border-bottom:1px solid #dce6ed!important}
+body.seo-home-design #main-content>section:is(#role-consultant,#resultats-seo,#entreprises){background:#f3f6f8!important}
+body.seo-home-design #main-content>section:is(#pourquoi-consultant,#freelance-ou-agence,#tarifs-consultant){background:#fff!important}
+body.seo-home-design #main-content>section:is(#prestations,#choisir-consultant){background:#e6f0f5!important}
+body.seo-home-design #main-content>section:is(#methode,#methode-audit,#seo-et-ia){background:#15364a!important}
+body.seo-home-design #main-content>section#questions-consultant{background:#fff!important}
+body.seo-home-design .cp-toc{background:#fff;border-bottom:1px solid #cbdce5;padding:18px 24px;gap:10px 28px}
+body.seo-home-design .cp-toc a{font-size:11px;color:#365b73;text-underline-offset:5px;min-height:32px;align-content:center}
+body.seo-home-design #main-content .cp-section-heading{margin-bottom:26px}
+body.seo-home-design #main-content .cp-section-heading h2{font:500 clamp(32px,3.6vw,49px)/1.12 'Outfit',sans-serif!important;letter-spacing:-1.4px!important;color:#102d42!important;margin:18px 0 0}
+body.seo-home-design #main-content .cp-why-eyebrow{font:500 9px/1.7 'Outfit',sans-serif;letter-spacing:1.4px;color:#537387}
+body.seo-home-design #main-content .cp-section p{font-size:14px;line-height:1.9}
+body.seo-home-design #main-content .cp-section h3{font-size:25px!important;line-height:1.25!important;letter-spacing:-.5px!important}
+body.seo-home-design #main-content .cp-independent-benefits{padding-right:10px}
+body.seo-home-design #main-content .cp-independent-when{background:#edf4f8;border-color:#cbdce5;border-radius:12px}
+body.seo-home-design #main-content .cp-independent-list strong{font-weight:500}
+/* En-têtes et carrousels repris des sections « Pour qui ? » et « Les leviers ». */
+body.seo-home-design .seo-section-top{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:60px;align-items:end;margin-bottom:34px}
+body.seo-home-design .seo-section-top .cp-section-heading{margin:0}
+body.seo-home-design .seo-section-aside{display:flex;flex-direction:column;align-items:flex-end;min-width:0}
+body.seo-home-design .seo-section-aside>p{max-width:430px;text-align:right;color:#587082;margin:0 0 14px;font-size:13px!important;line-height:1.85!important}
+body.seo-home-design .seo-section-aside .cp-carousel-controls{display:flex;align-items:center;gap:20px;padding-top:8px;margin:0}
+body.seo-home-design .cp-carousel-status{color:#245e7c;font-size:11px!important;letter-spacing:1px}
+body.seo-home-design #main-content :is(#prestations,#entreprises,#perimetre,#activites,#quand,#priorites,#livrables,#ross-seo) .cp-carousel{display:flex!important;align-items:stretch;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain;list-style:none;padding:3px 0 12px;margin:0}
+body.seo-home-design #main-content :is(#prestations,#entreprises,#perimetre,#activites,#quand,#priorites,#livrables,#ross-seo) .cp-carousel::-webkit-scrollbar{display:none}
+body.seo-home-design #main-content :is(#prestations,#entreprises,#perimetre,#activites,#quand,#priorites,#livrables,#ross-seo) .cp-carousel>.cp-detail-card{display:flex;flex-direction:column;flex:0 0 calc((100% - 44px)/3);box-sizing:border-box;min-width:0;min-height:340px;margin:0;padding:28px;scroll-snap-align:start;scroll-snap-stop:always;background:#fff;border:1px solid #cbdce5;border-radius:10px;box-shadow:none}
+body.seo-home-design #main-content :is(#prestations,#entreprises,#perimetre,#activites,#quand,#priorites,#livrables,#ross-seo) .cp-carousel>.cp-detail-card:nth-child(even){background:#0d293d;border-color:#24485e}
+body.seo-home-design #main-content :is(#prestations,#entreprises,#perimetre,#activites,#quand,#priorites,#livrables,#ross-seo) .cp-carousel>.cp-detail-card h3{font-size:25px!important;color:#102d42!important;margin:0 0 18px}
+body.seo-home-design #main-content :is(#prestations,#entreprises,#perimetre,#activites,#quand,#priorites,#livrables,#ross-seo) .cp-carousel>.cp-detail-card p{font-size:13px;line-height:1.85;color:#587082;margin:0}
+body.seo-home-design #main-content :is(#prestations,#entreprises,#perimetre,#activites,#quand,#priorites,#livrables,#ross-seo) .cp-carousel>.cp-detail-card:nth-child(even) h3{color:#a5e3f5!important}
+body.seo-home-design #main-content :is(#prestations,#entreprises,#perimetre,#activites,#quand,#priorites,#livrables,#ross-seo) .cp-carousel>.cp-detail-card:nth-child(even) p{color:#c0d2de}
+.seo-card-top{display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid #dce6ec;padding-bottom:20px;margin-bottom:24px}
+body.seo-home-design #main-content .seo-card-top .cp-card-number{border:0;border-radius:0;background:transparent;color:#537387;width:auto;height:auto;padding:0;margin:0;font:500 11px/1 'Outfit',sans-serif;letter-spacing:1px}
+body.seo-home-design .seo-card-top .fs-icon{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:42px;height:42px;border-radius:8px;background:#e2f2f8;color:#1c617f;margin:0}
+.seo-card-top .fs-icon svg{width:24px;height:24px}
+.cp-carousel>.cp-detail-card:nth-child(even) .seo-card-top{border-color:#ffffff26}
+body.seo-home-design .cp-carousel>.cp-detail-card:nth-child(even) .seo-card-top .cp-card-number{color:#a1c4d8}
+body.seo-home-design .cp-carousel>.cp-detail-card:nth-child(even) .seo-card-top .fs-icon{background:#8bd9f018;color:#8bd9f0}
+.seo-section-action{display:flex;justify-content:flex-end;margin-top:22px;padding-top:22px;border-top:1px solid #cbdce5}
+.seo-section-action p{margin:0}
+.seo-section-action .cp-button{background:#143b54;border-color:#143b54;color:#fff;font-size:12px;gap:24px}
+/* Méthode : quatre numéros reliés horizontalement, dans la palette de l’accueil. */
+body.seo-home-design #main-content>section:is(#methode,#methode-audit){display:block}
+body.seo-home-design #main-content :is(#methode,#methode-audit) .cp-method-intro{position:static;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:70px;align-items:start;margin-bottom:48px}
+body.seo-home-design #main-content :is(#methode,#methode-audit) .cp-section-heading{margin:0}
+body.seo-home-design #main-content :is(#methode,#methode-audit) .cp-section-heading h2{color:#fff!important;max-width:650px}
+body.seo-home-design #main-content :is(#methode,#methode-audit) .cp-why-eyebrow{color:#a5d6e8}
+body.seo-home-design #main-content :is(#methode,#methode-audit) .cp-method-intro>p{color:#d2e3ed;max-width:440px;margin:24px 0 0;font-size:14px}
+body.seo-home-design #main-content :is(#methode,#methode-audit) .cp-methode-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin:0}
+body.seo-home-design #main-content :is(#methode,#methode-audit) .cp-methode-grid::before{display:none}
+body.seo-home-design #main-content :is(#methode,#methode-audit) .cp-methode-grid>.cp-detail-card{display:flex;flex-direction:column;align-items:flex-start;gap:0;margin:0;padding:0 26px 0 0;border:0;border-radius:0;background:transparent}
+body.seo-home-design #main-content :is(#methode,#methode-audit) .cp-methode-grid>.cp-detail-card:last-child{padding-right:0}
+body.seo-home-design #main-content :is(#methode,#methode-audit) .cp-card-number{display:block;position:relative;width:100%;height:auto;box-sizing:border-box;padding:0 0 28px;margin:0 0 26px;border:0;border-radius:0;box-shadow:none;background:transparent;color:#a5d6e8;font:500 clamp(44px,4.6vw,62px)/1 'Outfit',sans-serif;letter-spacing:-2px}
+body.seo-home-design :is(#methode,#methode-audit) .cp-card-number::after{content:'';position:absolute;left:0;right:-26px;bottom:0;height:1px;background:#83b7d05c}
+body.seo-home-design :is(#methode,#methode-audit) .cp-card-number::before{content:'';position:absolute;left:0;bottom:-5px;width:9px;height:9px;border:2px solid #8bd9f0;border-radius:50%;background:#15364a;z-index:1}
+body.seo-home-design :is(#methode,#methode-audit) .cp-detail-card:last-child .cp-card-number::after{right:0}
+body.seo-home-design #main-content :is(#methode,#methode-audit) .cp-methode-grid h3{font-size:22px!important;line-height:1.25!important;color:#fff!important;margin:0 0 18px;padding:0}
+body.seo-home-design #main-content :is(#methode,#methode-audit) .cp-methode-grid p{color:#d2e3ed;font-size:13px;line-height:1.85;margin:0;padding:0;border:0}
+/* Exemples, comparaisons et FAQ conservent le même langage visuel. */
+body.seo-home-design .cp-outcomes-cases,body.seo-home-design .cp-decision-block{border-color:#cbdce5;border-radius:12px;box-shadow:none}
+body.seo-home-design .cp-outcomes-metrics li{background:#edf4f8;border-color:#cbdce5;border-radius:8px}
+body.seo-home-design .cp-decision-intro{gap:60px}
+body.seo-home-design .cp-outline-table{border-color:#cbdce5;border-radius:10px;scrollbar-width:thin}
+body.seo-home-design .cp-outline-table th{background:#15364a;color:#fff}
+body.seo-home-design .cp-outline-table td{font-size:13px;line-height:1.8}
+body.seo-home-design .cp-outline-table tbody tr:nth-child(even){background:#f7fafc}
+body.seo-home-design #main-content .cp-decision-takeaway h3,body.seo-home-design #main-content .cp-outcomes-roi h3{color:#a5e3f5!important}
+body.seo-home-design #main-content #seo-et-ia .cp-section-heading h2{color:#fff!important}
+body.seo-home-design #main-content #seo-et-ia .cp-why-eyebrow{color:#a5d6e8}
+body.seo-home-design #main-content #seo-et-ia p{color:#d2e3ed}
+body.seo-home-design #main-content #seo-et-ia h3{color:#fff!important}
+body.seo-home-design .cp-search-card{background:#0d293d;border-color:#45657a;border-radius:10px}
+body.seo-home-design .cp-search-card:nth-child(2){background:#1b4055}
+body.seo-home-design .cp-faq-professional .cp-faq-item{border-color:#cbdce5;border-radius:10px;background:#f8fafc}
+body.seo-home-design .cp-faq-professional .cp-faq-item[open] summary{background:#e6f0f5}
+body.seo-home-design #main-content .cp-faq-professional .cp-faq-item summary h3{font-size:17px!important}
+body.seo-home-design .cp-button:focus-visible,body.seo-home-design .cp-carousel:focus-visible{outline:2px solid #287a9b;outline-offset:4px}
+@media(max-width:1000px){body.seo-home-design .seo-section-top,body.seo-home-design .cp-decision-intro{gap:32px}body.seo-home-design #main-content :is(#prestations,#entreprises,#perimetre,#activites,#quand,#priorites,#livrables,#ross-seo) .cp-carousel>.cp-detail-card{flex-basis:calc((100% - 22px)/2);padding:26px}body.seo-home-design #main-content :is(#methode,#methode-audit) .cp-method-intro{gap:36px}body.seo-home-design #main-content :is(#methode,#methode-audit) .cp-methode-grid{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:32px}body.seo-home-design #main-content :is(#methode,#methode-audit) .cp-methode-grid>.cp-detail-card:nth-child(even){padding-right:0}body.seo-home-design :is(#methode,#methode-audit) .cp-detail-card:nth-child(even) .cp-card-number::after{right:0}}
+@media(max-width:760px){body.seo-home-design #main-content>.cp-section{padding:58px 24px!important}body.seo-home-design .ed-hero h1{font-size:clamp(36px,8.6vw,52px)!important}body.seo-home-design .ed-hero-content{padding-bottom:40px}body.seo-home-design .seo-section-top{grid-template-columns:1fr;gap:24px;margin-bottom:26px}body.seo-home-design .seo-section-aside{align-items:flex-start}body.seo-home-design .seo-section-aside>p{text-align:left;max-width:none}body.seo-home-design .seo-section-aside .cp-carousel-controls{align-self:flex-end}body.seo-home-design #main-content :is(#prestations,#entreprises,#perimetre,#activites,#quand,#priorites,#livrables,#ross-seo) .cp-carousel>.cp-detail-card{flex-basis:100%;min-height:320px;padding:24px}body.seo-home-design #main-content .cp-section-heading h2{font-size:36px!important;letter-spacing:-1.1px!important}body.seo-home-design #main-content :is(#methode,#methode-audit) .cp-method-intro{grid-template-columns:1fr;gap:22px;margin-bottom:32px}body.seo-home-design #main-content :is(#methode,#methode-audit) .cp-method-intro>p{margin:0;max-width:none}body.seo-home-design .seo-section-action .cp-button{width:100%}.seo-section-action,.seo-section-action p{width:100%}}
+@media(max-width:480px){body.seo-home-design #main-content :is(#methode,#methode-audit) .cp-methode-grid{grid-template-columns:1fr;gap:30px}body.seo-home-design #main-content :is(#methode,#methode-audit) .cp-methode-grid>.cp-detail-card{padding:0}body.seo-home-design :is(#methode,#methode-audit) .cp-card-number::after{right:0}body.seo-home-design #main-content :is(#methode,#methode-audit) .cp-card-number{font-size:48px;padding-bottom:22px;margin-bottom:22px}}
+
+/* Priorité sur l’ancien fond clair de la méthode et la section IA. */
+body.consultant-page.seo-home-design #main-content>section:is(#methode,#methode-audit).cp-method-journey,
+body.consultant-page.seo-home-design #main-content>section#seo-et-ia.cp-search-evolution{background:#15364a!important}
+
+body.seo-home-design #main-content > #choisir-consultant.cp-decision-section {
+  background: #edf4f8 !important;
+}
+
+#choisir-consultant .cp-decision-intro {
+  align-items: center;
+}
+
+#choisir-consultant .cp-decision-intro-copy {
+  padding: 0 0 0 20px;
+  border-left: 2px solid #8bd9f0;
+}
+
+#choisir-consultant-title span {
+  display: block;
+  color: #287a9b;
+}
+
+.seo-choice-guide {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+  gap: 18px;
+}
+
+#choisir-consultant .seo-choice-guide .cp-decision-block {
+  margin: 0;
+  padding: clamp(22px, 3vw, 34px);
+}
+
+#choisir-consultant .cp-decision-criteria {
+  background: #fff;
+}
+
+#choisir-consultant .cp-decision-checklist {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 20px;
+}
+
+#choisir-consultant .cp-decision-checklist li {
+  position: relative;
+  min-width: 0;
+  padding: 13px 0 13px 34px;
+  line-height: 1.55;
+}
+
+#choisir-consultant .cp-decision-checklist li::before {
+  position: absolute;
+  top: 13px;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  border-radius: 5px;
+  background: #e6f0f5;
+}
+
+#choisir-consultant .seo-choice-guide .cp-decision-takeaway {
+  display: block;
+  background: #15364a;
+  border-color: #24485e;
+}
+
+body.seo-home-design #main-content #choisir-consultant .cp-decision-takeaway h3 {
+  margin: 0 0 16px;
+  color: #a5e3f5 !important;
+}
+
+body.seo-home-design #main-content .cp-decision-block.seo-table-unframed {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+body.seo-home-design #main-content .seo-table-unframed .table-heading {
+  margin-top: 0;
+}
+
+#choisir-consultant .cp-decision-profiles .cp-decision-note {
+  padding: 12px 14px;
+  border-radius: 6px;
+  background: #f1f6f9;
+}
+
+@media (max-width: 760px) {
+  .seo-choice-guide,
+  #choisir-consultant .cp-decision-checklist {
+    grid-template-columns: 1fr;
+  }
+}
+
+.seo-decision-summary {
+  margin-top: 34px;
+}
+
+body.seo-home-design #main-content .seo-decision-summary > h3 {
+  margin: 0 0 20px;
+  color: #102d42;
+}
+
+.seo-decision-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 18px clamp(24px, 4vw, 52px);
+  margin-bottom: 22px;
+}
+
+.seo-decision-columns > div {
+  min-width: 0;
+}
+
+.seo-decision-columns h4 {
+  margin: 0 0 8px;
+  color: #245e7c;
+  font: 600 1rem/1.4 'Outfit', sans-serif;
+}
+
+body.seo-home-design #main-content .seo-decision-summary p {
+  margin: 0;
+  color: #365467;
+}
+
+@media (max-width: 760px) {
+  .seo-decision-columns {
+    grid-template-columns: 1fr;
+  }
+}
