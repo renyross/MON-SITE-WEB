@@ -260,37 +260,35 @@ body.exit-offer-open{overflow:hidden}
 .home-page .exit-offer-note{font-size:9px;margin-top:13px}
 @media(max-width:600px){.home-page .exit-offer{inset:auto 12px max(12px,env(safe-area-inset-bottom)) auto;width:min(340px,calc(100vw - 24px));max-width:calc(100vw - 24px);max-height:calc(100dvh - 24px);padding:22px}.home-page .exit-offer h2{font-size:23px!important}}
 
-@media (max-width: 760px) {
-  .home-page :is(a, button) > .cta-arrow-ne {
-    position: relative;
-    display: inline-block;
-    flex: 0 0 20px;
-    width: 20px;
-    height: 20px;
-    font-size: 0 !important;
-    vertical-align: middle;
-    pointer-events: none;
-  }
+.home-page :is(a, button) > .cta-arrow-ne {
+  position: relative;
+  display: inline-block;
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+  font-size: 0 !important;
+  vertical-align: middle;
+  pointer-events: none;
+}
 
-  .home-page :is(a, button) > .cta-arrow-ne::before {
-    position: absolute;
-    top: 9px;
-    left: 1px;
-    width: 18px;
-    height: 1.5px;
-    background: currentColor;
-    transform: rotate(-45deg);
-    content: "";
-  }
+.home-page :is(a, button) > .cta-arrow-ne::before {
+  position: absolute;
+  top: 9px;
+  left: 1px;
+  width: 18px;
+  height: 1.5px;
+  background: currentColor;
+  transform: rotate(-45deg);
+  content: "";
+}
 
-  .home-page :is(a, button) > .cta-arrow-ne::after {
-    position: absolute;
-    top: 3px;
-    right: 3px;
-    width: 7px;
-    height: 7px;
-    border-top: 1.5px solid currentColor;
-    border-right: 1.5px solid currentColor;
-    content: "";
-  }
+.home-page :is(a, button) > .cta-arrow-ne::after {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 7px;
+  height: 7px;
+  border-top: 1.5px solid currentColor;
+  border-right: 1.5px solid currentColor;
+  content: "";
 }
