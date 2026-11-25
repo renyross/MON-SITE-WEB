@@ -62,3 +62,55 @@ body.home-page footer.site-end.footer-reference .home-legal-part :is(p,h3,strong
     max-width: none;
   }
 }
+.site-cookie-link {
+  position: fixed;
+  inset-inline-start: max(16px, env(safe-area-inset-left));
+  bottom: max(16px, env(safe-area-inset-bottom));
+  z-index: 840;
+  display: grid;
+  box-sizing: border-box;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border: 1px solid #50748a;
+  border-radius: 50%;
+  background: linear-gradient(155deg, #214b63, #0d293d);
+  color: #a5e3f5;
+  box-shadow: 0 4px 14px #0d293d30, inset 0 1px 0 #ffffff24;
+  text-decoration: none;
+}
+
+.site-cookie-link > span {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 31% 34%, #214b63 1px, transparent 1.6px),
+    radial-gradient(circle at 65% 61%, #214b63 1.2px, transparent 1.8px),
+    radial-gradient(circle at 36% 75%, #214b63 1px, transparent 1.6px),
+    currentColor;
+  -webkit-mask: radial-gradient(circle at 94% 8%, transparent 5px, #000 5.6px);
+  mask: radial-gradient(circle at 94% 8%, transparent 5px, #000 5.6px);
+}
+
+.site-cookie-link:hover {
+  border-color: #8bd9f0;
+  background: #214b63;
+  color: #d3f4ff;
+}
+
+.site-cookie-link:focus-visible {
+  outline: 2px solid #245e7c;
+  outline-offset: 3px;
+}
+
+body.mobile-menu-open .site-cookie-link,
+body:has(.exit-offer[open]) .site-cookie-link {
+  display: none;
+}
+
+@media print {
+  .site-cookie-link {
+    display: none;
+  }
+}

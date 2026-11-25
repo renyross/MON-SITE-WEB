@@ -3,7 +3,6 @@
   const status = document.getElementById('blog-filter-status');
   const buttons = [...filter.querySelectorAll('[data-category]')];
   const cards = [...document.querySelectorAll('#blog-articles [data-categories]')];
-
   filter.addEventListener('click', event => {
     const selected = event.target.closest('button[data-category]');
     if (!selected) return;

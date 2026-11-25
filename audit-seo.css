@@ -190,8 +190,7 @@ body.audit-page #main-content > section#definition-audit {
   background: #fff !important;
 }
 
-#definition-audit .audit-definition-layout,
-.audit-project-layout {
+#definition-audit .audit-definition-layout {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: stretch;
@@ -201,8 +200,7 @@ body.audit-page #main-content > section#definition-audit {
   overflow: hidden;
 }
 
-#definition-audit .audit-definition-layout > :is(.audit-definition-intro, .audit-definition-example),
-.audit-project-layout > :is(.audit-project-intro, .audit-project-panel) {
+#definition-audit .audit-definition-layout > :is(.audit-definition-intro, .audit-definition-example) {
   box-sizing: border-box;
   min-width: 0;
   margin: 0;
@@ -212,8 +210,7 @@ body.audit-page #main-content > section#definition-audit {
   background: #fff;
 }
 
-#definition-audit .audit-definition-layout > .audit-definition-example,
-.audit-project-layout > .audit-project-panel {
+#definition-audit .audit-definition-layout > .audit-definition-example {
   border-inline-start: 1px solid #dce6ed;
   background: #f7f8f9;
 }
@@ -249,13 +246,11 @@ body.audit-page #main-content #definition-audit .audit-definition-example h3 {
 
 @media (max-width: 760px) {
   .audit-definition-layout,
-  #definition-audit .audit-definition-layout,
-  .audit-project-layout {
+  #definition-audit .audit-definition-layout {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  #definition-audit .audit-definition-layout > .audit-definition-example,
-  .audit-project-layout > .audit-project-panel {
+  #definition-audit .audit-definition-layout > .audit-definition-example {
     border-inline-start: 0;
     border-block-start: 1px solid #dce6ed;
   }
@@ -971,62 +966,6 @@ body.audit-page #main-content #faq .ross-faq-item > div {
 
 body.audit-page #main-content #faq .ross-faq-item > div p:last-child {
   margin-bottom: 0;
-}
-
-body.audit-page #main-content > section#projet {
-  background: #fff !important;
-}
-
-.audit-project-intro .audit-copy p {
-  margin: 0 0 12px;
-}
-
-.audit-project-intro .audit-copy p:last-child {
-  margin-bottom: 0;
-}
-
-body.audit-page #main-content #projet .audit-project-panel h3 {
-  margin: 0 0 14px;
-  color: #15364a !important;
-  font-size: clamp(1.3rem, 2.25vw, 1.85rem) !important;
-}
-
-.audit-project-panel p {
-  margin: 0 0 12px;
-  color: inherit;
-  line-height: 1.65;
-}
-
-.audit-project-panel > p:last-child {
-  margin-bottom: 0;
-  padding-top: 14px;
-  border-top: 1px solid #d5e5ed;
-  font-size: .875rem;
-}
-
-.audit-project-actions {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  margin-block: 16px;
-}
-
-.audit-project-actions > a:not(.audit-action) {
-  color: #245e7c;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-.audit-project-actions .audit-action {
-  box-sizing: border-box;
-  min-height: 44px;
-  font-weight: 600;
-}
-
-.audit-project-actions a:focus-visible {
-  outline: 2px solid #245e7c;
-  outline-offset: 4px;
 }
 
 body.audit-page #main-content #contact .site-contact-form {

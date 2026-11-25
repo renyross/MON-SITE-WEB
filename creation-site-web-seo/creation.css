@@ -1,0 +1,55 @@
+.creation-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 18px;
+}
+
+.creation-page #tarifs-consultant .creation-card-grid,
+.creation-page #seo-et-ia .creation-card-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+body.creation-page #main-content #methode .cp-method-intro {
+  display: block;
+}
+
+@media (min-width: 1001px) {
+  body.creation-page #main-content #methode .cp-methode-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 30px;
+  }
+
+  body.creation-page #methode .cp-detail-card:nth-child(3n) .cp-card-number::after {
+    right: 0;
+  }
+}
+
+.creation-page #seo-et-ia .creation-card-grid .cp-detail-card {
+  border-color: #4b6e83;
+  background: #183b51;
+}
+
+body.creation-page #main-content #seo-et-ia .creation-card-grid h3 {
+  color: #a5e3f5 !important;
+}
+
+.creation-page #seo-et-ia > p > a {
+  color: #a5e3f5;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 1000px) {
+  .creation-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .creation-card-grid,
+  .creation-page #tarifs-consultant .creation-card-grid,
+  .creation-page #seo-et-ia .creation-card-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

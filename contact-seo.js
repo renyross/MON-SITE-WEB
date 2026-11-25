@@ -45,20 +45,29 @@
     event.preventDefault();
     if (!form.reportValidity()) return;
     const data = new FormData(form);
+    const isWebsiteQuote = form.dataset.contactTopic === 'creation-web';
     const name = data.get('name') ?? [data.get('firstname'), data.get('lastname')].filter(Boolean).join(' ');
     const goal = data.get('goal');
+    const website = String(data.get('website') ?? '').trim();
     const budgetField = form.elements.namedItem('budget');
     const budget = budgetField?.value ? budgetField.selectedOptions[0].textContent.trim() : '';
+    const projectFields = [['pages', 'Nombre de pages'], ['budget-estimate', 'Budget indicatif'], ['deadline', 'Délai souhaité']];
+    const projectDetails = isWebsiteQuote ? projectFields.flatMap(([field, label]) => {
+      const value = String(data.get(field) ?? '').trim();
+      return value ? [`${label} : ${value}`] : [];
+    }) : [];
+    const subject = isWebsiteQuote ? 'Demande de devis pour un site web SEO' : 'Demande de diagnostic SEO & GEO';
     brief = [
-      'Bonjour Renel,', '', 'Je souhaite échanger sur un diagnostic SEO & GEO.', '',
+      'Bonjour Renel,', '', isWebsiteQuote ? 'Je souhaite obtenir un devis pour la création de mon site web.' : 'Je souhaite échanger sur un diagnostic SEO & GEO.', '',
       `Nom : ${String(name).trim()}`,
       `Email : ${String(data.get('email')).trim()}`,
-      `Site : ${String(data.get('website')).trim()}`,
-      ...(goal ? [`Objectif : ${goal}`] : []),
+      ...(website || !isWebsiteQuote ? [`Site : ${website}`] : []),
+      ...(goal ? [`${isWebsiteQuote ? 'Type de site' : 'Objectif'} : ${goal}`] : []),
+      ...projectDetails,
       ...(budget ? [`Budget : ${budget}`] : []), '',
       'Mon projet :', String(data.get('message')).trim()
     ].join('\n');
-    const url = 'mailto:contact@renelrosene.com?subject=' + encodeURIComponent('Demande de diagnostic SEO & GEO') + '&body=' + encodeURIComponent(brief);
+    const url = 'mailto:contact@renelrosene.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(brief);
     status.textContent = 'Votre demande est préparée. Votre messagerie va s’ouvrir pour vous permettre de la relire et de l’envoyer. Si elle ne s’ouvre pas, copiez votre demande ou utilisez le contact direct.';
     status.hidden = false;
     copy.hidden = false;
