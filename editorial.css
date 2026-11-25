@@ -269,6 +269,7 @@ body.exit-offer-open{overflow:hidden}
     height: 20px;
     font-size: 0 !important;
     vertical-align: middle;
+    pointer-events: none;
   }
 
   .home-page :is(a, button) > .cta-arrow-ne::before {
